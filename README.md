@@ -1,6 +1,9 @@
 # Projet WEB - Groupe 5
 
-Le site *trouver un nom* est un projet ambitieux visant à faciliter la recherche de stages pour les étudiants. Elle regroupera différentes offres de stage provenant d’entreprises et permettra d’enregistrer les données de ces entreprises. L’objectif est d’aider les étudiants à trouver des stages en rapport avec leur profil et leurs compétences.
+<p align='center'>
+<img src='https://github.com/RobinNoiret/CESI_CPIA2_WEB_PROJECT/blob/97acb4d32767cc35d70134b322a31ae484c9b883/SITE/Assets/logo-merge.png' width='40%' height=40%'>
+</p>
+Le site Merge est un projet ambitieux visant à faciliter la recherche de stages pour les étudiants. Elle regroupera différentes offres de stage provenant d’entreprises et permettra d’enregistrer les données de ces entreprises. L’objectif est d’aider les étudiants à trouver des stages en rapport avec leur profil et leurs compétences.
 
 <br><br>
 
