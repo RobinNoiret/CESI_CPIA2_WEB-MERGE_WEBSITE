@@ -1,0 +1,6 @@
+{
+    "editor.fontSize": 10,
+    "window.density.editorTabHeight": "default",
+    "accessibility.accessibleView.closeOnKeyPress": false,
+    "editor.accessibilityPageSize": 14
+}

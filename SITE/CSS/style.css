@@ -1,7 +1,6 @@
 /*____________________________________________________________________________________________________________*/
 /*                                              VARIABLES                                                     */
 /*____________________________________________________________________________________________________________*/
-
 html
 {
 
@@ -20,6 +19,8 @@ html
 Définition du gradient :
 linear-gradient(to right, var(--gradient-color1), var(--gradient-color2), var(--gradient-color3));
 */
+
+font-family: 'helvetica';
 }
 
 body
@@ -89,12 +90,64 @@ nav a:hover
 
 .landing-stats
 {
+    --stat-block-heigh: 100%;
+    --stat-block-wigth: 30%;
+    --stat-block-top: 75%;
+    --stat-block-left:20%;
+    --block-translate-l: -50%;
+    --block-translate-r: -50%; /*=-(stat-block-top)+20%*/
+
     width: 100%;
     height: 150px;
 
-    margin-top: -10px;
+    color: white;
+
+    margin-top: -5px;
 
     background-color: var(--orange-action);
+    display: flex;
+    padding: 10px;
+}
+
+.stats-block{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.stats-number {
+    font-size: 3em;
+}
+
+.stats-text {
+    font-size: 1.2rem;
+}
+
+#stats-students {
+    position: relative;
+    height: var(--stat-block-heigh);
+    width: var(--stat-block-wigth);
+    top: var(--stat-block-top);
+    left: var(--stat-block-left);
+    transform: translate(var(--block-translate-l),var(--block-translate-r));
+}
+
+#stats-companies {
+    position: relative;
+    height:var(--stat-block-heigh);
+    width: var(--stat-block-wigth);
+    top: var(--stat-block-top);
+    left: var(--stat-block-left);
+    transform: translate(var(--block-translate-l), var(--block-translate-r));
+}
+
+#stats-pilotes {
+    position: relative;
+    height: var(--stat-block-heigh);
+    width: var(--stat-block-wigth);
+    top: var(--stat-block-top);
+    left: var(--stat-block-left);
+    transform: translate(var(--block-translate-l), var(--block-translate-r));
 }
 
 /* To DO List :
