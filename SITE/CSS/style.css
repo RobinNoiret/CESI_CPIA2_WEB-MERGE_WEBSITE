@@ -54,6 +54,13 @@ body
     /*border-bottom:solid 1px var(--noir-fixe);*/
 }
 
+.nav-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
 nav a
 {
     color: var(--noir-fixe);
@@ -103,11 +110,11 @@ nav a:hover
 
 .espace {
     display: flex;
-    width: 1440px;
-    height: 41px;
+    width: auto;
+    height: 20px;
     align-items: center;
-    gap: 411px;
-    padding: 8px 100px;
+    gap: 400px;
+    padding: 8px 20px;
     position: relative;
     background-color: var(--orange-fond);
 }
@@ -126,6 +133,17 @@ nav a:hover
     width: fit-content;
     text-align: center;
     white-space: nowrap;
+    font-size: 14px;
+}
+
+.text-wrapper a {
+    color: var(--noir-fixe);
+    text-decoration: none;
+    align-items: center;
+}
+
+.text-wrapper a:hover {
+    font-weight: bold;
 }
 /* To DO List :
     - Mise en forme des textes et des chiffres
