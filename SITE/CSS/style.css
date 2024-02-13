@@ -1,0 +1,98 @@
+/*____________________________________________________________________________________________________________*/
+/*                                              VARIABLES                                                     */
+/*____________________________________________________________________________________________________________*/
+
+html
+{
+
+/*_____________________________________________ Couleurs _____________________________________________*/
+
+    --orange-clair: rgba(255, 140, 66, 1);          /* */
+    --orange-action: rgba(255, 125, 0, 1);          /*Couleur d'action - notamment les CTA*/
+    --blanc-fixe: rgba(246, 246, 246, 1);           /*Blanc cassé pour background*/ 
+    --noir-fixe: rgba(29, 29, 29, 1);               /*Couleur des textes*/
+    --orange-fond: rgba(252, 221, 201, 1);          /*Orange pastel pour quelques éléments de second plan*/
+
+    --gradient-color1: #FF7D00;                     /*couleur la plus a gauche*/        
+    --gradient-color2: #F79C43;                     /*couleur au centre*/
+    --gradient-color3: #FFA800;                       /*couleur la plus a droite*/
+/*
+Définition du gradient :
+linear-gradient(to right, var(--gradient-color1), var(--gradient-color2), var(--gradient-color3));
+*/
+}
+
+body
+{
+	background-color: var(--blanc-fixe);
+    margin: 0px;
+}
+
+
+/*____________________________________________________________________________________________________________*/
+/*                                                  NAVBAR                                                    */
+/*____________________________________________________________________________________________________________*/
+
+#nav-logo
+{
+    width: 45px;
+    height: 40px;
+}
+
+.navbar
+{
+    display: flex;
+    /*width: 100%;*/
+    height: 40px;
+
+    gap: 30px;
+    align-items: center;
+    padding: 8px 98px 8px;
+
+    background-color: var(--variable-collection-blanc-fixe);
+
+    /*border-bottom:solid 1px var(--noir-fixe);*/
+}
+
+/*____________________________________________________________________________________________________________*/
+/*                                                 LANDING                                                    */
+/*____________________________________________________________________________________________________________*/
+
+.landing
+{
+    width: 100%;
+}
+
+/*___________________________________________ Image de fond ___________________________________________*/
+#landing-pictureBG
+{
+    width: 100%;
+    height: 100%;
+}
+
+#picture
+{
+    width: 100%;
+}
+
+/*____________________________________________ Bloc stats ____________________________________________*/
+
+.landing-stats
+{
+    width: 100%;
+    height: 150px;
+
+    margin-top: -10px;
+
+    background-color: var(--orange-action);
+}
+
+/* To DO List :
+    - Mise en forme des textes et des chiffres
+*/
+
+
+
+
+
+
