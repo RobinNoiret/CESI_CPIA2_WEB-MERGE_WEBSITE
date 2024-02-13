@@ -30,7 +30,7 @@ body
 
 
 /*____________________________________________________________________________________________________________*/
-/*                                                  NAVBAR                                                    */
+/*                                               HOME PAGE                                                    */
 /*____________________________________________________________________________________________________________*/
 
 #nav-logo
@@ -54,9 +54,19 @@ body
     /*border-bottom:solid 1px var(--noir-fixe);*/
 }
 
-/*____________________________________________________________________________________________________________*/
-/*                                                 LANDING                                                    */
-/*____________________________________________________________________________________________________________*/
+nav a
+{
+    color: var(--noir-fixe);
+    text-decoration: none;
+    align-items: center;
+}
+
+nav a:hover
+{
+    color: var(--orange-action);
+}
+
+/*_______________________________________________ Landing _______________________________________________*/
 
 .landing
 {
@@ -87,12 +97,36 @@ body
     background-color: var(--orange-action);
 }
 
+/*____________________________________________________________________________________________________________*/
+/*                                               LOGIN PAGE                                                   */
+/*____________________________________________________________________________________________________________*/
+
+.espace {
+    display: flex;
+    width: 1440px;
+    height: 41px;
+    align-items: center;
+    gap: 411px;
+    padding: 8px 100px;
+    position: relative;
+    background-color: var(--orange-fond);
+}
+
+.espace .choix-profil {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    flex: 0 0 auto;
+    list-style: none;
+}
+
+.espace .text-wrapper {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    white-space: nowrap;
+}
 /* To DO List :
     - Mise en forme des textes et des chiffres
 */
-
-
-
-
-
-
