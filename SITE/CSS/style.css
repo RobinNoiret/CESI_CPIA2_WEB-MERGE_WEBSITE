@@ -4,6 +4,9 @@
 
 html
 {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 
 /*_____________________________________________ Couleurs _____________________________________________*/
 
@@ -26,7 +29,9 @@ linear-gradient(to right, var(--gradient-color1), var(--gradient-color2), var(--
 body
 {
 	background-color: var(--blanc-fixe);
-    margin: 0px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins';
 }
 
@@ -110,6 +115,8 @@ nav a:hover
 /*                                               LOGIN PAGE                                                   */
 /*____________________________________________________________________________________________________________*/
 
+/*____________________________________________ Header ____________________________________________*/
+
 .espace {
     display: flex;
     width: auto;
@@ -117,7 +124,7 @@ nav a:hover
     align-items: center;
     gap: 400px;
     padding: 8px 20px;
-    position: relative;
+    position: sticky;
     background-color: var(--orange-fond);
 }
 
@@ -152,6 +159,7 @@ nav a:hover
 
 .login-div {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .login-text {
@@ -162,7 +170,7 @@ nav a:hover
 }
 
 .login-form {
-    width: 400px;
+    width: 500px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -175,7 +183,7 @@ nav a:hover
 }
 
 .form-group {
-    color: #FF7D00;
+    color: var(--noir-fixe);
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -203,11 +211,13 @@ nav a:hover
       font-size: 1.5rem;
       cursor: text;
       top: 290px;
+      opacity: 0.45;
     }
     &:placeholder-shown ~ .form-label2 {
         font-size: 1.5rem;
         cursor: text;
         top: 378px;
+        opacity: 0.45;
       }
   }
   .form-field1 {
@@ -220,7 +230,7 @@ nav a:hover
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #FF7D00;
+    color: var(--noir-fixe);
   }
   .form-label2 {
     position: absolute;
@@ -228,7 +238,7 @@ nav a:hover
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #FF7D00;
+    color: var(--noir-fixe);
   }
   
   .form-field1:focus {
@@ -238,13 +248,15 @@ nav a:hover
       display: block;
       transition: 0.2s;
       font-size: 1rem;
-      color: #000000;
+      color: var(--gradient-color1);
       font-weight:700;    
+      opacity: 1;
     }
     padding-bottom: 6px;
     font-weight: 700;
     border-width: 3px;
     border-image-slice: 1;
+    border-color: var(--gradient-color1);
   }
   .form-field2:focus {
     ~ .form-label2 {
@@ -253,13 +265,15 @@ nav a:hover
       display: block;
       transition: 0.2s;
       font-size: 1rem;
-      color: #000000;
-      font-weight:700;    
+      color: var(--gradient-color1);
+      font-weight:700;
+      opacity: 1;
     }
     padding-bottom: 6px;  
     font-weight: 700;
     border-width: 3px;
     border-image-slice: 1;
+    border-color: var(--gradient-color1);
   }
 
   /* reset input */
@@ -294,6 +308,75 @@ nav a:hover
     background-color: #FF7D00;
     transform: translateY(-2px);
 }
+
+.span .inscription {
+    text-decoration: none;
+    color: var(--gradient-color1);
+}
+
+.span .inscription:hover {
+    font-weight: bold;
+}
+
+/*____________________________________________ Footer ____________________________________________*/
+
+footer {
+    background-color: #F79C43;
+}
+
+/* Style du footer */
+.footer {
+    background-color: var(--gris-clair); /* Couleur de fond */
+    padding: 20px 0; /* Espacement intérieur */
+    text-align: center; /* Alignement du contenu */
+    color: #333; /* Couleur du texte */
+}
+
+/* Style du titre */
+.footer-title {
+    font-size: 24px; /* Taille de la police */
+    color: #555; /* Couleur du titre */
+    margin-left: 10px; /* Marge à gauche */
+}
+
+.footer-group {
+    display: flex; /* Affichage en ligne des éléments */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Centrage horizontal */
+    margin-bottom: 20px; /* Marge inférieure */
+}
+
+/* Style des liens */
+.footer-list {
+    display: flex; /* Affichage en ligne des liens */
+    justify-content: center; /* Centrage des liens */
+    list-style: none; /* Suppression des puces */
+    padding: 0; /* Suppression des marges internes */
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #666;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    padding-right: 15px; /* Ajouter un espacement à droite pour l'espace du trait */
+}
+
+.footer-link:hover {
+    color: #000; /* Couleur du texte des liens au survol */
+}
+
+/* Style du texte de copyright */
+.footer-text {
+    font-size: 14px; 
+    margin-top: 20px; 
+    color: #777; 
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+
 /* To DO List :
     - Mise en forme des textes et des chiffres
 */
