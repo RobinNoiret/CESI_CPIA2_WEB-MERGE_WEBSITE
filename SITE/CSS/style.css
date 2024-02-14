@@ -35,6 +35,62 @@ body
     margin: 0px;
 }
 
+.CTA_important /* A perfectionner pour dégrader*/
+{
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+
+    border-image: linear-gradient(to right, var(--gradient-color1), var(--gradient-color2), var(--gradient-color3));
+    border-image-slice: 1;
+
+    border-radius: 50em;
+    border-image-repeat: stretch;
+
+    color: var(--noir-fixe);
+    padding: 15px 32px;
+    width:max-content;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;  
+    transition: transform 0.3s ease-in-out;
+}
+
+.CTA_important:hover
+{
+    transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
+}
+
+.CTA_secondaire
+{
+    
+    background-color: var(--blanc-fixe);
+    border-width: 2px;
+    border-style: solid;
+
+    border-color: var(--orange-action);
+    border-image-slice: 1;
+
+    border-radius: 50em;
+
+    color: var(--orange-action);
+    padding: 10px 20px;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.CTA_secondaire:hover
+{
+    transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
+}
+
 
 /*____________________________________________________________________________________________________________*/
 /*                                               HOME PAGE                                                    */
@@ -156,10 +212,18 @@ nav a:hover
     justify-content: center;
 }
 
-.domain-pictures {
+.domain-pictures
+{
     width: 15vw;
     height: 15vw;
     border-radius: 7.5vw;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.domain-pictures:hover
+{
+    transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
 
 }
 
