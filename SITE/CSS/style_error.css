@@ -1,0 +1,63 @@
+/*____________________________________________________________________________________________________________*/
+/*                                              VARIABLES                                                     */
+/*____________________________________________________________________________________________________________*/
+
+/*_____________________________________________ Couleurs _____________________________________________*/
+body
+{
+    --fond-rouge: #FFF2F2;                       /*Couleur du fond - Rouge*/
+    --fond-jaune: #FFF2D7;                       /*Couleur du fond - Jaune*/
+    --fond-bleu:  #E9F5FE;                       /*Couleur du fond - Bleu*/
+    --fond-vert:  #E2FCF6;                       /*Couleur du fond - Vert*/
+    --fond-violet:#EEDCFC;                       /*Couleur du fond - Violet*/
+
+    --orange-action: rgba(255, 125, 0, 1);          /*Couleur d'action - notamment les CTA*/
+    --noir-fixe: rgba(29, 29, 29, 1);               /*Couleur des textes*/
+
+    font-family: 'helvetica';
+}
+
+/*____________________________________________________________________________________________________________*/
+/*                                               Error 404                                                    */
+/*____________________________________________________________________________________________________________*/
+
+#Error404
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-rouge);
+    margin: 0px;
+}
+
+h1
+{
+    margin-top: 5%;
+    text-align: center;
+
+    font-weight: 700;
+    color: #000000;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+#picture
+{
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+a
+{
+    text-align: center;
+    color: var(--noir-fixe);
+    text-decoration: none;
+    margin-left: 45%;
+}
+
+a:hover
+{
+    text-align: center;
+    color: var(--orange-action);
+    text-decoration: underline;
+}
