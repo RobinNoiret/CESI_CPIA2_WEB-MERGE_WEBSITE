@@ -12,6 +12,7 @@ html
     --blanc-fixe: rgba(246, 246, 246, 1);           /*Blanc cassé pour background*/ 
     --noir-fixe: rgba(29, 29, 29, 1);               /*Couleur des textes*/
     --orange-fond: rgba(252, 221, 201, 1);          /*Orange pastel pour quelques éléments de second plan*/
+    --gris-clair: rgb(234, 234, 234, 1);            /*Couleur pour footer et fond d'éléments*/
 
     --gradient-color1: #FF7D00;                     /*couleur la plus a gauche*/        
     --gradient-color2: #F79C43;                     /*couleur au centre*/
@@ -26,6 +27,7 @@ body
 {
 	background-color: var(--blanc-fixe);
     margin: 0px;
+    font-family: 'Poppins';
 }
 
 
@@ -49,9 +51,9 @@ body
     align-items: center;
     padding: 8px 98px 8px;
 
-    background-color: var(--variable-collection-blanc-fixe);
+    background-color: var(--blanc-fixe);
 
-    /*border-bottom:solid 1px var(--noir-fixe);*/
+    border-bottom:solid 1.5px var(--gris-clair);
 }
 
 .nav-links {
@@ -144,6 +146,153 @@ nav a:hover
 
 .text-wrapper a:hover {
     font-weight: bold;
+}
+
+/*____________________________________________ Form ____________________________________________*/
+
+.login-div {
+    text-align: center;
+}
+
+.login-text {
+    color: #FF7D00;
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.login-form {
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--gris-clair);
+    border-radius: 20px;
+}
+
+.fieldset-group {
+    border-style: none;
+}
+
+.form-group {
+    color: #FF7D00;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Pour aligner les éléments à gauche */
+    gap: 10px; /* Pour définir l'espacement vertical entre les éléments */
+    margin: 25px;
+}
+
+.form-field1, .form-field2 {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--noir-fixe);
+    outline: 0;
+    font-size: 1rem;
+    color: var(--noir-fixe);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  
+    &::placeholder {
+      color: transparent;
+    }
+  
+    &:placeholder-shown ~ .form-label1 {
+      font-size: 1.5rem;
+      cursor: text;
+      top: 290px;
+    }
+    &:placeholder-shown ~ .form-label2 {
+        font-size: 1.5rem;
+        cursor: text;
+        top: 378px;
+      }
+  }
+  .form-field1 {
+    margin-bottom: 30px;
+  }
+  
+  .form-label1 {
+    position: absolute;
+    top: 275px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #FF7D00;
+  }
+  .form-label2 {
+    position: absolute;
+    top: 365px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #FF7D00;
+  }
+  
+  .form-field1:focus {
+    ~ .form-label1 {
+      position: absolute;
+      top: 275px;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: #000000;
+      font-weight:700;    
+    }
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image-slice: 1;
+  }
+  .form-field2:focus {
+    ~ .form-label2 {
+      position: absolute;
+      top: 365px;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: #000000;
+      font-weight:700;    
+    }
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image-slice: 1;
+  }
+
+  /* reset input */
+  .form-field1, .form-field2{
+    &:required,&:invalid { box-shadow:none; }
+  }
+
+.login-button {
+    display: inline;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1em;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    position: relative;
+    background-color: var(--blanc-fixe);
+    border-radius: 50px;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: #FF7D00;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.login-button:hover {
+    color: var(--blanc-fixe);
+    background-color: #FF7D00;
+    transform: translateY(-2px);
 }
 /* To DO List :
     - Mise en forme des textes et des chiffres
