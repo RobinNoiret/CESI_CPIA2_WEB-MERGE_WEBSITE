@@ -1,0 +1,162 @@
+/*____________________________________________________________________________________________________________*/
+/*                                              VARIABLES                                                     */
+/*____________________________________________________________________________________________________________*/
+
+/*_____________________________________________ Couleurs _____________________________________________*/
+body
+{
+    --fond-rouge: #FFF2F2;                       /*Couleur du fond - Rouge*/
+    --fond-jaune: #FFF2D7;                       /*Couleur du fond - Jaune*/
+    --fond-bleu:  #E9F5FE;                       /*Couleur du fond - Bleu*/
+    --fond-vert:  #E2FCF6;                       /*Couleur du fond - Vert*/
+    --fond-violet:#EEDCFC;                       /*Couleur du fond - Violet*/
+
+    --orange-action: rgba(255, 125, 0, 1);          /*Couleur d'action - notamment les CTA*/
+    --noir-fixe: rgba(29, 29, 29, 1);               /*Couleur des textes*/
+
+    font-family: 'helvetica';
+}
+
+/*____________________________________________________________________________________________________________*/
+/*                                               REGLES CSS                                                   */
+/*____________________________________________________________________________________________________________*/
+
+/*___________________________________________ Couleurs fond __________________________________________*/
+
+#Error404
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-rouge);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Error405
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-jaune);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Error406
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-bleu);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Error407
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-violet);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/*___________________________________________ Eléments __________________________________________*/
+
+h1
+{
+    margin-top: 5%;
+    text-align: center;
+
+    font-weight: 700;
+    color: #000000;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+h2
+{
+    text-align: center;
+    margin-top: -20px;
+    font-weight: 200;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.picture
+{
+    margin-top: 50px;
+    width: 60%;
+    height: 45%;
+
+}
+
+.error-picture
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+a
+{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: var(--noir-fixe);
+    text-decoration: none;
+}
+  
+a:hover
+{
+    color: var(--orange-action);
+    text-decoration: underline;
+}
+  
+.error-CTA
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 5%;
+}
+
+/*____________________________________________________________________________________________________________*/
+/*                                              RESPONSIVE                                                    */
+/*____________________________________________________________________________________________________________*/
+
+@media screen and (max-width: 768px)
+{
+    h1
+    {
+        font-size: 48px;
+    }
+
+    h2
+    {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1
+    {
+        font-size: 32px;
+    }
+
+    h2
+    {
+        font-size: 18px;
+    }
+}
