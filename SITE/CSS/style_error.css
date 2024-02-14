@@ -27,6 +27,42 @@ body
     height: 100%;
     background-color: var(--fond-rouge);
     margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Error405
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-jaune);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Error406
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-bleu);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Error407
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-violet);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
 }
 
 h1
@@ -41,23 +77,49 @@ h1
     line-height: normal;
 }
 
-#picture
+h2
 {
-    margin-left: 15%;
-    margin-top: 50px;
+    text-align: center;
+    margin-top: -30px;
+    font-weight: 200;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
 }
 
-a
+.picture
 {
+    margin-top: 50px;
+    width: 60%;
+    height: 45%;
+
+}
+
+.error-picture
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+a {
+    display: inline-block; /* Pour rendre la balise <a> un bloc en ligne */
+    width: 100%;
     text-align: center;
     color: var(--noir-fixe);
     text-decoration: none;
-    margin-left: 45%;
-}
-
-a:hover
-{
-    text-align: center;
+  }
+  
+  a:hover {
     color: var(--orange-action);
     text-decoration: underline;
-}
+  }
+  
+  .error-CTA {
+    display: flex; /* ou display: grid; selon votre choix */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
