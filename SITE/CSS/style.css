@@ -31,7 +31,6 @@ font-family: "DM Sans", sans-serif;
 
 header {
     width: auto;
-    position: sticky;
     top: 0;
 }
 
@@ -41,7 +40,7 @@ body
     height: auto;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    
 }
 
 .CTA_important /* A perfectionner pour dégrader*/
@@ -114,14 +113,18 @@ body
 .navbar
 {
     display: flex;
-    width: auto;    
-    height: auto;
+    top: 0;
+    left: 0;
+    width: calc(100% - 30px);
+    position: fixed;
+    z-index: 100;
 
     gap: 30px;
     align-items: center;
 
     background-color: var(--blanc-fixe-nav);
     padding-left: 30px;
+    padding-right: 0;
 
     box-shadow: 5px 1px 10px rgba(29, 29, 29, 0.3);
 }
@@ -220,6 +223,8 @@ nav a:hover
     margin-top: 7.5vw;
     color: var(--orange-action);
     text-align: center;
+    position: relative;
+    z-index: 50;
 }
 
 .landing-domains h2 {
@@ -239,22 +244,24 @@ nav a:hover
     height: 15vw;
     border-radius: 7.5vw;
     transition: transform 0.5s ease-in-out;
-
+    position: relative;
 }
 
 .domain-pictures:hover
 {
     transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
-
+    z-index: 1;
 }
 
 .domain {
-    display: block;
+    display: inline-block;
     text-align: center;
     font-weight: bold;
-    position: static;
+    position: relative;
     margin: 4vw;
     font-size: 1.1rem;
+    z-index: 0;
+
 }
 
 
@@ -308,42 +315,7 @@ nav a:hover
 
 /*____________________________________________ Header ____________________________________________*/
 
-.espace {
-    display: flex;
-    width: auto;
-    height: 24px;
-    align-items: center;
-    gap: 400px;
-    padding: 8px 20px;
-    background-color: var(--orange-fond);
-}
 
-.espace .choix-profil {
-    display: inline-flex;
-    align-items: center;
-    gap: 50px;
-    position: relative;
-    flex: 0 0 auto;
-    list-style: none;
-}
-
-.espace .text-wrapper {
-    position: relative;
-    width: fit-content;
-    text-align: center;
-    white-space: nowrap;
-    font-size: 14px;
-}
-
-.text-wrapper a {
-    color: var(--noir-fixe);
-    text-decoration: none;
-    align-items: center;
-}
-
-.text-wrapper a:hover {
-    font-weight: bold;
-}
 
 /*____________________________________________ Form ____________________________________________*/
 
@@ -451,7 +423,7 @@ nav a:hover
     &::placeholder {
         color: var(--noir-fixe);
         opacity: 0.3;
-        font-family: 'Poppins';
+        
       }
   }
   .form-field2:focus {
@@ -474,7 +446,7 @@ nav a:hover
     &::placeholder {
         color: var(--noir-fixe);
         opacity: 0.3;
-        font-family: 'Poppins';
+        
       }
   }
 
@@ -485,7 +457,7 @@ nav a:hover
 
 .login-button {
     display: inline;
-    font-family: 'Poppins';
+    
     font-weight: bold;
     font-size: 1em;
     width: 200px;
