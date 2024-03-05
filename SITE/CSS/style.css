@@ -529,6 +529,10 @@ footer {
 /* Style du footer */
 .footer {
     background-color: var(--gris-clair); /* Couleur de fond */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 20px 0; /* Espacement intérieur */
     margin-top: 7%;
     text-align: center; /* Alignement du contenu */
