@@ -530,6 +530,7 @@ footer {
 .footer {
     background-color: var(--gris-clair); /* Couleur de fond */
     padding: 20px 0; /* Espacement intérieur */
+    margin-top: 7%;
     text-align: center; /* Alignement du contenu */
     color: #333; /* Couleur du texte */
 }
