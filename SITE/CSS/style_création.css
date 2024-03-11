@@ -1,0 +1,225 @@
+/*____________________________________________________________________________________________________________*/
+/*                                              VARIABLES                                                     */
+/*____________________________________________________________________________________________________________*/
+
+html
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+/*_____________________________________________ Couleurs _____________________________________________*/
+
+    --orange-clair: rgba(255, 140, 66, 1);          /* */
+    --orange-action: rgba(255, 125, 0, 1);          /*Couleur d'action - notamment les CTA*/
+    --blanc-fixe: rgba(246, 246, 246, 1);           /*Blanc cassé pour background*/ 
+    --blanc-fixe-nav: rgba(246,246,246, 0.8);
+    --noir-fixe: rgba(29, 29, 29, 1);               /*Couleur des textes*/
+    --orange-fond: rgba(252, 221, 201, 1);          /*Orange pastel pour quelques éléments de second plan*/
+    --gris-clair: rgb(234, 234, 234, 1);            /*Couleur pour footer et fond d'éléments*/
+
+    --gradient-color1: #FF7D00;                     /*couleur la plus a gauche*/        
+    --gradient-color2: #F79C43;                     /*couleur au centre*/
+    --gradient-color3: #FFA800;                       /*couleur la plus a droite*/
+
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    width: auto;
+    position: sticky;
+    top: 0;
+}
+
+body
+{
+	background-color: var(--blanc-fixe);
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.CTA_important /* A perfectionner pour dégrader*/
+{
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+
+    border-image: linear-gradient(to right, var(--gradient-color1), var(--gradient-color2), var(--gradient-color3));
+    border-image-slice: 1;
+
+    border-radius: 50em;
+    border-image-repeat: stretch;
+
+    color: var(--noir-fixe);
+    padding: 15px 32px;
+    width:max-content;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;  
+    transition: transform 0.3s ease-in-out;
+}
+
+.CTA_important:hover
+{
+    transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
+}
+
+.CTA_secondaire
+{
+    
+    background-color: var(--blanc-fixe);
+    border-width: 2px;
+    border-style: solid;
+
+    border-color: var(--orange-action);
+    border-image-slice: 1;
+
+    border-radius: 50em;
+
+    color: var(--orange-action);
+    padding: 10px 20px;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.CTA_secondaire:hover
+{
+    transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
+}
+
+
+/*____________________________________________________________________________________________________________*/
+/*                                               HOME PAGE                                                    */
+/*____________________________________________________________________________________________________________*/
+
+#nav-logo
+{
+    width: 100px;
+    height: 25px;
+}
+
+.navbar
+{
+    display: flex;
+    width: auto;    
+    height: auto;
+
+    gap: 30px;
+    align-items: center;
+
+    background-color: var(--blanc-fixe-nav);
+    padding-left: 30px;
+
+    box-shadow: 5px 1px 10px rgba(29, 29, 29, 0.3);
+}
+
+.nav-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+nav a
+{
+    color: var(--noir-fixe);
+    text-decoration: none;
+    align-items: center;
+}
+
+nav a:hover
+{
+    color: var(--orange-action);
+}
+
+.user-icon {
+    width: 40px;
+    margin-right: 30px;
+    position:  absolute;
+    right: 0;
+}
+
+/*_______________________________________________ Landing _______________________________________________*/
+
+.landing
+{
+    width: 100%;
+}
+
+
+
+
+/*____________________________________________ Footer ____________________________________________*/
+
+footer {
+    background-color: #F79C43;
+    
+    /* Footer fixé en bas de page*/
+    width: 100%;    
+    height: auto;
+    bottom: 0px;
+    position: absolute;
+}
+
+/* Style du footer */
+.footer {
+    background-color: var(--gris-clair); /* Couleur de fond */
+    /*position: absolute;*/
+    /*bottom: 0;*/
+
+    padding: 20px 0; /* Espacement intérieur */
+    margin-top: 7%;
+    text-align: center; /* Alignement du contenu */
+    color: #333; /* Couleur du texte */
+}
+
+.footer-group {
+    display: flex; /* Affichage en ligne des éléments */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Centrage horizontal */
+    margin-bottom: 20px; /* Marge inférieure */
+}
+
+/* Style des liens */
+.footer-list {
+    display: flex; /* Affichage en ligne des liens */
+    justify-content: center; /* Centrage des liens */
+    list-style: none; /* Suppression des puces */
+    padding: 0; /* Suppression des marges internes */
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #666;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    padding-right: 15px; /* Ajouter un espacement à droite pour l'espace du trait */
+}
+
+.footer-link:hover {
+    color: var(--gradient-color1); /* Couleur du texte des liens au survol */
+}
+
+/* Style du texte de copyright */
+.footer-text {
+    font-size: 14px; 
+    margin-top: 20px; 
+    color: #777; 
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}

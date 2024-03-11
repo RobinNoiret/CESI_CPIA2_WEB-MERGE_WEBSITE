@@ -1,6 +1,7 @@
 /*____________________________________________________________________________________________________________*/
 /*                                              VARIABLES                                                     */
 /*____________________________________________________________________________________________________________*/
+
 html
 {
     height: 100%;
@@ -20,13 +21,8 @@ html
     --gradient-color1: #FF7D00;                     /*couleur la plus a gauche*/        
     --gradient-color2: #F79C43;                     /*couleur au centre*/
     --gradient-color3: #FFA800;                       /*couleur la plus a droite*/
-/*
-Définition du gradient :
-linear-gradient(to right, var(--gradient-color1), var(--gradient-color2), var(--gradient-color3));
-*/
 
-height: 100%;
-font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 header {
@@ -483,7 +479,7 @@ nav a:hover
     &:required,&:invalid { box-shadow:none; }
   }
 
-.login-button {
+.CTA-button {
     display: inline;
     font-family: 'Poppins';
     font-weight: bold;
@@ -519,6 +515,25 @@ nav a:hover
 .span .inscription:hover {
     font-weight: bold;
 }
+
+/*____________________________________ Formulaire Inscription __________________________________ */
+
+.signup-div {
+    margin: 20px auto;
+    width: 35%; 
+    height: 60%; 
+    -webkit-border-radius: 8px/7px; 
+    -moz-border-radius: 8px/7px; 
+    border-radius: 8px/7px; 
+    background-color: #ebebeb; 
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    border: solid 1px #cbc9c9;
+  }
+
+
+
 
 /*____________________________________________ Footer ____________________________________________*/
 
@@ -579,8 +594,3 @@ footer {
     width: 150px;
     height: auto;
 }
-
-
-/* To DO List :
-    - Mise en forme des textes et des chiffres
-*/
