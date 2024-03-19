@@ -80,13 +80,17 @@ body
 
     color: var(--orange-action);
     padding: 5px 10px;
-    width: fit-content;
+    width: 80%;
     height: 3%;
+
+    display: flex;
+    align-items: center;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+
     font-size: 16px;
-    margin: 9px 2px;
+    margin: 25px 2px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -166,7 +170,7 @@ nav a:hover
     display: flex;
     justify-content: center;
     text-align: left; /* Alignement à gauche du texte à l'intérieur du formulaire */
-    width: 40%;
+    width: 30%;
   }
 
   .signup-text
@@ -182,7 +186,8 @@ nav a:hover
     border-style: none;
 
     padding: 10%;
-    width: 150%;
+    padding-bottom: 5%;
+    width: 130%;
 
 
     display: inline;
@@ -197,16 +202,25 @@ nav a:hover
     text-align: left;
 }
 
-/*___________ Input du formulaire ___________*/
-input[type=text],input[type=number]
+#formFields
 {
-    display: block;
-    margin-bottom: 5px;
-    width: 70%;
+    text-align: center;
 }
 
-input[type=text], input[type=number]:active
-{
+/*___________ Input du formulaire ___________*/
+input[type="text"], input[type="number"] {
+    display: block;
+    margin-bottom: 5px;
+    width: 96%;
+    border-style: none;
+    border-bottom: 1px solid black;
+    transition: border-bottom-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-width: 2px;
+    border-bottom-color: var(--orange-action);
     
 }
 
@@ -224,9 +238,10 @@ footer {
     background-color: #F79C43;
     
     /* Footer fixé en bas de page*/
+    /* position: fixed; */
     width: 100%;    
     height: auto;
-    bottom: 0px;
+    bottom: 0%;
 }
 
 /* Style du footer */
