@@ -6,15 +6,15 @@ document.addEventListener('DOMContentLoaded', function ()
   const compteTypeEntreprise = document.getElementById("compteTypeEntreprise");
   const compteTypePilote = document.getElementById("compteTypePilote");
   const compteTypeEtudiant = document.getElementById("compteTypeEtudiant");
-  const localitesContainer = document.getElementById("localitesContainer");
+  //const localitesContainer = document.getElementById("localitesContainer");
 
   const entrepriseFieldsHTML = `
-      <div>
-          <label for="nomEntreprise">Nom de l'entreprise :</label>
-          <input type="text" id="nomEntreprise" name="nomEntreprise">
-      </div>
+    <div>
+        <label for="nomEntreprise">Nom de l'entreprise :</label>
+        <input type="text" id="nomEntreprise" name="nomEntreprise">
+    </div>
 
-      <div>
+    <div>
           <label for="secteurActivite">Secteur d'activité :</label>
           <input type="text" id="secteurActivite" name="secteurActivite">
       </div>
@@ -30,32 +30,33 @@ document.addEventListener('DOMContentLoaded', function ()
           </select>
       </div>
 
-      <div id="localitesContainer">
-        <h3>Localité 1 :</h3>
 
-        <div>
-          <label for="numRue 1">Numéro de rue :</label>
-          <input type="number" id="numRue" name="numRue 1">
+    <div id="localitesContainer">
+        <!-- Champs de localité -->
+        <div class="localite">
+            <h3>Localité 1 :</h3>
+            <div>
+                <label for="numRue1">Numéro de rue :</label>
+                <input type="text" id="numRue1" name="numRue1">
+            </div>
+            <div>
+                <label for="nomRue1">Nom de rue :</label>
+                <input type="text" id="nomRue1" name="nomRue1">
+            </div>
+            <div>
+                <label for="codePostal1">Code postal :</label>
+                <input type="text" class="codePostal" name="codePostal1" onchange="updateVille(1)">
+            </div>
+            <div>
+                <label for="ville1">Ville :</label>
+                <div class="resultsAPI"></div>
+            </div>
         </div>
+    </div>
 
-        <div>
-          <label for="nomRue 1">Nom de rue :</label>
-          <input type="text" id="nomRue" name="nomRue 1">
-        </div>
-
-        <div>
-          <label for="codePostal 1">Code postal :</label>
-          <input type="number" id="codePostal" name="CP">
-        </div>
-
-        <div id="CPflex">
-          <label>Ville :</label>
-          <div id="resultsDiv">
-          </div>
-        </div>
-      </div>
+    <!-- Bouton de soumission -->
+    <input type="submit" value="Soumettre">
   `;
-
   const piloteFieldsHTML = `
       <div>
           <label for="nomPilote">Nom :</label>
@@ -128,7 +129,7 @@ compteTypeEntreprise.addEventListener('change', function () {
                       </div>
                       <div>
                           <label for="ville${i + 1}">Ville :</label>
-                          <div id="resultsAPI">
+                          <div id="resultsAPI${i + 1}">
 
                           </div>
                       </div>
@@ -155,40 +156,41 @@ compteTypeEntreprise.addEventListener('change', function () {
   });
 });
 
+
+// Dans la fonction updateVille, utilisez des sélecteurs de classe et de l'index pour récupérer les éléments correspondants
 function updateVille(index) {
+    var html = "<select name='villes' class='formInput city_select'>";
+    var codePostal = document.getElementsByClassName('codePostal')[index - 1].value;
+    var xhr = new XMLHttpRequest();
 
-  var html = "<select name='villes' class='formInput' id='city_select'>";
-  var codePostal = document.getElementById('codePostal').value;
-  var xhr = new XMLHttpRequest();
+    console.log("https://apicarto.ign.fr/api/codes-postaux/communes/" + codePostal);
+    xhr.open("GET", "https://apicarto.ign.fr/api/codes-postaux/communes/" + codePostal, true);
 
-  console.log("https://apicarto.ign.fr/api/codes-postaux/communes/" + codePostal);
-  xhr.open("GET", "https://apicarto.ign.fr/api/codes-postaux/communes/" + codePostal, true);
+    xhr.onload = function() {
+        console.log(xhr.status);
+        if (xhr.status === 200) {
+            var villes = JSON.parse(xhr.responseText);
+            console.log(villes);
 
-  xhr.onload = function()
-  {
-      console.log(xhr.status);
-      if (xhr.status === 200)
-      {
-        var villes = JSON.parse(xhr.responseText);
-        console.log(villes);
+            for (let ville of villes) {
+                html += "<option value=" + ville.nomCommune + ">" + ville.nomCommune + "</option>"
+            };
 
-        for (let ville of villes)
-          {
-            html += "<option value=" + ville.nomCommune +">" + ville.nomCommune + "</option>"
-          };
+            html += "</select>"
+        } else {
+            console.log("erreur");
+            html = "<p>Erreur lors de la récupération des données.</p>";
+        }
+        document.getElementsByClassName("resultsAPI")[index - 1].innerHTML = html;
+    };
 
-          html += "</select>"
-      }
-      else
-      {
-        console.log("erreur");
-        html = "<p>Erreur lors de la récupération des données.</p>";
-      }
-      document.getElementById("resultsAPI").innerHTML = html;
-  };
-
-  xhr.send();
-  console.log('la ville a perdu le focus !');
+    xhr.send();
+    console.log('la ville a perdu le focus !');
 }
 
-
+//________________________________________________________________________________________________________________________//
+// Note : 19/03/2024                                                                                                      //
+// Problème : Auto complète Ville en fonction du code postal                                                              //
+// Source du problème : on cherche à la fois à  avoir des données différentes sur un ID donné pour chaque localité.       //
+// Solution : Il faudrait réussir à la fois à avoir un select spécifique pour chaque ville.                               //
+//________________________________________________________________________________________________________________________//
