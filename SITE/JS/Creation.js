@@ -10,17 +10,17 @@ document.addEventListener('DOMContentLoaded', function ()
 
   const entrepriseFieldsHTML = `
     <div>
-        <label for="nomEntreprise">Nom de l'entreprise :</label>
-        <input type="text" id="nomEntreprise" name="nomEntreprise">
+        <label class="Form_label" for="nomEntreprise">Nom de l'entreprise :</label>
+        <input class="Form_input" type="text" id="nomEntreprise" name="nomEntreprise">
     </div>
 
     <div>
-          <label for="secteurActivite">Secteur d'activité :</label>
-          <input type="text" id="secteurActivite" name="secteurActivite">
+          <label class="Form_label" for="secteurActivite">Secteur d'activité :</label>
+          <input class="Form_input" type="text" id="secteurActivite" name="secteurActivite">
       </div>
 
       <div>
-          <label for="nombreLocalites">Nombre de localités :</label>
+          <label class="Form_label" for="nombreLocalites">Nombre de localités :</label>
           <select id="nombreLocalites" name="nombreLocalites">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -32,69 +32,65 @@ document.addEventListener('DOMContentLoaded', function ()
 
 
     <div id="localitesContainer">
-        <!-- Champs de localité -->
         <div class="localite">
-            <h3>Localité 1 :</h3>
+            <h3 class="Form_h3_localite">Localité 1 :</h3>
             <div>
-                <label for="numRue1">Numéro de rue :</label>
-                <input type="text" id="numRue1" name="numRue1">
+                <label class="Form_label" for="numRue1">Numéro de rue :</label>
+                <input class="Form_input" type="text" id="numRue1" name="numRue1">
             </div>
             <div>
-                <label for="nomRue1">Nom de rue :</label>
-                <input type="text" id="nomRue1" name="nomRue1">
+                <label class="Form_label" for="nomRue1">Nom de rue :</label>
+                <input class="Form_input" type="text" id="nomRue1" name="nomRue1">
             </div>
             <div>
-                <label for="codePostal1">Code postal :</label>
+                <label class="Form_label" for="codePostal1">Code postal :</label>
                 <input type="text" class="codePostal" name="codePostal1" onchange="updateVille(1)">
             </div>
             <div>
-                <label for="ville1">Ville :</label>
+                <label class="Form_label" for="ville1">Ville :</label>
                 <div class="resultsAPI"></div>
             </div>
         </div>
     </div>
-
-    <!-- Bouton de soumission -->
-    <input type="submit" value="Soumettre">
   `;
   const piloteFieldsHTML = `
       <div>
-          <label for="nomPilote">Nom :</label>
-          <input type="text" id="nomPilote" name="nomPilote">
+          <label class="Form_label" for="nomPilote">Nom :</label>
+          <input class="Form_input" type="text" id="nomPilote" name="nomPilote">
       </div>
       <div>
-          <label for="prenomPilote">Prénom :</label>
-          <input type="text" id="prenomPilote" name="prenomPilote">
+          <label class="Form_label" for="prenomPilote">Prénom :</label>
+          <input class="Form_input" type="text" id="prenomPilote" name="prenomPilote">
       </div>
       <div>
-          <label for="centrePilote">Centre :</label>
-          <input type="text" id="centrePilote" name="centrePilote">
+          <label class="Form_label" for="centrePilote">Centre :</label>
+          <input class="Form_input" type="text" id="centrePilote" name="centrePilote">
       </div>
       <div>
-          <label for="promotionsAssignes">Promotions assignées :</label>
-          <input type="text" id="promotionsAssignes" name="promotionsAssignes">
+          <label class="Form_label" for="promotionsAssignes">Promotions assignées :</label>
+          <input class="Form_input" type="text" id="promotionsAssignes" name="promotionsAssignes">
       </div>
   `;
   const etudiantFieldsHTML = `
       <div>
-          <label for="nomEtudiant">Nom :</label>
-          <input type="text" id="nomEtudiant" name="nomEtudiant">
+          <label class="Form_label" for="nomEtudiant">Nom :</label>
+          <input class="Form_input" type="text" id="nomEtudiant" name="nomEtudiant">
       </div>
       <div>
-          <label for="prenomEtudiant">Prénom :</label>
-          <input type="text" id="prenomEtudiant" name="prenomEtudiant">
+          <label class="Form_label" for="prenomEtudiant">Prénom :</label>
+          <input class="Form_input" type="text" id="prenomEtudiant" name="prenomEtudiant">
       </div>
       <div>
-          <label for="centreEtudiant">Centre :</label>
-          <input type="text" id="centreEtudiant" name="centreEtudiant">
+          <label class="Form_label" for="centreEtudiant">Centre :</label>
+          <input class="Form_input" type="text" id="centreEtudiant" name="centreEtudiant">
       </div>
       <div>
-          <label for="promotionEtudiant">Promotion :</label>
-          <input type="text" id="promotionEtudiant" name="promotionEtudiant">
+          <label class="Form_label" for="promotionEtudiant">Promotion :</label>
+          <input class="Form_input" type="text" id="promotionEtudiant" name="promotionEtudiant">
       </div>
   `;
   const submit = `
-      <input type="submit" value="Soumettre">
+      <input class="Form_CTA_secondaire" class="Form_CTA_secondaire" type="submit" value="Soumettre">
   `;
 
 /* ___________________________________ Sélection du type de compte ___________________________________ */
@@ -116,19 +112,19 @@ compteTypeEntreprise.addEventListener('change', function () {
                   <div>
                       <h3>Localité ${i + 1} :</h3>
                       <div>
-                          <label for="numRue${i + 1}">Numéro de rue :</label>
-                          <input type="text" id="numRue${i + 1}" name="numRue${i + 1}">
+                          <label class="Form_label" for="numRue${i + 1}">Numéro de rue :</label>
+                          <input class="Form_input" type="text" id="numRue${i + 1}" name="numRue${i + 1}">
                       </div>
                       <div>
-                          <label for="nomRue${i + 1}">Nom de rue :</label>
-                          <input type="text" id="nomRue${i + 1}" name="nomRue${i + 1}">
+                          <label class="Form_label" for="nomRue${i + 1}">Nom de rue :</label>
+                          <input class="Form_input" type="text" id="nomRue${i + 1}" name="nomRue${i + 1}">
                       </div>
                       <div>
-                          <label for="codePostal${i + 1}">Code postal :</label>
-                          <input type="text" id="codePostal" name="codePostal${i + 1}" onchange="updateVille(${i + 1})">
+                          <label class="Form_label" for="codePostal${i + 1}">Code postal :</label>
+                          <input type="text" class="codePostal${i + 1}" name="codePostal${i + 1}" onchange="updateVille(${i + 1})">
                       </div>
                       <div>
-                          <label for="ville${i + 1}">Ville :</label>
+                          <label class="Form_label" for="ville${i + 1}">Ville :</label>
                           <div id="resultsAPI${i + 1}">
 
                           </div>
@@ -193,4 +189,16 @@ function updateVille(index) {
 // Problème : Auto complète Ville en fonction du code postal                                                              //
 // Source du problème : on cherche à la fois à  avoir des données différentes sur un ID donné pour chaque localité.       //
 // Solution : Il faudrait réussir à la fois à avoir un select spécifique pour chaque ville.                               //
+//________________________________________________________________________________________________________________________//
+
+//________________________________________________________________________________________________________________________//
+// Note : 19/03/2024    
+// Problème : Le principe d'automatiquement compléter les villes en fonction du code postal ne fonctionne pas             //
+//      au delà de une localité.                                                                                          //
+//________________________________________________________________________________________________________________________//
+
+//________________________________________________________________________________________________________________________//
+// Note : 19/03/2024                                                                                                      //
+// Problème : Impossible de mettre de la mise en forme (ajouter des classes) pour l'input du code postal et               //
+//      les options du nombre de localité. Il doit y avoir un problème entre l'ajour des classes et l'automatisation      //
 //________________________________________________________________________________________________________________________//

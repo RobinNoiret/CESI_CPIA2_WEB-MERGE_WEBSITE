@@ -93,7 +93,7 @@ body
 .Form_CTA_secondaire:hover
 {
     transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
-    background-color: white;
+    background-color: var(--blanc-fixe);
 }
 
 
@@ -155,26 +155,66 @@ nav a:hover
     width: 100%;
 }
 
+.signup-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-form
+  {
+    display: flex;
+    justify-content: center;
+    text-align: left; /* Alignement à gauche du texte à l'intérieur du formulaire */
+    width: 40%;
+  }
+
+  .signup-text
+  {
+    text-align: center;
+  }
+  
+/*__________ Ensemble du formulaire __________*/
 .fieldset-group
 {
-    display: inline;
-    width: 40%;
+    background-color: white;
     border-radius: 2em;
-    padding: 2%;
-    margin: 0 auto; /* Centrage horizontal */
-    justify-content: center;
-    justify-content: center; /* Centrage horizontal */
-    align-items: center; /* Centrage vertical */
-    background-color: white; /* Couleur de fond */
     border-style: none;
-    
+
+    padding: 10%;
+    width: 150%;
+
+
+    display: inline;
+    justify-content: center;
+    align-items: center;
 }
 
-  
+/*___________ Label du formulaire ___________*/
+.Form_label
+{
+    display: flex;
+    text-align: left;
+}
+
+/*___________ Input du formulaire ___________*/
 input[type=text],input[type=number]
 {
     display: block;
     margin-bottom: 5px;
+    width: 70%;
+}
+
+input[type=text], input[type=number]:active
+{
+    
+}
+
+/*____________ H3 du formulaire ____________*/
+.Form_h3_localite
+{
+    display: flex;
+    text-align: left;
 }
 
 
