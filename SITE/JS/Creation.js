@@ -27,30 +27,35 @@ document.addEventListener('DOMContentLoaded', function ()
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
-              <option value="6">6</option>
           </select>
       </div>
 
       <div id="localitesContainer">
         <h3>Localité 1 :</h3>
+
         <div>
           <label for="numRue 1">Numéro de rue :</label>
-          <input type="text" id="numRue 1" name="numRue 1">
+          <input type="number" id="numRue" name="numRue 1">
         </div>
+
         <div>
           <label for="nomRue 1">Nom de rue :</label>
-          <input type="text" id="nomRue 1" name="nomRue 1">
+          <input type="text" id="nomRue" name="nomRue 1">
         </div>
+
         <div>
           <label for="codePostal 1">Code postal :</label>
-          <input type="text" id="codePostal 1" name="codePostal 1" onchange="updateVille( 1)">
+          <input type="number" id="codePostal" name="CP">
         </div>
-        <div>
-          <label for="ville 1">Ville :</label>
-          <input type="text" id="ville 1" name="ville 1" readonly>
+
+        <div id="CPflex">
+          <label>Ville :</label>
+          <div id="resultsDiv">
+          </div>
         </div>
       </div>
   `;
+
   const piloteFieldsHTML = `
       <div>
           <label for="nomPilote">Nom :</label>
@@ -119,11 +124,13 @@ compteTypeEntreprise.addEventListener('change', function () {
                       </div>
                       <div>
                           <label for="codePostal${i + 1}">Code postal :</label>
-                          <input type="text" id="codePostal${i + 1}" name="codePostal${i + 1}" onchange="updateVille(${i + 1})">
+                          <input type="text" id="codePostal" name="codePostal${i + 1}" onchange="updateVille(${i + 1})">
                       </div>
                       <div>
                           <label for="ville${i + 1}">Ville :</label>
-                          <input type="text" id="ville${i + 1}" name="ville${i + 1}" readonly>
+                          <div id="resultsAPI">
+
+                          </div>
                       </div>
                   </div>
               `;
@@ -147,3 +154,41 @@ compteTypeEntreprise.addEventListener('change', function () {
       }
   });
 });
+
+function updateVille(index) {
+
+  var html = "<select name='villes' class='formInput' id='city_select'>";
+  var codePostal = document.getElementById('codePostal').value;
+  var xhr = new XMLHttpRequest();
+
+  console.log("https://apicarto.ign.fr/api/codes-postaux/communes/" + codePostal);
+  xhr.open("GET", "https://apicarto.ign.fr/api/codes-postaux/communes/" + codePostal, true);
+
+  xhr.onload = function()
+  {
+      console.log(xhr.status);
+      if (xhr.status === 200)
+      {
+        var villes = JSON.parse(xhr.responseText);
+        console.log(villes);
+
+        for (let ville of villes)
+          {
+            html += "<option value=" + ville.nomCommune +">" + ville.nomCommune + "</option>"
+          };
+
+          html += "</select>"
+      }
+      else
+      {
+        console.log("erreur");
+        html = "<p>Erreur lors de la récupération des données.</p>";
+      }
+      document.getElementById("resultsAPI").innerHTML = html;
+  };
+
+  xhr.send();
+  console.log('la ville a perdu le focus !');
+}
+
+
