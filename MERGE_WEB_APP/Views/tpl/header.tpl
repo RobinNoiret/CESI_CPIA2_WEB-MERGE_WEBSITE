@@ -2,7 +2,10 @@
 
 <header>
     <nav class="navbar">
-        <img id="nav-logo" src="Views/Assets/logo avec texte.png">
+
+        <a href="index.html">
+            <img id="nav-logo" src="Views/Assets/logo avec texte.png">
+        </a>
 
         <ul class="nav-links">
                         <li><a href="index.html">Accueil</a></li>
@@ -18,6 +21,8 @@
             {/if}
         </ul>
 
-        <img src="Views/Assets/user-circle.svg" alt="User icon" class="user-icon">
+        <a href="connexion.html">
+            <img src="Views/Assets/user-circle.svg" alt="User icon" class="user-icon">
+        </a>
     </nav>
 </header>
