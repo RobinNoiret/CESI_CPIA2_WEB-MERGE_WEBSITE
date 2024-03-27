@@ -22,6 +22,8 @@
 
         {if $page eq 'home'}
             {include "../tpl/homeContent.tpl"}
+        {elseif  $page eq 'connexion'}
+            {include "../tpl/connexionContent.tpl"}
         {/if}
 
         {include "../tpl/footer.tpl"}
