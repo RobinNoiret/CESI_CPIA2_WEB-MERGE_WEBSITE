@@ -3,9 +3,7 @@
 <header>
     <nav class="navbar">
 
-        <a href="index.html">
-            <img id="nav-logo" src="Views/Assets/logo avec texte.png">
-        </a>
+        <img id="nav-logo" src="Views/Assets/logo avec texte.png">
 
         <ul class="nav-links">
                         <li><a href="index.html">Accueil</a></li>
@@ -20,9 +18,8 @@
                 {/if}
             {/if}
         </ul>
+        
+        <img src="Views/Assets/user-circle.svg"  alt="User icon" class="user-icon">
 
-        <a href="connexion.html">
-            <img src="Views/Assets/user-circle.svg" alt="User icon" class="user-icon">
-        </a>
     </nav>
 </header>
