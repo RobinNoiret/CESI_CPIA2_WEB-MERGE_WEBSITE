@@ -2,11 +2,11 @@
 
 <header>
     <nav class="navbar">
-        <img id="nav-logo" src="Assets/logo avec texte.png">
+        <img id="nav-logo" src="Views/Assets/logo avec texte.png">
 
         <ul class="nav-links">
                         <li><a href="index.html">Accueil</a></li>
-            {if $user neq 'none' || $user neq ''}   {* Can be fonctionnal with the exception of an unset value *}
+            {if $user neq 'none' && $user neq ''}   {* Can be fonctionnal with the exception of an unset value *}
                         <li><a href="#.html">Trouver un stage</a></li>
                         <li><a href="#.html">Trouver une entreprise</a></li>
                 {if $user eq 'admin'}
@@ -18,6 +18,6 @@
             {/if}
         </ul>
 
-        <img src="Assets/user-circle.svg" alt="User icon" class="user-icon">
+        <img src="Views/Assets/user-circle.svg" alt="User icon" class="user-icon">
     </nav>
 </header>

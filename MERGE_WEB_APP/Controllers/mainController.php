@@ -23,7 +23,7 @@
             if (false){
             }
             else {
-                $user = 'none';
+                $user = 'admin';
             }
 
             include 'Views/mainView.php';           // Add template for home view

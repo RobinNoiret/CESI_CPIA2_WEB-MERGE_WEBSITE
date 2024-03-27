@@ -1,4 +1,4 @@
-// Set variables to display with smarty 
+<!-- Set variables to display with smarty -->
 <?php 
     require_once 'libs/Smarty.class.php';
 
@@ -6,6 +6,7 @@
 
     if ($page == 'home'){
         $smarty->assign('title', 'Merge-homepage');
+        $smarty->assign('page', $page);
         $smarty->assign('user', $user);
-        $smarty->display('/*path to tpl page to display*/');
+        $smarty->display('Views/tpl/templateBase.tpl');
     }

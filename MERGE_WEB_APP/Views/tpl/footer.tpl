@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="footer-group">
-        <div class="logo"><img src="Assets/logo avec texte.png" alt="logo-merge"></div>
+        <div class="logo"><img src="Views/Assets/logo avec texte.png" alt="logo-merge"></div>
     </div>
 
     <div class="footer-links">
