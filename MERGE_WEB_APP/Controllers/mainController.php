@@ -56,4 +56,26 @@
 
             return true;
         }
+
+        public function errorsController($errorType){     // Autorized $errorType : data, connect, net, server
+            if ($errorType == 'Default'){
+                $link = 'Views/tpl/errors/serverAccess-error.tpl';
+            }
+            elseif ($errorType == 'data'){
+                //$link = 'Views/tpl/errors/databaseConnexion-error.tpl';
+            }
+            elseif ($errorType == 'connect'){
+                // $link = 'Views/tpl/errors/serverAccess-error.tpl';
+            }
+            elseif ($errorType == 'net'){
+                $link = 'Views/tpl/errors/networkAccess-error.tpl';
+            }
+            elseif ($errorType == 'server'){
+                $link = 'Views/tpl/errors/serverAccess-error.tpl';
+            }
+
+            include 'Views/errors.php';           // Add template for home view
+
+            return true;            
+        }
     }

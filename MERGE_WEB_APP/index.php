@@ -24,16 +24,19 @@
         elseif ($_GET["page"]=='company'){               // Want to access to company
             //$controller->companyController();
         }
+        elseif ($_GET["page"]=='404'and isset($_GET["error"])){
+            errors($controller, $_GET["error"]);
+        }
         else{
-            error404($controller);
+            errors($controller);
         }
     }
 
     else {
-        error404($controller);                          // Call error404
+        errors($controller);                          // Call errors
     }
         
-    function error404(&$controlPointer){
-        $controlPointer->error404Controller();          // Give to the controller the action to do
+    function errors(&$controlPointer,$errorType='Default'){   // Autorized $errorType : data, connect, net, server
+        $controlPointer->errorsController($errorType);          // Give to the controller the action to do
         return true;
     }
