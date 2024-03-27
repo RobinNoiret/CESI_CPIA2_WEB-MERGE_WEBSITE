@@ -10,27 +10,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="espace">
-            <ul class="choix-profil">
-                <li class="text-wrapper"><a href="">Espace Etudiant</a></li>
-                <li class="text-wrapper"><a href="">Espace Pilote</a></li>
-            </ul>
-        </div>
-        <nav class="navbar">
-            <a href="index.html">
-                <img id="nav-logo" src="Assets/logo avec texte.png" alt="Logo">
-            </a>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#.html">Trouver un stage</a></li>
-                <li><a href="#.html">Trouver un pilote</a></li>
-                <li><a href="#.html">Trouver une entreprise</a></li>
-            </ul>
-            <img src="Assets/user-circle.svg" alt="User icon" class="user-icon">
-        </nav>
-    </header>
+    <?php  require_once('./PHP/header.php'); ?>
 
     <div class="landing">
 
@@ -66,22 +47,30 @@
 
             <div class="domains">
                 <div class="domain" id="domain-IT">
+                    <a href="error-accèsInternet.html">
                     <img class="domain-pictures" src="Assets/TechnologyIT.png">
+                    </a>
                     <h4 class="domain-title">IT</h4>
                 </div>
 
                 <div class="domain" id="domain-services">
+                    <a href="error-accèsServeur.html">
                     <img class="domain-pictures" src="Assets/Serviceservice.png">
+                    </a>
                     <h4 class="domain-title">Services</h4>
                 </div>
 
                 <div class="domain" id="domain-Health">
+                    <a href="error-FlorentSauvage.html">
                     <img class="domain-pictures" src="Assets/Health Care - Health Researchhealth.png">
+                    </a>
                     <h4 class="domain-title">Santé</h4>
                 </div>
 
                 <div class="domain" id="domain-Finances">
+                    <a href="error-pageDoesntExist.html">
                     <img class="domain-pictures" src="Assets/Business Planbusiness.svg">
+                    </a>
                     <h4 class="domain-title">Finances</h4>
                 </div>
             </div>
@@ -140,23 +129,7 @@
 
     </div>
     
-    <footer class="footer">
-        <div class="footer-group">
-            <div class="logo"><img src="Assets/logo avec texte.png" alt="logo-merge"></div>
-        </div>
-        <div class="footer-links">
-            <ul class="footer-list">
-                <li><a href="#" class="footer-link">Conditions générales d'utilisation</a></li>
-                <li><a href="#" class="footer-link">Politique de confidentialité</a></li>
-                <li><a href="#" class="footer-link">Contact</a></li>
-                <li><a href="#" class="footer-link">FAQ</a></li>
-            </ul>
-        </div>
-        <div class="footer-copyright">
-            <p class="footer-text">&#169; 2024 Merge - Tous Droits Réservés.</p>
-        </div>
-    </footer>
-    
+    <?php  require_once('./PHP/footer.php'); ?>    
     
 </body>
 
