@@ -3,12 +3,12 @@
 <header>
     <nav class="navbar">
 
-        <a href="index.html">
+        <a href="{$source}">
             <img id="nav-logo" src="Assets/logo avec texte.png">
         </a>
 
         <ul class="nav-links">
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="{$source}l">Accueil</a></li>
                         <li><a href="#.html">Trouver un stage</a></li>
                         <li><a href="#.html">Trouver une entreprise</a></li>
             {if $user eq 'admin'}
@@ -19,7 +19,7 @@
             {/if}
         </ul>
         
-        <a href="connexion.html">
+        <a href="{$source|cat:"?page=connexion"}">
             <img src="Assets/user-circle.svg" alt="User icon" class="user-icon">
         </a>
 

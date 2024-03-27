@@ -33,6 +33,8 @@
 
         public function connexionController(){
             $page = 'connexion';
+            $source = $this->sourcePath;
+
             if (isset($_GET['action'])){                
                 if ($_GET['action'] == 'verify'){               // Test the action gave in parameter of URL
                     // Make the verification of arguments
