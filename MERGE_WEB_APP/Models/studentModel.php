@@ -20,6 +20,12 @@
 
             return $datas;
         }
+
+        public function selectWichlist($id){
+            $datas = array(); // A modifier
+
+            return $datas;
+        }
         
         public function insert(/*ensemble de données*/){
             $datas = array(); // A modifier
