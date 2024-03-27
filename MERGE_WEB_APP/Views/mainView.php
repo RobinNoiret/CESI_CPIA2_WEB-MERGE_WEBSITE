@@ -4,6 +4,8 @@
 
     $smarty = new Smarty();
 
-    if (true){
+    if ($page == 'home'){
+        $smarty->assign('title', 'Merge-homepage');
+        $smarty->assign('user', $user);
         $smarty->display('/*path to tpl page to display*/');
     }
