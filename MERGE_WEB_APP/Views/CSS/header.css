@@ -44,7 +44,7 @@ header
     padding-left: 0;
 }
 
-nav a
+ul nav a
 {
     color: var(--noir-fixe);
     font-weight: bold;
@@ -52,7 +52,7 @@ nav a
     align-items: center;
 }
 
-nav a:hover
+ul nav a:hover
 {
     color: var(--orange-action);
 }
