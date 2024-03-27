@@ -16,14 +16,13 @@
 
 
         public function homeController(){
-            $source = $this->sourcePath;
             $page = 'home';
 
             // Get user of the connect user 
             if (false){
             }
             else {
-                $user = 'admin';
+                $user = 'admin';                    // Put user status
             }
 
             include 'Views/mainView.php';           // Add template for home view
@@ -33,8 +32,19 @@
 
 
         public function connexionController(){
-            // 
-            // Include view to have the connexion page
+            $page = 'connexion';
+            if (isset($_GET['action'])){                
+                if ($_GET['action'] == 'verify'){               // Test the action gave in parameter of URL
+                    // Make the verification of arguments
+                }
+                else{
+                    header("Location: ".$this->sourcePath);     // Redirection in case of unconventionnal value
+                }
+
+            }
+
+            include 'Views/mainView.php';           // Add template for home view
+
             return true;
         }
 

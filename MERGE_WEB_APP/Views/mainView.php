@@ -5,8 +5,13 @@
     $smarty = new Smarty();
 
     if ($page == 'home'){
-        $smarty->assign('title', 'Merge-homepage');
-        $smarty->assign('page', $page);
+        $smarty->assign('title', 'Merge-home');
         $smarty->assign('user', $user);
-        $smarty->display('Views/tpl/templateBase.tpl');
     }
+    elseif ($page == 'connexion'){
+        $smarty->assign('title', 'Merge-connexion');
+        $smarty->assign('user', 'none');
+    }
+    $smarty->assign('page', $page);
+
+    $smarty->display('Views/tpl/templateBase.tpl');
