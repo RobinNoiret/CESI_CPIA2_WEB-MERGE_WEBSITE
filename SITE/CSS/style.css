@@ -356,6 +356,10 @@ nav a:hover
     position: relative;
 }
 
+.form-group:first-child {
+    margin-bottom: 45px; /* Ajoute de l'espace en dessous du premier élément */
+}
+
 .form-field-usr, .form-field-pwd {
     width: 100%;
     border: 0;
@@ -370,11 +374,6 @@ nav a:hover
     &::placeholder {
       color: transparent;
     }
-  }
-
-  /* Fonction de validation */
-  .form-field-usr {
-    margin-bottom: 30px;
   }
   
   .form-label-usr {
@@ -403,7 +402,7 @@ nav a:hover
       }
   }
   .form-field-pwd:focus {
-    padding-bottom: 6px;  
+    padding-bottom: 6px;
     border-width: 3px;
     border-image-slice: 1;
     border-color: var(--gradient-color1);
@@ -441,20 +440,12 @@ nav a:hover
     transition: .5s ease;
 }
 
-.login-button:hover {
+.CTA-button:hover {
     color: var(--blanc-fixe);
     background-color: #FF7D00;
     transform: translateY(-2px);
 }
 
-.span .inscription {
-    text-decoration: none;
-    color: var(--gradient-color1);
-}
-
-.span .inscription:hover {
-    font-weight: bold;
-}
 
 /*____________________________________ Formulaire Inscription __________________________________ */
 
