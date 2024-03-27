@@ -3,28 +3,28 @@
         protected $db;
         protected $sourcePath;
 
-        public function __construct($source){
-            $this->sourcePath = $source;
+        public function __construct($source){ 
+            $this->sourcePath = $source;                // Give the path to the starter point
 
-            $user = 'merge_connect';
+            $user = 'merge_connect';                    // Define login and password to connect with DataBase
             $pass = '?tc,L2D8Y4t]';
 
             try { 
-                $this->db = new PDO('mysql:host=localhost;dbname=mergedatabase', $user, $pass);
+                $this->db = new PDO('mysql:host=localhost;dbname=mergedatabase', $user, $pass);     //Connexion
             }
             catch (PDOException $e) {
-                header("Location: ".$this->sourcePath."?page=404&error=connect");
+                header("Location: ".$this->sourcePath."?page=404&error=connect");                   // Managed exception
                 exit;
             }
         }
 
 
-        public function tryToExe(&$request){
+        public function tryToExecute(&$request){
             try { 
-                $request->execute();
+                $request->execute();                    // Try to execute the prepared request
             }
             catch (PDOException $e) {
-                header("Location: ".$this->sourcePath."?page=404&error=data");
+                header("Location: ".$this->sourcePath."?page=404&error=data");                      // Managed exception
                 exit;
             }            
         }
