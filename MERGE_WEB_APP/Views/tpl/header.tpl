@@ -9,15 +9,13 @@
 
         <ul class="nav-links">
                         <li><a href="index.html">Accueil</a></li>
-            {if $user neq 'none' && $user neq ''}   {* Can be fonctionnal with the exception of an unset value *}
                         <li><a href="#.html">Trouver un stage</a></li>
                         <li><a href="#.html">Trouver une entreprise</a></li>
-                {if $user eq 'admin'}
-                    {if $user neq 'pilote'}
+            {if $user eq 'admin'}
+                {if $user neq 'pilote'}
                         <li><a href="#.html">Trouver un pilote</a></li>
-                    {/if}
-                        <li><a href="#.html">Trouver un étudiant</a></li>
                 {/if}
+                        <li><a href="#.html">Trouver un étudiant</a></li>
             {/if}
         </ul>
         
