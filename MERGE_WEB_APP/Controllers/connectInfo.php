@@ -14,4 +14,13 @@
             // Return if there is a connection or not
             return false;
         }
+
+        public function actionLinkToConnect(){
+            if ($this->isConnect()){
+                return "?page=dashbord";
+            }
+            else{
+                return "?page=connexion";
+            }
+        }
     }

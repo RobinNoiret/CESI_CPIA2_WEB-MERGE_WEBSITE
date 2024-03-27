@@ -1,5 +1,5 @@
 <?php
-    include 'connectInfo';
+    include 'connectInfo.php';
 
     class Controller extends connectInfo{
         private string $sourcePath;
@@ -8,15 +8,6 @@
 
         function __construct($source) {
             $this->sourcePath = $source; // Set sourcePath attribut
-        }
-
-        public function associatactiontoconnect(){
-            if ($this->isConnect()){
-                return "?page=connexion";
-            }
-            else{
-                return "?page=dashbord";
-            }
         }
 
 
