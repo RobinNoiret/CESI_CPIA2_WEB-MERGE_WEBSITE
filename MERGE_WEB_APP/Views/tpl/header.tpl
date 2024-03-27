@@ -3,8 +3,8 @@
 <header>
     <nav class="navbar">
 
-        <a href="{$source}">
-            <img id="nav-logo" src="Views/Assets/logo avec texte.png">
+        <a id="link_nav-logo" class="nav-logo" href="{$source}">
+            <img id="nav-logo" class="nav-logo" src="Views/Assets/logo avec texte.png">
         </a>
 
         <ul class="nav-links">
@@ -19,8 +19,8 @@
             {/if}
         </ul>
         
-        <a href="{$source}">
-            <img src="Views/Assets/user-circle.svg" alt="User icon" class="user-icon">
+        <a id="link_user-icon" class="user-icon" href="{$source}">
+            <img id="user-icon"src="Views/Assets/user-circle.svg" alt="User icon" class="user-icon">
         </a>
 
     </nav>
