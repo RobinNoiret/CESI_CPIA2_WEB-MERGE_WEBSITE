@@ -1,5 +1,7 @@
 <?php
-    class Controller {
+    include 'connectInfo';
+
+    class Controller extends connectInfo{
         private string $sourcePath;
 
 
@@ -8,10 +10,13 @@
             $this->sourcePath = $source; // Set sourcePath attribut
         }
 
-
-        function whoIsConnect(){
-            // Return the people who is connected 
-            return NULL;
+        public function associatactiontoconnect(){
+            if ($this->isConnect()){
+                return "?page=connexion";
+            }
+            else{
+                return "?page=dashbord";
+            }
         }
 
 
@@ -22,7 +27,7 @@
             if (false){
             }
             else {
-                $user = 'admin';                    // Put user status
+                $user = 'admin';                    // Put user stat
             }
 
             include 'Views/mainView.php';           // Add template for home view

@@ -15,5 +15,7 @@
     }
     $smarty->assign('source', $this->sourcePath);
     $smarty->assign('page', $page);
+    $smarty->assign('connecAction', $actionConnect);
+    
 
     $smarty->display('Views/tpl/templateBase.tpl');

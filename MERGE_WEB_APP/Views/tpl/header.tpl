@@ -19,7 +19,7 @@
             {/if}
         </ul>
         
-        <a id="link_user-icon" class="user-icon" href="{$source}">
+        <a id="link_user-icon" class="user-icon" href="{$source|cat:$connecAction}">
             <img id="user-icon"src="Views/Assets/user-circle.svg" alt="User icon" class="user-icon">
         </a>
 
