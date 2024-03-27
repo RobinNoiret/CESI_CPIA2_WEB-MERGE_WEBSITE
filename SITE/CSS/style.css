@@ -2,13 +2,14 @@
 /*                                              VARIABLES                                                     */
 /*____________________________________________________________________________________________________________*/
 
-html
+html /*ok*/
 {
     height: 100%;
     margin: 0;
     padding: 0;
 
 /*_____________________________________________ Couleurs _____________________________________________*/
+/*ok*/
 
     --orange-clair: rgba(255, 140, 66, 1);          /* */
     --orange-action: rgba(255, 125, 0, 1);          /*Couleur d'action - notamment les CTA*/
@@ -25,12 +26,12 @@ html
     font-family: "DM Sans", sans-serif;
 }
 
-header {
+header { /*ok*/
     width: auto;
     top: 0;
 }
 
-body
+body /*ok*/
 {
 	background-color: var(--blanc-fixe);
     height: auto;
@@ -39,7 +40,7 @@ body
     
 }
 
-.CTA_important /* A perfectionner pour dégrader*/
+.CTA_important /*Ok*/
 {
     background-color: white;
     border-width: 3px;
@@ -62,12 +63,12 @@ body
     transition: transform 0.3s ease-in-out;
 }
 
-.CTA_important:hover
+.CTA_important:hover /*Ok*/
 {
     transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
 }
 
-.CTA_secondaire
+.CTA_secondaire /*Ok*/
 {
     
     background-color: var(--blanc-fixe);
@@ -90,7 +91,7 @@ body
     transition: transform 0.3s ease-in-out;
 }
 
-.CTA_secondaire:hover
+.CTA_secondaire:hover /*Ok*/
 {
     transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
 }
@@ -100,13 +101,13 @@ body
 /*                                               HOME PAGE                                                    */
 /*____________________________________________________________________________________________________________*/
 
-#nav-logo
+#nav-logo /*Ok*/
 {
     width: 100px;
     height: 25px;
 }
 
-.navbar
+.navbar /*Ok*/
 {
     display: flex;
     top: 0;
@@ -126,7 +127,7 @@ body
     box-shadow: 5px 1px 10px rgba(29, 29, 29, 0.3);
 }
 
-.nav-links {
+.nav-links { /*Ok*/
     display: inline-flex;
     align-items: center;
     text-align: center;
@@ -135,7 +136,7 @@ body
     padding-left: 0;
 }
 
-nav a
+nav a /*Ok*/
 {
     color: var(--noir-fixe);
     font-weight: bold;
@@ -143,12 +144,12 @@ nav a
     align-items: center;
 }
 
-nav a:hover
+nav a:hover /*Ok*/
 {
     color: var(--orange-action);
 }
 
-.user-icon {
+.user-icon { /*Ok*/
     width: 40px;
     margin-right: 30px;
     /* position: ; */
@@ -159,26 +160,26 @@ nav a:hover
 
 /*_______________________________________________ Landing _______________________________________________*/
 
-.landing
+.landing /*Ok*/
 {
     width: 100%;
 }
 
 /*___________________________________________ Image de fond ___________________________________________*/
-#landing-pictureBG
+#landing-pictureBG /*Ok*/
 {
     width: 100%;
     height: 100%;
 }
 
-#picture
+#picture /*Ok*/
 {
     width: 100%;
 }
 
 /*____________________________________________ Bloc stats ____________________________________________*/
 
-.landing-stats
+.landing-stats /*Ok*/
 {
     --stat-block-heigh: 100%;
     --stat-block-wigth: 30%;
@@ -198,7 +199,7 @@ nav a:hover
     display: flex;
 }
 
-.stats-block{
+.stats-block{  /*Ok*/
     display: block;
     text-align: center;
     font-weight: bold;
@@ -210,18 +211,18 @@ nav a:hover
     transform: translate(var(--block-translate-l),var(--block-translate-r));
 }
 
-.stats-number {
+.stats-number { /*Ok*/
     font-size: 3rem;
 }
 
-.stats-text {
+.stats-text { /*Ok*/
     font-size: 1.2rem;
 }
 
 
 /*__________________________________________ Bloc domaines __________________________________________ */
 
-.landing-domains {
+.landing-domains { /*Ok*/
     margin-top: 7.5vw;
     color: var(--orange-action);
     text-align: center;
@@ -229,18 +230,18 @@ nav a:hover
     z-index: 50;
 }
 
-.landing-domains h2 {
+.landing-domains h2 { /*Ok*/
     font-size: 1.5rem;
 }
 
-.domains {
+.domains { /*Ok*/
     display: flex;
     width: 100%;
     height: 40vw;
     justify-content: center;
 }
 
-.domain-pictures
+.domain-pictures /*Ok*/
 {
     width: 15vw;
     height: 15vw;
@@ -249,13 +250,13 @@ nav a:hover
     position: relative;
 }
 
-.domain-pictures:hover
+.domain-pictures:hover /*Ok*/
 {
     transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
     z-index: 1;
 }
 
-.domain {
+.domain { /*Ok*/
     display: inline-block;
     text-align: center;
     font-weight: bold;
@@ -269,21 +270,21 @@ nav a:hover
 
 /*________________________________________ Bloc articles __________________________________________*/
 
-.landing-articles h4 {
+.landing-articles h4 { /*Ok*/
     color: var(--orange-action);
     display: block;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 
-.articles-pict_right {
+.articles-pict_right { /*Ok*/
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 3%;
 }
 
-.articles-pict_left {
+.articles-pict_left { /*Ok*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,7 +293,7 @@ nav a:hover
     margin-bottom: 5%;
 }
 
-.articles-text {
+.articles-text { /*Ok*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,12 +302,12 @@ nav a:hover
     padding-right: 3%;
 }
 
-.article-picture {
+.article-picture { /*Ok*/
     width: 50%;
     height: 25%;
 }
 
-.articles-text h4 {
+.articles-text h4 { /*Ok*/
     margin: 0;
 }
 
@@ -320,6 +321,8 @@ nav a:hover
 
 
 /*____________________________________________ Form ____________________________________________*/
+/* Pris depuis le fichier de Brieuc !*/
+
 
 .login-div {
     text-align: center;
@@ -341,7 +344,7 @@ nav a:hover
     border-radius: 20px;
 }
 
-.fieldset-group {
+.fieldset-group { /*Attention*/
     border-style: none;
     padding: 30px 20px 15px;
 }
@@ -448,7 +451,7 @@ nav a:hover
 
 
 /*____________________________________ Formulaire Inscription __________________________________ */
-
+/* innutile*/
 .signup-div {
     margin: 20px auto;
     width: 35%; 
@@ -467,13 +470,14 @@ nav a:hover
 
 
 /*____________________________________________ Footer ____________________________________________*/
+ /*Ok*/
 
-footer {
+footer { /*Ok*/
     background-color: #F79C43;
 }
 
 /* Style du footer */
-.footer {
+.footer { /*Ok*/
     background-color: var(--gris-clair); /* Couleur de fond */
     /*position: absolute;*/
     /*bottom: 0;*/
@@ -484,7 +488,7 @@ footer {
     color: #333; /* Couleur du texte */
 }
 
-.footer-group {
+.footer-group { /*Ok*/
     display: flex; /* Affichage en ligne des éléments */
     align-items: center; /* Alignement vertical au centre */
     justify-content: center; /* Centrage horizontal */
@@ -492,14 +496,14 @@ footer {
 }
 
 /* Style des liens */
-.footer-list {
+.footer-list { /*Ok*/
     display: flex; /* Affichage en ligne des liens */
     justify-content: center; /* Centrage des liens */
     list-style: none; /* Suppression des puces */
     padding: 0; /* Suppression des marges internes */
 }
 
-.footer-link {
+.footer-link { /*Ok*/
     text-decoration: none;
     color: #666;
     margin: 0 15px;
@@ -508,12 +512,12 @@ footer {
     padding-right: 15px; /* Ajouter un espacement à droite pour l'espace du trait */
 }
 
-.footer-link:hover {
+.footer-link:hover { /*Ok*/
     color: var(--gradient-color1); /* Couleur du texte des liens au survol */
 }
 
 /* Style du texte de copyright */
-.footer-text {
+.footer-text { /*Ok*/
     font-size: 14px; 
     margin-top: 20px; 
     color: #777; 
@@ -521,7 +525,7 @@ footer {
     font-style: italic;
 }
 
-.logo img {
+.logo img { /*Ok*/
     width: 150px;
     height: auto;
 }

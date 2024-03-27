@@ -1,0 +1,160 @@
+/*___________________________________________________________________________________________________________________________*/
+/*                                              Importation des fichiers CSS                                                 */
+/*___________________________________________________________________________________________________________________________*/
+
+/*______Header______*/
+@import url('header.css');
+
+/*______Footer______*/
+@import url('footer.css');
+
+/*_______Forms______*/ 
+/*A revoir pour factoriser car conflit entre connexion et création*/
+@import url('forms.css');
+
+/*_______Home_______*/
+@import url('homePage.css');
+
+/*______Errors______*/
+@import url('errors.css');
+
+/*____Responsive____*/
+@import url('responsive.css');
+
+
+/*___________________________________________________________________________________________________________________________*/
+/*                                                          main.css                                                         */
+/*___________________________________________________________________________________________________________________________*/
+
+/*____Variables____*/
+html
+{
+    --orange-action: rgba(255, 125, 0, 1);          /*Main color - Action color*/
+    --orange-clair: rgba(255, 140, 66, 1);          /*Variation main color - light*/
+    --orange-fond: rgba(252, 221, 201, 1);          /*Variation main color - pastel*/
+
+    --blanc-fixe: rgba(246, 246, 246, 1);           /*Main white - background color*/ 
+    --blanc-fixe-nav: rgba(246,246,246, 0.8);       /*Variation white - navbar*/
+    --gris-clair: rgb(234, 234, 234, 1);            /*Variation white - footer & items background*/
+
+    --noir-fixe: rgba(29, 29, 29, 1);               /*Main black - text color*/
+}
+
+/*______Fonts______*/
+html
+{
+    font-family: "DM Sans", sans-serif;
+}
+
+/*_______Body______*/
+html
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;  
+}
+
+body
+{
+    width: auto;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+	background-color: var(--blanc-fixe);
+    font-family: 'Poppins';
+}
+
+/*_______CTA_______*/
+.CTA_important
+{
+    width:max-content;
+    display: inline-block;
+
+    padding: 15px 32px;
+    margin: 4px 2px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+
+    background-color: white;
+    border-image: linear-gradient(to right, var(--gradient-color1), var(--gradient-color2), var(--gradient-color3));
+
+    color: var(--noir-fixe);
+    
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+    
+    transition: transform 0.3s ease-in-out;
+}
+.CTA_important:hover
+{
+    transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
+}
+
+.CTA_secondaire
+{
+    width: 40%;
+    display: inline-block;
+
+    padding: 10px 20px;
+    margin: 4px 2px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50em;
+    border-image-slice: 1;
+    border-color: var(--orange-action);
+    
+    background-color: var(--blanc-fixe);
+    color: var(--orange-action);
+
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    
+    transition: transform 0.3s ease-in-out;
+}
+.CTA_secondaire:hover
+{
+    transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
+}
+
+/* Bouton formulaire connexion Brieuc, à mêtre à jour en fonction du CTA définitif*/
+/* Nécessite d'uniformiser les formulaire, il faudra donc modifier dans les fichiers :*/
+    /* Soit inscription.html (CTA-important ou secondaire)*/
+    /* Soit connexion.html (CTA-button)*/
+
+.CTA-button
+{
+    display: inline;
+    font-weight: bold;
+    font-size: 1em;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    position: relative;
+    background-color: var(--blanc-fixe);
+    border-radius: 50px;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: #FF7D00;
+    cursor: pointer;
+    transition: .5s ease;
+}
+ 
+.CTA-button:hover
+{
+    color: var(--blanc-fixe);
+    background-color: #FF7D00;
+    transform: translateY(-2px);
+}
