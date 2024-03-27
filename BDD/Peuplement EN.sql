@@ -1,3 +1,7 @@
+-- _____________________________________________________________________________________
+-- _______________________________ Peuplement des villes _______________________________
+-- _____________________________________________________________________________________
+
 INSERT INTO Cities (cityName, postalCode)
 VALUES
     ('Aix-en-Provence', '13100'),('Angoulême', '16000'),('Arras', '62000'),
@@ -9,9 +13,12 @@ VALUES
     ('Paris - Nanterre', '92000'),('Pau', '64000'),('Reims', '51100'),
     ('Rouen', '76000'),('Saint-Nazaire', '44600'),('Strasbourg', '67000'),
     ('Toulouse', '31000');
-    
 
--- Campus Aix-en-Provence
+-- _____________________________________________________________________________________
+-- ____________________________ Peuplement des utilisateurs ____________________________
+-- _____________________________________________________________________________________
+
+-- _______________________________ Campus Aix-en-Provence ______________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Dupont', 'Sophie', 'Pilote', 'sophie.dupont', 'Pilot@123', 1),
@@ -19,136 +26,141 @@ VALUES
     ('Leroy', 'Camille', 'Pilote', 'camille.leroy', 'TeachMe456', 1),
     ('Dubois', 'Lucas', 'Pilote', 'lucas.dubois', 'EduPass789', 1),
     ('Rousseau', 'Éléonore', 'Pilote', 'eleonore.rousseau', 'Tutoring2024', 1);
--- Campus Angoulême
+-- __________________________________ Campus Angoulême _________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Dupuis', 'Marie', 'Pilote', 'marie.dupuis', 'CodeHelp2024', 2),
     ('Lambert', 'Théo', 'Pilote', 'theo.lambert', 'TutorTech21', 2),
     ('Bernard', 'Emma', 'Pilote', 'emma.bernard', 'LearnTogether', 2);
--- Campus Arras
+-- ___________________________________ Campus Arras ____________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Lefebvre', 'Antoine', 'Pilote', 'antoine.lefebvre', 'EduConnect2024', 3),
     ('Martin', 'Sophie', 'Pilote', 'sophie.martin', 'TutorPass123', 3);
--- Campus Bordeaux
+-- __________________________________ Campus Bordeaux __________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Dubois', 'Pierre', 'Pilote', 'pierre.dubois', 'BordeauxTutor', 4),
     ('Moreau', 'Léa', 'Pilote', 'lea.moreau', 'LearnBordeaux', 4);
--- Campus Brest
+-- ___________________________________ Campus Brest ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Leclerc', 'Louis', 'Pilote', 'louis.leclerc', 'BrestEdu2024', 5),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.roussel', 'TutorWave', 5);
--- Campus Caen
+-- ___________________________________ Campus Caen ____________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Dupuis', 'Hugo', 'Pilote', 'hugo.dupuis', 'CaenTutoring', 6),
     ('Lambert', 'Manon', 'Pilote', 'manon.lambert', 'LearnCaen21', 6);
--- Campus Dijon
+-- ___________________________________ Campus Dijon ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Martin', 'Lucie', 'Pilote', 'lucie.martin', 'DijonEduPass', 7),
     ('Dubois', 'Thomas', 'Pilote', 'thomas.dubois', 'TutorDijon123', 7);
--- Campus Grenoble
+-- __________________________________ Campus Grenoble _________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Dupuis', 'Marie', 'Pilote', 'marie.grenoble', 'CodeHelp2024', 8),
     ('Lambert', 'Théo', 'Pilote', 'theo.grenoble', 'TutorTech21', 8);
--- Campus La Rochelle
+-- ________________________________ Campus La Rochelle ________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Leclerc', 'Louis', 'Pilote', 'louis.larochelle', 'BrestEdu2024', 9),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.larochelle', 'TutorWave', 9);
--- Campus Lille
+-- ___________________________________ Campus Lille ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Martin', 'Lucie', 'Pilote', 'lucie.lille', 'DijonEduPass', 10),
     ('Dubois', 'Thomas', 'Pilote', 'thomas.lille', 'TutorDijon123', 10);
--- Campus Le Mans
+-- __________________________________ Campus Le Mans __________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Martin', 'Sophie', 'Pilote', 'sophie.lemans', 'TutorPass123', 11),
     ('Leroy', 'Camille', 'Pilote', 'camille.lemans', 'SeaSkills456', 11);
--- Campus Lyon
+-- ___________________________________ Campus Lyon ____________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Rousseau', 'Éléonore', 'Pilote', 'eleonore.lyon', 'PilotWave2024', 12),
     ('Dupont', 'Alexandre', 'Pilote', 'alex.lyon', 'LearnStras21', 12);
--- Campus Montpellier
+-- ________________________________ Campus Montpellier ________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Lefebvre', 'Antoine', 'Pilote', 'antoine.lefebvre', 'EduConnect2024', 13),
     ('Martin', 'Sophie', 'Pilote', 'sophie.martin', 'TutorPass123', 13);
--- Campus Nancy
+-- ___________________________________ Campus Nancy ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Dubois', 'Pierre', 'Pilote', 'pierre.dubois', 'BordeauxTutor', 14),
     ('Moreau', 'Léa', 'Pilote', 'lea.moreau', 'LearnBordeaux', 14);
--- Campus Nantes
+-- ___________________________________ Campus Nantes ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Leclerc', 'Louis', 'Pilote', 'louis.leclerc', 'BrestEdu2024', 15),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.roussel', 'TutorWave', 15);
--- Campus Nice
+-- ___________________________________ Campus Nice ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Dupuis', 'Hugo', 'Pilote', 'hugo.dupuis', 'NiceTutoring', 16),
     ('Lambert', 'Manon', 'Pilote', 'manon.lambert', 'LearnNice21', 16);
--- Campus Orléans
+-- ___________________________________ Campus Orléans ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Martin', 'Lucie', 'Pilote', 'lucie.martin', 'DijonEduPass', 17),
     ('Dubois', 'Thomas', 'Pilote', 'thomas.dubois', 'TutorDijon123', 17);
--- Campus Paris - La Défense
+-- ___________________________________ Campus Paris - La Défense ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Martin', 'Sophie', 'Pilote', 'sophie.paris', 'TutorPass123', 18),
     ('Leroy', 'Camille', 'Pilote', 'camille.paris', 'SeaSkills456', 18);
--- Campus Paris - Nanterre
+-- ___________________________________ Campus Paris - Nanterre ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Rousseau', 'Éléonore', 'Pilote', 'eleonore.paris', 'PilotWave2024', 19),
     ('Dupont', 'Alexandre', 'Pilote', 'alex.paris', 'LearnStras21', 19);
--- Campus Pau
+-- ___________________________________ Campus Pau ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Dupuis', 'Marie', 'Pilote', 'marie.pau', 'CodeHelp2024', 20),
     ('Lambert', 'Théo', 'Pilote', 'theo.pau', 'TutorTech21', 20);
--- Campus de Reims
+-- ___________________________________ Campus de Reims ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Leclerc', 'Louis', 'Pilote', 'louis.leclerc', 'BrestEdu2024', 21),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.roussel', 'TutorWave', 21);
--- Campus de Rouen
+-- ___________________________________ Campus de Rouen ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Dupuis', 'Hugo', 'Pilote', 'hugo.dupuis', 'CaenTutoring', 22),
     ('Lambert', 'Manon', 'Pilote', 'manon.lambert', 'LearnCaen21', 22);
--- Campus de Saint-Nazaire
+-- ___________________________________ Campus de Saint-Nazaire ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Leclerc', 'Louis', 'Pilote', 'louis.saintnazaire', 'BrestEdu2024', 23),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.saintnazaire', 'TutorWave', 23);
--- Campus de Strasbourg
+-- ___________________________________ Campus de Strasbourg ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Martin', 'Lucie', 'Pilote', 'lucie.strasbourg', 'DijonEduPass', 24),
     ('Dubois', 'Thomas', 'Pilote', 'thomas.strasbourg', 'TutorDijon123', 24);
--- Campus de Toulouse
+-- ___________________________________ Campus de Toulouse ___________________________________
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID)
 VALUES
     ('Martin', 'Sophie', 'Pilote', 'sophie.toulouse', 'TutorPass123', 25),
     ('Leroy', 'Camille', 'Pilote', 'camille.toulouse', 'SeaSkills456', 25);
 
--- Class
+-- _____________________________________________________________________________________
+-- _______________________________ Peuplement des classes ______________________________
+-- _____________________________________________________________________________________
+
 INSERT INTO Classes (className) VALUES
 	('CPI-A1'),('CPI-A2_Generaliste'),('CPI-A2_Informatique'),('CPI-A2_BTP'),('CPI-A2_SystemesEmbarques'),
     ('FISE-A3_Generaliste'), ('FISE-A3_Informatique'), ('FISE-A3_BTP'), ('FISE-A3_SystemesEmbarques'),
 	('FISE-A4_Generaliste'), ('FISE-A4_Informatique'), ('FISE-A4_BTP'), ('FISE-A4_SystemesEmbarques'),
 	('FISE-A5_Generaliste'), ('FISE-A5_Informatique'), ('FISE-A5_BTP'), ('FISE-A5_SystemesEmbarques');
     
--- Skills
+-- _____________________________________________________________________________________
+-- _______________________________ Peuplement des skills _______________________________
+-- _____________________________________________________________________________________
 INSERT INTO Skills (skill) VALUES 
 	('Esprit d''analyse'), ('Rigueur'), ('Sens de l''organisation'),
 	('Prise d''initiative et leadership'), ('Communication et qualités relationnelles'), ('Autonomie et esprit d''équipe'),
@@ -157,7 +169,9 @@ INSERT INTO Skills (skill) VALUES
 	('Maîtrise des outils de développement (IDE, Git)'), ('Connaissances en réseaux et sécurité'), ('Compétences en génie civil (pour le BTP)'),
 	('Automatisation et robotique'), ('Maîtrise des langages web (HTML, CSS, JavaScript)'), ('Connaissances en systèmes embarqués');
     
--- Compagnies
+-- _____________________________________________________________________________________
+-- _____________________________ Peuplement des Companies  _____________________________
+-- _____________________________________________________________________________________
 insert into Companies (companyName, activityArea, visibility) values ('D''Amore and Sons', 'Termite Control', false);
 insert into Companies (companyName, activityArea, visibility) values ('Goyette-Schumm', 'Electrical', false);
 insert into Companies (companyName, activityArea, visibility) values ('Howell Group', 'Drywall & Acoustical (MOB)', true);
@@ -218,10 +232,14 @@ insert into Companies (companyName, activityArea, visibility) values ('Corkery L
 insert into Companies (companyName, activityArea, visibility) values ('Toy-Hand', 'Painting & Vinyl Wall Covering', false);
 insert into Companies (companyName, activityArea, visibility) values ('Marvin-Larson', 'EIFS', false);
 
--- Addresses
+-- _____________________________________________________________________________________
+-- ______________________________ Peuplement des adresses ______________________________
+-- _____________________________________________________________________________________
 INSERT INTO `Addresses` VALUES (1,'Way 2nd',0,36,5),(2,'Parkway Drewry',11032,52,11),(3,'Road Texas',93,20,24),(4,'Plaza Hanson',7,23,22),(5,'Center Magdeline',9454,49,11),(6,'Trail Kedzie',5586,2,20),(7,'Street Surrey',179,44,9),(8,'Plaza Shasta',970,13,21),(9,'Street Jackson',8,30,25),(10,'Avenue Raven',26,46,24),(11,'Drive Thierer',7560,3,25),(12,'Trail Cordelia',40,39,19),(13,'Terrace Dapin',1,37,13),(14,'Center Towne',6,13,3),(15,'Place 1st',0,22,25),(16,'Circle Northland',8285,8,12),(17,'Center Lakewood',7,11,9),(18,'Place Briar Crest',67,17,24),(19,'Terrace Bluejay',77,55,25),(20,'Drive Kingsford',19355,33,14),(21,'Lane Pleasure',69,15,4),(22,'Place Hoffman',73,50,2),(23,'Place Columbus',187,10,25),(24,'Crossing Claremont',1,51,1),(25,'Plaza Clarendon',351,51,4),(26,'Crossing Sauthoff',56,17,7),(27,'Terrace Dwight',5,10,7),(28,'Lane Karstens',163,3,23),(29,'Place Starling',1,25,2),(30,'Parkway John Wall',5,34,1),(31,'Plaza Jackson',7065,41,2),(32,'Court Laurel',2264,57,21),(33,'Street Montana',497,14,13),(34,'Center Mandrake',9492,3,24),(35,'Terrace Havey',64,44,3),(36,'Trail Laurel',6,37,18),(37,'Street Messerschmidt',7578,33,25),(38,'Court Leroy',130,35,25),(39,'Court Thierer',5586,36,12),(40,'Place Marquette',6615,37,1),(41,'Parkway Paget',28,57,2),(42,'Center Nevada',204,21,15),(43,'Avenue Butterfield',55,38,23),(44,'Drive Oxford',13716,50,22),(45,'Center Utah',4,27,9),(46,'Plaza Kingsford',8986,27,24),(47,'Road Nobel',77,12,23),(48,'Hill Toban',2912,30,11),(49,'Avenue Dryden',5,55,23),(50,'Parkway Bashford',48,19,25),(51,'Circle Lukken',21,9,22),(52,'Alley Thackeray',28,28,21),(53,'Junction Erie',4,28,22),(54,'Junction Namekagon',23253,59,22),(55,'Center Brentwood',7,17,18),(56,'Court Green',3202,45,19),(57,'Way Bultman',33,13,9),(58,'Circle Alpine',449,30,5),(59,'Parkway Transport',66,1,6),(60,'Point Barnett',33,57,16),(61,'Parkway Veith',99,23,14),(62,'Parkway Clove',10770,59,20),(63,'Center Donald',1099,27,10),(64,'Trail Mosinee',94,35,9),(65,'Circle Melody',655,20,10),(66,'Trail Bluestem',11,32,1),(67,'Terrace Kings',76,15,25),(68,'Road Shopko',3,37,19),(69,'Junction Lakewood Gardens',29019,13,19),(70,'Park Crest Line',72,26,25),(71,'Plaza Sundown',715,58,7),(72,'Road Acker',81,42,21),(73,'Alley Summerview',817,10,23),(74,'Circle 3rd',505,9,18),(75,'Terrace Northland',38,12,9),(76,'Trail Dovetail',1,38,9),(77,'Place David',402,22,11),(78,'Alley Emmet',540,56,13),(79,'Street Superior',6930,34,13),(80,'Center Gale',4693,54,11),(81,'Street Gerald',729,46,3),(82,'Circle Laurel',8,40,25),(83,'Way Farmco',6977,14,7),(84,'Point Union',846,20,21),(85,'Terrace Main',18723,39,18),(86,'Pass Chive',9,48,8),(87,'Center Kinsman',9,11,15);
 
--- Offers
+-- _____________________________________________________________________________________
+-- ________________________________ Peuplement des offres ______________________________
+-- _____________________________________________________________________________________
 insert into Offers (internDuration, publicationDate, placesNumber, remunerationBasis, addressID) values (1, '2018/12/04', 9, 1570, 45);
 insert into Offers (internDuration, publicationDate, placesNumber, remunerationBasis, addressID) values (2, '2023/07/22', 9, null, 17);
 insert into Offers (internDuration, publicationDate, placesNumber, remunerationBasis, addressID) values (3, '2021/09/22', 2, 1310, 72);
@@ -262,5 +280,3 @@ insert into Offers (internDuration, publicationDate, placesNumber, remunerationB
 insert into Offers (internDuration, publicationDate, placesNumber, remunerationBasis, addressID) values (38, '2021/07/26', 5, null, 11);
 insert into Offers (internDuration, publicationDate, placesNumber, remunerationBasis, addressID) values (39, '2024/01/10', 5, null, 99);
 insert into Offers (internDuration, publicationDate, placesNumber, remunerationBasis, addressID) values (40, '2020/04/19', 2, null, 11);
-
--- 
