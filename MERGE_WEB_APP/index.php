@@ -5,7 +5,7 @@
     $controller = new Controller($sourcePath);          // Create and give to the controller the start path
 
     if (empty($_SERVER['QUERY_STRING'])){               // Test path parameters
-
+        $controller->homeController();
     }
 
     elseif (isset($_GET["page"])){

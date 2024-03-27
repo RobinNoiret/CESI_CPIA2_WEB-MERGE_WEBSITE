@@ -3,9 +3,34 @@
         private string $sourcePath;
 
 
+
         function __construct($source) {
             $this->sourcePath = $source; // Set sourcePath attribut
         }
+
+
+        function whoIsConnect(){
+            // Return the people who is connected 
+            return NULL;
+        }
+
+
+        public function homeController(){
+            $source = $this->sourcePath;
+            $page = 'home';
+
+            // Get user of the connect user 
+            if (false){
+            }
+            else {
+                $user = 'none';
+            }
+
+            include 'Views/mainView.php';           // Add template for home view
+
+            return true;
+        }
+
 
         public function connexionController(){
             // 
@@ -13,8 +38,10 @@
             return true;
         }
 
+
         public function internshipController(){
             // Verify user's connexion
+            $this->whoIsConnect();
 
             // Test "action" criteria to know if you want to create, display, update, delete
                 //update and delete need an ID
