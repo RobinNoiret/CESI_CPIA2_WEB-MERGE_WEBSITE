@@ -151,7 +151,7 @@ nav a:hover
 .user-icon {
     width: 40px;
     margin-right: 30px;
-    position: ;
+    /* position: ; */
     float: left;
     /* position:  absolute;
     right: 0; */
@@ -352,11 +352,11 @@ nav a:hover
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Pour aligner les éléments à gauche */
-    gap: 10px; /* Pour définir l'espacement vertical entre les éléments */
     margin: 25px;
+    position: relative;
 }
 
-.form-field1, .form-field2 {
+.form-field-usr, .form-field-pwd {
     width: 100%;
     border: 0;
     border-bottom: 2px solid var(--noir-fixe);
@@ -370,54 +370,28 @@ nav a:hover
     &::placeholder {
       color: transparent;
     }
-  
-    &:placeholder-shown ~ .form-label1 {
-      font-size: 1.5rem;
-      cursor: text;
-      top: 315px;
-      opacity: 0.45;
-    }
-    &:placeholder-shown ~ .form-label2 {
-        font-size: 1.5rem;
-        cursor: text;
-        top: 405px;
-        opacity: 0.45;
-      }
   }
-  .form-field1 {
+
+  /* Fonction de validation */
+  .form-field-usr {
     margin-bottom: 30px;
   }
   
-  .form-label1 {
-    position: absolute;
-    top: 300px;
+  .form-label-usr {
+    position: relative;
     display: block;
-    transition: 0.2s;
     font-size: 1rem;
     color: var(--noir-fixe);
   }
-  .form-label2 {
-    position: absolute;
-    top: 390px;
+  .form-label-pwd {
+    position: relative;
     display: block;
-    transition: 0.2s;
     font-size: 1rem;
     color: var(--noir-fixe);
   }
   
-  .form-field1:focus {
-    ~ .form-label1 {
-      position: absolute;
-      top: 300px;
-      display: block;
-      transition: 0.2s;
-      font-size: 1rem;
-      color: var(--gradient-color1);
-      font-weight:700;    
-      opacity: 1;
-    }
+  .form-field-usr:focus {
     padding-bottom: 6px;
-    font-weight: 700;
     border-width: 3px;
     border-image-slice: 1;
     border-color: var(--gradient-color1);
@@ -428,19 +402,8 @@ nav a:hover
         
       }
   }
-  .form-field2:focus {
-    ~ .form-label2 {
-      position: absolute;
-      top: 390px;
-      display: block;
-      transition: 0.2s;
-      font-size: 1rem;
-      color: var(--gradient-color1);
-      font-weight:700;
-      opacity: 1;
-    }
+  .form-field-pwd:focus {
     padding-bottom: 6px;  
-    font-weight: 700;
     border-width: 3px;
     border-image-slice: 1;
     border-color: var(--gradient-color1);
@@ -453,13 +416,12 @@ nav a:hover
   }
 
   /* reset input */
-  .form-field1, .form-field2{
+  .form-field-usr, .form-field-pwd{
     &:required,&:invalid { box-shadow:none; }
   }
 
 .CTA-button {
     display: inline;
-    
     font-weight: bold;
     font-size: 1em;
     width: 200px;
