@@ -3,4 +3,6 @@
 
     $smarty = new Smarty();
 
+    $smarty->assign('source',$this->sourcePath);
+
     $smarty->display($link);

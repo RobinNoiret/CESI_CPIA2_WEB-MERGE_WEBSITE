@@ -59,7 +59,7 @@
 
         public function errorsController($errorType){     // Autorized $errorType : data, connect, net, server
             if ($errorType == 'Default'){
-                $link = 'Views/tpl/errors/serverAccess-error.tpl';
+                $link = 'Views/tpl/errors/pageDoesntExist-error.tpl';
             }
             elseif ($errorType == 'data'){
                 //$link = 'Views/tpl/errors/databaseConnexion-error.tpl';
@@ -74,7 +74,7 @@
                 $link = 'Views/tpl/errors/serverAccess-error.tpl';
             }
 
-            include 'Views/errors.php';           // Add template for home view
+            include 'Views/errorsView.php';           // Add template for home view
 
             return true;            
         }
