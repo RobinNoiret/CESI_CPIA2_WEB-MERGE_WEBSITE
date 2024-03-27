@@ -7,6 +7,28 @@
     if (empty($_SERVER['QUERY_STRING'])){               // Test path parameters
 
     }
+
+    elseif (isset($_GET["page"])){
+        if ($_GET["page"]=='connexion'){                // Test want to access to connexion
+            $controller->connexionController();
+        }
+        elseif ($_GET["page"]=='internship'){           // Want to access to internship
+            $controller->internshipController();
+        }
+        elseif ($_GET["page"]=='pilote'){               // Want to access to pilote
+            //$controller->piloteController();
+        }
+        elseif ($_GET["page"]=='student'){               // Want to access to pilote
+            //$controller->studentController();
+        }
+        elseif ($_GET["page"]=='company'){               // Want to access to company
+            //$controller->companyController();
+        }
+        else{
+            error404($controller);
+        }
+    }
+
     else {
         error404($controller);                          // Call error404
     }
