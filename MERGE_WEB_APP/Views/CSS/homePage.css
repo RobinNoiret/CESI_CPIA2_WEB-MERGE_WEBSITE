@@ -1,0 +1,155 @@
+/*___________________________________________________________________________________________________________________________*/
+/*                                                       homePage.css                                                        */
+/*___________________________________________________________________________________________________________________________*/
+
+
+.landing
+{
+    width: 100%;
+}
+
+/*___________________________________________ Image de fond ___________________________________________*/
+#landing-pictureBG
+{
+    width: 100%;
+    height: 100%;
+}
+
+#picture
+{
+    width: 100%;
+}
+
+/*____________________________________________ Bloc stats ____________________________________________*/
+
+.landing-stats
+{
+    --stat-block-heigh: 100%;
+    --stat-block-wigth: 30%;
+    --stat-block-top: 75%;
+    --stat-block-left:20%;
+    --block-translate-l: -50%;
+    --block-translate-r: -50%; /*=-(stat-block-top)+20%*/
+
+    width: 100%;
+    height: 150px;
+
+    color: white;
+
+    margin-top: -5px;
+
+    background-color: var(--orange-action);
+    display: flex;
+}
+
+.stats-block{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    height: var(--stat-block-heigh);
+    width: var(--stat-block-wigth);
+    top: var(--stat-block-top);
+    left: var(--stat-block-left);
+    transform: translate(var(--block-translate-l),var(--block-translate-r));
+}
+
+.stats-number {
+    font-size: 3rem;
+}
+
+.stats-text {
+    font-size: 1.2rem;
+}
+
+
+/*__________________________________________ Bloc domaines __________________________________________ */
+
+.landing-domains {
+    margin-top: 7.5vw;
+    color: var(--orange-action);
+    text-align: center;
+    position: relative;
+    z-index: 50;
+}
+
+.landing-domains h2 {
+    font-size: 1.5rem;
+}
+
+.domains {
+    display: flex;
+    width: 100%;
+    height: 40vw;
+    justify-content: center;
+}
+
+.domain-pictures
+{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 7.5vw;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.domain-pictures:hover
+{
+    transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
+    z-index: 1;
+}
+
+.domain {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    margin: 4vw;
+    font-size: 1.1rem;
+    z-index: 0;
+
+}
+
+
+/*________________________________________ Bloc articles __________________________________________*/
+
+.landing-articles h4 {
+    color: var(--orange-action);
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.articles-pict_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3%;
+}
+
+.articles-pict_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.articles-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.article-picture {
+    width: 50%;
+    height: 25%;
+}
+
+.articles-text h4 {
+    margin: 0;
+}
