@@ -1,0 +1,62 @@
+/*___________________________________________________________________________________________________________________________*/
+/*                                                         footer.css                                                        */
+/*___________________________________________________________________________________________________________________________*/
+
+
+footer {
+    background-color: #F79C43;
+}
+
+/* Style du footer */
+.footer {
+    background-color: var(--gris-clair); /* Couleur de fond */
+    /*position: absolute;*/
+    /*bottom: 0;*/
+
+    padding: 20px 0; /* Espacement intérieur */
+    margin-top: 7%;
+    text-align: center; /* Alignement du contenu */
+    color: #333; /* Couleur du texte */
+}
+
+.footer-group {
+    display: flex; /* Affichage en ligne des éléments */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Centrage horizontal */
+    margin-bottom: 20px; /* Marge inférieure */
+}
+
+/* Style des liens */
+.footer-list {
+    display: flex; /* Affichage en ligne des liens */
+    justify-content: center; /* Centrage des liens */
+    list-style: none; /* Suppression des puces */
+    padding: 0; /* Suppression des marges internes */
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #666;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    padding-right: 15px; /* Ajouter un espacement à droite pour l'espace du trait */
+}
+
+.footer-link:hover {
+    color: var(--gradient-color1); /* Couleur du texte des liens au survol */
+}
+
+/* Style du texte de copyright */
+.footer-text {
+    font-size: 14px; 
+    margin-top: 20px; 
+    color: #777; 
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}

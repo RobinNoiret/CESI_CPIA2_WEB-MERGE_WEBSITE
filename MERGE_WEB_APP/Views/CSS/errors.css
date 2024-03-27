@@ -1,0 +1,125 @@
+/*___________________________________________________________________________________________________________________________*/
+/*                                                         errors.css                                                        */
+/*___________________________________________________________________________________________________________________________*/
+
+/*____Variables____*/
+body
+{
+    --fond-rouge: #FFF2F2;                       /*Background color - Red*/
+    --fond-jaune: #FFF2D7;                       /*Background color - Yellow*/
+    --fond-bleu:  #E9F5FE;                       /*Background color - Blue*/
+    --fond-vert:  #E2FCF6;                       /*Background color - Green*/
+    --fond-violet:#EEDCFC;                       /*Background color - Purple*/
+}
+
+/*____BG colors____*/
+
+#Error404
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-rouge);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Error405
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-jaune);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Error406
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-bleu);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Error407
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fond-violet);
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/*______Items______*/
+
+
+h1
+{
+    margin-top: 5%;
+    text-align: center;
+
+    font-weight: 700;
+    color: #000000;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+h2
+{
+    text-align: center;
+    margin-top: -20px;
+    font-weight: 200;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.picture
+{
+    margin-top: 50px;
+    width: 60%;
+    height: 45%;
+
+}
+
+.error-picture
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+a
+{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: var(--noir-fixe);
+    text-decoration: none;
+}
+  
+a:hover
+{
+    color: var(--orange-action);
+    text-decoration: underline;
+}
+  
+.error-CTA
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 5%;
+}
