@@ -1,7 +1,7 @@
 <?php
     include 'connectEntity.php';
 
-    class piloteModel extends connectToDB{
+    class homeDataModel extends connectToDB{
 
         public function countPilotes(){
         $request = $this->db->prepare("SELECT count(userID) AS NumberOfPilotes FROM users where userStatus='Pilote';");
