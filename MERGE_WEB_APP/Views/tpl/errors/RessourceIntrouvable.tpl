@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 404</title>
 
-    <link rel="stylesheet" href="Views/CSS/main.css" />
+    <link rel="stylesheet" href="Views/CSS/errors.css" />
 </head>
 
 <body id="Error404">
         <h1> Ooops !</h1>
-        <h2> Erreur d'accès au server...</h2>
+        <h2> Ressource introuvable ou n'existe pas</h2>
         <div class="error-picture"> 
-            <img class="picture" src="Views/Assets/404 error.png">
+            <img class="picture" src="Views/Assets/error404.png">
         </div>
 
         <div class="error-CTA">
@@ -21,3 +21,11 @@
 </body>
 
 </html>
+
+<!-- Commentaires :
+Remarques :
+- lors de l'affichage via Appache, le style et l'image ne s'affiche pas
+
+=> Piste de solution : le problème vient des liens.
+
+-->
