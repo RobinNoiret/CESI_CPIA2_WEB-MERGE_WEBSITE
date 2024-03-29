@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-03-27 21:13:47
+/* Smarty version 3.1.36, created on 2024-03-29 17:02:29
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\errors\pageDoesntExist-error.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_66047dfbb439e2_76784940',
+  'unifunc' => 'content_6606e6155ab7d4_52937074',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cca77577572637ce80ddb4f709c39e2296201064' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\errors\\pageDoesntExist-error.tpl',
-      1 => 1711570423,
+      1 => 1711726151,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66047dfbb439e2_76784940 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6606e6155ab7d4_52937074 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
