@@ -13,7 +13,6 @@
     }
     elseif ($page == 'connexion'){
         $smarty->assign('title', 'Merge-connexion');
-        $smarty->assign('user', $user);
 
     }
     $smarty->assign('source', $this->sourcePath);
