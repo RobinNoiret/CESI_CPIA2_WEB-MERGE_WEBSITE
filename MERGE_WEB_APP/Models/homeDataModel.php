@@ -11,7 +11,7 @@
 
         // Call functions to set datas if needed
 
-        return $datas;
+        return $datas[0];
         }
 
         public function countStudents(){
@@ -22,7 +22,7 @@
     
             // Call functions to set datas if needed
     
-            return $datas;
+            return $datas[0];
             }
 
         public function countCompanies(){
@@ -33,6 +33,6 @@
     
             // Call functions to set datas if needed
     
-            return $datas;
+            return $datas[0];
             }
     }

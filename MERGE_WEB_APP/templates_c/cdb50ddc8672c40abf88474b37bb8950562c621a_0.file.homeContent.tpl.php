@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-03-27 16:10:07
+/* Smarty version 3.1.36, created on 2024-03-29 17:38:40
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660436cf05dd91_57978841',
+  'unifunc' => 'content_6606ee90c3e9b4_91741917',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdb50ddc8672c40abf88474b37bb8950562c621a' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\homeContent.tpl',
-      1 => 1711552203,
+      1 => 1711730319,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660436cf05dd91_57978841 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6606ee90c3e9b4_91741917 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="landing">
 
     <!-- ___________________________________________ Image de fond ___________________________________________ -->
@@ -33,17 +33,20 @@ function content_660436cf05dd91_57978841 (Smarty_Internal_Template $_smarty_tpl)
 
     <div class="landing-stats">
         <div class="stats-block" id="stats-students">
-            <div class="stats-number">28 000</div>
+            <div class="stats-number"><?php echo $_smarty_tpl->tpl_vars['studentsNumber']->value;?>
+</div>
             <div class="stats-text">Etudiants</div>
         </div>
 
         <div class="stats-block" id="stats-companies">
-            <div class="stats-number">700</div>
+            <div class="stats-number"><?php echo $_smarty_tpl->tpl_vars['companiesNumber']->value;?>
+</div>
             <div class="stats-text">Entreprises</div>
         </div>
 
         <div class="stats-block" id="stats-pilotes">
-            <div class="stats-number">1 820</div>
+            <div class="stats-number"><?php echo $_smarty_tpl->tpl_vars['pilotesNumber']->value;?>
+</div>
             <div class="stats-text">Pilotes</div>
         </div>
     </div>

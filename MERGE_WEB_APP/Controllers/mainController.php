@@ -23,7 +23,6 @@
             $nbCompany = $dataModel->countCompanies();
             $nbStudent = $dataModel->countStudents();
 
-
             include 'Views/mainView.php';           // Add template for home view
 
             return true;

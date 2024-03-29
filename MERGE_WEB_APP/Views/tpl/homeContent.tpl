@@ -10,17 +10,17 @@
 
     <div class="landing-stats">
         <div class="stats-block" id="stats-students">
-            <div class="stats-number">28 000{*{$studentsNumber}*}</div>
+            <div class="stats-number">{$studentsNumber}</div>
             <div class="stats-text">Etudiants</div>
         </div>
 
         <div class="stats-block" id="stats-companies">
-            <div class="stats-number">700{*{$companiesNumber}*}</div>
+            <div class="stats-number">{$companiesNumber}</div>
             <div class="stats-text">Entreprises</div>
         </div>
 
         <div class="stats-block" id="stats-pilotes">
-            <div class="stats-number">1 820{*{$pilotesNumber}*}</div>
+            <div class="stats-number">{$pilotesNumber}</div>
             <div class="stats-text">Pilotes</div>
         </div>
     </div>
