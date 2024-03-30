@@ -14,8 +14,6 @@
         public function homeController(){
             $page = 'home';
 
-            $user = 'none'/*$this->whatIsConnect()*/;
-
             require_once 'Models/homeDataModel.php';
 
             $dataModel = new homeDataModel($this->sourcePath);      // Search data
@@ -50,7 +48,7 @@
 
         public function internshipController(){
             // Verify user's connexion
-            $this->whoIsConnect();
+            $this->isConnect();
 
             // Test "action" criteria to know if you want to create, display, update, delete
                 //update and delete need an ID

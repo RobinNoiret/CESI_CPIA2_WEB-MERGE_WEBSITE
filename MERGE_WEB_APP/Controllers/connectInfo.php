@@ -6,8 +6,12 @@
         }
 
         function whatIsConnect(){
-            // Return the stat who is connected 
-            return NULL;
+            // Return the stat who is connected
+            if ($this->isConnect()){
+                return '';
+            } else {
+                return 'none';
+            }
         }
 
         function isConnect(){
