@@ -4,9 +4,46 @@
 
 /*____Max-width = 768px____*/
 
-/*Source : pages d'erreurs*/
 @media screen and (max-width: 768px)
 {
+    /*________ homePage __________*/
+    :root {
+        font-size: 14px;
+    }
+
+    .nav-link-big{
+        display: none;
+    }
+
+    .landing-articles{
+        --article-padding-left: 3%;
+        --article-padding-right: 3%;
+    }
+
+    .articles-pict_right, .articles-pict_left { /*Ok*/
+        display: block;
+        padding-left: var(--article-padding-left);
+        padding-right: var(--article-padding-right);
+    }
+    
+    .articles-text { /*Ok*/
+        width: calc(100%-(
+            var(--article-padding-right)
+            +var(--article-padding-left)));
+    }
+    
+    .article-picture { /*Ok*/
+        width: 94%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    
+    .footer-list{
+        display: block;
+    }
+    
+    /*_________ Errors ___________*/ /*Source : pages d'erreurs*/
     h1
     {
         font-size: 48px;
@@ -23,8 +60,21 @@
 
 /*____Max-width = 480px____*/
 
-/*Source : pages d'erreurs*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) 
+{
+    /*________ homePage __________*/
+    :root {
+        font-size: 10px;
+    }
+
+    .nav-links-small{
+        display: none;
+        /* gap: 0rem;
+        margin: 0;
+        padding: 0; */
+    }
+
+    /*_________ Errors ___________*/ /*Source : pages d'erreurs*/
     h1
     {
         font-size: 32px;

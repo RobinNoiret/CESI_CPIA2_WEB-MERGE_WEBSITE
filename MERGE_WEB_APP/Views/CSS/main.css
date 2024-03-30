@@ -65,10 +65,10 @@ body
     width:max-content;
     display: inline-block;
 
-    padding: 15px 32px;
-    margin: 4px 2px;
+    padding: 0.9rem 2rem;
+    margin: 0.6rem 1.25rem;
 
-    border-width: 3px;
+    border-width: 0.19rem;
     border-style: solid;
     border-image-slice: 1;
     border-image-repeat: stretch;
@@ -81,7 +81,7 @@ body
     text-align: center;
     text-decoration: none;
 
-    font-size: 16px;
+    font-size: 1rem;
     
     transition: transform 0.3s ease-in-out;
 }
@@ -95,10 +95,14 @@ body
     width: 40%;
     display: inline-block;
 
-    padding: 10px 20px;
-    margin: 4px 2px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    
+    padding: 0.6em 1.25em;
+    margin: 0.25em 0.125em;
 
-    border-width: 2px;
+    border-width: 0.18em;
     border-style: solid;
     border-radius: 50em;
     border-image-slice: 1;
@@ -107,10 +111,6 @@ body
     background-color: var(--blanc-fixe);
     color: var(--orange-action);
 
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    
     transition: transform 0.3s ease-in-out;
 }
 .CTA_secondaire:hover
@@ -128,18 +128,18 @@ body
     display: inline;
     font-weight: bold;
     font-size: 1em;
-    width: 200px;
+    width: 12.5rem;
     height: auto;
-    margin: 10px;
+    margin: 0.6rem;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 12px 20px;
+    gap: 0.6rem;
+    padding: 0.75rem 1.25rem;
     position: relative;
     background-color: var(--blanc-fixe);
-    border-radius: 50px;
+    border-radius: 3rem;
     overflow: hidden;
-    border: 3px solid;
+    border: 0.2rem solid;
     border-color: #FF7D00;
     cursor: pointer;
     transition: .5s ease;
