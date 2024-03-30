@@ -7,7 +7,7 @@
             <img id="nav-logo" class="nav-logo" src="Views/Assets/logo avec texte.png">
         </a>
 
-        <ul {if $user eq 'none'}class="nav-links-small"{else}class="nav-links-big"{/if}>
+        <ul {if $user eq 'admin' || $user eq 'pilote'}class="nav-links-big"{else}class="nav-links-small"{/if}>
                         <li><a href="{$source}">Accueil</a></li>
                         <li><a href="#.html">Trouver un stage</a></li>
                         <li><a href="#.html">Trouver une entreprise</a></li>
