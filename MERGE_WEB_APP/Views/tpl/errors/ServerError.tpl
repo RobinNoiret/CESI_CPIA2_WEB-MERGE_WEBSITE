@@ -10,8 +10,8 @@
 </head>
 
 <body id="Error500">
-        <h1> Ooops !</h1>
-        <h2> Le serveur nous a lâché</h2>
+        <h1 id="h1_error"> Ooops !</h1>
+        <h2 id="h2_error"> Le serveur nous a lâché</h2>
         <div class="error-picture"> 
             <img class="picture" src="Views/Assets/error500.png">
         </div>

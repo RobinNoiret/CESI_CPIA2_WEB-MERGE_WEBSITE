@@ -9,8 +9,8 @@
 </head>
 
 <body id="Error401">
-        <h1> Ooops !</h1>
-        <h2> Authorisation requise </h2>
+        <h1 id="h1_error"> Ooops !</h1>
+        <h2 id="h2_error"> Authorisation requise </h2>
         <div class="error-picture"> 
             <img class="picture" src="Views/Assets/error401.png">
         </div>
