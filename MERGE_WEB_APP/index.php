@@ -1,6 +1,7 @@
 <?php 
     include ('Controllers/mainController.php');         // Include the controller part
-    $sourcePath = $_SERVER['REQUEST_URI'];              // Keep the path of the start point of the website
+    $path = $_SERVER['REQUEST_URI'];
+    $sourcePath = (substr($path,0,strlen($path)-(strlen(strrchr($path,'/'))-1)));  // Keep the path of the start point of the website
 
     $controller = new Controller($sourcePath);          // Create and give to the controller the start path
 

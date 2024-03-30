@@ -14,12 +14,14 @@
         public function homeController(){
             $page = 'home';
 
-            // Get user of the connect user 
-            if (false){
-            }
-            else {
-                $user = 'admin';                    // Put user stat
-            }
+            $user = 'none'/*$this->whatIsConnect()*/;
+
+            require_once 'Models/homeDataModel.php';
+
+            $dataModel = new homeDataModel($this->sourcePath);      // Search data
+            $nbPilote = $dataModel->countPilotes();
+            $nbCompany = $dataModel->countCompanies();
+            $nbStudent = $dataModel->countStudents();
 
             include 'Views/mainView.php';           // Add template for home view
 
