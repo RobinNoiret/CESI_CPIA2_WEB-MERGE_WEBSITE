@@ -1,5 +1,5 @@
 <?php
-    include 'connectEntity.php';
+    include_once 'connectEntity.php';
 
     class connexionModel extends connectToDB{
         public function getPwd($login){

@@ -1,5 +1,5 @@
 <?php
-    include 'connectEntity.php';
+    include_once 'connectEntity.php';
 
     class piloteModel extends connectToDB{
         
