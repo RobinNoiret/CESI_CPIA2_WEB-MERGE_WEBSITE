@@ -1,23 +1,22 @@
-<div class="login-div">
+<h1 class="form-text">Connexion</h1>
+<div class="form-div">
 
-<h1 class="login-text">Connexion</h1>
+    <form class="div-form" action="#" method="post">
 
-<form class="login-form">
-    <fieldset class="fieldset-group">
+        <!--__________________________ Input pour la connexion __________________________-->
+        <fieldset class="fieldset-group">
+        <div id="formFields">
+            <div>
+                <label for="login" class="Form_label">Identifiant</label>
+                <input type="text" class="Form_input" placeholder="prenom.nom" id="login" name="login" required>
+            </div>
+            <div>
+                <label for="password" class="Form_label">Mot de passe</label>
+                <input type="password" class="Form_input" placeholder="mot-de-passe" id="password" name="password" required>
+            </div>
 
-        <div class="form-group">
-            <label for="login" class="form-label-usr">Identifiant</label>
-            <input type="text" class="form-field-usr" placeholder="prenom.nom" id="login" name="login" required>
+            <input type="submit" class="Form_CTA_secondaire" value="Login">
         </div>
-
-        <div class="form-group">
-            <label for="password" class="form-label-pwd">Mot de passe</label>
-            <input type="password" class="form-field-pwd" placeholder="mot-de-passe" id="password" name="password" required>
-        </div>
-
-        <input type="submit" class="CTA-button" value="Login">
-
-    </fieldset>
-</form>
-
+        </fieldset>
+    </form>
 </div>

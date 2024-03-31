@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-03-27 17:17:07
-  from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\templateBase.tpl' */
+/* Smarty version 3.1.36, created on 2024-03-30 14:05:51
+  from 'C:\Users\Noiret\Documents\4 - Projets\4.2 - Etudes\4 - Développement WEB\Site\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\templateBase.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6604468338e488_77666325',
+  'unifunc' => 'content_66080e2f39fca9_84125689',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '3b238e60590e889026f1dcde3ca3fa2b6e10850a' => 
+    'd59c7c5bfd858f3002da80182aee7664f293b1d7' => 
     array (
-      0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\templateBase.tpl',
-      1 => 1711556011,
+      0 => 'C:\\Users\\Noiret\\Documents\\4 - Projets\\4.2 - Etudes\\4 - Développement WEB\\Site\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\templateBase.tpl',
+      1 => 1711800162,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../tpl/footer.tpl' => 1,
   ),
 ),false)) {
-function content_6604468338e488_77666325 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66080e2f39fca9_84125689 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -34,25 +34,25 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
     <head> 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_109657736566044683380147_63597451', 'head');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_140978407566080e2f36cdf7_54543018', 'head');
 ?>
 
     </head> 
 
    	<body>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_167275243266044683385fd9_37271328', 'body');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_214533561466080e2f37e809_67971374', 'body');
 ?>
 
     </body> 
 </html> <?php }
 /* {block 'head'} */
-class Block_109657736566044683380147_63597451 extends Smarty_Internal_Block
+class Block_140978407566080e2f36cdf7_54543018 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head' => 
   array (
-    0 => 'Block_109657736566044683380147_63597451',
+    0 => 'Block_140978407566080e2f36cdf7_54543018',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -71,12 +71,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'head'} */
 /* {block 'body'} */
-class Block_167275243266044683385fd9_37271328 extends Smarty_Internal_Block
+class Block_214533561466080e2f37e809_67971374 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_167275243266044683385fd9_37271328',
+    0 => 'Block_214533561466080e2f37e809_67971374',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

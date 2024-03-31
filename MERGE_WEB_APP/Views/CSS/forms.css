@@ -5,14 +5,16 @@
 
 .landing
 {
-    width: 100%;
+    width: auto;
 }
+
 
 /*___________________________________________________________________________________________________________________________*/
 /*                                                    Page de connexion                                                      */
 /*___________________________________________________________________________________________________________________________*/
 /* Source : Commit sur le main de Brieuc*/
 
+/*
 .login-div {
     text-align: center;
     margin-bottom: 80px;
@@ -43,13 +45,13 @@
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Pour aligner les éléments à gauche */
+    align-items: flex-start;
     margin: 25px;
     position: relative;
 }
  
 .form-group:first-child {
-    margin-bottom: 45px; /* Ajoute de l'espace en dessous du premier élément */
+    margin-bottom: 45px;
 }
  
 .form-field-usr, .form-field-pwd {
@@ -106,24 +108,23 @@
       }
   }
  
-  /* reset input */
   .form-field-usr, .form-field-pwd{
     &:required,&:invalid { box-shadow:none; }
   }
-
+*/
 
 /*___________________________________________________________________________________________________________________________*/
 /*                                                    Page d'inscription                                                     */
 /*___________________________________________________________________________________________________________________________*/
 /*Source : Robin css de la page d'inscription*/
 
-.signup-div {
+.form-div {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .signup-form
+  .div-form
   {
     display: flex;
     justify-content: center;
@@ -131,7 +132,7 @@
     width: 30%;
   }
 
-  .signup-text
+  .form-text
   {
     text-align: center;
   }
@@ -145,7 +146,7 @@
 
     padding: 10%;
     padding-bottom: 5%;
-    width: 130%;
+    width: 70%;
 
 
     display: inline;
