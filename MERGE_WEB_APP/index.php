@@ -5,8 +5,8 @@
 
     $controller = new Controller($sourcePath);          // Create and give to the controller the start path
 
-    var_dump($_GET);
-    var_dump($_POST);
+    // var_dump($_GET);
+    // var_dump($_POST);
 
     //var_dump(password_hash('Merge_Admin_Florentµ', PASSWORD_DEFAULT));
     

@@ -9,7 +9,7 @@
             $this->tryToExecute($request);                  
             $datas = $request->fetch(PDO::FETCH_ASSOC);
 
-            var_dump($datas);
+            //var_dump($datas);
     
             if ($datas == false){
                 return array("userPassword"=>""); 

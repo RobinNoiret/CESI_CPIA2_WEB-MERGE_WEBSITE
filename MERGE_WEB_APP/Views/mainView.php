@@ -14,7 +14,8 @@
         $smarty->assign('title', 'Merge-connexion');
         
     }
-    $smarty->assign('user', $user = $this->whatIsConnect());
+    $user = $this->whatIsConnect();
+    $smarty->assign('user', $user);
     $smarty->assign('source', $this->sourcePath);
     $smarty->assign('page', $page);
     $smarty->assign('connecAction', $this->actionLinkToConnect());
