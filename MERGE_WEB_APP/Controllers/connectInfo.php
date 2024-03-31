@@ -1,24 +1,30 @@
 <?php
     class connectInfo{  
+        // Return the id or information of who is connected 
         function whoIsConnect(){
-            // Return the id or information of who is connected 
+            if ($this->isConnect()){
+                return $_SESSION['LOGGED_USER']['login'];
+            } else {
+                return 'none';
+            }            
             return NULL;
         }
 
+        // Return the stat who is connected
         function whatIsConnect(){
-            // Return the stat who is connected
             if ($this->isConnect()){
-                return '';
+                return $_SESSION['LOGGED_USER']['status'];
             } else {
                 return 'none';
             }
         }
 
+        // Return if there is a connection or not
         function isConnect(){
-            // Return if there is a connection or not
-            return false;
+            return isset($_SESSION['LOGGED_USER']);
         }
 
+        // Action for connect button
         public function actionLinkToConnect(){
             if ($this->isConnect()){
                 return "?page=dashbord";

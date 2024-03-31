@@ -44,7 +44,7 @@
 
                     session_start();                                                            // Create a session and put information on it like the login and the status
                     $_SESSION['LOGGED_USER']['login'] = $login;
-                    $_SESSION['LOGGED_USER']['statu'] = $hashPassword['userStatus'];
+                    $_SESSION['LOGGED_USER']['status'] = $hashPassword['userStatus'];
 
                     $this->homeController();                                                    // Redirect to home page
                 } else {
