@@ -42,11 +42,21 @@
                 if (password_verify('Merge_Admin_Florentµ', $hashPassword['userPassword'])) {   // Know if password is correct
                     //echo 'Password is valid!';            // To verify the activation
 
-                    session_start();                                                            // Create a session and put information on it like the login and the status
-                    $_SESSION['LOGGED_USER']['login'] = $login;
-                    $_SESSION['LOGGED_USER']['status'] = $hashPassword['userStatus'];
+                    setcookie(                               // Create a cookie and put informations on it like the login and the status
+                        'LOGGED_USER',
+                        '{
+                            "login"  :  "'.$login.'",
+                            "status" :  "'.$hashPassword['userStatus'].'"
+                        }',
+                        [
+                            'expires' => time() + 60*10,
+                            'secure' => true,
+                            'httponly' => true,
+                        ]
+                    ); 
 
-                    $this->homeController();                                                    // Redirect to home page
+                    header('Location: '.$this->sourcePath);                                     // Redirect to home page
+
                 } else {
                     //echo 'Invalid password.';
                     // Alert user about the failed of authentification

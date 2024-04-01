@@ -3,7 +3,8 @@
         // Return the id or information of who is connected 
         function whoIsConnect(){
             if ($this->isConnect()){
-                return $_SESSION['LOGGED_USER']['login'];
+                $cookie = json_decode($_COOKIE['LOGGED_USER'],true);
+                return $cookie['login'];
             } else {
                 return 'none';
             }            
@@ -13,7 +14,8 @@
         // Return the stat who is connected
         function whatIsConnect(){
             if ($this->isConnect()){
-                return $_SESSION['LOGGED_USER']['status'];
+                $cookie = json_decode($_COOKIE['LOGGED_USER'],true);
+                return $cookie['status'];
             } else {
                 return 'none';
             }
@@ -21,7 +23,7 @@
 
         // Return if there is a connection or not
         function isConnect(){
-            return isset($_SESSION['LOGGED_USER']);
+            return isset($_COOKIE['LOGGED_USER']);
         }
 
         // Action for connect button
