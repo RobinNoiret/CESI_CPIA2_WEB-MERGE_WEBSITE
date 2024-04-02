@@ -14,9 +14,34 @@
     .navbar-big .nav-links{
         display: none;
     }
-    .navbar-big #scrolling-menu-header{
+    /* .navbar-big #scrolling-menu-header{
         display: block;
+    } */
+
+    /* .navbar-big .nav-links{
+        display: none;
+        box-shadow: 0px 1px 2px #CCC;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
     }
+    nav > #nav-menu-header:hover .nav-links{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .navbar-big .nav-links li{
+        flex: 1 1 auto;
+        text-align: left;
+    }
+    .navbar-big .nav-links a{
+        padding: 10px;
+        border-bottom: none;
+    }
+    .navbar-big .nav-links a:hover{
+        border-bottom: none;
+        background-color: RGBa(200,200,200,0.1);
+    } */
 
     .landing-articles{
         --article-padding-left: 3%;
@@ -83,14 +108,16 @@
 
     .navbar-small .nav-links{
         display: none;
-        /* gap: 0rem;
-        margin: 0;
-        padding: 0; */
     }
     .navbar-small #scrolling-menu-header{
         display: block;
-    }
 
+
+    } 
+    nav #second-nav-links, nav #second-nav-links a {
+        display: flex;
+    }
+    
 
     /*_________ Errors ___________*/ /*Source : pages d'erreurs*/
     h1

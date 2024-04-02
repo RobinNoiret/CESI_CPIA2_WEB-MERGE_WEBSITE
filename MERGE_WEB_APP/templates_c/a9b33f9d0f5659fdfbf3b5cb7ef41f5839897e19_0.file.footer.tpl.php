@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-02 15:20:53
+/* Smarty version 3.1.36, created on 2024-04-02 16:27:50
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\header&footer\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660c0635c11717_49277105',
+  'unifunc' => 'content_660c15e64c38d1_28482202',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660c0635c11717_49277105 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660c15e64c38d1_28482202 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer class="footer">
     <div class="footer-group">
         <div class="logo"><img src="Views/Assets/logo avec texte.png" alt="logo-merge"></div>
