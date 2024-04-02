@@ -13,7 +13,7 @@ Pour le bon déroulement de notre projet, il est essentiel de mettre en place un
 
 - Visual Studio Code : [Download](https://code.visualstudio.com)
 - Figma : [Download](https://www.figma.com/fr/downloads/)
-- A définir : [Download](#)
+- Xampp : [Download](https://www.apachefriends.org/download.html)
 
 <br><br>
 
@@ -22,6 +22,7 @@ Pour le bon déroulement de notre projet, il est essentiel de mettre en place un
 - HTML/CSS/JS
 - PHP
 - SQL
+- Smarty (Architecture MVC)
 
 <br><br>
 
@@ -50,16 +51,7 @@ Une fois la structure de la base de données en place, le script de remplissage 
 
 <br>
 
-## Fonctionnalités
-
-#### Gestion des offres
-- Fonctionnalités
-  
-#### Gestion des étudiants
-- Fonctionnalités
-
-
 ## Authors
 * **Robin NOIRET** - [Robin GitHub](https://github.com/RobinNoiret)
-* **Floren MAILLARD-SALIN** - [Florent GitHub](#lien)
-* **Brieuc OLIVIERI** - [Brieuc GitHub](#lien)
+* **Floren MAILLARD-SALIN** - [Florent GitHub](https://github.com/FlorentMS)
+* **Brieuc OLIVIERI** - [Brieuc GitHub](https://github.com/FlorentMS)
