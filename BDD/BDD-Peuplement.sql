@@ -1,3 +1,4 @@
+-- sélection de la data base
 Use mergeDatabase;
 
 -- Peuplement de la table Cities
@@ -48,11 +49,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Dupuis', 'Marie', 'Pilote', 'marie.dupuis', 'CodeHelp2024', 2),
     ('Lambert', 'Théo', 'Pilote', 'theo.lambert', 'TutorTech21', 2),
 -- Etudiants
-    ('Davis', 'Mia', 'étudiant', 'mia.davis', 'password1234', '2'),
-    ('Miller', 'Elijah', 'étudiant', 'elijah.miller', 'abcdef1234', '2'),
-    ('Wilson', 'Sophia', 'étudiant', 'sophia.wilson', 'qwertyuiop1', '2'),
-    ('Moore', 'Lucas', 'étudiant', 'lucas.moore', '12345678901', '2'),
-    ('Taylor', 'Isabella', 'étudiant', 'isabella.taylor', 'letmein1234', '2');
+    ('Davis', 'Mia', 'étudiant', 'mia.davis', 'password1234', 2),
+    ('Miller', 'Elijah', 'étudiant', 'elijah.miller', 'abcdef1234', 2),
+    ('Wilson', 'Sophia', 'étudiant', 'sophia.wilson', 'qwertyuiop1', 2),
+    ('Moore', 'Lucas', 'étudiant', 'lucas.moore', '12345678901', 2),
+    ('Taylor', 'Isabella', 'étudiant', 'isabella.taylor', 'letmein1234', 2);
 
     -- Campus Arras
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -60,11 +61,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Dubois', 'Lucas', 'Pilote', 'lucas.dubois', 'EduPass789', 3),
     ('Rousseau', 'Éléonore', 'Pilote', 'eleonore.rousseau', 'Tutoring2024', 3),
 -- Etudiants
-    ('Jackson', 'Harper', 'étudiant', 'harper.jackson', 'password12345', '3'),
-    ('Clark', 'Charlotte', 'étudiant', 'charlotte.clark', 'abcdef12345', '3'),
-    ('Anderson', 'Aiden', 'étudiant', 'aiden.anderson', 'qwertyuiop12', '3'),
-    ('Thomas', 'Amelia', 'étudiant', 'amelia.thomas', '123456789012', '3'),
-    ('White', 'Mason', 'étudiant', 'mason.white', 'letmein12345', '3');
+    ('Jackson', 'Harper', 'étudiant', 'harper.jackson', 'password12345', 3),
+    ('Clark', 'Charlotte', 'étudiant', 'charlotte.clark', 'abcdef12345', 3),
+    ('Anderson', 'Aiden', 'étudiant', 'aiden.anderson', 'qwertyuiop12', 3),
+    ('Thomas', 'Amelia', 'étudiant', 'amelia.thomas', '123456789012', 3),
+    ('White', 'Mason', 'étudiant', 'mason.white', 'letmein12345', 3);
 
     -- Campus Bordeaux
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES  
@@ -72,11 +73,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Dubois', 'Pierre', 'Pilote', 'pierre.dubois', 'BordeauxTutor', 4),
     ('Moreau', 'Léa', 'Pilote', 'lea.moreau', 'LearnBordeaux', 4),
 -- Etudiants
-    ('Harris', 'Evelyn', 'étudiant', 'evelyn.harris', 'password123456', '4'),
-    ('Allen', 'Ethan', 'étudiant', 'ethan.allen', 'abcdef123456', '4'),
-    ('Young', 'Luna', 'étudiant', 'luna.young', 'qwertyuiop123', '4'),
-    ('Martin', 'Benjamin', 'étudiant', 'benjamin.martin', '1234567890123', '4'),
-    ('Scott', 'Ella', 'étudiant', 'ella.scott', 'letmein123456', '4');
+    ('Harris', 'Evelyn', 'étudiant', 'evelyn.harris', 'password123456', 4),
+    ('Allen', 'Ethan', 'étudiant', 'ethan.allen', 'abcdef123456', 4),
+    ('Young', 'Luna', 'étudiant', 'luna.young', 'qwertyuiop123', 4),
+    ('Martin', 'Benjamin', 'étudiant', 'benjamin.martin', '1234567890123', 4),
+    ('Scott', 'Ella', 'étudiant', 'ella.scott', 'letmein123456', 4);
     
     -- Campus Brest
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES   
@@ -84,11 +85,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Leclerc', 'Louis', 'Pilote', 'louis.leclerc', 'BrestEdu2024', 5),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.roussel', 'TutorWave', 5),
 -- Etudiants
-    ('Hall', 'Liam', 'étudiant', 'liam.hall', 'password1234567', '5'),
-    ('King', 'Mia', 'étudiant', 'mia.king', 'abcdef1234567', '5'),
-    ('Wright', 'James', 'étudiant', 'james.wright', 'qwertyuiop1234', '5'),
-    ('Lopez', 'Emily', 'étudiant', 'emily.lopez', '12345678901234', '5'),
-    ('Baker', 'Harper', 'étudiant', 'harper.baker', 'letmein1234567', '5');
+    ('Hall', 'Liam', 'étudiant', 'liam.hall', 'password1234567', 5),
+    ('King', 'Mia', 'étudiant', 'mia.king', 'abcdef1234567', 5),
+    ('Wright', 'James', 'étudiant', 'james.wright', 'qwertyuiop1234', 5),
+    ('Lopez', 'Emily', 'étudiant', 'emily.lopez', '12345678901234', 5),
+    ('Baker', 'Harper', 'étudiant', 'harper.baker', 'letmein1234567', 5);
 
     -- Campus Caen
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES   
@@ -96,11 +97,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Dupuis', 'Hugo', 'Pilote', 'hugo.dupuis', 'CaenTutoring', 6),
     ('Lambert', 'Manon', 'Pilote', 'manon.lambert', 'LearnCaen21', 6),
 -- Etudiants
-    ('Nelson', 'Noah', 'étudiant', 'noah.nelson', 'password12345678', '6'),
-    ('Carter', 'Avery', 'étudiant', 'avery.carter', 'abcdef12345678', '6'),
-    ('Mitchell', 'Liam', 'étudiant', 'liam.mitchell', 'qwertyuiop12345', '6'),
-    ('Perez', 'Ella', 'étudiant', 'ella.perez', '123456789012345', '6'),
-    ('Roberts', 'Olivia', 'étudiant', 'olivia.roberts', 'letmein12345678', '6');
+    ('Nelson', 'Noah', 'étudiant', 'noah.nelson', 'password12345678', 6),
+    ('Carter', 'Avery', 'étudiant', 'avery.carter', 'abcdef12345678', 6),
+    ('Mitchell', 'Liam', 'étudiant', 'liam.mitchell', 'qwertyuiop12345', 6),
+    ('Perez', 'Ella', 'étudiant', 'ella.perez', '123456789012345', 6),
+    ('Roberts', 'Olivia', 'étudiant', 'olivia.roberts', 'letmein12345678', 6);
 
     -- Campus Dijon
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES  
@@ -108,11 +109,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Martin', 'Lucie', 'Pilote', 'lucie.martin', 'DijonEduPass', 7),
     ('Dubois', 'Thomas', 'Pilote', 'thomas.dubois', 'TutorDijon123', 7),
 -- Etudiants
-    ('Turner', 'Oliver', 'étudiant', 'oliver.turner', 'password123456789', '7'),
-    ('Phillips', 'Sophia', 'étudiant', 'sophia.phillips', 'abcdef123456789', '7'),
-    ('Coleman', 'Ethan', 'étudiant', 'ethan.coleman', 'qwertyuiop123456', '7'),
-    ('Hayes', 'Aria', 'étudiant', 'aria.hayes', '1234567890123456', '7'),
-    ('Rivera', 'Emma', 'étudiant', 'emma.rivera', 'letmein123456789', '7');
+    ('Turner', 'Oliver', 'étudiant', 'oliver.turner', 'password123456789', 7),
+    ('Phillips', 'Sophia', 'étudiant', 'sophia.phillips', 'abcdef123456789', 7),
+    ('Coleman', 'Ethan', 'étudiant', 'ethan.coleman', 'qwertyuiop123456', 7),
+    ('Hayes', 'Aria', 'étudiant', 'aria.hayes', '1234567890123456', 7),
+    ('Rivera', 'Emma', 'étudiant', 'emma.rivera', 'letmein123456789', 7);
 
     -- Campus Grenoble
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -120,11 +121,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Dupuis', 'Marie', 'Pilote', 'marie.grenoble', 'CodeHelp2024', 8),
     ('Lambert', 'Théo', 'Pilote', 'theo.grenoble', 'TutorTech21', 8),
 -- Etudiants
-    ('Reed', 'Logan', 'étudiant', 'logan.reed', 'password1234567890', '8'),
-    ('Washington', 'Mia', 'étudiant', 'mia.washington', 'abcdef1234567890', '8'),
-    ('Gonzalez', 'Liam', 'étudiant', 'liam.gonzalez', 'qwertyuiop1234567', '8'),
-    ('Bennett', 'Avery', 'étudiant', 'avery.bennett', '12345678901234567', '8'),
-    ('Gray', 'Harper', 'étudiant', 'harper.gray', 'letmein1234567890', '8');
+    ('Reed', 'Logan', 'étudiant', 'logan.reed', 'password1234567890', 8),
+    ('Washington', 'Mia', 'étudiant', 'mia.washington', 'abcdef1234567890', 8),
+    ('Gonzalez', 'Liam', 'étudiant', 'liam.gonzalez', 'qwertyuiop1234567', 8),
+    ('Bennett', 'Avery', 'étudiant', 'avery.bennett', '12345678901234567', 8),
+    ('Gray', 'Harper', 'étudiant', 'harper.gray', 'letmein1234567890', 8);
 
     -- Campus La Rochelle
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -132,11 +133,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Leclerc', 'Louis', 'Pilote', 'louis.larochelle', 'BrestEdu2024', 9),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.larochelle', 'TutorWave', 9),
 -- Etudiants
-    ('Foster', 'Noah', 'étudiant', 'noah.foster', 'password12345678901', '9'),
-('Sullivan', 'Sophia', 'étudiant', 'sophia.sullivan', 'abcdef12345678901', '9'),
-('Bryant', 'Ethan', 'étudiant', 'ethan.bryant', 'qwertyuiop12345678', '9'),
-('Reyes', 'Isabella', 'étudiant', 'isabella.reyes', '123456789012345678', '9'),
-('Russell', 'Olivia', 'étudiant', 'olivia.russell', 'letmein12345678901', '9');
+    ('Foster', 'Noah', 'étudiant', 'noah.foster', 'password12345678901', 9),
+    ('Sullivan', 'Sophia', 'étudiant', 'sophia.sullivan', 'abcdef12345678901', 9),
+    ('Bryant', 'Ethan', 'étudiant', 'ethan.bryant', 'qwertyuiop12345678', 9),
+    ('Reyes', 'Isabella', 'étudiant', 'isabella.reyes', '123456789012345678', 9),
+    ('Russell', 'Olivia', 'étudiant', 'olivia.russell', 'letmein12345678901', 9);
 
     -- Campus Lille
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -144,11 +145,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Martin', 'Lucie', 'Pilote', 'lucie.lille', 'DijonEduPass', 10),
     ('Dubois', 'Thomas', 'Pilote', 'thomas.lille', 'TutorDijon123', 10),
 -- Etudiants
-    ('Griffin', 'Logan', 'étudiant', 'logan.griffin', 'password123456789012', '10'),
-    ('Shaw', 'Mia', 'étudiant', 'mia.shaw', 'abcdef123456789012', '10'),
-    ('Gordon', 'Liam', 'étudiant', 'liam.gordon', 'qwertyuiop123456789', '10'),
-    ('Holmes', 'Avery', 'étudiant', 'avery.holmes', '1234567890123456789', '10'),
-    ('Tucker', 'Harper', 'étudiant', 'harper.tucker', 'letmein123456789012', '10');
+    ('Griffin', 'Logan', 'étudiant', 'logan.griffin', 'password123456789012', 10),
+    ('Shaw', 'Mia', 'étudiant', 'mia.shaw', 'abcdef123456789012', 10),
+    ('Gordon', 'Liam', 'étudiant', 'liam.gordon', 'qwertyuiop123456789', 10),
+    ('Holmes', 'Avery', 'étudiant', 'avery.holmes', '1234567890123456789', 10),
+    ('Tucker', 'Harper', 'étudiant', 'harper.tucker', 'letmein123456789012', 10);
 
     --Campus Le Mans
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -156,11 +157,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Martin', 'Sophie', 'Pilote', 'sophie.lemans', 'TutorPass123', 11),
     ('Leroy', 'Camille', 'Pilote', 'camille.lemans', 'SeaSkills456', 11),
 -- Etudiants
-    ('Sims', 'Noah', 'étudiant', 'noah.sims', 'password1234567890123', '11'),
-    ('Matthews', 'Sophia', 'étudiant', 'sophia.matthews', 'abcdef1234567890123', '11'),
-    ('Owens', 'Ethan', 'étudiant', 'ethan.owens', 'qwertyuiop1234567890', '11'),
-    ('Cunningham', 'Isabella', 'étudiant', 'isabella.cunningham', '12345678901234567890', '11'),
-    ('Salazar', 'Olivia', 'étudiant', 'olivia.salazar', 'letmein1234567890123', '11');
+    ('Sims', 'Noah', 'étudiant', 'noah.sims', 'password1234567890123', 11),
+    ('Matthews', 'Sophia', 'étudiant', 'sophia.matthews', 'abcdef1234567890123', 11),
+    ('Owens', 'Ethan', 'étudiant', 'ethan.owens', 'qwertyuiop1234567890', 11),
+    ('Cunningham', 'Isabella', 'étudiant', 'isabella.cunningham', '12345678901234567890', 11),
+    ('Salazar', 'Olivia', 'étudiant', 'olivia.salazar', 'letmein1234567890123', 11);
 
     -- Campus Lyon
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -168,11 +169,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Rousseau', 'Éléonore', 'Pilote', 'eleonore.lyon', 'PilotWave2024', 12),
     ('Dupont', 'Alexandre', 'Pilote', 'alex.lyon', 'LearnStras21', 12),
 -- Etudiants
-    ('Dixon', 'Logan', 'étudiant', 'logan.dixon', 'password12345678901234', '12'),
-    ('Schmidt', 'Mia', 'étudiant', 'mia.schmidt', 'abcdef12345678901234', '12'),
-    ('Vasquez', 'Liam', 'étudiant', 'liam.vasquez', 'qwertyuiop12345678901', '12'),
-    ('Walters', 'Avery', 'étudiant', 'avery.walters', '123456789012345678901', '12'),
-    ('Hubbard', 'Harper', 'étudiant', 'harper.hubbard', 'letmein12345678901234', '12');
+    ('Dixon', 'Logan', 'étudiant', 'logan.dixon', 'password12345678901234', 12),
+    ('Schmidt', 'Mia', 'étudiant', 'mia.schmidt', 'abcdef12345678901234', 12),
+    ('Vasquez', 'Liam', 'étudiant', 'liam.vasquez', 'qwertyuiop12345678901', 12),
+    ('Walters', 'Avery', 'étudiant', 'avery.walters', '123456789012345678901', 12),
+    ('Hubbard', 'Harper', 'étudiant', 'harper.hubbard', 'letmein12345678901234', 12);
 
     -- Campus Montpellier
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -180,11 +181,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Lefebvre', 'Antoine', 'Pilote', 'antoine.lefebvre', 'EduConnect2024', 13),
     ('Martin', 'Sophie', 'Pilote', 'sophie.martin', 'TutorPass123', 13),
 -- Etudiants
-    ('Ortega', 'Noah', 'étudiant', 'noah.ortega', 'password123456789012345', '13'),
-    ('Conner', 'Sophia', 'étudiant', 'sophia.conner', 'abcdef123456789012345', '13'),
-    ('Gardner', 'Ethan', 'étudiant', 'ethan.gardner', 'qwertyuiop123456789012', '13'),
-    ('Stephens', 'Isabella', 'étudiant', 'isabella.stephens', '1234567890123456789012', '13'),
-    ('Mendoza', 'Olivia', 'étudiant', 'olivia.mendoza', 'letmein123456789012345', '13');
+    ('Ortega', 'Noah', 'étudiant', 'noah.ortega', 'password123456789012345', 13),
+    ('Conner', 'Sophia', 'étudiant', 'sophia.conner', 'abcdef123456789012345', 13),
+    ('Gardner', 'Ethan', 'étudiant', 'ethan.gardner', 'qwertyuiop123456789012', 13),
+    ('Stephens', 'Isabella', 'étudiant', 'isabella.stephens', '1234567890123456789012', 13),
+    ('Mendoza', 'Olivia', 'étudiant', 'olivia.mendoza', 'letmein123456789012345', 13);
 
     -- Campus Nancy
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -192,11 +193,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Dubois', 'Pierre', 'Pilote', 'pierre.dubois', 'BordeauxTutor', 14),
     ('Moreau', 'Léa', 'Pilote', 'lea.moreau', 'LearnBordeaux', 14),
 -- Etudiants
-    ('Waters', 'Logan', 'étudiant', 'logan.waters', 'password1234567890123456', '14'),
-    ('Brewer', 'Mia', 'étudiant', 'mia.brewer', 'abcdef1234567890123456', '14'),
-    ('Wilkerson', 'Liam', 'étudiant', 'liam.wilkerson', 'qwertyuiop1234567890123', '14'),
-    ('Nicholson', 'Avery', 'étudiant', 'avery.nicholson', '12345678901234567890123', '14'),
-    ('Underwood', 'Harper', 'étudiant', 'harper.underwood', 'letmein1234567890123456', '14');
+    ('Waters', 'Logan', 'étudiant', 'logan.waters', 'password1234567890123456', 14),
+    ('Brewer', 'Mia', 'étudiant', 'mia.brewer', 'abcdef1234567890123456', 14),
+    ('Wilkerson', 'Liam', 'étudiant', 'liam.wilkerson', 'qwertyuiop1234567890123', 14),
+    ('Nicholson', 'Avery', 'étudiant', 'avery.nicholson', '12345678901234567890123', 14),
+    ('Underwood', 'Harper', 'étudiant', 'harper.underwood', 'letmein1234567890123456', 14);
 
     -- Campus Nantes
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -204,11 +205,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Leclerc', 'Louis', 'Pilote', 'louis.leclerc', 'BrestEdu2024', 15),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.roussel', 'TutorWave', 15),
 -- Etudiants
-    ('Short', 'Noah', 'étudiant', 'noah.short', 'password12345678901234567', '15'),
-    ('Carson', 'Sophia', 'étudiant', 'sophia.carson', 'abcdef12345678901234567', '15'),
-    ('Hoover', 'Ethan', 'étudiant', 'ethan.hoover', 'qwertyuiop12345678901234', '15'),
-    ('Mccoy', 'Isabella', 'étudiant', 'isabella.mccoy', '123456789012345678901234', '15'),
-    ('Hess', 'Olivia', 'étudiant', 'olivia.hess', 'letmein12345678901234567', '15');
+    ('Short', 'Noah', 'étudiant', 'noah.short', 'password12345678901234567', 15),
+    ('Carson', 'Sophia', 'étudiant', 'sophia.carson', 'abcdef12345678901234567', 15),
+    ('Hoover', 'Ethan', 'étudiant', 'ethan.hoover', 'qwertyuiop12345678901234', 15),
+    ('Mccoy', 'Isabella', 'étudiant', 'isabella.mccoy', '123456789012345678901234', 15),
+    ('Hess', 'Olivia', 'étudiant', 'olivia.hess', 'letmein12345678901234567', 15);
 
     -- Campus Nice
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -216,11 +217,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Dupuis', 'Hugo', 'Pilote', 'hugo.dupuis', 'NiceTutoring', 16),
     ('Lambert', 'Manon', 'Pilote', 'manon.lambert', 'LearnNice21', 16),
 -- Etudiants
-    ('Bentley', 'Logan', 'étudiant', 'logan.bentley', 'password123456789012345678', '16'),
-    ('Hardy', 'Mia', 'étudiant', 'mia.hardy', 'abcdef123456789012345678', '16'),
-    ('Landry', 'Liam', 'étudiant', 'liam.landry', 'qwertyuiop123456789012345', '16'),
-    ('Brennan', 'Avery', 'étudiant', 'avery.brennan', '1234567890123456789012345', '16'),
-    ('Watkins', 'Harper', 'étudiant', 'harper.watkins', 'letmein123456789012345678', '16'),:
+    ('Bentley', 'Logan', 'étudiant', 'logan.bentley', 'password123456789012345678', 16),
+    ('Hardy', 'Mia', 'étudiant', 'mia.hardy', 'abcdef123456789012345678', 16),
+    ('Landry', 'Liam', 'étudiant', 'liam.landry', 'qwertyuiop123456789012345', 16),
+    ('Brennan', 'Avery', 'étudiant', 'avery.brennan', '1234567890123456789012345', 16),
+    ('Watkins', 'Harper', 'étudiant', 'harper.watkins', 'letmein123456789012345678', 16),:
 
     -- Campus Orléans
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -228,11 +229,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Martin', 'Lucie', 'Pilote', 'lucie.martin', 'DijonEduPass', 17),
     ('Dubois', 'Thomas', 'Pilote', 'thomas.dubois', 'TutorDijon123', 17),
 -- Etudiants
-    ('Mcintosh', 'Noah', 'étudiant', 'noah.mcintosh', 'password1234567890123456789', '17'),
-('Ho', 'Sophia', 'étudiant', 'sophia.ho', 'abcdef1234567890123456789', '17'),
-('Guzman', 'Ethan', 'étudiant', 'ethan.guzman', 'qwertyuiop123456789012345', '17'),
-('Faulkner', 'Isabella', 'étudiant', 'isabella.faulkner', '12345678901234567890123456', '17'),
-('Patton', 'Olivia', 'étudiant', 'olivia.patton', 'letmein1234567890123456789', '17');
+    ('Mcintosh', 'Noah', 'étudiant', 'noah.mcintosh', 'password1234567890123456789', 17),
+('Ho', 'Sophia', 'étudiant', 'sophia.ho', 'abcdef1234567890123456789', 17),
+('Guzman', 'Ethan', 'étudiant', 'ethan.guzman', 'qwertyuiop123456789012345', 17),
+('Faulkner', 'Isabella', 'étudiant', 'isabella.faulkner', '12345678901234567890123456', 17),
+('Patton', 'Olivia', 'étudiant', 'olivia.patton', 'letmein1234567890123456789', 17);
 
     -- Campus Paris La Défense
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -240,11 +241,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Martin', 'Sophie', 'Pilote', 'sophie.paris', 'TutorPass123', 18),
     ('Leroy', 'Camille', 'Pilote', 'camille.paris', 'SeaSkills456', 18),
 -- Etudiants
-    ('Brown', 'Logan', 'étudiant', 'logan.brown', 'password12345678901234567890', '18'),
-    ('Lloyd', 'Mia', 'étudiant', 'mia.lloyd', 'abcdef12345678901234567890', '18'),
-    ('Marsh', 'Liam', 'étudiant', 'liam.marsh', 'qwertyuiop1234567890123456', '18'),
-    ('Maynard', 'Avery', 'étudiant', 'avery.maynard', '123456789012345678901234567', '18'),
-    ('Kemp', 'Harper', 'étudiant', 'harper.kemp', 'letmein12345678901234567890', '18');
+    ('Brown', 'Logan', 'étudiant', 'logan.brown', 'password12345678901234567890', 18),
+    ('Lloyd', 'Mia', 'étudiant', 'mia.lloyd', 'abcdef12345678901234567890', 18),
+    ('Marsh', 'Liam', 'étudiant', 'liam.marsh', 'qwertyuiop1234567890123456', 18),
+    ('Maynard', 'Avery', 'étudiant', 'avery.maynard', '123456789012345678901234567', 18),
+    ('Kemp', 'Harper', 'étudiant', 'harper.kemp', 'letmein12345678901234567890', 18);
 
     -- Campus Paris Nanterre
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -252,11 +253,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Rousseau', 'Éléonore', 'Pilote', 'eleonore.paris', 'PilotWave2024', 19),
     ('Dupont', 'Alexandre', 'Pilote', 'alex.paris', 'LearnStras21', 19),
 -- Etudiants
-    ('Curtis', 'Noah', 'étudiant', 'noah.curtis', 'password123456789012345678901', '19'),
-    ('Gross', 'Sophia', 'étudiant', 'sophia.gross', 'abcdef123456789012345678901', '19'),
-    ('Navarro', 'Ethan', 'étudiant', 'ethan.navarro', 'qwertyuiop12345678901234567', '19'),
-    ('Caldwell', 'Isabella', 'étudiant', 'isabella.caldwell', '1234567890123456789012345678', '19'),
-    ('Noble', 'Olivia', 'étudiant', 'olivia.noble', 'letmein123456789012345678901', '19');
+    ('Curtis', 'Noah', 'étudiant', 'noah.curtis', 'password123456789012345678901', 19),
+    ('Gross', 'Sophia', 'étudiant', 'sophia.gross', 'abcdef123456789012345678901', 19),
+    ('Navarro', 'Ethan', 'étudiant', 'ethan.navarro', 'qwertyuiop12345678901234567', 19),
+    ('Caldwell', 'Isabella', 'étudiant', 'isabella.caldwell', '1234567890123456789012345678', 19),
+    ('Noble', 'Olivia', 'étudiant', 'olivia.noble', 'letmein123456789012345678901', 19);
 
     -- Campus Pau
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -264,11 +265,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Dupuis', 'Marie', 'Pilote', 'marie.pau', 'CodeHelp2024', 20),
     ('Lambert', 'Théo', 'Pilote', 'theo.pau', 'TutorTech21', 20),
 -- Etudiants
-    ('Holland', 'Logan', 'étudiant', 'logan.holland', 'password1234567890123456789012', '20'),
-    ('Hardin', 'Mia', 'étudiant', 'mia.hardin', 'abcdef1234567890123456789012', '20'),
-    ('Wiley', 'Liam', 'étudiant', 'liam.wiley', 'qwertyuiop123456789012345678', '20'),
-    ('Britt', 'Avery', 'étudiant', 'avery.britt', '12345678901234567890123456789', '20'),
-    ('Armstrong', 'Harper', 'étudiant', 'harper.armstrong', 'letmein1234567890123456789012', '20');
+    ('Holland', 'Logan', 'étudiant', 'logan.holland', 'password1234567890123456789012', 20),
+    ('Hardin', 'Mia', 'étudiant', 'mia.hardin', 'abcdef1234567890123456789012', 20),
+    ('Wiley', 'Liam', 'étudiant', 'liam.wiley', 'qwertyuiop123456789012345678', 20),
+    ('Britt', 'Avery', 'étudiant', 'avery.britt', '12345678901234567890123456789', 20),
+    ('Armstrong', 'Harper', 'étudiant', 'harper.armstrong', 'letmein1234567890123456789012', 20);
 
     -- Campus Reins
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -276,11 +277,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Leclerc', 'Louis', 'Pilote', 'louis.leclerc', 'BrestEdu2024', 21),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.roussel', 'TutorWave', 21),
 -- Etudiants
-    ('Sawyer', 'Noah', 'étudiant', 'noah.sawyer', 'password12345678901234567890123', '21'),
-    ('Whitley', 'Sophia', 'étudiant', 'sophia.whitley', 'abcdef12345678901234567890123', '21'),
-    ('Hanna', 'Ethan', 'étudiant', 'ethan.hanna', 'qwertyuiop1234567890123456789', '21'),
-    ('Mcclain', 'Isabella', 'étudiant', 'isabella.mcclain', '123456789012345678901234567890', '21'),
-    ('Higgins', 'Olivia', 'étudiant', 'olivia.higgins', 'letmein12345678901234567890123', '21');
+    ('Sawyer', 'Noah', 'étudiant', 'noah.sawyer', 'password12345678901234567890123', 21),
+    ('Whitley', 'Sophia', 'étudiant', 'sophia.whitley', 'abcdef12345678901234567890123', 21),
+    ('Hanna', 'Ethan', 'étudiant', 'ethan.hanna', 'qwertyuiop1234567890123456789', 21),
+    ('Mcclain', 'Isabella', 'étudiant', 'isabella.mcclain', '123456789012345678901234567890', 21),
+    ('Higgins', 'Olivia', 'étudiant', 'olivia.higgins', 'letmein12345678901234567890123', 21);
 
     -- Campus Rouen
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -288,11 +289,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Dupuis', 'Hugo', 'Pilote', 'hugo.dupuis', 'CaenTutoring', 22),
     ('Lambert', 'Manon', 'Pilote', 'manon.lambert', 'LearnCaen21', 22),
 -- Etudiants
-    ('Floyd', 'Logan', 'étudiant', 'logan.floyd', 'password123456789012345678901234', '22'),
-    ('Hood', 'Mia', 'étudiant', 'mia.hood', 'abcdef123456789012345678901234', '22'),
-    ('Diaz', 'Liam', 'étudiant', 'liam.diaz', 'qwertyuiop1234567890123456789', '22'),
-    ('Preston', 'Avery', 'étudiant', 'avery.preston', '123456789012345678901234567890', '22'),
-    ('Blanchard', 'Harper', 'étudiant', 'harper.blanchard', 'letmein123456789012345678901234', '22');
+    ('Floyd', 'Logan', 'étudiant', 'logan.floyd', 'password123456789012345678901234', 22),
+    ('Hood', 'Mia', 'étudiant', 'mia.hood', 'abcdef123456789012345678901234', 22),
+    ('Diaz', 'Liam', 'étudiant', 'liam.diaz', 'qwertyuiop1234567890123456789', 22),
+    ('Preston', 'Avery', 'étudiant', 'avery.preston', '123456789012345678901234567890', 22),
+    ('Blanchard', 'Harper', 'étudiant', 'harper.blanchard', 'letmein123456789012345678901234', 22);
 
     -- Campus Saint-Nazaire
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -300,11 +301,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Leclerc', 'Louis', 'Pilote', 'louis.saintnazaire', 'BrestEdu2024', 23),
     ('Roussel', 'Juliette', 'Pilote', 'juliette.saintnazaire', 'TutorWave', 23),
 -- Etudiants
-    ('Haley', 'Noah', 'étudiant', 'noah.haley', 'password1234567890123456789012345', '23'),
-    ('Daugherty', 'Sophia', 'étudiant', 'sophia.daugherty', 'abcdef1234567890123456789012345', '23'),
-    ('Odom', 'Ethan', 'étudiant', 'ethan.odom', 'qwertyuiop12345678901234567890', '23'),
-    ('Pittman', 'Isabella', 'étudiant', 'isabella.pittman', '1234567890123456789012345678901', '23'),
-    ('Wall', 'Olivia', 'étudiant', 'olivia.wall', 'letmein1234567890123456789012345', '23');
+    ('Haley', 'Noah', 'étudiant', 'noah.haley', 'password1234567890123456789012345', 23),
+    ('Daugherty', 'Sophia', 'étudiant', 'sophia.daugherty', 'abcdef1234567890123456789012345', 23),
+    ('Odom', 'Ethan', 'étudiant', 'ethan.odom', 'qwertyuiop12345678901234567890', 23),
+    ('Pittman', 'Isabella', 'étudiant', 'isabella.pittman', '1234567890123456789012345678901', 23),
+    ('Wall', 'Olivia', 'étudiant', 'olivia.wall', 'letmein1234567890123456789012345', 23);
 
     -- Campus Strasbourg
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -312,11 +313,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Martin', 'Lucie', 'Pilote', 'lucie.strasbourg', 'DijonEduPass', 24),
     ('Dubois', 'Thomas', 'Pilote', 'thomas.strasbourg', 'TutorDijon123', 24),
 -- Etudiants
-    ('Dickerson', 'Logan', 'étudiant', 'logan.dickerson', 'password12345678901234567890123456', '24'),
-    ('Leach', 'Mia', 'étudiant', 'mia.leach', 'abcdef12345678901234567890123456', '24'),
-    ('Skinner', 'Liam', 'étudiant', 'liam.skinner', 'qwertyuiop123456789012345678901', '24'),
-    ('Hendricks', 'Avery', 'étudiant', 'avery.hendricks', '12345678901234567890123456789012', '24'),
-    ('Hooper', 'Harper', 'étudiant', 'harper.hooper', 'letmein12345678901234567890123456', '24');
+    ('Dickerson', 'Logan', 'étudiant', 'logan.dickerson', 'password12345678901234567890123456', 24),
+    ('Leach', 'Mia', 'étudiant', 'mia.leach', 'abcdef12345678901234567890123456', 24),
+    ('Skinner', 'Liam', 'étudiant', 'liam.skinner', 'qwertyuiop123456789012345678901', 24),
+    ('Hendricks', 'Avery', 'étudiant', 'avery.hendricks', '12345678901234567890123456789012', 24),
+    ('Hooper', 'Harper', 'étudiant', 'harper.hooper', 'letmein12345678901234567890123456', 24);
 
     -- Campus Toulouse
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
@@ -324,11 +325,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Martin', 'Sophie', 'Pilote', 'sophie.toulouse', 'TutorPass123', 25),
     ('Leroy', 'Camille', 'Pilote', 'camille.toulouse', 'SeaSkills456', 25),
 -- Etudiants
-    ('Gill', 'Noah', 'étudiant', 'noah.gill', 'password123456789012345678901234567', '25'),
-    ('Combs', 'Sophia', 'étudiant', 'sophia.combs', 'abcdef123456789012345678901234567', '25'),
-    ('Valencia', 'Ethan', 'étudiant', 'ethan.valencia', 'qwertyuiop1234567890123456789012', '25'),
-    ('House', 'Isabella', 'étudiant', 'isabella.house', '123456789012345678901234567890123', '25'),
-    ('Burnett', 'Olivia', 'étudiant', 'olivia.burnett', 'letmein123456789012345678901234567', '25');
+    ('Gill', 'Noah', 'étudiant', 'noah.gill', 'password123456789012345678901234567', 25),
+    ('Combs', 'Sophia', 'étudiant', 'sophia.combs', 'abcdef123456789012345678901234567', 25),
+    ('Valencia', 'Ethan', 'étudiant', 'ethan.valencia', 'qwertyuiop1234567890123456789012', 25),
+    ('House', 'Isabella', 'étudiant', 'isabella.house', '123456789012345678901234567890123', 25),
+    ('Burnett', 'Olivia', 'étudiant', 'olivia.burnett', 'letmein123456789012345678901234567', 25);
 
 -- Peuplement de la table Classes
 INSERT INTO Classes (className) VALUES
