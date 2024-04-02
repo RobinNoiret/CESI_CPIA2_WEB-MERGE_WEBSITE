@@ -6,15 +6,16 @@
 
     if ($page == 'home'){
         $smarty->assign('title', 'Merge-home');
-        $smarty->assign('user', $user);
         $smarty->assign('studentsNumber',$nbStudent);
         $smarty->assign('companiesNumber',$nbCompany);
         $smarty->assign('pilotesNumber',$nbPilote);
     }
     elseif ($page == 'connexion'){
         $smarty->assign('title', 'Merge-connexion');
-
+        
     }
+    $user = $this->whatIsConnect();
+    $smarty->assign('user', $user);
     $smarty->assign('source', $this->sourcePath);
     $smarty->assign('page', $page);
     $smarty->assign('connecAction', $this->actionLinkToConnect());

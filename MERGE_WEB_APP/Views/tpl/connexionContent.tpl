@@ -2,7 +2,7 @@
 
 <h1 class="login-text">Connexion</h1>
 
-<form class="login-form">
+<form class="login-form" action="{$source}?page=connexion" method="post">
     <fieldset class="fieldset-group">
 
         <div class="form-group">

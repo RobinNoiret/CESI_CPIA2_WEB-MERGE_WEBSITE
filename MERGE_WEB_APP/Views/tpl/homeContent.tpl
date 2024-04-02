@@ -93,6 +93,7 @@
 
                 <a class="CTA_secondaire" href="#">Découvrir les évènements</a>
             </div>
+            <img class="article-picture-responsive" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png">
         </article>
 
         <article class="articles-pict_right">

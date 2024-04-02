@@ -7,12 +7,12 @@
             <img id="nav-logo" class="nav-logo" src="Views/Assets/logo avec texte.png">
         </a>
 
-        <ul class="nav-links">
+        <ul {if $user eq 'Admin' || $user eq 'Pilote'}class="nav-links-big"{else}class="nav-links-small"{/if}>
                         <li><a href="{$source}">Accueil</a></li>
                         <li><a href="#.html">Trouver un stage</a></li>
                         <li><a href="#.html">Trouver une entreprise</a></li>
-            {if $user eq 'admin'}
-                {if $user neq 'pilote'}
+            {if $user eq 'Admin'}
+                {if $user neq 'Pilote'}
                         <li><a href="#.html">Trouver un pilote</a></li>
                 {/if}
                         <li><a href="#.html">Trouver un étudiant</a></li>

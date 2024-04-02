@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-03-29 17:38:40
+/* Smarty version 3.1.36, created on 2024-03-30 15:22:05
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6606ee90c3e9b4_91741917',
+  'unifunc' => 'content_6608200dbcabb7_24880245',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdb50ddc8672c40abf88474b37bb8950562c621a' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\homeContent.tpl',
-      1 => 1711730319,
+      1 => 1711808374,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6606ee90c3e9b4_91741917 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6608200dbcabb7_24880245 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="landing">
 
     <!-- ___________________________________________ Image de fond ___________________________________________ -->
@@ -119,6 +119,7 @@ function content_6606ee90c3e9b4_91741917 (Smarty_Internal_Template $_smarty_tpl)
 
                 <a class="CTA_secondaire" href="#">Découvrir les évènements</a>
             </div>
+            <img class="article-picture-responsive" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png">
         </article>
 
         <article class="articles-pict_right">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-03-27 18:22:17
+/* Smarty version 3.1.36, created on 2024-03-31 17:52:34
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\connexionContent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660455c9bbf564_45491890',
+  'unifunc' => 'content_660986c250f204_52730918',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0a322d9539dab354b04219c6ed825b405243fee5' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\connexionContent.tpl',
-      1 => 1711557335,
+      1 => 1711900125,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660455c9bbf564_45491890 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660986c250f204_52730918 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="login-div">
 
 <h1 class="login-text">Connexion</h1>
 
-<form class="login-form">
+<form class="login-form" action="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
+?page=connexion" method="post">
     <fieldset class="fieldset-group">
 
         <div class="form-group">
