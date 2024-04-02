@@ -51,12 +51,24 @@ html
 body
 {
     width: auto;
-    height: auto;
+    height: 100%;
 
     margin: 0;
     padding: 0;
 
+    display: flex;
+    flex-direction: column;
+
 	background-color: var(--blanc-fixe);
+}
+
+header, footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.Content {
+    flex-grow: 1;
 }
 
 /*_______CTA_______*/

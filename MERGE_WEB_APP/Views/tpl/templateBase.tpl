@@ -19,12 +19,13 @@
     {block name=body}
 
         {include "../tpl/header.tpl"}
-
-        {if $page eq 'home'}
-            {include "../tpl/homeContent.tpl"}
-        {elseif  $page eq 'connexion'}
-            {include "../tpl/connexionContent.tpl"}
-        {/if}
+        <div class="Content">
+            {if $page eq 'home'}
+                {include "../tpl/homeContent.tpl"}
+            {elseif  $page eq 'connexion'}
+                {include "../tpl/connexionContent.tpl"}
+            {/if}
+        </div>
 
         {include "../tpl/footer.tpl"}
 

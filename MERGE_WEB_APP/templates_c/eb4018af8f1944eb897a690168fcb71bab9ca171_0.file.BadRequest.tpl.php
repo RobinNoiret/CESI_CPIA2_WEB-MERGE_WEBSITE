@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-02 18:49:30
+/* Smarty version 3.1.36, created on 2024-04-02 22:28:16
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\errors\BadRequest.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660c371ae733f7_64007906',
+  'unifunc' => 'content_660c6a60994946_84868619',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660c371ae733f7_64007906 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660c6a60994946_84868619 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>

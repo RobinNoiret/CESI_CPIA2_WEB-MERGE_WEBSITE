@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-02 18:49:01
+/* Smarty version 3.1.36, created on 2024-04-02 22:28:24
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\connexionContent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660c36fd586d17_72426597',
+  'unifunc' => 'content_660c6a68b45471_02593578',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660c36fd586d17_72426597 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660c6a68b45471_02593578 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h1 class="form-text">Connexion</h1>
 <div class="form-div">
 
