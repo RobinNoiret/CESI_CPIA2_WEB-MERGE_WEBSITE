@@ -14,6 +14,15 @@
         $smarty->assign('title', 'Merge-connexion');
         
     }
+    elseif ($page == 'internship'){
+        if (isset($title)){
+            $smarty->assign('title',$title);
+        }
+        else {
+            $smarty->assign('title','Merge-stages');
+        }
+        
+    }
     $user = $this->whatIsConnect();
     $smarty->assign('user', $user);
     $smarty->assign('source', $this->sourcePath);

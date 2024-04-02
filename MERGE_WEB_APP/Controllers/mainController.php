@@ -73,8 +73,65 @@
 
 
         public function internshipController(){
-            // Verify user's connexion
-            $this->isConnect();
+            if ($this->whatIsConnect() != 'none'){              // Verify user's connexion
+                $page = 'internship';
+
+                include_once 'Models/internshipModel.php';
+                $internshipModel = new internshipModel($this->sourcePath);
+
+                if (isset($_GET['action'])){
+                    if ($_GET['action'] == 'display'){
+                        $contenu = $internshipModel->selectAll();
+                        include 'Views/mainView.php';
+                    }
+                    elseif ($_GET['action'] == 'displayOne'){
+                        $contenu = $internshipModel->select($_GET['id']);
+                        $title = 'Merge-stage'; // put the name of the stage
+                        include 'Views/mainView.php';
+                    }
+                    elseif ($_GET['action'] == 'displayCriters'){
+                        $contenu = $internshipModel->selectSeveral(/*ensemble de paramètre à définir*/);
+                        include 'Views/mainView.php';
+                    }
+                    else{
+                        if ($this->whatIsConnect() == ('Pilote' or 'Admin')){
+                            if ($_GET['action'] == 'add'){
+                                $title = 'Merge-stage-nouveau'; // put the name of the stage
+                                // Make the insert with model
+                                // Signal the correct change
+                                // Display the mainView
+                            }
+                            elseif ($_GET['action'] == 'change'){
+                                // Ask the confirmation to update data
+                                $title = 'Merge-modification'; // put the name of the stage
+                                // Make the update with model
+                                // Signal the correct change
+                                // Display the mainView
+                            }
+                            elseif ($_GET['action'] == 'delete'){
+                                // Ask the confirmation to delete
+                                // Make the delete with model
+                                $internshipModel->delete($_GET['id']);
+                                // Signal the correct change
+                                // Display the mainView
+                            }
+                            else {
+                                $this->errorsController(404);
+                            }
+                        }
+                        else {
+                            $this->errorsController(404);
+                        }                       
+                    }                  
+                }
+                else {
+                    $contenu = $internshipModel->selectAll();
+                    include 'Views/mainView.php';
+                }
+            }
+            else{
+                header('Location: '.$this->sourcePath.'?page=connexion');
+            }
 
             // Test "action" criteria to know if you want to create, display, update, delete
                 //update and delete need an ID
