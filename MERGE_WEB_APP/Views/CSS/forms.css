@@ -1,129 +1,21 @@
 /*___________________________________________________________________________________________________________________________*/
 /*                                                          forms.css                                                        */
 /*___________________________________________________________________________________________________________________________*/
-
-
 .landing
 {
-    width: 100%;
+    width: auto;
 }
-
-/*___________________________________________________________________________________________________________________________*/
-/*                                                    Page de connexion                                                      */
-/*___________________________________________________________________________________________________________________________*/
-/* Source : Commit sur le main de Brieuc*/
-
-.login-div {
-    text-align: center;
-    margin-bottom: 80px;
-}
- 
-.login-text {
-    color: #FF7D00;
-    font-size: 3rem;
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
- 
-.login-form {
-    width: 520px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--gris-clair);
-    border-radius: 20px;
-}
- 
-.fieldset-group {
-    border-style: none;
-    padding: 30px 20px 15px;
-}
- 
-.form-group {
-    color: var(--noir-fixe);
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Pour aligner les éléments à gauche */
-    margin: 25px;
-    position: relative;
-}
- 
-.form-group:first-child {
-    margin-bottom: 45px; /* Ajoute de l'espace en dessous du premier élément */
-}
- 
-.form-field-usr, .form-field-pwd {
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid var(--noir-fixe);
-    outline: 0;
-    font-size: 1rem;
-    color: var(--noir-fixe);
-    padding: 7px 0;
-    background: transparent;
-    transition: border-color 0.2s;
- 
-    &::placeholder {
-      color: transparent;
-    }
-  }
- 
-  .form-label-usr {
-    position: relative;
-    display: block;
-    font-size: 1rem;
-    color: var(--noir-fixe);
-  }
-  .form-label-pwd {
-    position: relative;
-    display: block;
-    font-size: 1rem;
-    color: var(--noir-fixe);
-  }
- 
-  .form-field-usr:focus {
-    padding-bottom: 6px;
-    border-width: 3px;
-    border-image-slice: 1;
-    border-color: var(--gradient-color1);
- 
-    &::placeholder {
-        color: var(--noir-fixe);
-        opacity: 0.3;
-       
-      }
-  }
-  .form-field-pwd:focus {
-    padding-bottom: 6px;
-    border-width: 3px;
-    border-image-slice: 1;
-    border-color: var(--gradient-color1);
- 
-    &::placeholder {
-        color: var(--noir-fixe);
-        opacity: 0.3;
-       
-      }
-  }
- 
-  /* reset input */
-  .form-field-usr, .form-field-pwd{
-    &:required,&:invalid { box-shadow:none; }
-  }
-
 
 /*___________________________________________________________________________________________________________________________*/
 /*                                                    Page d'inscription                                                     */
 /*___________________________________________________________________________________________________________________________*/
-/*Source : Robin css de la page d'inscription*/
-
-.signup-div {
+.form-div {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .signup-form
+  .div-form
   {
     display: flex;
     justify-content: center;
@@ -131,7 +23,7 @@
     width: 30%;
   }
 
-  .signup-text
+  .form-text
   {
     text-align: center;
   }
@@ -145,7 +37,7 @@
 
     padding: 10%;
     padding-bottom: 5%;
-    width: 130%;
+    width: 70%;
 
 
     display: inline;
@@ -166,20 +58,19 @@
 }
 
 /*___________ Input du formulaire ___________*/
-input[type="text"], input[type="number"] {
-    display: block;
-    margin-bottom: 5px;
-    width: 96%;
-    border-style: none;
-    border-bottom: 1px solid black;
-    transition: border-bottom-color 0.3s;
+.Form_input {
+  display: block;
+  margin-bottom: 5px;
+  width: 96%;
+  border-style: none;
+  border-bottom: 1px solid black;
+  transition: border-bottom-color 0.3s;
 }
 
-input[type="text"]:focus, input[type="number"]:focus {
-    outline: none;
-    border-width: 2px;
-    border-bottom-color: var(--orange-action);
-    
+.Form_input:focus {
+  outline: none;
+  border-width: 2px;
+  border-bottom-color: var(--orange-action);
 }
 
 /*____________ H3 du formulaire ____________*/
