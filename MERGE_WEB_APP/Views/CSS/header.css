@@ -45,13 +45,13 @@ header
     padding-left: 0; 
 }
 
-ul nav a
+nav ul a
 {
     color: var(--noir-fixe);
     text-decoration: none;
 }
 
-ul nav a:hover
+nav ul a:hover
 {
     color: var(--orange-action);
 }
