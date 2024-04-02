@@ -13,7 +13,7 @@ footer {
     /*position: absolute;*/
     /*bottom: 0;*/
 
-    padding: 20px 0; /* Espacement intérieur */
+    padding: 1.25rem 0; /* Espacement intérieur */
     margin-top: 7%;
     text-align: center; /* Alignement du contenu */
     color: #333; /* Couleur du texte */
@@ -23,7 +23,7 @@ footer {
     display: flex; /* Affichage en ligne des éléments */
     align-items: center; /* Alignement vertical au centre */
     justify-content: center; /* Centrage horizontal */
-    margin-bottom: 20px; /* Marge inférieure */
+    margin-bottom: 1.25rem; /* Marge inférieure */
 }
 
 /* Style des liens */
@@ -37,10 +37,10 @@ footer {
 .footer-link {
     text-decoration: none;
     color: #666;
-    margin: 0 15px;
+    margin: 0 0.9rem;
     transition: color 0.3s ease;
-    font-size: 16px;
-    padding-right: 15px; /* Ajouter un espacement à droite pour l'espace du trait */
+    font-size: 1rem;
+    padding-right: 0.9rem; /* Ajouter un espacement à droite pour l'espace du trait */
 }
 
 .footer-link:hover {
@@ -49,14 +49,14 @@ footer {
 
 /* Style du texte de copyright */
 .footer-text {
-    font-size: 14px; 
-    margin-top: 20px; 
+    font-size: 0.9rem; 
+    margin-top: 1.25rem; 
     color: #777; 
     margin-bottom: 0;
     font-style: italic;
 }
 
 .logo img {
-    width: 150px;
+    width: 8rem;
     height: auto;
 }

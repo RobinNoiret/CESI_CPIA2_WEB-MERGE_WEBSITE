@@ -1,4 +1,27 @@
-<div class="landing">
+<?php
+/* Smarty version 3.1.36, created on 2024-04-02 13:45:38
+  from 'C:\Users\Noiret\Documents\4 - Projets\4.2 - Etudes\4 - Développement WEB\Site\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.36',
+  'unifunc' => 'content_660befe2bca482_03245594',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '5e1e88f49473158a1bc8e71612e92745db3f54bd' => 
+    array (
+      0 => 'C:\\Users\\Noiret\\Documents\\4 - Projets\\4.2 - Etudes\\4 - Développement WEB\\Site\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\homeContent.tpl',
+      1 => 1712058168,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_660befe2bca482_03245594 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="landing">
 
     <!-- ___________________________________________ Image de fond ___________________________________________ -->
 
@@ -10,17 +33,20 @@
 
     <div class="landing-stats">
         <div class="stats-block" id="stats-students">
-            <div class="stats-number">{$studentsNumber}</div>
+            <div class="stats-number"><?php echo $_smarty_tpl->tpl_vars['studentsNumber']->value;?>
+</div>
             <div class="stats-text">Etudiants</div>
         </div>
 
         <div class="stats-block" id="stats-companies">
-            <div class="stats-number">{$companiesNumber}</div>
+            <div class="stats-number"><?php echo $_smarty_tpl->tpl_vars['companiesNumber']->value;?>
+</div>
             <div class="stats-text">Entreprises</div>
         </div>
 
         <div class="stats-block" id="stats-pilotes">
-            <div class="stats-number">{$pilotesNumber}</div>
+            <div class="stats-number"><?php echo $_smarty_tpl->tpl_vars['pilotesNumber']->value;?>
+</div>
             <div class="stats-text">Pilotes</div>
         </div>
     </div>
@@ -113,4 +139,5 @@
 
     </div>
 
-</div>
+</div><?php }
+}

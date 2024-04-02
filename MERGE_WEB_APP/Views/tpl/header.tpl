@@ -2,22 +2,26 @@
 
 <header>
     <nav class="navbar">
-        <img id="nav-logo" src="Assets/logo avec texte.png">
 
-        <ul class="nav-links">
-                        <li><a href="index.html">Accueil</a></li>
-            {if $user neq 'none' || $user neq ''}   {* Can be fonctionnal with the exception of an unset value *}
+        <a id="link_nav-logo" class="nav-logo" href="{$source}">
+            <img id="nav-logo" class="nav-logo" src="Views/Assets/logo avec texte.png">
+        </a>
+
+        <ul {if $user eq 'Admin' || $user eq 'Pilote'}class="nav-links-big"{else}class="nav-links-small"{/if}>
+                        <li><a href="{$source}">Accueil</a></li>
                         <li><a href="#.html">Trouver un stage</a></li>
                         <li><a href="#.html">Trouver une entreprise</a></li>
-                {if $user eq 'admin'}
-                    {if $user neq 'pilote'}
+            {if $user eq 'Admin'}
+                {if $user neq 'Pilote'}
                         <li><a href="#.html">Trouver un pilote</a></li>
-                    {/if}
-                        <li><a href="#.html">Trouver un étudiant</a></li>
                 {/if}
+                        <li><a href="#.html">Trouver un étudiant</a></li>
             {/if}
         </ul>
+        
+        <a id="link_user-icon" class="user-icon" href="{$source|cat:$connecAction}">
+            <img id="user-icon"src="Views/Assets/user-circle.svg" alt="User icon" class="user-icon">
+        </a>
 
-        <img src="Assets/user-circle.svg" alt="User icon" class="user-icon">
     </nav>
 </header>

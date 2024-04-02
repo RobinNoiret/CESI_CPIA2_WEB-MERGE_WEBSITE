@@ -1,9 +1,15 @@
 <?php 
     include ('Controllers/mainController.php');         // Include the controller part
-    $sourcePath = $_SERVER['REQUEST_URI'];              // Keep the path to start point of the website
+    $path = $_SERVER['REQUEST_URI'];
+    $sourcePath = (substr($path,0,strlen($path)-(strlen(strrchr($path,'/'))-1)));  // Keep the path of the start point of the website
 
     $controller = new Controller($sourcePath);          // Create and give to the controller the start path
 
+    // var_dump($_GET);
+    // var_dump($_POST);
+
+    //var_dump(password_hash('Merge_Admin_Florentµ', PASSWORD_DEFAULT));
+    
     if (empty($_SERVER['QUERY_STRING'])){               // Test path parameters
         $controller->homeController();
     }
@@ -24,16 +30,19 @@
         elseif ($_GET["page"]=='company'){               // Want to access to company
             //$controller->companyController();
         }
+        elseif ($_GET["page"]=='error'and isset($_GET["error"])){
+            errors($controller, $_GET["error"]);
+        }
         else{
-            error404($controller);
+            errors($controller);
         }
     }
 
     else {
-        error404($controller);                          // Call error404
+        errors($controller);                          // Call errors
     }
         
-    function error404(&$controlPointer){
-        $controlPointer->error404Controller();          // Give to the controller the action to do
+    function errors(&$controlPointer,$errorType='400'){   // Autorized $errorType : 400,401,404,500
+        $controlPointer->errorsController($errorType);          // Give to the controller the action to do
         return true;
     }

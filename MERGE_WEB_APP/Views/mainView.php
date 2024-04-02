@@ -1,11 +1,24 @@
-// Set variables to display with smarty 
+<!-- Set variables to display with smarty -->
 <?php 
     require_once 'libs/Smarty.class.php';
 
     $smarty = new Smarty();
 
     if ($page == 'home'){
-        $smarty->assign('title', 'Merge-homepage');
-        $smarty->assign('user', $user);
-        $smarty->display('/*path to tpl page to display*/');
+        $smarty->assign('title', 'Merge-home');
+        $smarty->assign('studentsNumber',$nbStudent);
+        $smarty->assign('companiesNumber',$nbCompany);
+        $smarty->assign('pilotesNumber',$nbPilote);
     }
+    elseif ($page == 'connexion'){
+        $smarty->assign('title', 'Merge-connexion');
+        
+    }
+    $user = $this->whatIsConnect();
+    $smarty->assign('user', $user);
+    $smarty->assign('source', $this->sourcePath);
+    $smarty->assign('page', $page);
+    $smarty->assign('connecAction', $this->actionLinkToConnect());
+
+
+    $smarty->display('Views/tpl/templateBase.tpl');
