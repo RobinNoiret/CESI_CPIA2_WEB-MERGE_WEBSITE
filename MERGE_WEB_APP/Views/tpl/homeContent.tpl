@@ -3,7 +3,7 @@
     <!-- ___________________________________________ Image de fond ___________________________________________ -->
 
     <div id="landing-pictureBG">
-        <img id="picture" src="Views/Assets/Picture backgroundhome-firstpicture.png">
+        <img id="picture" src="Views/Assets/Picture backgroundhome-firstpicture-min.png">
     </div>
 
     <!-- ____________________________________________ Bloc stats ____________________________________________ -->
