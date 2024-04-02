@@ -1,5 +1,7 @@
-CREATE database mergedatabase;
-USE mergedatabase;
+/*_________________________________________________________________________________________*/
+/*						Création d'un utilisateur pour la base de données				   */
+/*_________________________________________________________________________________________*/
+
 
 CREATE USER 'merge_connect'@'%' 
 	IDENTIFIED VIA mysql_native_password USING '?tc,L2D8Y4t]';
