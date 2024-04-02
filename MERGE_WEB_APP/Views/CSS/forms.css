@@ -73,6 +73,11 @@
   border-bottom-color: var(--orange-action);
 }
 
+input::placeholder {
+  opacity: 0.3;
+  font-style: italic;
+}
+
 /*____________ H3 du formulaire ____________*/
 .Form_h3_localite
 {

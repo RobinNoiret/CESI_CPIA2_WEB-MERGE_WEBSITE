@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-02 10:07:07
+/* Smarty version 3.1.36, created on 2024-04-02 13:50:55
   from 'C:\Users\Noiret\Documents\4 - Projets\4.2 - Etudes\4 - Développement WEB\Site\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\errors\BadRequest.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660bbcab575ac8_64207701',
+  'unifunc' => 'content_660bf11fbe00f6_34211397',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '61974f5d306814ad9f2d2f9e521a9e1673f5c6fd' => 
     array (
       0 => 'C:\\Users\\Noiret\\Documents\\4 - Projets\\4.2 - Etudes\\4 - Développement WEB\\Site\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\errors\\BadRequest.tpl',
-      1 => 1712044350,
+      1 => 1712057643,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660bbcab575ac8_64207701 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660bf11fbe00f6_34211397 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
