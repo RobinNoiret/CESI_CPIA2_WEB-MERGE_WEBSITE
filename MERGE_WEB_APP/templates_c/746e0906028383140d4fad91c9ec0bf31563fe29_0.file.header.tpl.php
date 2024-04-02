@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-02 18:32:57
+/* Smarty version 3.1.36, created on 2024-04-02 20:37:10
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660c3339908c33_34724717',
+  'unifunc' => 'content_660c5056dc6c11_64545008',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '746e0906028383140d4fad91c9ec0bf31563fe29' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\header.tpl',
-      1 => 1712075505,
+      1 => 1712083025,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660c3339908c33_34724717 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660c5056dc6c11_64545008 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header>
     <nav class="navbar">
@@ -33,13 +33,17 @@ function content_660c3339908c33_34724717 (Smarty_Internal_Template $_smarty_tpl)
         <ul <?php if ($_smarty_tpl->tpl_vars['user']->value == 'Admin' || $_smarty_tpl->tpl_vars['user']->value == 'Pilote') {?>class="nav-links-big"<?php } else { ?>class="nav-links-small"<?php }?>>
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
 ">Accueil</a></li>
-                        <li><a href="#.html">Trouver un stage</a></li>
-                        <li><a href="#.html">Trouver une entreprise</a></li>
+                        <li><a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=internship');?>
+">Trouver un stage</a></li>
+                        <li><a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=company');?>
+">Trouver une entreprise</a></li>
             <?php if ($_smarty_tpl->tpl_vars['user']->value == 'Admin') {?>
                 <?php if ($_smarty_tpl->tpl_vars['user']->value != 'Pilote') {?>
-                        <li><a href="#.html">Trouver un pilote</a></li>
+                        <li><a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=pilote');?>
+">Trouver un pilote</a></li>
                 <?php }?>
-                        <li><a href="#.html">Trouver un étudiant</a></li>
+                        <li><a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=student');?>
+">Trouver un étudiant</a></li>
             <?php }?>
         </ul>
         
