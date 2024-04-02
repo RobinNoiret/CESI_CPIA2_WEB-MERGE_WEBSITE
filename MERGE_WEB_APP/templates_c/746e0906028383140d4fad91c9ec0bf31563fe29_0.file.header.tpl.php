@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-03-31 21:59:09
+/* Smarty version 3.1.36, created on 2024-04-02 15:04:14
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6609c08db982d4_81459033',
+  'unifunc' => 'content_660c024ec3bff3_63030469',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '746e0906028383140d4fad91c9ec0bf31563fe29' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\header.tpl',
-      1 => 1711915144,
+      1 => 1712062936,
       2 => 'file',
     ),
   ),
@@ -20,17 +20,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6609c08db982d4_81459033 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660c024ec3bff3_63030469 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header>
-    <nav class="navbar">
+    <nav id="navbar" <?php if ($_smarty_tpl->tpl_vars['user']->value == 'Admin' || $_smarty_tpl->tpl_vars['user']->value == 'Pilote') {?>class="navbar-big"<?php } else { ?>class="navbar-small"<?php }?> > 
+        <div id="scrolling-menu-header" class="scrolling-menu" >
+        </div>
 
         <a id="link_nav-logo" class="nav-logo" href="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
 ">
             <img id="nav-logo" class="nav-logo" src="Views/Assets/logo avec texte.png">
         </a>
 
-        <ul <?php if ($_smarty_tpl->tpl_vars['user']->value == 'Admin' || $_smarty_tpl->tpl_vars['user']->value == 'Pilote') {?>class="nav-links-big"<?php } else { ?>class="nav-links-small"<?php }?>>
+        <ul <?php if ($_smarty_tpl->tpl_vars['user']->value == 'Admin' || $_smarty_tpl->tpl_vars['user']->value == 'Pilote') {?>class="nav-links-big"<?php } else { ?>class="nav-links-small"<?php }?>><!-- class="nav-links -->
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
 ">Accueil</a></li>
                         <li><a href="#.html">Trouver un stage</a></li>

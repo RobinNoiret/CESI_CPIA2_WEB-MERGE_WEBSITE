@@ -9,7 +9,7 @@ header
     top: 0;
 }
 
-.navbar
+.navbar-small, .navbar-big
 {
     display: flex;
     /* top: 0;
@@ -35,23 +35,24 @@ header
     height: 1.56rem;
 }
 
-.nav-links-big, .nav-links-small {
+.nav-links {
     display: inline-flex;
     align-items: center;        /* Center in heigh*/
     text-align: center;         /* Center in width*/
     font-weight: bold;
     gap: 1rem;
     list-style: none;
+    color: var(--noir-fixe);
     padding-left: 0; 
 }
 
-ul nav a
+nav ul a
 {
     color: var(--noir-fixe);
     text-decoration: none;
 }
 
-ul nav a:hover
+nav ul a:hover
 {
     color: var(--orange-action);
 }
@@ -59,4 +60,8 @@ ul nav a:hover
 .user-icon {
     width: 2.7rem;
     height: 2.7rem;
+}
+
+#navbar #scrolling-menu-header {
+    display: none;
 }

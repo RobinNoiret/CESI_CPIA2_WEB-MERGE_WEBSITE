@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-02 10:07:07
-  from 'C:\Users\Noiret\Documents\4 - Projets\4.2 - Etudes\4 - Développement WEB\Site\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\errors\BadRequest.tpl' */
+/* Smarty version 3.1.36, created on 2024-04-02 14:12:05
+  from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\errors\BadRequest.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660bbcab575ac8_64207701',
+  'unifunc' => 'content_660bf615b82253_62234408',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '61974f5d306814ad9f2d2f9e521a9e1673f5c6fd' => 
+    'eb4018af8f1944eb897a690168fcb71bab9ca171' => 
     array (
-      0 => 'C:\\Users\\Noiret\\Documents\\4 - Projets\\4.2 - Etudes\\4 - Développement WEB\\Site\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\errors\\BadRequest.tpl',
-      1 => 1712044350,
+      0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\errors\\BadRequest.tpl',
+      1 => 1712056066,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660bbcab575ac8_64207701 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660bf615b82253_62234408 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>

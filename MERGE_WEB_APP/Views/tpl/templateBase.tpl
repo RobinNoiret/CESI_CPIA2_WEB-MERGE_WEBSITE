@@ -18,7 +18,7 @@
    	<body>
     {block name=body}
 
-        {include "../tpl/header.tpl"}
+        {include "../tpl/header&footer/header.tpl"}
 
         {if $page eq 'home'}
             {include "../tpl/homeContent.tpl"}
@@ -26,7 +26,7 @@
             {include "../tpl/connexionContent.tpl"}
         {/if}
 
-        {include "../tpl/footer.tpl"}
+        {include "../tpl/header&footer/footer.tpl"}
 
         {/block}
     </body> 
