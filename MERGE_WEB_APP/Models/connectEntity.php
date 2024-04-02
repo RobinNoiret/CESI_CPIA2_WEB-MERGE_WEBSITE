@@ -13,7 +13,7 @@
                 $this->db = new PDO('mysql:host=localhost;dbname=mergedatabase', $user, $pass);     //Connexion
             }
             catch (PDOException $e) {
-                header("Location: ".$this->sourcePath."?page=404&error=connect");                   // Managed exception
+                header("Location: ".$this->sourcePath."?page=error&error=400");                   // Managed exception
                 exit;
             }
         }
@@ -24,7 +24,7 @@
                 $request->execute();                    // Try to execute the prepared request
             }
             catch (PDOException $e) {
-                header("Location: ".$this->sourcePath."?page=404&error=data");                      // Managed exception
+                header("Location: ".$this->sourcePath."?page=error&error=500");                      // Managed exception
                 exit;
             }            
         }
