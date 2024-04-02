@@ -32,28 +32,28 @@
 
         <div class="domains">
             <div class="domain" id="domain-IT">
-                <a href="error-accèsInternet.html">
+                <a href="{$source|cat:'?page=internship&action=research&domain=IT'}">
                 <img class="domain-pictures" src="Views/Assets/TechnologyIT.png">
                 </a>
                 <h4 class="domain-title">IT</h4>
             </div>
 
             <div class="domain" id="domain-services">
-                <a href="error-accèsServeur.html">
+                <a href="{$source|cat:'?page=internshi&action=researchp&domain=Services'}">
                 <img class="domain-pictures" src="Views/Assets/Serviceservice.png">
                 </a>
                 <h4 class="domain-title">Services</h4>
             </div>
 
             <div class="domain" id="domain-Health">
-                <a href="error-FlorentSauvage.html">
+                <a href="{$source|cat:'?page=internship&action=research&domain=Santé'}">
                 <img class="domain-pictures" src="Views/Assets/Health Care - Health Researchhealth.png">
                 </a>
                 <h4 class="domain-title">Santé</h4>
             </div>
 
             <div class="domain" id="domain-Finances">
-                <a href="error-pageDoesntExist.html">
+                <a href="{$source|cat:'?page=internship&action=research&domain=Finances'}">
                 <img class="domain-pictures" src="Views/Assets/Business Planbusiness.svg">
                 </a>
                 <h4 class="domain-title">Finances</h4>
@@ -73,7 +73,9 @@
                     Quisque dignissim neque tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
 
-                <a class="CTA_secondaire" href="#">Découvrir les fiches métiers</a>
+                <a class="CTA_secondaire" href="https://www.emploi-store.fr/portail/parcours-conseils/choisisFuturMetier/fiche-metier">
+                    Découvrir les fiches métiers
+                </a>
             </div>
 
             <img class="article-picture" src="Views/Assets/Placeholder imageexplorez et trouver votre voie.png">
@@ -91,7 +93,9 @@
                     Quisque dignissim neque tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
 
-                <a class="CTA_secondaire" href="#">Découvrir les évènements</a>
+                <a class="CTA_secondaire" href="https://www.nsalons.com/entreprises/france/">
+                    Découvrir les évènements
+                </a>
             </div>
             <img class="article-picture-responsive" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png">
         </article>
@@ -105,7 +109,9 @@
                     Quisque dignissim neque tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
 
-                <a class="CTA_secondaire" href="#">Découvrir comment vous préparez</a>
+                <a class="CTA_secondaire" href="https://www.welcometothejungle.com/fr/articles/preparer-entretien-stage">
+                    Découvrir comment vous préparez
+                </a>
             </div>
 
             <img class="article-picture" src="Views/Assets/Placeholder imagepréparez vous.png">
