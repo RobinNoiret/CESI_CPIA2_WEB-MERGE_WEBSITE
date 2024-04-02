@@ -60,20 +60,17 @@
         }
 
         public function errorsController($errorType){     // Autorized $errorType : data, connect, net, server
-            if ($errorType == 'Default'){
-                $link = 'Views/tpl/errors/pageDoesntExist-error.tpl';
+            if ($errorType == '404'){
+                $link = 'Views/tpl/errors/RessourceIntrouvable.tpl';
             }
-            elseif ($errorType == 'data'){
-                //$link = 'Views/tpl/errors/databaseConnexion-error.tpl';
+            elseif ($errorType == '400'){
+                $link = 'Views/tpl/errors/BadRequest.tpl';
             }
-            elseif ($errorType == 'connect'){
-                // $link = 'Views/tpl/errors/serverAccess-error.tpl';
+            elseif ($errorType == '401'){
+                $link = 'Views/tpl/errors/AuthorisationRequise.tpl';
             }
-            elseif ($errorType == 'net'){
-                $link = 'Views/tpl/errors/networkAccess-error.tpl';
-            }
-            elseif ($errorType == 'server'){
-                $link = 'Views/tpl/errors/serverAccess-error.tpl';
+            elseif ($errorType == '500'){
+                $link = 'Views/tpl/errors/ServerError.tpl';
             }
 
             include 'Views/errorsView.php';           // Add template for home view

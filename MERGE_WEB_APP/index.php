@@ -25,7 +25,7 @@
         elseif ($_GET["page"]=='company'){               // Want to access to company
             //$controller->companyController();
         }
-        elseif ($_GET["page"]=='404'and isset($_GET["error"])){
+        elseif ($_GET["page"]=='error'and isset($_GET["error"])){
             errors($controller, $_GET["error"]);
         }
         else{
@@ -37,7 +37,7 @@
         errors($controller);                          // Call errors
     }
         
-    function errors(&$controlPointer,$errorType='Default'){   // Autorized $errorType : data, connect, net, server
+    function errors(&$controlPointer,$errorType='400'){   // Autorized $errorType : 400,401,404,500
         $controlPointer->errorsController($errorType);          // Give to the controller the action to do
         return true;
     }
