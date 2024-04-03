@@ -2,7 +2,7 @@
 <h1 class="form-text">Création d'un compte</h1>
 <div class="form-div">
     
-    <form class="div-form" action="{source}?page={$page}&action=display" method="post">
+    <form class="div-form" action="{$source}?page={$actionPage}&action=display" method="post">
 
         <fieldset class="fieldset-group">
 
@@ -46,6 +46,8 @@
 
         </fieldset>
     </form>
+
+    <script src="Views/JS/form_crea.js"></script>
 
 
 </div>

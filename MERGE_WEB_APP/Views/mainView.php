@@ -4,6 +4,8 @@
 
     $smarty = new Smarty();
 
+    $smarty->assign('action','none');
+
     if ($page == 'home'){
         $smarty->assign('title', 'Merge-home');
         $smarty->assign('studentsNumber',$nbStudent);
@@ -18,13 +20,14 @@
         if (isset($title)){ $smarty->assign('title',$title);}
         else {  $smarty->assign('title','Merge-stages');}
         if (isset($_GET['id'])){$smarty->assign('id',$_GET['id']);}
-        if (isset($_GET['id'])){$smarty->assign('id',$_GET['id']);}
-
-        
+        if (isset($action)){ 
+            $smarty->assign('action',$action);
+            if ($action == 'add'){
+                
+            }
+        }     
     }
-
-    if (isset($action)){ $smarty->assign('action',$action);}
-    else {  $smarty->assign('action','none');}
+   
 
     $user = $this->whatIsConnect();
     $smarty->assign('user', $user);

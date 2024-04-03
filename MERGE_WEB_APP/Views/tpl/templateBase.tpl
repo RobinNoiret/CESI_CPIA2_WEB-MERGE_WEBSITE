@@ -29,7 +29,7 @@
             {elseif $action eq 'change'}
                 {include "../tpl/modification.tpl"}
             {elseif $action eq 'add'}
-                {include "../tpl/createEntity.tpl"}
+                {include "../tpl/creationContent.tpl"}
             {/if}
         </div>
 
