@@ -1,7 +1,7 @@
 {* The header change it menu with the value of $user wich can have values none, student, pilote, admin *}
 
 <header>
-    <nav class="navbar">
+    <nav id="navbar-header" class="navbar">
 
         <a id="link_nav-logo" class="nav-logo" href="{$source}">
             <img id="nav-logo" class="nav-logo" src="Views/Assets/logo avec texte.png">

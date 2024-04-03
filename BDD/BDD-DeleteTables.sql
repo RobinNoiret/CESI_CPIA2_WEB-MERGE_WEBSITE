@@ -1,4 +1,4 @@
-Use mergeDatabase;
+Use mergedatabase;
 
 Drop table if exists Skills;
 Drop table if exists Classes;

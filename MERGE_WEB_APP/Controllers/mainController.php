@@ -36,24 +36,15 @@
 
                 require_once 'Models/connexionModel.php';                                       // Initialized the model to recover password and status
                 $connexionModel = new connexionModel($this->sourcePath);                        
-                $hashPassword=$connexionModel->getPwd($login);
+                $loginData=$connexionModel->getPwd($login);
 
-                //var_dump(password_verify($password, $hashPassword['userPassword']));
-                if (password_verify('Merge_Admin_Florentµ', $hashPassword['userPassword'])) {   // Know if password is correct
-                    //echo 'Password is valid!';            // To verify the activation
+                
+                if (password_verify($password, $loginData['userPassword'])) {                   // Know if password is correct
+                    //echo 'Password is valid!';            // To verify the activation of condition
 
-                    setcookie(                               // Create a cookie and put informations on it like the login and the status
-                        'LOGGED_USER',
-                        '{
-                            "login"  :  "'.$login.'",
-                            "status" :  "'.$hashPassword['userStatus'].'"
-                        }',
-                        [
-                            'expires' => time() + 60*10,
-                            'secure' => true,
-                            'httponly' => true,
-                        ]
-                    ); 
+                    // Create variable and put informations like the login and the status
+                    $_SESSION['LOGGED_USER']['login'] = $login;
+                    $_SESSION['LOGGED_USER']['status'] = $loginData['userStatus'];
 
                     header('Location: '.$this->sourcePath);                                     // Redirect to home page
 
@@ -150,6 +141,13 @@
             // Test "action" criteria to know if you want to create, display, update, delete
                 //update and delete need an ID
             // Intialize variables
+
+            return true;
+        }
+
+        public function  mentionController(){
+            $page = 'mentions';
+            include 'Views/mainView.php';
 
             return true;
         }

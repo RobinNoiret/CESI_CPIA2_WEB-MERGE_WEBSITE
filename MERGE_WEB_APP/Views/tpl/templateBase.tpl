@@ -20,19 +20,27 @@
 
         {include "../tpl/header.tpl"}
         <div class="Content">
+        
             {if $page eq 'home'}
                 {include "../tpl/homeContent.tpl"}
             {elseif  $page eq 'connexion'}
                 {include "../tpl/connexionContent.tpl"}
+<<<<<<< HEAD
             {elseif $action eq 'display'}
             {elseif $action eq 'dispalyOne'}
             {elseif $action eq 'change' or $action eq 'add'}
                 {include "../tpl/offer.tpl"}
+=======
+            {elseif  $page eq 'mentions'}
+                {include "../tpl/mLegaleContent.tpl"}
+>>>>>>> main
             {/if}
         </div>
 
         {include "../tpl/footer.tpl"}
-
+        
+        <script src="Views/JS/header.js"></script>
         {/block}
+        
     </body> 
 </html> 

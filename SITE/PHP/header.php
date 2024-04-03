@@ -1,6 +1,6 @@
 <?php
     echo'<header>
-            <nav class="navbar">
+            <nav class="navbar" id="header">
                 <a id="link_nav-logo" class="nav-logo" href="index.html">
                     <img id="nav-logo" class="nav-logo" src="Assets/logo avec texte.png">
                 </a>
