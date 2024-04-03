@@ -17,6 +17,9 @@
     elseif ($page == 'internship'){
         if (isset($title)){ $smarty->assign('title',$title);}
         else {  $smarty->assign('title','Merge-stages');}
+        if (isset($_GET['id'])){$smarty->assign('id',$_GET['id']);}
+        if (isset($_GET['id'])){$smarty->assign('id',$_GET['id']);}
+
         
     }
 

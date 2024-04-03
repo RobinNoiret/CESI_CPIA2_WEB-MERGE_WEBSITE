@@ -25,7 +25,7 @@
         public function selectDomain($domain){
             $request = $this->db->prepare('SELECT * 
                                             FROM (SELECT * FROM companies WHERE activityArea=:domain) AS co 
-                                            INNER JOIN addresses AS ad ON co.compagnyID = ad.compagnyID
+                                            INNER JOIN addresses AS ad ON co.companyID = ad.companyID
                                             INNER JOIN cities AS ci ON ad.cityID = ci.cityID
                                             INNER JOIN offers AS of ON ad.addressID = of.addressID;
                                         ');
