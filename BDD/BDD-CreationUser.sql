@@ -1,5 +1,7 @@
-CREATE database mergedatabase;
-USE mergedatabase;
+/*_________________________________________________________________________________________*/
+/*						Création d'un utilisateur pour la base de données				   */
+/*_________________________________________________________________________________________*/
+
 
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, FILE, INDEX, ALTER, CREATE TEMPORARY TABLES, 
 EXECUTE, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, EVENT, TRIGGER 
