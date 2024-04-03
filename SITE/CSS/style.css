@@ -113,8 +113,8 @@ body /*ok*/
 .navbar, .header-fixed /*Ok*/
 {
     display: flex;
-    /* top: 0;
-    left: 0; */
+     top: 0;
+    /*left: 0; */
     /* position: fixed;                   Bar fixed when scrolling */
     z-index: 100;
     justify-content: space-between;
