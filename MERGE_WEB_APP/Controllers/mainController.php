@@ -101,6 +101,8 @@
                         if ($this->whatIsConnect() == ('Pilote' or 'Admin')){
                             if ($_GET['action'] == 'add'){
                                 $title = 'Merge-stage-nouveau'; // put the name of the stage
+                                // Choose an existing compagny after choose an existing adresse from this company
+                                
                                 // Make the insert with model
                                 // Signal the correct change
                                 // Display the mainView
