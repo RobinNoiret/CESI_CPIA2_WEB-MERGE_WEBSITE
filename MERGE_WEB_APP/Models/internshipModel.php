@@ -7,11 +7,10 @@
             $request = $this->db->prepare('SELECT * FROM offers AS of 
                                                         INNER JOIN addresses AS ad ON ad.addressID = of.addressID
                                                         INNER JOIN cities AS ci ON ad.cityID = ci.cityID
-                                                        INNER JOIN compagnies AS co ON ad.companyID = co.companyID
-            ');
+                                                        INNER JOIN companies AS co ON ad.companyID = co.companyID;
+                                        ');
 
             $this->tryToExecute($request); 
-
             $datas = $request->fetch(PDO::FETCH_ASSOC);
 
             return $datas;
@@ -23,10 +22,11 @@
             return $datas;
         }
         public function selectDomain($domain){
-            $request = $this->db->prepare('SELECT * FROM (SELECT * FROM compagnies WHERE activityArea=:domain) AS co 
+            $request = $this->db->prepare('SELECT * FROM (SELECT * FROM companies WHERE activityArea=:domain) AS co 
                                                         INNER JOIN addresses AS ad ON co.compagnyID = ad.compagnyID
                                                         INNER JOIN cities AS ci ON ad.cityID = ci.cityID
-                                                        INNER JOIN offers AS of ON ad.addressID = of.addressID');
+                                                        INNER JOIN offers AS of ON ad.addressID = of.addressID;
+                                        ');
             $request->bindValue(':domain', $domain);
 
             $this->tryToExecute($request);             
@@ -41,7 +41,7 @@
             $request = $this->db->prepare('SELECT * FROM (SELECT * FROM offers WHERE offerID=:offerID) AS of 
                                                         INNER JOIN addresses AS ad ON ad.addressID = of.addressID
                                                         INNER JOIN cities AS ci ON ad.cityID = ci.cityID
-                                                        INNER JOIN compagnies AS co ON ad.companyID = co.companyID
+                                                        INNER JOIN companies AS co ON ad.companyID = co.companyID;
                                         ');
             $request->bindValue(':offerID', $id);
 
