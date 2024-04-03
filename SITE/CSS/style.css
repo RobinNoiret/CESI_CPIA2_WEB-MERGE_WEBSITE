@@ -110,13 +110,12 @@ body /*ok*/
     height: 1.56rem;
 }
 
-.navbar /*Ok*/
+.navbar, .header-fixed /*Ok*/
 {
     display: flex;
     /* top: 0;
     left: 0; */
-    width: calc(100% - 30px);
-    position: fixed;                   /* Bar fixed when scrolling*/
+    /* position: fixed;                   Bar fixed when scrolling */
     z-index: 100;
     justify-content: space-between;
 
@@ -128,6 +127,12 @@ body /*ok*/
     padding-right: 1.5rem;
 
     box-shadow: 5px 1px 10px rgba(29, 29, 29, 0.3);
+}
+
+.header-fixed
+{
+    position: fixed;                  /* Bar fixed when scrolling */
+    width: calc(100% - 1.93rem);
 }
 
 .nav-links { /*Ok*/
