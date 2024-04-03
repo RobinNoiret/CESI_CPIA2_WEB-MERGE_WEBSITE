@@ -74,6 +74,13 @@
             return true;
         }
 
+        public function  mentionController(){
+            $page = 'mentions';
+            include 'Views/mainView.php';
+
+            return true;
+        }
+
         public function errorsController($errorType){     // Autorized $errorType : data, connect, net, server
             if ($errorType == '404'){
                 $link = 'Views/tpl/errors/RessourceIntrouvable.tpl';

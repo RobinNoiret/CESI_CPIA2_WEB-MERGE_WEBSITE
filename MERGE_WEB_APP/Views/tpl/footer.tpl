@@ -5,10 +5,10 @@
 
     <div class="footer-links">
         <ul class="footer-list">
-            <li><a href="#" class="footer-link">Conditions générales d'utilisation</a></li>
-            <li><a href="#" class="footer-link">Politique de confidentialité</a></li>
-            <li><a href="#" class="footer-link">Contact</a></li>
-            <li><a href="#" class="footer-link">Mentions légales</a></li>
+            <li><a href="{$source}?page=mentionslégales" class="footer-link">Conditions générales d'utilisation</a></li>
+            <li><a href="{$source}?page=mentionslégales" class="footer-link">Politique de confidentialité</a></li>
+            <li><a href="https://github.com/RobinNoiret/CESI_CPIA2_WEB_PROJECT/" class="footer-link">Contact</a></li>
+            <li><a href="{$source}?page=mentionslégales" class="footer-link">Mentions légales</a></li>
         </ul>
     </div>
 

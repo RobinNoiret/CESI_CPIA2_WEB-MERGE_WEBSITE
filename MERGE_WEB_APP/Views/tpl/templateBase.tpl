@@ -25,6 +25,8 @@
                 {include "../tpl/homeContent.tpl"}
             {elseif  $page eq 'connexion'}
                 {include "../tpl/connexionContent.tpl"}
+            {elseif  $page eq 'mentions'}
+                {include "../tpl/mLegaleContent.tpl"}
             {/if}
         </div>
 
