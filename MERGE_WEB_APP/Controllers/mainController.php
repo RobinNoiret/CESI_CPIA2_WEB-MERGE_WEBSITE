@@ -89,8 +89,12 @@
                         $title = 'Merge-stage'; // put the name of the stage
                         include 'Views/mainView.php';
                     }
-                    elseif ($_GET['action'] == 'displayCriters'){
-                        $contenu = $internshipModel->selectSeveral(/*ensemble de paramètre à définir*/);
+                    elseif ($_GET['action'] == 'research'){
+                        if (isset($_GET['domain'])){
+                        $contenu = $internshipModel->selectDomain($_GET['domain']);
+                        }else {
+                            $contenu = $internshipModel->selectSeveral(/*ensemble de paramètre à définir*/);
+                        }
                         include 'Views/mainView.php';
                     }
                     else{
