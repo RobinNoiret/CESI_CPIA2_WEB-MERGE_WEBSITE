@@ -1,6 +1,5 @@
 // Sélection du header
 const header = document.getElementById('navbar-header');
-console.log(header);
 
 // Fonction pour mettre à jour le style du header
 function updateHeaderStyle() {

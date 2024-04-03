@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-03 09:58:36
+/* Smarty version 3.1.36, created on 2024-04-03 14:05:32
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660d0c2cd2f638_64390751',
+  'unifunc' => 'content_660d460ce1bdc7_99296680',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdb50ddc8672c40abf88474b37bb8950562c621a' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\homeContent.tpl',
-      1 => 1712129977,
+      1 => 1712145215,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660d0c2cd2f638_64390751 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660d460ce1bdc7_99296680 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="landing">
 
     <!-- ___________________________________________ Image de fond ___________________________________________ -->
@@ -99,8 +99,10 @@ function content_660d0c2cd2f638_64390751 (Smarty_Internal_Template $_smarty_tpl)
                 <h4>Explorez et trouver votre voie</h4>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus egestas ex, id tempor sem maximus id. 
-                    Quisque dignissim neque tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Plongez dans des fiches métiers détaillées pour explorer les différentes professions. Apprenez-en plus
+                    sur les compétences requises, les responsabilités et les opportunités de carrière dans chaque domaine. 
+                    Que vous soyez passionné par le développement informatique, le marketing ou la finance, ces fiches vous 
+                    guideront vers le métier qui vous correspond le mieux.
                 </p>
 
                 <a class="CTA_secondaire" href="https://www.emploi-store.fr/portail/parcours-conseils/choisisFuturMetier/fiche-metier">
@@ -119,8 +121,9 @@ function content_660d0c2cd2f638_64390751 (Smarty_Internal_Template $_smarty_tpl)
                 <h4>Développez votre réseau</h4>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus egestas ex, id tempor sem maximus id. 
-                    Quisque dignissim neque tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Restez à l’affût des événements professionnels ! Salons de l’emploi, conférences, webinaires… Ces occasions
+                    sont idéales pour rencontrer des employeurs, élargir votre réseau et découvrir des opportunités de stage ou
+                    d’alternance. Préparez votre CV, prévoyez des questions pertinentes et soyez prêt à briller lors de ces rencontres.
                 </p>
 
                 <a class="CTA_secondaire" href="https://www.nsalons.com/entreprises/france/">
@@ -135,8 +138,10 @@ function content_660d0c2cd2f638_64390751 (Smarty_Internal_Template $_smarty_tpl)
                 <h4>Préparez-vous !</h4>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus egestas ex, id tempor sem maximus id. 
-                    Quisque dignissim neque tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    L’entretien est une étape cruciale dans votre recherche d’emploi. Préparez-vous en amont : révisez vos compétences,
+                    entraînez-vous à répondre aux questions courantes, et travaillez sur votre présentation personnelle. Montrez votre
+                    motivation, votre confiance et votre intérêt pour l’entreprise. Vous serez ainsi prêt à convaincre les recruteurs
+                    que vous êtes le candidat idéal !
                 </p>
 
                 <a class="CTA_secondaire" href="https://www.welcometothejungle.com/fr/articles/preparer-entretien-stage">

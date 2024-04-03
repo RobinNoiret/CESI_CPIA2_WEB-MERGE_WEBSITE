@@ -29,7 +29,9 @@
         </div>
 
         {include "../tpl/footer.tpl"}
-
+        
+        <script src="Views/JS/header.js"></script>
         {/block}
+        
     </body> 
 </html> 

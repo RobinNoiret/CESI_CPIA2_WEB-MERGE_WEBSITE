@@ -110,7 +110,7 @@ body /*ok*/
     height: 1.56rem;
 }
 
-.navbar, .header-fixed /*Ok*/
+.navbar, .navbar-fixed /*Ok*/
 {
     display: flex;
      top: 0;
@@ -129,7 +129,7 @@ body /*ok*/
     box-shadow: 5px 1px 10px rgba(29, 29, 29, 0.3);
 }
 
-.header-fixed
+.navbar-fixed
 {
     position: fixed;                  /* Bar fixed when scrolling */
     width: calc(100% - 1.93rem);
