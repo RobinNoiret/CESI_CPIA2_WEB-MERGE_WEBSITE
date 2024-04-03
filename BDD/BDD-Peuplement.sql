@@ -563,7 +563,7 @@ insert into Offers (title, descr, publicationDate, placesNumber, remunerationBas
 ('Assistant de Communication Interne', "Rejoignez notre équipe en tant qu'assistant de communication interne et participez à la gestion des communications internes de l'entreprise. Vous serez chargé d'assister nos responsables communication dans la création de contenus, la diffusion d'informations et l'organisation d'événements internes.", '2024-01-05', 1, 850, 68);
 
 
--- Peuplement de la table Wishlist (10 par ligne)
+-- Peuplement de la table Wishlist (10 par ligne) (OK)
 INSERT INTO wishlist VALUES
 (12, 56),(3, 123),(28, 89),(9, 45),(15, 174),(20, 31),(7, 102),(25, 68),(1, 150),(19, 77),
 (4, 98),(11, 5),(27, 160),(8, 33),(13, 75),(30, 111),(17, 22),(6, 99),(22, 72),(10, 43),
@@ -577,7 +577,7 @@ INSERT INTO wishlist VALUES
 (30, 79),(1, 124),(13, 15),(17, 85),(9, 138),(25, 55),(11, 70),(3, 11),(22, 163),(19, 41);
 
 
--- Peuplement de la table UserClass (10 par ligne)
+-- Peuplement de la table UserClass (10 par ligne) (problème)
 INSERT INTO userclass VALUES
 (12, 5),(33, 10),(55, 9),(78, 14),(102, 6),(125, 3),(148, 8),(162, 12),(174, 1),(41, 4),
 (7, 15),(29, 11),(51, 7),(74, 2),(96, 16),(119, 13),(142, 5),(165, 10),(39, 1),(82, 9),
@@ -591,10 +591,10 @@ INSERT INTO userclass VALUES
 (16, 14),(38, 3),(60, 10),(83, 6),(105, 16),(128, 12),(150, 4),(173, 1),(35, 8),(57, 5);
 
 
--- Peuplement de la table skilloffer (10 par ligne)
+-- Peuplement de la table skilloffer (10 par ligne) (problème)
 INSERT INTO skilloffer VALUES
 (12, 5),(3, 13),(28, 7),(9, 18),(15, 6),(20, 11),(7, 4),(25, 8),(1, 14),(19, 2),
-(4, 9),(11, 16),(27, 3),(8, 10),(13, 17),(17, 12),(6, 15),(22, 5),(10, 18),
+(4, 9),(11, 16),(27, 3),(8, 10),(13, 17),(6, 15),(22, 5),(10, 18),
 (24, 6),(18, 13),(2, 8),(26, 4),(29, 10),(16, 2),(21, 14),(5, 3),(14, 11),(23, 7),
 (30, 17),(1, 5),(13, 11),(17, 3),(9, 15),(25, 12),(11, 7),(3, 16),(22, 8),(19, 6),
 (8, 13),(12, 1),(27, 5),(5, 14),(20, 10),(26, 2),(16, 15),(30, 3),(14, 12),(23, 4),
@@ -605,8 +605,8 @@ INSERT INTO skilloffer VALUES
 (17, 12),(25, 7),(1, 2),(13, 18),(9, 5),(30, 13),(11, 16),(3, 8),(22, 3),(19, 14);
 
 
--- Peuplement de la table skilloffer  (10 par ligne)
-INSERT INTO skilloffer VALUES
+-- Peuplement de la table evaluation  (10 par ligne) (problème)
+INSERT INTO evaluations VALUES
 (12, 56, 3),(33, 10, 4),(55, 89, 2),(78, 14, 1),(102, 6, 5),(125, 123, 3),(148, 8, 2),(162, 68, 4),(174, 150, 1),(41, 4, 5),
 (7, 15, 3),(29, 11, 2),(51, 7, 5),(74, 2, 4),(96, 16, 1),(119, 13, 5),(142, 5, 2),(165, 10, 3),(39, 1, 4),(82, 9, 5),
 (17, 8, 4),(42, 4, 5),(64, 16, 2),(87, 11, 1),(109, 6, 3),(132, 2, 5),(154, 14, 4),(177, 7, 1),(20, 13, 2),(45, 5, 3),
@@ -619,8 +619,8 @@ INSERT INTO skilloffer VALUES
 (16, 14, 5),(38, 3, 1),(60, 10, 2),(83, 6, 3),(105, 16, 4),(128, 12, 5),(150, 4, 1),(173, 1, 2),(35, 8, 3),(57, 5, 4);
 
 
--- Peuplement de la table candidature  (10 par ligne)
-INSERT INTO skilloffer VALUES
+-- Peuplement de la table candidature  (10 par ligne) (OK)
+INSERT INTO candidatures VALUES
 (12, 56, "Je suis motivé pour ce poste.", NULL, 1),
 (3, 123, "J'ai une grande expérience dans ce domaine.", NULL, 0),
 (28, 89, "Je suis disponible immédiatement.", NULL, 1),
@@ -670,3 +670,9 @@ INSERT INTO skilloffer VALUES
 (16, 55, "Je suis dynamique et j'ai le sens de l'initiative.", NULL,0);
 
 
+-- Peuplement de la table Users (OK)
+    -- Admins
+INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
+('MaillardSalin', 'Florent', 'Admin', 'florent.ms', '04052004', 1),
+('Noiret', 'Robin', 'Admin', 'robin.noiret', '26042004', 1),
+('Olivieri', 'Brieuc', 'Admin', 'brieuc.olivieri', '31102003', 1);
