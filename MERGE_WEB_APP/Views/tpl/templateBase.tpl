@@ -28,6 +28,8 @@
             {elseif $action eq 'dispalyOne'}
             {elseif $action eq 'change'}
                 {include "../tpl/modification.tpl"}
+            {elseif $action eq 'add'}
+                {include "../tpl/createEntity.tpl"}
             {/if}
         </div>
 
