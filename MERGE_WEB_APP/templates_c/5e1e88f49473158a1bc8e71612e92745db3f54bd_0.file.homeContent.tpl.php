@@ -1,4 +1,27 @@
-<div class="landing">
+<?php
+/* Smarty version 3.1.36, created on 2024-04-03 09:39:43
+  from 'C:\Users\Noiret\Documents\4 - Projets\4.2 - Etudes\4 - Développement WEB\Site\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.36',
+  'unifunc' => 'content_660d07bf3f4ad1_48112468',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '5e1e88f49473158a1bc8e71612e92745db3f54bd' => 
+    array (
+      0 => 'C:\\Users\\Noiret\\Documents\\4 - Projets\\4.2 - Etudes\\4 - Développement WEB\\Site\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\homeContent.tpl',
+      1 => 1712129968,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_660d07bf3f4ad1_48112468 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="landing">
 
     <!-- ___________________________________________ Image de fond ___________________________________________ -->
 
@@ -10,17 +33,20 @@
 
     <div class="landing-stats">
         <div class="stats-block" id="stats-students">
-            <div class="stats-number">{$studentsNumber}</div>
+            <div class="stats-number"><?php echo $_smarty_tpl->tpl_vars['studentsNumber']->value;?>
+</div>
             <div class="stats-text">Etudiants</div>
         </div>
 
         <div class="stats-block" id="stats-companies">
-            <div class="stats-number">{$companiesNumber}</div>
+            <div class="stats-number"><?php echo $_smarty_tpl->tpl_vars['companiesNumber']->value;?>
+</div>
             <div class="stats-text">Entreprises</div>
         </div>
 
         <div class="stats-block" id="stats-pilotes">
-            <div class="stats-number">{$pilotesNumber}</div>
+            <div class="stats-number"><?php echo $_smarty_tpl->tpl_vars['pilotesNumber']->value;?>
+</div>
             <div class="stats-text">Pilotes</div>
         </div>
     </div>
@@ -32,28 +58,32 @@
 
         <div class="domains">
             <div class="domain" id="domain-IT">
-                <a href="{$source|cat:'?page=internship&action=research&domain=IT'}">
+                <a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=internship&action=research&domain=IT');?>
+">
                 <img class="domain-pictures" src="Views/Assets/TechnologyIT.png">
                 </a>
                 <h4 class="domain-title">IT</h4>
             </div>
 
             <div class="domain" id="domain-services">
-                <a href="{$source|cat:'?page=internshi&action=researchp&domain=Services'}">
+                <a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=internshi&action=researchp&domain=Services');?>
+">
                 <img class="domain-pictures" src="Views/Assets/Serviceservice.png">
                 </a>
                 <h4 class="domain-title">Services</h4>
             </div>
 
             <div class="domain" id="domain-Health">
-                <a href="{$source|cat:'?page=internship&action=research&domain=Santé'}">
+                <a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=internship&action=research&domain=Santé');?>
+">
                 <img class="domain-pictures" src="Views/Assets/Health Care - Health Researchhealth.png">
                 </a>
                 <h4 class="domain-title">Santé</h4>
             </div>
 
             <div class="domain" id="domain-Finances">
-                <a href="{$source|cat:'?page=internship&action=research&domain=Finances'}">
+                <a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=internship&action=research&domain=Finances');?>
+">
                 <img class="domain-pictures" src="Views/Assets/Business Planbusiness.svg">
                 </a>
                 <h4 class="domain-title">Finances</h4>
@@ -124,4 +154,5 @@
 
     </div>
 
-</div>
+</div><?php }
+}
