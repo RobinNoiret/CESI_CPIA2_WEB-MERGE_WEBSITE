@@ -109,8 +109,8 @@ CREATE TABLE `evaluations` (
 
 CREATE TABLE `offers` (
   `offerID` int(11) NOT NULL,
-  `Title` varchar(100) NOT NULL,
-  `Description` varchar(1000) NOT NULL,
+  `title` varchar(100) NOT NULL,          -- Ajouté
+  `descr` text DEFAULT NOT NULL,          -- Ajouté (description en abrégé car description existe déjà en SQL)
   `internDuration` smallint(6) DEFAULT NULL,
   `publicationDate` date DEFAULT NULL,
   `placesNumber` smallint(6) DEFAULT NULL,
