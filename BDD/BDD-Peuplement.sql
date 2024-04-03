@@ -561,3 +561,112 @@ insert into Offers (title, descr, publicationDate, placesNumber, remunerationBas
 ('Assistant Commercial', "Nous recherchons un assistant commercial pour soutenir nos équipes dans le développement des ventes. Vous serez chargé d'assister nos commerciaux dans la prospection de clients, la gestion des comptes clients et le suivi des ventes.", '2024-01-10', 2, 1200, 57),
 ('Développeur Java Senior', "Nous recherchons un développeur Java senior pour rejoindre notre équipe de développement logiciel. Vous serez responsable de la conception, du développement et de la maintenance de solutions logicielles robustes et évolutives, en utilisant les meilleures pratiques de développement.", '2024-01-08', 3, 1800, 22),
 ('Assistant de Communication Interne', "Rejoignez notre équipe en tant qu'assistant de communication interne et participez à la gestion des communications internes de l'entreprise. Vous serez chargé d'assister nos responsables communication dans la création de contenus, la diffusion d'informations et l'organisation d'événements internes.", '2024-01-05', 1, 850, 68);
+
+
+-- Peuplement de la table Wishlist (10 par ligne)
+INSERT INTO wishlist VALUES
+(12, 56),(3, 123),(28, 89),(9, 45),(15, 174),(20, 31),(7, 102),(25, 68),(1, 150),(19, 77),
+(4, 98),(11, 5),(27, 160),(8, 33),(13, 75),(30, 111),(17, 22),(6, 99),(22, 72),(10, 43),
+(24, 88),(18, 51),(2, 135),(26, 64),(29, 14),(16, 106),(21, 39),(5, 83),(14, 171),(23, 47),
+(30, 120),(1, 7),(13, 52),(17, 92),(9, 19),(25, 48),(11, 67),(3, 27),(22, 104),(19, 61),
+(8, 79),(12, 124),(27, 15),(5, 33),(20, 85),(26, 138),(30, 70),(14, 11),(23, 163),
+(7, 41),(18, 97),(2, 132),(29, 24),(21, 60),(6, 141),(15, 76),(28, 37),(10, 108),(24, 152),
+(19, 44),(4, 103),(11, 68),(27, 22),(8, 72),(13, 35),(30, 162),(17, 9),(3, 50),(22, 114),
+(25, 87),(1, 38),(12, 70),(26, 17),(29, 124),(16, 32),(21, 81),(5, 56),(14, 105),(23, 139),
+(20, 93),(7, 26),(18, 57),(2, 28),(28, 71),(6, 49),(15, 133),(19, 96),(24, 150),(10, 13),
+(30, 79),(1, 124),(13, 15),(17, 85),(9, 138),(25, 55),(11, 70),(3, 11),(22, 163),(19, 41);
+
+
+-- Peuplement de la table UserClass (10 par ligne)
+INSERT INTO userclass VALUES
+(12, 5),(33, 10),(55, 9),(78, 14),(102, 6),(125, 3),(148, 8),(162, 12),(174, 1),(41, 4),
+(7, 15),(29, 11),(51, 7),(74, 2),(96, 16),(119, 13),(142, 5),(165, 10),(39, 1),(82, 9),
+(17, 8),(42, 4),(64, 16),(87, 11),(132, 2),(154, 14),(177, 7),(20, 13),(45, 5),
+(27, 3),(49, 12),(71, 7),(94, 15),(116, 1),(139, 10),(162, 8),(175, 2),(38, 9),(61, 6),
+(2, 16),(24, 5),(47, 2),(69, 13),(114, 4),(137, 11),(159, 15),(26, 1),(80, 7),
+(11, 14),(34, 3),(56, 10),(79, 6),(101, 16),(124, 12),(147, 4),(170, 9),(36, 5),(59, 1),
+(6, 13),(28, 2),(50, 7),(73, 15),(95, 1),(118, 10),(141, 8),(164, 3),(19, 16),(43, 11),
+(22, 4),(44, 9),(66, 5),(89, 1),(111, 14),(134, 7),(156, 16),(179, 12),(32, 6),(55, 2),
+(9, 8),(31, 3),(53, 10),(76, 6),(98, 16),(121, 12),(143, 4),(166, 1),(21, 15),(46, 11),
+(16, 14),(38, 3),(60, 10),(83, 6),(105, 16),(128, 12),(150, 4),(173, 1),(35, 8),(57, 5);
+
+
+-- Peuplement de la table skilloffer (10 par ligne)
+INSERT INTO skilloffer VALUES
+(12, 5),(3, 13),(28, 7),(9, 18),(15, 6),(20, 11),(7, 4),(25, 8),(1, 14),(19, 2),
+(4, 9),(11, 16),(27, 3),(8, 10),(13, 17),(17, 12),(6, 15),(22, 5),(10, 18),
+(24, 6),(18, 13),(2, 8),(26, 4),(29, 10),(16, 2),(21, 14),(5, 3),(14, 11),(23, 7),
+(30, 17),(1, 5),(13, 11),(17, 3),(9, 15),(25, 12),(11, 7),(3, 16),(22, 8),(19, 6),
+(8, 13),(12, 1),(27, 5),(5, 14),(20, 10),(26, 2),(16, 15),(30, 3),(14, 12),(23, 4),
+(7, 18),(18, 2),(2, 9),(29, 15),(21, 5),(6, 7),(15, 11),(28, 1),(10, 14),(24, 3),
+(17, 10),(25, 16),(1, 13),(13, 6),(9, 3),(30, 11),(11, 4),(3, 17),(22, 7),(19, 5),
+(8, 1),(12, 14),(27, 9),(5, 16),(20, 3),(26, 12),(16, 5),(30, 2),(14, 10),(23, 18),
+(7, 15),(18, 8),(2, 3),(29, 14),(21, 11),(6, 4),(15, 17),(28, 10),(10, 1),(24, 9),
+(17, 12),(25, 7),(1, 2),(13, 18),(9, 5),(30, 13),(11, 16),(3, 8),(22, 3),(19, 14);
+
+
+-- Peuplement de la table skilloffer  (10 par ligne)
+INSERT INTO skilloffer VALUES
+(12, 56, 3),(33, 10, 4),(55, 89, 2),(78, 14, 1),(102, 6, 5),(125, 123, 3),(148, 8, 2),(162, 68, 4),(174, 150, 1),(41, 4, 5),
+(7, 15, 3),(29, 11, 2),(51, 7, 5),(74, 2, 4),(96, 16, 1),(119, 13, 5),(142, 5, 2),(165, 10, 3),(39, 1, 4),(82, 9, 5),
+(17, 8, 4),(42, 4, 5),(64, 16, 2),(87, 11, 1),(109, 6, 3),(132, 2, 5),(154, 14, 4),(177, 7, 1),(20, 13, 2),(45, 5, 3),
+(27, 3, 5),(49, 12, 1),(71, 7, 4),(116, 1, 2),(139, 10, 5),(162, 8, 3),(175, 2, 1),(38, 9, 4),(61, 6, 2),
+(2, 16, 2),(24, 5, 3),(47, 2, 4),(69, 13, 5),(92, 8, 1),(114, 4, 2),(137, 11, 3),(159, 15, 4),(26, 1, 5),(80, 7, 3),
+(11, 14, 4),(34, 3, 5),(56, 10, 1),(79, 6, 2),(101, 16, 3),(124, 12, 4),(147, 4, 5),(170, 9, 1),(36, 5, 2),(59, 1, 3),
+(6, 13, 5),(28, 2, 1),(50, 7, 2),(73, 15, 3),(118, 10, 5),(141, 8, 1),(164, 3, 2),(19, 16, 3),(43, 11, 4),
+(22, 4, 1),(44, 9, 2),(66, 5, 3),(89, 1, 4),(111, 14, 5),(134, 7, 1),(156, 16, 2),(32, 6, 4),(55, 2, 5),
+(9, 8, 3),(31, 3, 4),(53, 10, 5),(76, 6, 1),(98, 16, 2),(121, 12, 3),(143, 4, 4),(166, 1, 5),(21, 15, 1),(46, 11, 2),
+(16, 14, 5),(38, 3, 1),(60, 10, 2),(83, 6, 3),(105, 16, 4),(128, 12, 5),(150, 4, 1),(173, 1, 2),(35, 8, 3),(57, 5, 4);
+
+
+-- Peuplement de la table candidature  (10 par ligne)
+INSERT INTO skilloffer VALUES
+(12, 56, "Je suis motivé pour ce poste.", NULL, 1),
+(3, 123, "J'ai une grande expérience dans ce domaine.", NULL, 0),
+(28, 89, "Je suis disponible immédiatement.", NULL, 1),
+(9, 45, "Je suis passionné par ce secteur d'activité.", NULL, 0),
+(15, 174, "Je suis prêt à relever de nouveaux défis.", NULL, 1),
+(20, 31, "Je souhaite évoluer dans une entreprise dynamique.", NULL, 0),
+(7, 102, "Je suis flexible au niveau des horaires de travail.", NULL, 1),
+(25, 68, "Je suis capable de travailler en équipe.", NULL, 0),
+(1, 150, "Je suis autonome et motivé.", NULL, 1),
+(19, 77, "Je possède de bonnes compétences en communication.", NULL, 0),
+(4, 98, "Je suis intéressé par ce poste.", NULL, 1),
+(11, 5, "Je suis motivé et déterminé.", NULL, 0),
+(27, 160, "Je suis prêt à apprendre de nouvelles compétences.", NULL, 1),
+(8, 33, "Je suis créatif et innovant.", NULL, 0),
+(13, 75, "Je suis organisé et rigoureux dans mon travail.", NULL, 1),
+(30, 111, "Je suis passionné par ce métier depuis toujours.", NULL, 0),
+(17, 22, "Je suis prêt à me déplacer si nécessaire.", NULL, 1),
+(6, 99, "Je suis polyvalent et adaptable.", NULL, 0),
+(22, 72, "Je suis à l'écoute des besoins de l'entreprise.", NULL, 1),
+(10, 43, "Je suis ambitieux et motivé par les défis.", NULL, 0),
+(24, 88, "Je suis passionné par ce domaine depuis mon enfance.", NULL, 1),
+(18, 51, "Je suis capable de travailler sous pression.", NULL, 0),
+(2, 135, "Je suis à la recherche de nouvelles opportunités professionnelles.", NULL, 1),
+(26, 64, "Je suis créatif et force de proposition.", NULL, 0),
+(29, 14, "Je suis rigoureux dans mon travail et attentif aux détails.", NULL, 1),
+(16, 106, "Je suis à l'aise avec les nouvelles technologies.", NULL, 0),
+(21, 39, "Je suis motivé à l'idée de contribuer au succès de l'entreprise.", NULL, 1),
+(5, 83, "Je suis passionné par mon métier et j'aime relever des défis.", NULL, 0),
+(14, 171, "Je suis prêt à m'investir pleinement dans ce projet.", NULL, 1),
+(23, 47, "Je suis créatif et j'ai le sens de l'initiative.", NULL, 0),
+(30, 120, "Je suis déterminé à réussir dans ce domaine.", NULL, 1),
+(1, 7, "Je suis polyvalent et je m'adapte rapidement.", NULL, 0),
+(13, 52, "Je suis ambitieux et j'ai le sens des responsabilités.", NULL, 1),
+(17, 92, "Je suis prêt à travailler dur pour atteindre mes objectifs.", NULL, 0),
+(9, 19, "Je suis organisé et je sais gérer les priorités.", NULL, 1),
+(25, 48, "Je suis enthousiaste à l'idée de contribuer au succès de l'entreprise.", NULL, 0),
+(11, 67, "Je suis autonome et je prends des initiatives.", NULL, 1),
+(3, 27, "Je suis capable de m'adapter à des environnements variés.", NULL, 0),
+(22, 104, "Je suis motivé par l'apprentissage continu.", NULL, 1),
+(19, 61, "Je suis résilient et je sais faire face aux difficultés.", NULL, 0),
+(8, 79, "Je suis passionné par mon métier et j'aime apprendre.", NULL, 1),
+(12, 124, "Je suis à l'écoute des besoins de mes collègues.", NULL, 0),
+(27, 15, "Je suis orienté résultats et je sais prendre des décisions.", NULL, 1),
+(5, 33, "Je suis motivé et je sais travailler en équipe.", NULL, 0),
+(20, 85, "Je suis déterminé à atteindre mes objectifs.", NULL, 1),
+(26, 138, "Je suis passionné par l'innovation et les nouvelles technologies.", NULL, 0),
+(16, 55, "Je suis dynamique et j'ai le sens de l'initiative.", NULL,0);
+
+
