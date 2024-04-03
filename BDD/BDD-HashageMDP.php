@@ -21,7 +21,7 @@
         if (substr($user['userPassword'],0,1) != '$'){
             $sql = "UPDATE users
             SET userPassword='".password_hash($user['userPassword'],PASSWORD_DEFAULT)."'
-            WHERE userPassword=".$user['userID'];
+            WHERE userID=".$user['userID'];
             //echo $sql.'<br>';
 
             $rslt = $db->query($sql);
@@ -31,4 +31,5 @@
             echo 'unchange id='.$index;
         }
         echo '<br>';
+        $index = $index + 1;
     }
