@@ -80,6 +80,7 @@
                 $internshipModel = new internshipModel($this->sourcePath);
 
                 if (isset($_GET['action'])){
+                    $action = 'display';
                     if ($_GET['action'] == 'display'){
                         $contenu = $internshipModel->selectAll();
                         include 'Views/mainView.php';
@@ -87,11 +88,12 @@
                     elseif ($_GET['action'] == 'displayOne'){
                         $contenu = $internshipModel->select($_GET['id']);
                         $title = 'Merge-stage'; // put the name of the stage
+                        $action = 'displayOne';
                         include 'Views/mainView.php';
                     }
                     elseif ($_GET['action'] == 'research'){
                         if (isset($_GET['domain'])){
-                        $contenu = $internshipModel->selectDomain($_GET['domain']);
+                            $contenu = $internshipModel->selectDomain($_GET['domain']);
                         }else {
                             $contenu = $internshipModel->selectSeveral(/*ensemble de paramètre à définir*/);
                         }
@@ -101,18 +103,23 @@
                         if ($this->whatIsConnect() == ('Pilote' or 'Admin')){
                             if ($_GET['action'] == 'add'){
                                 $title = 'Merge-stage-nouveau'; // put the name of the stage
+                                $action = 'add';
                                 // Choose an existing compagny after choose an existing adresse from this company
                                 
                                 // Make the insert with model
                                 // Signal the correct change
                                 // Display the mainView
+                                include 'Views/mainView.php';
                             }
                             elseif ($_GET['action'] == 'change'){
+                                
                                 // Ask the confirmation to update data
+                                $action = 'change';
                                 $title = 'Merge-modification'; // put the name of the stage
                                 // Make the update with model
                                 // Signal the correct change
                                 // Display the mainView
+                                include 'Views/mainView.php';
                             }
                             elseif ($_GET['action'] == 'delete'){
                                 // Ask the confirmation to delete
@@ -120,6 +127,7 @@
                                 $internshipModel->delete($_GET['id']);
                                 // Signal the correct change
                                 // Display the mainView
+                                include 'Views/mainView.php';
                             }
                             else {
                                 $this->errorsController(404);

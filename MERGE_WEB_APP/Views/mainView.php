@@ -15,14 +15,14 @@
         
     }
     elseif ($page == 'internship'){
-        if (isset($title)){
-            $smarty->assign('title',$title);
-        }
-        else {
-            $smarty->assign('title','Merge-stages');
-        }
+        if (isset($title)){ $smarty->assign('title',$title);}
+        else {  $smarty->assign('title','Merge-stages');}
         
     }
+
+    if (isset($action)){ $smarty->assign('action',$action);}
+    else {  $smarty->assign('action','none');}
+
     $user = $this->whatIsConnect();
     $smarty->assign('user', $user);
     $smarty->assign('source', $this->sourcePath);

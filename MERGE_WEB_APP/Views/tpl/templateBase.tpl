@@ -24,6 +24,10 @@
                 {include "../tpl/homeContent.tpl"}
             {elseif  $page eq 'connexion'}
                 {include "../tpl/connexionContent.tpl"}
+            {elseif $action eq 'display'}
+            {elseif $action eq 'dispalyOne'}
+            {elseif $action eq 'change'}
+                {include "../tpl/modification.tpl"}
             {/if}
         </div>
 
