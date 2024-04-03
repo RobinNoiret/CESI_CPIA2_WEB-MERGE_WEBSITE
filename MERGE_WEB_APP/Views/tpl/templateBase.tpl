@@ -26,10 +26,8 @@
                 {include "../tpl/connexionContent.tpl"}
             {elseif $action eq 'display'}
             {elseif $action eq 'dispalyOne'}
-            {elseif $action eq 'change'}
-                {include "../tpl/modification.tpl"}
-            {elseif $action eq 'add'}
-                {include "../tpl/creationContent.tpl"}
+            {elseif $action eq 'change' or $action eq 'add'}
+                {include "../tpl/offer.tpl"}
             {/if}
         </div>
 

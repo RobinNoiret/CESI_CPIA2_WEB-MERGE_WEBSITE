@@ -22,9 +22,14 @@
         if (isset($_GET['id'])){$smarty->assign('id',$_GET['id']);}
         if (isset($action)){ 
             $smarty->assign('action',$action);
-            if ($action == 'add'){
-                
-            }
+            $smarty->assign('placeholderTitle','Stage - Nom de stage');
+            $smarty->assign('companyID','');
+            $smarty->assign('internshipTitle','');
+            $smarty->assign('companyName', '');
+            $smarty->assign('internshipDesc','');
+            $smarty->assign('placeholderDesc','Donner une description des missions et du contenu de l\'offre de stage ...');
+            $smarty->assign('internshipDesc','');
+            $smarty->assign('placeholderComp','Compétence1, Compétence2, Compétence3 ...');
         }     
     }
    

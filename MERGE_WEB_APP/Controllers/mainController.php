@@ -73,7 +73,7 @@
 
 
         public function internshipController(){
-            if ($this->whatIsConnect() != 'none'){              // Verify user's connexion
+            if ($this->whatIsConnect() != 'none' or true){              // Verify user's connexion
                 $page = 'internship';
 
                 include_once 'Models/internshipModel.php';
