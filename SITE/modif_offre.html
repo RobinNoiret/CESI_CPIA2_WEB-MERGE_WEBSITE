@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Modif offre stage - Merge</title>
-        
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modification d'Offre de Stage - Merge</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style_buttons.css">
+    <script src="https://kit.fontawesome.com/7fb23658f3.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
 
-        <?php require_once('./PHP/header.php'); ?>
+    <?php require_once('./PHP/header.php'); ?>
 
-        <div class="main-content">
+    <div class="content">
+        <section class="stage-edit">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="input-and-buttons">
+                <input class="stage-title-input" placeholder="Titre du stage">
+                <div class="buttons-group">
+                    <button class="postuler" id="btn-apply">Postuler</button>
+                    <button class="like" id="btn-like">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <input class="company-name-input" placeholder="Nom de l'entreprise"></input>
+        </section>
+        <section class="stage-info">
+            <form class="stage-form">
+                <ul class="form-list">
+                    <li class="form-item">
+                        <input type="text" id="villeInput" oninput="searchCities()" name="Ville" placeholder="Ville">
+                    </li>
+                    <li class="form-item">
+                        <select id="suggestions" style="display: none;"></select> <!-- Utilisation d'une liste déroulante cachée -->
+                    </li>
+                    <li class="form-item">
+                        <input type="date" id="date" name="date">
+                    </li>
+                    <li class="form-item">
+                        <input type="text" id="field-3" name="field-3" placeholder="Promotion">
+                    </li>
+                    <li class="form-item">
+                        <input type="text" id="field-4" name="field-4" placeholder="Durée">
+                    </li>
+                    <li class="form-item">
+                        <input type="text" id="field-5" name="field-5" placeholder="Rémunération">
+                    </li>
+                </ul>
+            </form>      
             <div class="stage-details">
-                <div class="stage-title">
-                    <textarea name="" id="" cols="45" rows="2"></textarea>
-                </div>
-                <div class="stage-actions">
-                    <div class="btn-postuler">Postuler</div>
-                    <div class="btn-like">♡</div>
-                    <div class="btn-close">X</div>
-                </div>
-                <div class="company-name">
-                    <textarea name="" id="" cols="30" rows="1"></textarea>
-                </div>
-            </div>
-            <hr>
-            <div class="stage-info">
-                <div class="details-list">
-                    <ul>
-                        <li><textarea name="" id="" cols="10" rows="2"></textarea></li>
-                        <li><textarea name="" id="" cols="10" rows="2"></textarea></li>
-                        <li><textarea name="" id="" cols="10" rows="2"></textarea></li>
-                        <li><textarea name="" id="" cols="10" rows="2"></textarea></li>
-                        <li><textarea name="" id="" cols="10" rows="2"></textarea></li>
-                        <li><textarea name="" id="" cols="10" rows="2"></textarea></li>
-                    </ul>
-                    <div class="details-wrapper">
-                        <div class="job-description">
-                            <h3>Le Stage</h3>
-                            <div class="description">
-                                <h4>Descriptif du stage</h4>
-                                <textarea name="desc-stage" id="" cols="80" rows="20"></textarea>
-                            </div>
-                        </div>
-                        <div class="company-image">
-                            <img src="" alt="">
-                        </div>
-                        <div class="skills">
-                            <h4>Compétences</h4>
-                            <textarea name="competences" id="" cols="40" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <ul class="btn-list-modify">
-                            <li><button class="btn-delete">Supprimer</button></li>
-                            <li><button class="btn-save">Enregistrer</button></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <?php require_once('./PHP/footer.php'); ?>    
+                <article class="job-description">
+                    <h3>Le Stage</h3>
+                    <textarea class="description-input" placeholder="Descriptif du stage" rows="30" ></textarea>
+                </article>
 
-    </body>
+                <figure class="company-logo">
+                    <img src="Assets/logo avec texte.png" alt="Logo de l'entreprise">
+                </figure>
+
+                <div class="required-skills">
+                    <h4>Compétences Requises</h4>
+                    <textarea class="skills-input" placeholder="Listez les compétences" rows="10"></textarea>
+                </div>
+            </div>
+
+            <div class="edit-actions">
+                <button class="btn delete">Supprimer</button>
+                <button class="btn save">Enregistrer</button>
+            </div>
+        </section>
+    </div>
+
+    <?php require_once('./PHP/footer.php'); ?>
+
+    <script src="JS/script-modif-offre.js"></script>
+    <script src="JS/script-boutons.js"></script>
+
+</body>
 </html>
