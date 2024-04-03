@@ -20,6 +20,7 @@
 
         {include "../tpl/header.tpl"}
         <div class="Content">
+        
             {if $page eq 'home'}
                 {include "../tpl/homeContent.tpl"}
             {elseif  $page eq 'connexion'}
