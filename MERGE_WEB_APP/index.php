@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     include ('Controllers/mainController.php');         // Include the controller part
     $path = $_SERVER['REQUEST_URI'];
     $sourcePath = (substr($path,0,strlen($path)-(strlen(strrchr($path,'/'))-1)));  // Keep the path of the start point of the website

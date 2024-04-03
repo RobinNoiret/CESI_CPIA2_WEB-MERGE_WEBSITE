@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-03 09:12:02
+/* Smarty version 3.1.36, created on 2024-04-03 09:58:36
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660d0142702826_02567044',
+  'unifunc' => 'content_660d0c2cbe6974_79215739',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '746e0906028383140d4fad91c9ec0bf31563fe29' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\header.tpl',
-      1 => 1712088913,
+      1 => 1712129977,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660d0142702826_02567044 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660d0c2cbe6974_79215739 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header>
     <nav class="navbar">
