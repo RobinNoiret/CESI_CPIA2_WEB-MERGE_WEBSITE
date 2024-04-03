@@ -1,5 +1,5 @@
 -- sélection de la data base
-Use mergeDatabase;
+-- Use mergedatabase;
 
 -- Peuplement de la table Cities
 INSERT INTO Cities (cityName, postalCode) VALUES
@@ -34,32 +34,32 @@ INSERT INTO Cities (cityName, postalCode) VALUES
     -- Campus Aix-en-Provence
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Dupont', 'Sophie', 'Pilote', 'sophie.dupont', 'Pilot@123', 1),
-    ('Martin', 'Alexandre', 'Pilote', 'alex.martin', 'Learn123!', 1),
+    ('colette', 'Albert', 'Pilote', 'albert.colette', 'Pilot@5654', 1),
+    ('Mbap', 'Alexandre', 'Pilote', 'alexandre.mbap', 'Learn123!', 1),
 -- Etudiants
-    ('Smith', 'Emma', 'étudiant', 'emma.smith', 'password123', '1'),
-    ('Johnson', 'Noah', 'étudiant', 'noah.johnson', 'abcdef123', '1'),
-    ('Williams', 'Liam', 'étudiant', 'liam.williams', 'qwertyuiop', '1'),
-    ('Brown', 'Olivia', 'étudiant', 'olivia.brown', '1234567890', '1'),
-    ('Jones', 'Ava', 'étudiant', 'ava.jones', 'letmein123', '1');
+    ('Smith', 'Josephine', 'étudiant', 'josephine.smith', 'password123', 1),
+    ('Johnson', 'Joseph', 'étudiant', 'joseph.johnson', 'abcdef123', 1),
+    ('Houssein', 'Liam', 'étudiant', 'liam.houssein', 'qwertyuiop', 1),
+    ('Brownie', 'Olivia', 'étudiant', 'olivia.brownie', '1234567890', 1),
+    ('Jones', 'Avamind', 'étudiant', 'avamind.jones', 'letmein123', 1);
 
     -- Campus Angoulème
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Dupuis', 'Marie', 'Pilote', 'marie.dupuis', 'CodeHelp2024', 2),
-    ('Lambert', 'Théo', 'Pilote', 'theo.lambert', 'TutorTech21', 2),
+    ('Dupuis', 'Jean', 'Pilote', 'jean.dupuis', 'fsdfsdsqfq', 2),
+    ('Lambert', 'Youssef', 'Pilote', 'youssef.lambert', 'gfsgqdffhyd', 2),
 -- Etudiants
-    ('Davis', 'Mia', 'étudiant', 'mia.davis', 'password1234', 2),
-    ('Miller', 'Elijah', 'étudiant', 'elijah.miller', 'abcdef1234', 2),
-    ('Wilson', 'Sophia', 'étudiant', 'sophia.wilson', 'qwertyuiop1', 2),
-    ('Moore', 'Lucas', 'étudiant', 'lucas.moore', '12345678901', 2),
-    ('Taylor', 'Isabella', 'étudiant', 'isabella.taylor', 'letmein1234', 2);
+    ('Davis', 'Mial', 'étudiant', 'mial.davis', 'password1234', 2),
+    ('Miller', 'Elija', 'étudiant', 'elija.miller', 'abcdef1234', 2),
+    ('Wilson', 'Sophie', 'étudiant', 'sophie.wilson', 'qwertyuiop1', 2),
+    ('Moore', 'Lucase', 'étudiant', 'lucase.moore', '12345678901', 2),
+    ('Taylor', 'Isabela', 'étudiant', 'isabela.taylor', 'letmein1234', 2);
 
     -- Campus Arras
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
     ('Dubois', 'Lucas', 'Pilote', 'lucas.dubois', 'EduPass789', 3),
-    ('Rousseau', 'Éléonore', 'Pilote', 'eleonore.rousseau', 'Tutoring2024', 3),
+    ('Rousseau', 'Kevin', 'Pilote', 'kevin.rousseau', 'Tutoring2024', 3),
 -- Etudiants
     ('Jackson', 'Harper', 'étudiant', 'harper.jackson', 'password12345', 3),
     ('Clark', 'Charlotte', 'étudiant', 'charlotte.clark', 'abcdef12345', 3),
@@ -70,8 +70,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Bordeaux
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES  
 -- Pilotes
-    ('Dubois', 'Pierre', 'Pilote', 'pierre.dubois', 'BordeauxTutor', 4),
-    ('Moreau', 'Léa', 'Pilote', 'lea.moreau', 'LearnBordeaux', 4),
+    ('Dubois', 'Pierre', 'Pilote', 'pierre.dubois', 'kfytfju', 4),
+    ('Moreau', 'Lisa', 'Pilote', 'lisa.moreau', 'ligjkhk', 4),
 -- Etudiants
     ('Harris', 'Evelyn', 'étudiant', 'evelyn.harris', 'password123456', 4),
     ('Allen', 'Ethan', 'étudiant', 'ethan.allen', 'abcdef123456', 4),
@@ -82,8 +82,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Brest
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES   
 -- Pilotes
-    ('Leclerc', 'Louis', 'Pilote', 'louis.leclerc', 'BrestEdu2024', 5),
-    ('Roussel', 'Juliette', 'Pilote', 'juliette.roussel', 'TutorWave', 5),
+    ('David', 'Louis', 'Pilote', 'louis.david', 'kuyfjgk', 5),
+    ('Olivier', 'Juliette', 'Pilote', 'juliette.olivier', 'lihgfygdwfqt', 5),
 -- Etudiants
     ('Hall', 'Liam', 'étudiant', 'liam.hall', 'password1234567', 5),
     ('King', 'Mia', 'étudiant', 'mia.king', 'abcdef1234567', 5),
@@ -94,8 +94,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Caen
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES   
 -- Pilotes
-    ('Dupuis', 'Hugo', 'Pilote', 'hugo.dupuis', 'CaenTutoring', 6),
-    ('Lambert', 'Manon', 'Pilote', 'manon.lambert', 'LearnCaen21', 6),
+    ('Dupuis', 'Heliot', 'Pilote', 'heliot.dupuis', 'qrzqfve', 6),
+    ('Lambert', 'Mano', 'Pilote', 'mano.lambert', 'gdvsfdgfbff', 6),
 -- Etudiants
     ('Nelson', 'Noah', 'étudiant', 'noah.nelson', 'password12345678', 6),
     ('Carter', 'Avery', 'étudiant', 'avery.carter', 'abcdef12345678', 6),
@@ -106,8 +106,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Dijon
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES  
 -- Pilotes
-    ('Martin', 'Lucie', 'Pilote', 'lucie.martin', 'DijonEduPass', 7),
-    ('Dubois', 'Thomas', 'Pilote', 'thomas.dubois', 'TutorDijon123', 7),
+    ('Martin', 'Luci', 'Pilote', 'luci.martin', 'lkhgfytdgsvdg', 7),
+    ('Dubois', 'Thoma', 'Pilote', 'thoma.dubois', 'vfdsqdcf', 7),
 -- Etudiants
     ('Turner', 'Oliver', 'étudiant', 'oliver.turner', 'password123456789', 7),
     ('Phillips', 'Sophia', 'étudiant', 'sophia.phillips', 'abcdef123456789', 7),
@@ -118,8 +118,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Grenoble
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Dupuis', 'Marie', 'Pilote', 'marie.grenoble', 'CodeHelp2024', 8),
-    ('Lambert', 'Théo', 'Pilote', 'theo.grenoble', 'TutorTech21', 8),
+    ('Dupus', 'Marie', 'Pilote', 'marie.dupus', 'CodeHcdsqcxsfselp2024', 8),
+    ('Labet', 'Théo', 'Pilote', 'theo.labet', 'sqdsqcvdsfqd', 8),
 -- Etudiants
     ('Reed', 'Logan', 'étudiant', 'logan.reed', 'password1234567890', 8),
     ('Washington', 'Mia', 'étudiant', 'mia.washington', 'abcdef1234567890', 8),
@@ -130,8 +130,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus La Rochelle
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Leclerc', 'Louis', 'Pilote', 'louis.larochelle', 'BrestEdu2024', 9),
-    ('Roussel', 'Juliette', 'Pilote', 'juliette.larochelle', 'TutorWave', 9),
+    ('Lcerc', 'Lou', 'Pilote', 'lou.lcerc', 'vfdsd<cd', 9),
+    ('Rousez', 'Julie', 'Pilote', 'julie.rousez', 'fqwssxcwdgq', 9),
 -- Etudiants
     ('Foster', 'Noah', 'étudiant', 'noah.foster', 'password12345678901', 9),
     ('Sullivan', 'Sophia', 'étudiant', 'sophia.sullivan', 'abcdef12345678901', 9),
@@ -142,8 +142,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Lille
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Martin', 'Lucie', 'Pilote', 'lucie.lille', 'DijonEduPass', 10),
-    ('Dubois', 'Thomas', 'Pilote', 'thomas.lille', 'TutorDijon123', 10),
+    ('Marin', 'Luie', 'Pilote', 'luie.marin', 'ukjfhdsqD', 10),
+    ('Dois', 'Thamas', 'Pilote', 'thamas.dois', 'KJFHDGFZD', 10),
 -- Etudiants
     ('Griffin', 'Logan', 'étudiant', 'logan.griffin', 'password123456789012', 10),
     ('Shaw', 'Mia', 'étudiant', 'mia.shaw', 'abcdef123456789012', 10),
@@ -151,11 +151,11 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     ('Holmes', 'Avery', 'étudiant', 'avery.holmes', '1234567890123456789', 10),
     ('Tucker', 'Harper', 'étudiant', 'harper.tucker', 'letmein123456789012', 10);
 
-    --Campus Le Mans
+    -- Campus Le Mans
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Martin', 'Sophie', 'Pilote', 'sophie.lemans', 'TutorPass123', 11),
-    ('Leroy', 'Camille', 'Pilote', 'camille.lemans', 'SeaSkills456', 11),
+    ('Maytin', 'Soplie', 'Pilote', 'sophie.mayin', 'mlkjhrsgeqfzD', 11),
+    ('Leyoy', 'Cale', 'Pilote', 'cale.leyoy', 'MOLIUYTREQD', 11),
 -- Etudiants
     ('Sims', 'Noah', 'étudiant', 'noah.sims', 'password1234567890123', 11),
     ('Matthews', 'Sophia', 'étudiant', 'sophia.matthews', 'abcdef1234567890123', 11),
@@ -166,8 +166,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Lyon
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Rousseau', 'Éléonore', 'Pilote', 'eleonore.lyon', 'PilotWave2024', 12),
-    ('Dupont', 'Alexandre', 'Pilote', 'alex.lyon', 'LearnStras21', 12),
+    ('kev', 'Éléonore', 'Pilote', 'eleonore.kev', 'LUKYTRFHDGSFQ', 12),
+    ('maillars', 'Alexandre', 'Pilote', 'alex.maillars', 'JHDFGSQ', 12),
 -- Etudiants
     ('Dixon', 'Logan', 'étudiant', 'logan.dixon', 'password12345678901234', 12),
     ('Schmidt', 'Mia', 'étudiant', 'mia.schmidt', 'abcdef12345678901234', 12),
@@ -178,8 +178,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Montpellier
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Lefebvre', 'Antoine', 'Pilote', 'antoine.lefebvre', 'EduConnect2024', 13),
-    ('Martin', 'Sophie', 'Pilote', 'sophie.martin', 'TutorPass123', 13),
+    ('Joyca', 'Antoine', 'Pilote', 'antoine.joyca', 'KJFHDGS', 13),
+    ('Squeezie', 'Sophie', 'Pilote', 'sophie.squeezie', 'MUILYTRDSV', 13),
 -- Etudiants
     ('Ortega', 'Noah', 'étudiant', 'noah.ortega', 'password123456789012345', 13),
     ('Conner', 'Sophia', 'étudiant', 'sophia.conner', 'abcdef123456789012345', 13),
@@ -190,8 +190,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Nancy
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Dubois', 'Pierre', 'Pilote', 'pierre.dubois', 'BordeauxTutor', 14),
-    ('Moreau', 'Léa', 'Pilote', 'lea.moreau', 'LearnBordeaux', 14),
+    ('Auchard', 'Florent', 'Pilote', 'florent.auchard', 'MOUIYGFHBF', 14),
+    ('Morose', 'Léa', 'Pilote', 'lea.morose', '%FSEFDQER', 14),
 -- Etudiants
     ('Waters', 'Logan', 'étudiant', 'logan.waters', 'password1234567890123456', 14),
     ('Brewer', 'Mia', 'étudiant', 'mia.brewer', 'abcdef1234567890123456', 14),
@@ -202,8 +202,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Nantes
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Leclerc', 'Louis', 'Pilote', 'louis.leclerc', 'BrestEdu2024', 15),
-    ('Roussel', 'Juliette', 'Pilote', 'juliette.roussel', 'TutorWave', 15),
+    ('Sohum', 'Louis', 'Pilote', 'louis.sohum', 'BrestEdQESRFJNBVCu2024', 15),
+    ('Nazous', 'Juliette', 'Pilote', 'juliette.nazous', 'QTGHJ?CVXW', 15),
 -- Etudiants
     ('Short', 'Noah', 'étudiant', 'noah.short', 'password12345678901234567', 15),
     ('Carson', 'Sophia', 'étudiant', 'sophia.carson', 'abcdef12345678901234567', 15),
@@ -214,32 +214,32 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Nice
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Dupuis', 'Hugo', 'Pilote', 'hugo.dupuis', 'NiceTutoring', 16),
-    ('Lambert', 'Manon', 'Pilote', 'manon.lambert', 'LearnNice21', 16),
+    ('poir', 'Hugo', 'Pilote', 'hugo.poir', 'QSRFGHN?NVCXW<', 16),
+    ('kied', 'Manon', 'Pilote', 'manon.kied', 'QSGHBCVXWX', 16),
 -- Etudiants
     ('Bentley', 'Logan', 'étudiant', 'logan.bentley', 'password123456789012345678', 16),
     ('Hardy', 'Mia', 'étudiant', 'mia.hardy', 'abcdef123456789012345678', 16),
     ('Landry', 'Liam', 'étudiant', 'liam.landry', 'qwertyuiop123456789012345', 16),
     ('Brennan', 'Avery', 'étudiant', 'avery.brennan', '1234567890123456789012345', 16),
-    ('Watkins', 'Harper', 'étudiant', 'harper.watkins', 'letmein123456789012345678', 16),:
+    ('Watkins', 'Harper', 'étudiant', 'harper.watkins', 'letmein123456789012345678', 16);
 
     -- Campus Orléans
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Martin', 'Lucie', 'Pilote', 'lucie.martin', 'DijonEduPass', 17),
-    ('Dubois', 'Thomas', 'Pilote', 'thomas.dubois', 'TutorDijon123', 17),
+    ('mopa', 'Lucie', 'Pilote', 'lucie.mopa', 'JKDBGESFDS', 17),
+    ('voirs', 'Thomas', 'Pilote', 'thomas.voirs', 'KQSRHVFGYJFHGDS', 17),
 -- Etudiants
-    ('Mcintosh', 'Noah', 'étudiant', 'noah.mcintosh', 'password1234567890123456789', 17),
-('Ho', 'Sophia', 'étudiant', 'sophia.ho', 'abcdef1234567890123456789', 17),
-('Guzman', 'Ethan', 'étudiant', 'ethan.guzman', 'qwertyuiop123456789012345', 17),
-('Faulkner', 'Isabella', 'étudiant', 'isabella.faulkner', '12345678901234567890123456', 17),
-('Patton', 'Olivia', 'étudiant', 'olivia.patton', 'letmein1234567890123456789', 17);
+    ('Mcintosh', 'Noah', 'étudiant', 'noah.mcintosh', 'jsreufnfd5643', 17),
+    ('Ho', 'Sophia', 'étudiant', 'sophia.ho', 'abcdef1234567890123456789', 17),
+    ('Guzman', 'Ethan', 'étudiant', 'ethan.guzman', 'qwertyuiop123456789012345', 17),
+    ('Faulkner', 'Isabella', 'étudiant', 'isabella.faulkner', '12345678901234567890123456', 17),
+    ('Patton', 'Olivia', 'étudiant', 'olivia.patton', 'letmein1234567890123456789', 17);
 
     -- Campus Paris La Défense
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Martin', 'Sophie', 'Pilote', 'sophie.paris', 'TutorPass123', 18),
-    ('Leroy', 'Camille', 'Pilote', 'camille.paris', 'SeaSkills456', 18),
+    ('villette', 'Sophie', 'Pilote', 'sophie.villette', 'DGDSZD5', 18),
+    ('prum', 'Camille', 'Pilote', 'camille.prum', 'ssfgfdR4R44V£', 18),
 -- Etudiants
     ('Brown', 'Logan', 'étudiant', 'logan.brown', 'password12345678901234567890', 18),
     ('Lloyd', 'Mia', 'étudiant', 'mia.lloyd', 'abcdef12345678901234567890', 18),
@@ -250,8 +250,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Paris Nanterre
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Rousseau', 'Éléonore', 'Pilote', 'eleonore.paris', 'PilotWave2024', 19),
-    ('Dupont', 'Alexandre', 'Pilote', 'alex.paris', 'LearnStras21', 19),
+    ('house', 'Éléonore', 'Pilote', 'eleonore.house', 'RFEZQSCVBVHFGQDFDGJF', 19),
+    ('egkus', 'Alexandre', 'Pilote', 'alex.egkus', 'Ddfcvgfqd', 19),
 -- Etudiants
     ('Curtis', 'Noah', 'étudiant', 'noah.curtis', 'password123456789012345678901', 19),
     ('Gross', 'Sophia', 'étudiant', 'sophia.gross', 'abcdef123456789012345678901', 19),
@@ -262,8 +262,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Pau
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Dupuis', 'Marie', 'Pilote', 'marie.pau', 'CodeHelp2024', 20),
-    ('Lambert', 'Théo', 'Pilote', 'theo.pau', 'TutorTech21', 20),
+    ('deki', 'Marie', 'Pilote', 'marie.deki', 'gkjyrthfec', 20),
+    ('delpo', 'Théo', 'Pilote', 'theo.delpo', 'jyhrgdsfghjjhigfseqd', 20),
 -- Etudiants
     ('Holland', 'Logan', 'étudiant', 'logan.holland', 'password1234567890123456789012', 20),
     ('Hardin', 'Mia', 'étudiant', 'mia.hardin', 'abcdef1234567890123456789012', 20),
@@ -274,8 +274,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Reins
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Leclerc', 'Louis', 'Pilote', 'louis.leclerc', 'BrestEdu2024', 21),
-    ('Roussel', 'Juliette', 'Pilote', 'juliette.roussel', 'TutorWave', 21),
+    ('sqli', 'Louis', 'Pilote', 'louis.sqli', 'afsfvsdfsv', 21),
+    ('sqlert', 'Juliette', 'Pilote', 'juliette.sqlert', 'a&fcdsgsdfd', 21),
 -- Etudiants
     ('Sawyer', 'Noah', 'étudiant', 'noah.sawyer', 'password12345678901234567890123', 21),
     ('Whitley', 'Sophia', 'étudiant', 'sophia.whitley', 'abcdef12345678901234567890123', 21),
@@ -286,8 +286,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Rouen
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Dupuis', 'Hugo', 'Pilote', 'hugo.dupuis', 'CaenTutoring', 22),
-    ('Lambert', 'Manon', 'Pilote', 'manon.lambert', 'LearnCaen21', 22),
+    ('frgde', 'Hugo', 'Pilote', 'hugo.frgde', 'vDFSGSQdq', 22),
+    ('Laeaismbert', 'Manon', 'Pilote', 'manon.laeaismbert', 'bfdqdfsdtrsqjgfd', 22),
 -- Etudiants
     ('Floyd', 'Logan', 'étudiant', 'logan.floyd', 'password123456789012345678901234', 22),
     ('Hood', 'Mia', 'étudiant', 'mia.hood', 'abcdef123456789012345678901234', 22),
@@ -298,8 +298,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Saint-Nazaire
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Leclerc', 'Louis', 'Pilote', 'louis.saintnazaire', 'BrestEdu2024', 23),
-    ('Roussel', 'Juliette', 'Pilote', 'juliette.saintnazaire', 'TutorWave', 23),
+    ('miex', 'Louis', 'Pilote', 'louis.miex', 'kiuyhgfdsdxs', 23),
+    ('miuensf', 'Juliette', 'Pilote', 'juliette.miuensf', 'mlkjhgfdsq', 23),
 -- Etudiants
     ('Haley', 'Noah', 'étudiant', 'noah.haley', 'password1234567890123456789012345', 23),
     ('Daugherty', 'Sophia', 'étudiant', 'sophia.daugherty', 'abcdef1234567890123456789012345', 23),
@@ -310,8 +310,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Strasbourg
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Martin', 'Lucie', 'Pilote', 'lucie.strasbourg', 'DijonEduPass', 24),
-    ('Dubois', 'Thomas', 'Pilote', 'thomas.strasbourg', 'TutorDijon123', 24),
+    ('moued', 'Lucie', 'Pilote', 'lucie.moued', 'sazdfjklm', 24),
+    ('mouhad', 'Thomas', 'Pilote', 'thomas.mouhad', 'qsdfgh', 24),
 -- Etudiants
     ('Dickerson', 'Logan', 'étudiant', 'logan.dickerson', 'password12345678901234567890123456', 24),
     ('Leach', 'Mia', 'étudiant', 'mia.leach', 'abcdef12345678901234567890123456', 24),
@@ -322,8 +322,8 @@ INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassw
     -- Campus Toulouse
 INSERT INTO Users (userLastName, userFirstName, userStatus, userLogin, userPassword, cityID) VALUES
 -- Pilotes
-    ('Martin', 'Sophie', 'Pilote', 'sophie.toulouse', 'TutorPass123', 25),
-    ('Leroy', 'Camille', 'Pilote', 'camille.toulouse', 'SeaSkills456', 25),
+    ('Niris', 'Sophie', 'Pilote', 'sophie.niris', 'QSDFGHJK', 25),
+    ('Loir', 'Camille', 'Pilote', 'camille.loir', 'QSDFTYUI', 25),
 -- Etudiants
     ('Gill', 'Noah', 'étudiant', 'noah.gill', 'password123456789012345678901234567', 25),
     ('Combs', 'Sophia', 'étudiant', 'sophia.combs', 'abcdef123456789012345678901234567', 25),
@@ -375,7 +375,7 @@ INSERT INTO Skills (skill) VALUES
 
 -- Peuplement de la table Companies
 insert into Companies (companyName, activityArea, visibility) values
-('D''Amore and Sons', 'Termite Control', false),
+('DAmore and Sons', 'Termite Control', false),
 ('Goyette-Schumm', 'Electrical', false),
 ('Howell Group', 'Drywall & Acoustical (MOB)', true),
 ('Jacobson Inc', 'Rebar & Wire Mesh Install', true),
@@ -407,7 +407,7 @@ insert into Companies (companyName, activityArea, visibility) values
 ('Klein, Prosacco and Wiegand', 'Rebar & Wire Mesh Install', true),
 ('Wolf-Mann', 'HVAC', true),
 ('Haley-O''Hara', 'Elevator', true),
-('O''Conner, Lynch and Roob', 'Drilled Shafts', false),
+('OConner, Lynch and Roob', 'Drilled Shafts', false),
 ('Metz-Sipes', 'Structural & Misc Steel Erection', false),
 ('Rolfson, Hagenes and D''Amore', 'Wall Protection', true),
 ('Stehr, Kessler and Wilkinson', 'Prefabricated Aluminum Metal Canopies', false),
@@ -528,36 +528,36 @@ INSERT INTO `Addresses` VALUES
 
 
 -- Peuplement de la table Offers
-insert into Offers (title, descr, internDuration, publicationDate, placesNumber, remunerationBasis, addressID) values
-('Développeur Web Junior', "Cette offre s'adresse à un développeur web junior passionné par la création de sites web dynamiques et innovants. Vous rejoindrez une startup en pleine croissance, où vous aurez l'opportunité de travailler sur divers projets excitants et de collaborer avec une équipe talentueuse.", 3, '2024-03-25', 2, 1000, 12),
-('Assistant Marketing Digital', "Nous recherchons un assistant en marketing digital pour contribuer à la mise en œuvre de stratégies de marketing innovantes. Vous travaillerez au sein d'une agence de communication dynamique, où vous aurez l'occasion de développer vos compétences dans divers domaines du marketing digital.", 6, '2024-03-22', 1, 1500, 76),
-('Stagiaire en Ressources Humaines', "Rejoignez notre équipe en tant que stagiaire en ressources humaines et découvrez le fonctionnement d'une entreprise dynamique. Vous assisterez nos experts RH dans diverses tâches, y compris le recrutement, la formation et le développement du personnel.", 4, '2024-03-20', 1, 800, 45),
-('Développeur Mobile Senior', "Nous recherchons un développeur mobile senior pour prendre en charge le développement et la maintenance de nos applications mobiles. Vous serez responsable de la conception, du développement et du déploiement d'applications robustes et performantes.", 12, '2024-03-18', 3, 2000, 32),
-('Assistant Administratif', "Vous êtes à la recherche d'un poste polyvalent dans le domaine administratif? Rejoignez notre équipe en tant qu'assistant administratif et contribuez au bon fonctionnement de notre entreprise. Vous serez chargé de diverses tâches administratives et de soutien, offrant ainsi une expérience précieuse dans un environnement professionnel stimulant.", 5, '2024-03-15', 2, 1200, 51),
-('Designer Graphique Junior', "Vous êtes passionné par la création visuelle? Rejoignez-nous en tant que designer graphique junior et participez à la conception de supports de communication créatifs et impactants. Vous travaillerez sur une variété de projets, de la conception de logos à la création de maquettes pour des campagnes publicitaires.", 3, '2024-03-12', 1, 900, 64),
-('Analyste Financier', "Vous êtes un expert en analyse financière? Rejoignez notre équipe en tant qu'analyste financier et contribuez à l'élaboration de stratégies d investissement rentables. Vous aurez l opportunité d analyser les marchés financiers, d évaluer les opportunités d investissement et de fournir des recommandations stratégiques.", 8, '2024-03-10', 2, 1800, 22),
-('Assistant de Production', "Cette offre s'adresse à un assistant de production passionné par l'industrie du divertissement. Vous rejoindrez une société de production audiovisuelle et apporterez un soutien précieux à l'équipe de production. Vos responsabilités incluront l'organisation des tournages, la gestion des plannings et le suivi logistique.", 6, '2024-03-08', 1, 700, 43),
-('Stagiaire en Développement Commercial', "Rejoignez notre équipe en tant que stagiaire en développement commercial et découvrez les rouages du secteur commercial. Vous assisterez nos équipes dans la prospection de nouveaux clients, la négociation des contrats et le suivi des performances commerciales.", 4, '2024-03-05', 1, 950, 18),
-('Ingénieur en Sécurité Informatique', "Cette offre s'adresse à un ingénieur en sécurité informatique expérimenté pour renforcer notre équipe IT. Vous serez Florent responsable de la conception, de la mise en œuvre et de la maintenance des solutions de sécurité informatique de l'entreprise, garantissant ainsi la protection de nos systèmes et données sensibles.", 10, '2024-03-02', 3, 1600, 79),
+insert into Offers (title, descr, publicationDate, placesNumber, remunerationBasis, addressID) values
+('Développeur Web Junior', "Cette offre s'adresse à un développeur web junior passionné par la création de sites web dynamiques et innovants. Vous rejoindrez une startup en pleine croissance, où vous aurez l'opportunité de travailler sur divers projets excitants et de collaborer avec une équipe talentueuse.", '2024-03-25', 2, 1000, 12),
+('Assistant Marketing Digital', "Nous recherchons un assistant en marketing digital pour contribuer à la mise en œuvre de stratégies de marketing innovantes. Vous travaillerez au sein d'une agence de communication dynamique, où vous aurez l'occasion de développer vos compétences dans divers domaines du marketing digital.", '2024-03-22', 1, 1500, 76),
+('Stagiaire en Ressources Humaines', "Rejoignez notre équipe en tant que stagiaire en ressources humaines et découvrez le fonctionnement d'une entreprise dynamique. Vous assisterez nos experts RH dans diverses tâches, y compris le recrutement, la formation et le développement du personnel.", '2024-03-20', 1, 800, 45),
+('Développeur Mobile Senior', "Nous recherchons un développeur mobile senior pour prendre en charge le développement et la maintenance de nos applications mobiles. Vous serez responsable de la conception, du développement et du déploiement d'applications robustes et performantes.", '2024-03-18', 3, 2000, 32),
+('Assistant Administratif', "Vous êtes à la recherche d'un poste polyvalent dans le domaine administratif? Rejoignez notre équipe en tant qu'assistant administratif et contribuez au bon fonctionnement de notre entreprise. Vous serez chargé de diverses tâches administratives et de soutien, offrant ainsi une expérience précieuse dans un environnement professionnel stimulant.", '2024-03-15', 2, 1200, 51),
+('Designer Graphique Junior', "Vous êtes passionné par la création visuelle? Rejoignez-nous en tant que designer graphique junior et participez à la conception de supports de communication créatifs et impactants. Vous travaillerez sur une variété de projets, de la conception de logos à la création de maquettes pour des campagnes publicitaires.", '2024-03-12', 1, 900, 64),
+('Analyste Financier', "Vous êtes un expert en analyse financière? Rejoignez notre équipe en tant qu'analyste financier et contribuez à l'élaboration de stratégies d investissement rentables. Vous aurez l opportunité d analyser les marchés financiers, d évaluer les opportunités d investissement et de fournir des recommandations stratégiques.", '2024-03-10', 2, 1800, 22),
+('Assistant de Production', "Cette offre s'adresse à un assistant de production passionné par l'industrie du divertissement. Vous rejoindrez une société de production audiovisuelle et apporterez un soutien précieux à l'équipe de production. Vos responsabilités incluront l'organisation des tournages, la gestion des plannings et le suivi logistique.", '2024-03-08', 1, 700, 43),
+('Stagiaire en Développement Commercial', "Rejoignez notre équipe en tant que stagiaire en développement commercial et découvrez les rouages du secteur commercial. Vous assisterez nos équipes dans la prospection de nouveaux clients, la négociation des contrats et le suivi des performances commerciales.", '2024-03-05', 1, 950, 18),
+('Ingénieur en Sécurité Informatique', "Cette offre s'adresse à un ingénieur en sécurité informatique expérimenté pour renforcer notre équipe IT. Vous serez Florent responsable de la conception, de la mise en œuvre et de la maintenance des solutions de sécurité informatique de l'entreprise, garantissant ainsi la protection de nos systèmes et données sensibles.", '2024-03-02', 3, 1600, 79),
 
-('Assistant de Communication', "Vous êtes passionné par la communication et souhaitez contribuer à la visibilité d'une entreprise dynamique? Rejoignez notre équipe en tant qu'assistant de communication et participez à la création de contenus attractifs pour nos différents canaux de communication.", 5, '2024-02-28', 2, 1100, 8),
-('Développeur Full Stack', "Nous recherchons un développeur Full Stack talentueux pour rejoindre notre équipe de développement. Vous serez responsable du développement de nouvelles fonctionnalités pour nos applications web, en travaillant sur l'ensemble du processus de développement, de la conception à la mise en production.", 9, '2024-02-25', 3, 1900, 35),
-('Assistant de Recherche en Biologie', "Rejoignez notre équipe en tant qu'assistant de recherche en biologie et contribuez à des projets de recherche passionnants dans le domaine de la biologie moléculaire. Vous travaillerez en étroite collaboration avec nos chercheurs pour mener des expériences, analyser les données et rédiger des rapports scientifiques.", 6, '2024-02-22', 1, 800, 58),
-('Chef de Projet Marketing', "Vous êtes un professionnel du marketing stratégique et souhaitez relever de nouveaux défis? Rejoignez notre équipe en tant que chef de projet marketing et prenez en charge la conception et la mise en œuvre de stratégies marketing innovantes pour promouvoir nos produits et services.", 12, '2024-02-20', 2, 1700, 19),
-('Assistant Commercial Export', "Nous recherchons un assistant commercial export pour contribuer au développement de nos activités à l'international. Vous serez chargé d'assister nos équipes commerciales dans la gestion des clients internationaux, la négociation des contrats et le suivi des commandes.", 6, '2024-02-18', 1, 1300, 71),
-('Designer UI/UX', "Vous êtes un designer passionné par l'expérience utilisateur? Rejoignez notre équipe en tant que designer UI/UX et participez à la conception d'interfaces utilisateur intuitives et attrayantes pour nos produits numériques. Vous travaillerez en étroite collaboration avec nos équipes de développement pour créer des expériences utilisateur exceptionnelles.", 8, '2024-02-15', 2, 1400, 29),
-('Stagiaire en Marketing Digital', "Vous êtes étudiant en marketing et recherchez un stage enrichissant dans le domaine du digital? Rejoignez notre équipe en tant que stagiaire en marketing digital et contribuez à la mise en œuvre de stratégies marketing innovantes pour promouvoir nos produits et services en ligne.", 3, '2024-02-12', 1, 850, 50),
-('Développeur Python Junior', "Vous êtes passionné par le développement logiciel et souhaitez acquérir de nouvelles compétences? Rejoignez notre équipe en tant que développeur Python junior et participez au développement de nos applications logicielles en utilisant les dernières technologies et pratiques de développement.", 4, '2024-02-10', 1, 1000, 67),
-('Assistant RH/Paie', "Rejoignez notre équipe en tant qu'assistant en ressources humaines et paie et contribuez à la gestion administrative du personnel et à la paie. Vous serez chargé d'assister nos équipes RH dans la gestion des dossiers du personnel, la préparation des bulletins de paie et le suivi des congés et absences.", 7, '2024-02-08', 2, 1200, 14),
-('Stagiaire en Communication', "Vous êtes étudiant en communication et recherchez un stage pour mettre en pratique vos compétences? Rejoignez notre équipe en tant que stagiaire en communication et participez à la création de contenus et à la gestion des canaux de communication de l'entreprise.", 5, '2024-02-05', 2, 950, 82),
+('Assistant de Communication', "Vous êtes passionné par la communication et souhaitez contribuer à la visibilité d'une entreprise dynamique? Rejoignez notre équipe en tant qu'assistant de communication et participez à la création de contenus attractifs pour nos différents canaux de communication.", '2024-02-28', 2, 1100, 8),
+('Développeur Full Stack', "Nous recherchons un développeur Full Stack talentueux pour rejoindre notre équipe de développement. Vous serez responsable du développement de nouvelles fonctionnalités pour nos applications web, en travaillant sur l'ensemble du processus de développement, de la conception à la mise en production.", '2024-02-25', 3, 1900, 35),
+('Assistant de Recherche en Biologie', "Rejoignez notre équipe en tant qu'assistant de recherche en biologie et contribuez à des projets de recherche passionnants dans le domaine de la biologie moléculaire. Vous travaillerez en étroite collaboration avec nos chercheurs pour mener des expériences, analyser les données et rédiger des rapports scientifiques.", '2024-02-22', 1, 800, 58),
+('Chef de Projet Marketing', "Vous êtes un professionnel du marketing stratégique et souhaitez relever de nouveaux défis? Rejoignez notre équipe en tant que chef de projet marketing et prenez en charge la conception et la mise en œuvre de stratégies marketing innovantes pour promouvoir nos produits et services.", '2024-02-20', 2, 1700, 19),
+('Assistant Commercial Export', "Nous recherchons un assistant commercial export pour contribuer au développement de nos activités à l'international. Vous serez chargé d'assister nos équipes commerciales dans la gestion des clients internationaux, la négociation des contrats et le suivi des commandes.", '2024-02-18', 1, 1300, 71),
+('Designer UI/UX', "Vous êtes un designer passionné par l'expérience utilisateur? Rejoignez notre équipe en tant que designer UI/UX et participez à la conception d'interfaces utilisateur intuitives et attrayantes pour nos produits numériques. Vous travaillerez en étroite collaboration avec nos équipes de développement pour créer des expériences utilisateur exceptionnelles.", '2024-02-15', 2, 1400, 29),
+('Stagiaire en Marketing Digital', "Vous êtes étudiant en marketing et recherchez un stage enrichissant dans le domaine du digital? Rejoignez notre équipe en tant que stagiaire en marketing digital et contribuez à la mise en œuvre de stratégies marketing innovantes pour promouvoir nos produits et services en ligne.", '2024-02-12', 1, 850, 50),
+('Développeur Python Junior', "Vous êtes passionné par le développement logiciel et souhaitez acquérir de nouvelles compétences? Rejoignez notre équipe en tant que développeur Python junior et participez au développement de nos applications logicielles en utilisant les dernières technologies et pratiques de développement.", '2024-02-10', 1, 1000, 67),
+('Assistant RH/Paie', "Rejoignez notre équipe en tant qu'assistant en ressources humaines et paie et contribuez à la gestion administrative du personnel et à la paie. Vous serez chargé d'assister nos équipes RH dans la gestion des dossiers du personnel, la préparation des bulletins de paie et le suivi des congés et absences.", '2024-02-08', 2, 1200, 14),
+('Stagiaire en Communication', "Vous êtes étudiant en communication et recherchez un stage pour mettre en pratique vos compétences? Rejoignez notre équipe en tant que stagiaire en communication et participez à la création de contenus et à la gestion des canaux de communication de l'entreprise.", '2024-02-05', 2, 950, 82),
 
-('Développeur Front-end', "Nous recherchons Brieuc un développeur Front-end pour rejoindre notre équipe de développement. Vous serez responsable de la création d'interfaces utilisateur attrayantes et fonctionnelles pour nos applications web, en utilisant les dernières technologies et frameworks Front-end.", 6, '2024-01-28', 2, 1600, 26),
-('Assistant Marketing Opérationnel', "Rejoignez notre équipe marketing en tant qu'assistant marketing opérationnel et participez à la mise en œuvre de campagnes marketing et promotionnelles. Vous serez chargé d'assister nos responsables marketing dans la coordination des actions marketing et le suivi des performances.", 4, '2024-01-25', 1, 900, 63),
-('Stagiaire en Développement Web', "Vous êtes étudiant en informatique et recherchez un stage dans le développement web? Rejoignez notre équipe en tant que stagiaire en développement web et participez au développement et à la maintenance de nos applications web, en utilisant les dernières technologies et pratiques de développement.", 3, '2024-01-22', 1, 750, 41),
-('Consultant en Stratégie Digitale', "Nous recherchons un consultant en stratégie digitale pour conseiller nos clients dans l'élaboration et la mise en œuvre de stratégies digitales efficaces. Vous serez chargé d'analyser les besoins des clients, de recommander des solutions adaptées et d'assurer le suivi de leur mise en œuvre.", 8, '2024-01-20', 3, 1900, 53),
-('Assistant Chef de Projet', "Rejoignez notre équipe en tant qu'assistant chef de projet et participez à la gestion et au suivi de projets dans différents domaines. Vous assisterez nos chefs de projet dans la planification, l'organisation et le suivi des projets, en veillant à leur bon déroulement et à leur livraison dans les délais impartis.", 5, '2024-01-18', 2, 1100, 79),
-('Designer Produit', "Vous êtes passionné par le design de produits et souhaitez contribuer à la création de produits innovants? Rejoignez notre équipe en tant que designer produit et participez à la conception de produits attrayants et ergonomiques, en collaboration avec nos équipes de développement.", 7, '2024-01-15', 2, 1300, 17),
-('Stagiaire en Gestion de Projet', "Vous êtes étudiant en gestion de projet et recherchez un stage pour mettre en pratique vos compétences? Rejoignez notre équipe en tant que stagiaire en gestion de projet et participez à la planification, à l'organisation et au suivi de projets dans différents domaines.", 3, '2024-01-12', 1, 800, 34),
-('Assistant Commercial', "Nous recherchons un assistant commercial pour soutenir nos équipes dans le développement des ventes. Vous serez chargé d'assister nos commerciaux dans la prospection de clients, la gestion des comptes clients et le suivi des ventes.", 6, '2024-01-10', 2, 1200, 57),
-('Développeur Java Senior', "Nous recherchons un développeur Java senior pour rejoindre notre équipe de développement logiciel. Vous serez responsable de la conception, du développement et de la maintenance de solutions logicielles robustes et évolutives, en utilisant les meilleures pratiques de développement.", 10, '2024-01-08', 3, 1800, 22),
-('Assistant de Communication Interne', "Rejoignez notre équipe en tant qu'assistant de communication interne et participez à la gestion des communications internes de l'entreprise. Vous serez chargé d'assister nos responsables communication dans la création de contenus, la diffusion d'informations et l'organisation d'événements internes.", 4, '2024-01-05', 1, 850, 68);
+('Développeur Front-end', "Nous recherchons Brieuc un développeur Front-end pour rejoindre notre équipe de développement. Vous serez responsable de la création d'interfaces utilisateur attrayantes et fonctionnelles pour nos applications web, en utilisant les dernières technologies et frameworks Front-end.", '2024-01-28', 2, 1600, 26),
+('Assistant Marketing Opérationnel', "Rejoignez notre équipe marketing en tant qu'assistant marketing opérationnel et participez à la mise en œuvre de campagnes marketing et promotionnelles. Vous serez chargé d'assister nos responsables marketing dans la coordination des actions marketing et le suivi des performances.", '2024-01-25', 1, 900, 63),
+('Stagiaire en Développement Web', "Vous êtes étudiant en informatique et recherchez un stage dans le développement web? Rejoignez notre équipe en tant que stagiaire en développement web et participez au développement et à la maintenance de nos applications web, en utilisant les dernières technologies et pratiques de développement.", '2024-01-22', 1, 750, 41),
+('Consultant en Stratégie Digitale', "Nous recherchons un consultant en stratégie digitale pour conseiller nos clients dans l'élaboration et la mise en œuvre de stratégies digitales efficaces. Vous serez chargé d'analyser les besoins des clients, de recommander des solutions adaptées et d'assurer le suivi de leur mise en œuvre.", '2024-01-20', 3, 1900, 53),
+('Assistant Chef de Projet', "Rejoignez notre équipe en tant qu'assistant chef de projet et participez à la gestion et au suivi de projets dans différents domaines. Vous assisterez nos chefs de projet dans la planification, l'organisation et le suivi des projets, en veillant à leur bon déroulement et à leur livraison dans les délais impartis.", '2024-01-18', 2, 1100, 79),
+('Designer Produit', "Vous êtes passionné par le design de produits et souhaitez contribuer à la création de produits innovants? Rejoignez notre équipe en tant que designer produit et participez à la conception de produits attrayants et ergonomiques, en collaboration avec nos équipes de développement.", '2024-01-15', 2, 1300, 17),
+('Stagiaire en Gestion de Projet', "Vous êtes étudiant en gestion de projet et recherchez un stage pour mettre en pratique vos compétences? Rejoignez notre équipe en tant que stagiaire en gestion de projet et participez à la planification, à l'organisation et au suivi de projets dans différents domaines.", '2024-01-12', 1, 800, 34),
+('Assistant Commercial', "Nous recherchons un assistant commercial pour soutenir nos équipes dans le développement des ventes. Vous serez chargé d'assister nos commerciaux dans la prospection de clients, la gestion des comptes clients et le suivi des ventes.", '2024-01-10', 2, 1200, 57),
+('Développeur Java Senior', "Nous recherchons un développeur Java senior pour rejoindre notre équipe de développement logiciel. Vous serez responsable de la conception, du développement et de la maintenance de solutions logicielles robustes et évolutives, en utilisant les meilleures pratiques de développement.", '2024-01-08', 3, 1800, 22),
+('Assistant de Communication Interne', "Rejoignez notre équipe en tant qu'assistant de communication interne et participez à la gestion des communications internes de l'entreprise. Vous serez chargé d'assister nos responsables communication dans la création de contenus, la diffusion d'informations et l'organisation d'événements internes.", '2024-01-05', 1, 850, 68);

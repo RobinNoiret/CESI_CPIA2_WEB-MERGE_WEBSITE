@@ -65,6 +65,8 @@ CREATE TABLE `cities` (
   `postalCode` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+
+
 -- --------------------------------------------------------
 
 --
@@ -84,8 +86,8 @@ CREATE TABLE `classes` (
 
 CREATE TABLE `companies` (
   `companyID` int(11) NOT NULL,
-  `companyName` varchar(25) DEFAULT NULL,
-  `activityArea` varchar(20) DEFAULT NULL,
+  `companyName` varchar(100) DEFAULT NULL,
+  `activityArea` varchar(100) DEFAULT NULL,
   `visibility` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -109,9 +111,8 @@ CREATE TABLE `evaluations` (
 
 CREATE TABLE `offers` (
   `offerID` int(11) NOT NULL,
-  `title` varchar(100) NOT NULL,          -- Ajouté
-  `descr` text DEFAULT NOT NULL,          -- Ajouté (description en abrégé car description existe déjà en SQL)
-  `internDuration` smallint(6) DEFAULT NULL,
+  `title` varchar(100) NOT NULL,
+  `descr` text NOT NULL,
   `publicationDate` date DEFAULT NULL,
   `placesNumber` smallint(6) DEFAULT NULL,
   `remunerationBasis` decimal(10,2) DEFAULT NULL,
@@ -137,7 +138,7 @@ CREATE TABLE `skilloffer` (
 
 CREATE TABLE `skills` (
   `skillID` int(11) NOT NULL,
-  `skill` varchar(20) NOT NULL
+  `skill` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -161,7 +162,7 @@ CREATE TABLE `users` (
   `userID` int(11) NOT NULL,
   `userLastName` varchar(25) DEFAULT NULL,
   `userFirstName` varchar(25) DEFAULT NULL,
-  `userStatus` enum('Piolte','Etudiant','Admin') DEFAULT NULL,
+  `userStatus` enum('Pilote','Etudiant','Admin') DEFAULT NULL,
   `userLogin` varchar(20) DEFAULT NULL,
   `userPassword` varchar(100) DEFAULT NULL,
   `cityID` int(11) DEFAULT NULL
