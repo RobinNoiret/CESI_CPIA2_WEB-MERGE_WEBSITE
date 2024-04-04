@@ -76,13 +76,14 @@
 
         public function companiesController() {
             $page = 'companies';
-        
+            
+            
             // Inclure le modèle des entreprises
             include_once 'Models/companyModel.php';
-        
+            
             // Créer une instance du modèle des entreprises
             $companyModel = new companyModel($this->sourcePath);
-
+            
             // Vérifier si un ID d'entreprise est passé en paramètre
             if (isset($_POST['search'])) {
                 // Récupération de l'id de la company
@@ -95,14 +96,18 @@
                     // Appeler la méthode selectAll() pour récupérer toutes les entreprises par défaut
                     $companies = $companyModel->selectAll();
                 }
-            } else{
+            } else if (isset($_GET['action']) == 'add') {
+                $action = $_GET['action'];
+                $companies = null;
+
+            }else{
                 // Appeler la méthode selectAll() pour récupérer toutes les entreprises par défaut
                 $companies = $companyModel->selectAll();
             }
             
             // Passer les données récupérées à la vue
             include 'Views/mainView.php';
-        
+            
             return true;
         }
 
