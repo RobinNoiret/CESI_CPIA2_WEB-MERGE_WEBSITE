@@ -67,8 +67,6 @@
             if ($this->whatIsConnect() != 'none' or true){              // Verify user's connexion
                 $page = 'internship';
 
-                var_dump($_POST);
-
                 include_once 'Models/internshipModel.php';
                 $internshipModel = new internshipModel($this->sourcePath);
 
@@ -134,12 +132,12 @@
                             }
                             elseif ($_GET['action'] == 'delete'){
                                 // Ask the confirmation to delete
-
+                                var_dump($_POST);
                                 // Make the delete with model
                                 $internshipModel->delete($_GET['id']);
 
                                 // Alert on the correct change
-                                header('Location: '.$this->sourcePath.'?page=internship&action=displayOne&id='.$_GET['id']);
+                                header('Location: '.$this->sourcePath.'?page=internship&action=display');
                                 exit;
                                 
                             }

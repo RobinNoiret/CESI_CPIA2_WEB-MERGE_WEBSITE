@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-04 23:22:07
+/* Smarty version 3.1.36, created on 2024-04-05 01:47:32
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660f19ff67bca9_87501334',
+  'unifunc' => 'content_660f3c14c9fe15_90358875',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660f19ff67bca9_87501334 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660f3c14c9fe15_90358875 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="landing">
 
     <!-- ___________________________________________ Image de fond ___________________________________________ -->

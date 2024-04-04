@@ -99,9 +99,9 @@
 
             $Skills = '';
             foreach ( $datas as $data){
-                $Skills = $Skills.$data['skill'].',';
+                $Skills = $Skills.$data['skill'].', ';
             }
-            $Skills = substr($Skills,1,-1);
+            $Skills = substr($Skills,0,-2);
             
             return $Skills;
         }
@@ -186,13 +186,14 @@
         public function delete($id){
             // Delete relation beetween skills and the offer 
             $request = $this->db->prepare('DELETE FROM skilloffer WHERE offerID = :offerID;');
-            $request->bindValue(':offerID',$id);
+            $request->bindValue(':offerID',intval($id));
             $this->tryToExecute($request);
 
             // Delete the offer
-            $request = $this->db->prepare('DELETE FROM offers WHERE offerID = :offerID;');
-            $request->bindValue(':offerID',$id);
-            $this->tryToExecute($request);
+            $request2 = $this->db->prepare('DELETE FROM offers WHERE offerID = :offerID;');
+            $request2->bindValue(':offerID',intval($id));
+            var_dump(intval($id));
+            $this->tryToExecute($request2);
 
             return true;
         }

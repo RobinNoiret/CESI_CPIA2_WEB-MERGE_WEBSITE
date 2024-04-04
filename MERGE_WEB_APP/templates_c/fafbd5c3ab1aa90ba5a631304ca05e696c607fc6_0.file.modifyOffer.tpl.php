@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-05 00:39:16
+/* Smarty version 3.1.36, created on 2024-04-05 01:45:21
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\offerTemplates\modifyOffer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660f2c14269912_45039230',
+  'unifunc' => 'content_660f3b91386542_61872436',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660f2c14269912_45039230 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660f3b91386542_61872436 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form  action="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
 ?page=internship&action=<?php echo $_smarty_tpl->tpl_vars['action']->value;
 if ($_smarty_tpl->tpl_vars['action']->value == 'change') {?>&id=<?php echo $_smarty_tpl->tpl_vars['intershipID']->value;
