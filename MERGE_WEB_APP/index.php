@@ -32,7 +32,7 @@
             //$controller->companyController();
         }
         elseif ($_GET["page"]=='mentionslégales'){       // Want to access to legal aspect
-            //$controller->mentionController();
+            $controller->mentionController();
         }
         elseif ($_GET["page"]=='error'and isset($_GET["error"])){
             errors($controller, $_GET["error"]);
