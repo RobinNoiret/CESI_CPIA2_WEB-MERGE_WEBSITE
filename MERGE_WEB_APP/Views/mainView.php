@@ -24,9 +24,8 @@
         if (isset($_GET['id'])){$smarty->assign('intershipID',$_GET['id']);}
 
         if (isset($action)){ 
-            
             $smarty->assign('action',$action);
-            if ($action == 'display'){         
+            if ($action == 'displayOne'or $action == 'add'){         
                 $smarty->assign('companyID','');        /*élément à remplire*/
                 $smarty->assign('internshipTitle','');
                 $smarty->assign('companyName', '');     /*élément à remplire*/
@@ -36,7 +35,7 @@
                 $smarty->assign('internshipComp','');
                 $smarty->assign('companyAddress','');
             }
-            elseif ($action == 'change' or $action == 'add'){
+            elseif ($action == 'change'){
                 $smarty->assign('companyID',$content['companyID']);
                 $smarty->assign('internshipTitle',$content['title']);
                 $smarty->assign('companyName', $content['companyName']);

@@ -70,11 +70,10 @@
                 include_once 'Models/internshipModel.php';
                 $internshipModel = new internshipModel($this->sourcePath);
 
+                $action = 'display';
                 if (isset($_GET['action'])){
-                    $action = 'display';
                     if ($_GET['action'] == 'display'){
                         $content = $internshipModel->selectAll();
-                        var_dump($content);
                         include 'Views/mainView.php';
                     }
                     elseif ($_GET['action'] == 'displayOne'){
@@ -147,7 +146,6 @@
                 }
                 else {
                     $content = $internshipModel->selectAll();
-                    //var_dump($content);
                     include 'Views/mainView.php';
                 }
             }

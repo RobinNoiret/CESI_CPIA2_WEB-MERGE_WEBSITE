@@ -15,17 +15,18 @@
             $datas = $request->fetchAll(PDO::FETCH_ASSOC);
 
             $temp = array(); 
+            $index = 0;
             foreach ($datas as $data){
                 $temp = array_merge($data, 
                                     array('skills' => $this->selectSkill($data['ID'])),
-                                    // array('address' => $data['cityName'].' '.$data['postalCode']),
-                                    // array('short_descr' => (substr($data['descr'],0,30)).'...')
+                                    array('address' => $data['cityName'].' '.$data['postalCode']),
+                                    array('short_descr' => (substr($data['descr'],0,40)).'...')
                                 );
-                
-                $data=$temp;
+                $datas[$index]=$temp;
+                $index = $index+1;
             }
 
-            var_dump($datas);
+            //var_dump($datas);
 
             return $datas;
         }
