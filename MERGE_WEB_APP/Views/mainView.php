@@ -17,12 +17,16 @@
         
     }
     elseif ($page == 'internship'){
+        
         if (isset($title)){ $smarty->assign('title',$title);}
         else {  $smarty->assign('title','Merge-stages');}
-        if (isset($_GET['id'])){$smarty->assign('id',$_GET['id']);}
+
+        if (isset($_GET['id'])){$smarty->assign('intershipID',$_GET['id']);}
+
         if (isset($action)){ 
+            
             $smarty->assign('action',$action);
-            if ($action = ('display' or 'add')){           
+            if ($action == 'display' or $action == 'add'){         
                 $smarty->assign('companyID','');        /*élément à remplire*/
                 $smarty->assign('internshipTitle','');
                 $smarty->assign('companyName', '');     /*élément à remplire*/
@@ -30,16 +34,17 @@
                 $smarty->assign('remuneration','');
                 $smarty->assign('internshipDesc','');
                 $smarty->assign('internshipComp','');
+                $smarty->assign('companyAddress','');
             }
             else{
-                $smarty->assign('companyID',$compagnyID);
-                $smarty->assign('internshipTitle',$internshipTitle);
-                $smarty->assign('companyName', $companyName);
-                $smarty->assign('companyAddresse',$companyAddresse);
-                $smarty->assign('placesNumber',$placesNumber);
-                $smarty->assign('remuneration',$remuneration);
-                $smarty->assign('internshipDesc',$internshipDesc);
-                $smarty->assign('internshipComp',$internshipComp);
+                $smarty->assign('companyID',$content['companyID']);
+                $smarty->assign('internshipTitle',$content['title']);
+                $smarty->assign('companyName', $content['companyName']);
+                $smarty->assign('companyAddress',$content['companyAddress']);
+                $smarty->assign('placesNumber',$content['placesNumber']);
+                $smarty->assign('remuneration',$content['remunerationBasis']);
+                $smarty->assign('internshipDesc',$content['descr']);
+                $smarty->assign('internshipComp',$content['skills']);
             }
         }     
     }

@@ -103,23 +103,37 @@
                                 include 'Views/mainView.php';
                             }
                             elseif ($_GET['action'] == 'change'){
-                                
                                 // Ask the confirmation to update data
-                                $action = 'change';
-                                $content = $internshipModel->select($_GET['id']);
-                                $title = 'Merge-modification'; // put the name of the stage
                                 // Make the update with model
                                 // Signal the correct change
+                                $title = 'Merge-modification'; // put the name of the stage
+                                $action = 'change';
+                                if (isset($_POST['companyID'])){
+                                    // Do if an save action is made
+                                    
+                                    $internshipModel->update($_GET['id']);
+
+                                    //Alert the user of the correct execution
+                                    header('Location: '.$this->sourcePath.'?page=internship&action=displayOne&id='.$_GET['id']);
+                                    exit;
+                                }
+                                else{
+                                $content = $internshipModel->select($_GET['id']);
+                                }
+
                                 // Display the mainView
                                 include 'Views/mainView.php';
                             }
                             elseif ($_GET['action'] == 'delete'){
                                 // Ask the confirmation to delete
+
                                 // Make the delete with model
                                 $internshipModel->delete($_GET['id']);
-                                // Signal the correct change
-                                // Display the mainView
-                                include 'Views/mainView.php';
+
+                                // Alert on the correct change
+                                header('Location: '.$this->sourcePath.'?page=internship&action=displayOne&id='.$_GET['id']);
+                                exit;
+                                
                             }
                             else {
                                 $this->errorsController(404);

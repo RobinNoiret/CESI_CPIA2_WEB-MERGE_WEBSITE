@@ -28,10 +28,12 @@
             {elseif  $page eq 'mentions'}
                 {include "../tpl/mLegaleContent.tpl"}
 
-            {elseif $action eq 'display'}
-            {elseif $action eq 'dispalyOne'}
-            {elseif $action eq 'change' or $action eq 'add'}
-                {include "../tpl/offer.tpl"}
+            {elseif $page eq 'internship'}
+                {if $action eq 'change' or $action eq 'add'}
+                    {include "../tpl/offer.tpl"}
+                {else}
+                    {* {include } *}
+                {/if}
             {/if}
         </div>
 

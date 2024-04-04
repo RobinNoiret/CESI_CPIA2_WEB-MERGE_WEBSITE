@@ -11,12 +11,13 @@
 }
 .stage-title {
     display: flex ;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     justify-content: center;
 }
-.stage-title textarea{
-    padding: 0.25em;
-    height: 2.5rem;
+#internshipTitle{
+    padding: 0em;
+    width: auto;
+    height: 1.5em;
 }
 
 .descr-block {
@@ -26,12 +27,13 @@
 .details-list ul{
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     margin: 0;
 }
-.details-list ul li{
+.details-list .data-list input{
     font-size: 0.8rem;
     width: 8rem;
+    height: 1.5em;
 }
 
 .details-wrapper{
@@ -43,11 +45,11 @@
     --width-right-part: 30vw;
 }
 
-.job-description textarea{
+.job-description .textarea{
     width: 50vw;
     height: 30vh;
 }
-.skills textarea{
+.skills .textarea{
     width: var(--width-right-part);
     height: 15vh;
 }
@@ -66,4 +68,10 @@
 .company-image img{
     width: var(--width-right-part);
     height: auto;
+}
+
+.company-name{
+    display: flex ;
+    justify-content: center;
+    padding: 0.4rem;
 }

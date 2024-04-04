@@ -179,4 +179,9 @@ header, footer {
 textarea { 
     resize: none; 
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+input, textarea, button{
+    font-family: "DM Sans", sans-serif;
 }
