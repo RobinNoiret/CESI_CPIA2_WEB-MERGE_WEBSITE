@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-04 21:36:04
+/* Smarty version 3.1.36, created on 2024-04-04 22:47:51
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660f0124c03316_12568167',
+  'unifunc' => 'content_660f11f74876a9_02376907',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '746e0906028383140d4fad91c9ec0bf31563fe29' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\header.tpl',
-      1 => 1712235336,
+      1 => 1712263600,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660f0124c03316_12568167 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660f11f74876a9_02376907 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header>
     <nav id="navbar-header" class="navbar">

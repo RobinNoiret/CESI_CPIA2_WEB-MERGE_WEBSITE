@@ -44,7 +44,7 @@
                     <td class='date-column'>{$elem.publicationDate}<td>
                     <td class='places-column'>{$elem.placesNumber}<td>
                     <td class='open-column'><a class="CTA_secondaire" href="{$source}?page=internship&action=displayOne&id={$elem.ID}">Découvrir l'offre<a><td>
-                    {if $user neq 'Student'}<td class='modify-Column'><a href="{$source}?page=internship&action=displayOne&id={$elem.ID}"><a><td>{/if}
+                    {if $user neq 'Student'}<td class='fa-solid fa-pen-to-square'><a href="{$source}?page=internship&action=displayOne&id={$elem.ID}"><a><td>{/if}
                 </tr>
             {/foreach}
             </thbody>
