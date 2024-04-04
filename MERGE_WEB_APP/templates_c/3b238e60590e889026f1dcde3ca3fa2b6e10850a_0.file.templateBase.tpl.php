@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-04 17:27:31
+/* Smarty version 3.1.36, created on 2024-04-04 21:39:48
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\templateBase.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660ec6e39e2ed5_26060566',
+  'unifunc' => 'content_660f02045c8300_24593664',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3b238e60590e889026f1dcde3ca3fa2b6e10850a' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\templateBase.tpl',
-      1 => 1712244388,
+      1 => 1712259582,
       2 => 'file',
     ),
   ),
@@ -22,11 +22,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../tpl/homeContent.tpl' => 1,
     'file:../tpl/connexionContent.tpl' => 1,
     'file:../tpl/mLegaleContent.tpl' => 1,
-    'file:../tpl/offer.tpl' => 1,
+    'file:Views/tpl/offerTemplates/modifyOffer.tpl' => 1,
+    'file:Views/tpl/offerTemplates/displayOffers.tpl' => 1,
     'file:../tpl/footer.tpl' => 1,
   ),
 ),false)) {
-function content_660ec6e39e2ed5_26060566 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660f02045c8300_24593664 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -36,26 +37,26 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
     <head> 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_854600086660ec6e38df5e7_97573226', 'head');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1757379482660f02045aaa43_56240130', 'head');
 ?>
 
     </head> 
 
    	<body>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_816488333660ec6e38e54d4_86494654', 'body');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1065052414660f02045b3fd1_67229297', 'body');
 ?>
 
         
     </body> 
 </html> <?php }
 /* {block 'head'} */
-class Block_854600086660ec6e38df5e7_97573226 extends Smarty_Internal_Block
+class Block_1757379482660f02045aaa43_56240130 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head' => 
   array (
-    0 => 'Block_854600086660ec6e38df5e7_97573226',
+    0 => 'Block_1757379482660f02045aaa43_56240130',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -74,12 +75,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'head'} */
 /* {block 'body'} */
-class Block_816488333660ec6e38e54d4_86494654 extends Smarty_Internal_Block
+class Block_1065052414660f02045b3fd1_67229297 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_816488333660ec6e38e54d4_86494654',
+    0 => 'Block_1065052414660f02045b3fd1_67229297',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -102,10 +103,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
             <?php } elseif ($_smarty_tpl->tpl_vars['page']->value == 'internship') {?>
                 <?php if ($_smarty_tpl->tpl_vars['action']->value == 'change' || $_smarty_tpl->tpl_vars['action']->value == 'add') {?>
-                    <?php $_smarty_tpl->_subTemplateRender("file:../tpl/offer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+                    <?php $_smarty_tpl->_subTemplateRender("file:Views/tpl/offerTemplates/modifyOffer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
                 <?php } else { ?>
-                                    <?php }?>
+                    <?php $_smarty_tpl->_subTemplateRender("file:Views/tpl/offerTemplates/displayOffers.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+                <?php }?>
             <?php }?>
         </div>
 

@@ -30,9 +30,9 @@
 
             {elseif $page eq 'internship'}
                 {if $action eq 'change' or $action eq 'add'}
-                    {include "../tpl/offer.tpl"}
+                    {include "Views/tpl/offerTemplates/modifyOffer.tpl"}
                 {else}
-                    {* {include } *}
+                    {include "Views/tpl/offerTemplates/displayOffers.tpl"}
                 {/if}
             {/if}
         </div>

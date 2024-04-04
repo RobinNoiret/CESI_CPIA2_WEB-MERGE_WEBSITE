@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-04 19:41:20
-  from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\offer.tpl' */
+/* Smarty version 3.1.36, created on 2024-04-04 21:36:33
+  from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\offerTemplates\modifyOffer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660ee640f24232_21881213',
+  'unifunc' => 'content_660f01414c7314_48262965',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'ba068df921a1ed8a5dda655cd98d6fa61b38448f' => 
+    'fafbd5c3ab1aa90ba5a631304ca05e696c607fc6' => 
     array (
-      0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\offer.tpl',
+      0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\offerTemplates\\modifyOffer.tpl',
       1 => 1712252303,
       2 => 'file',
     ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660ee640f24232_21881213 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660f01414c7314_48262965 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form  action="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
 ?page=internship&action=<?php echo $_smarty_tpl->tpl_vars['action']->value;
 if ($_smarty_tpl->tpl_vars['action']->value == 'change') {?>&id=<?php echo $_smarty_tpl->tpl_vars['intershipID']->value;

@@ -147,7 +147,7 @@
                 }
                 else {
                     $content = $internshipModel->selectAll();
-                    var_dump($content);
+                    //var_dump($content);
                     include 'Views/mainView.php';
                 }
             }

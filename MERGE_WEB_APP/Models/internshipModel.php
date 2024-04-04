@@ -4,7 +4,7 @@
     class internshipModel extends connectToDB{
         
         public function selectAll(){
-            $request = $this->db->prepare('SELECT * 
+            $request = $this->db->prepare('SELECT of.offerID as ID, title, publicationDate, cityName, postalCode, companyName, descr, placesNumber, remunerationBasis
                                             FROM offers AS of 
                                                 INNER JOIN addresses AS ad ON ad.addressID = of.addressID
                                                 INNER JOIN cities AS ci ON ad.cityID = ci.cityID
@@ -13,6 +13,19 @@
 
             $this->tryToExecute($request); 
             $datas = $request->fetchAll(PDO::FETCH_ASSOC);
+
+            $temp = array(); 
+            foreach ($datas as $data){
+                $temp = array_merge($data, 
+                                    array('skills' => $this->selectSkill($data['ID'])),
+                                    // array('address' => $data['cityName'].' '.$data['postalCode']),
+                                    // array('short_descr' => (substr($data['descr'],0,30)).'...')
+                                );
+                
+                $data=$temp;
+            }
+
+            var_dump($datas);
 
             return $datas;
         }
