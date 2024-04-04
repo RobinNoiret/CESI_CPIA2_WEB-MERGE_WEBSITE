@@ -435,6 +435,13 @@ insert into Companies (companyName, activityArea, visibility) values
 ('Toy-Hand', 'Painting & Vinyl Wall Covering', false),
 ('Marvin-Larson', 'EIFS', false);
 
+-- Ajout des entreprises avec secteurs Home Page
+INSERT INTO Companies (companyName, activityArea, visibility) VALUES
+('LumApps', 'IT', true),
+('Global Services', 'Services', true),
+('HCL', 'Santé', true),
+('Financial Consultants', 'Finances', true);
+
 
 -- Peuplement de la table Addresses
 INSERT INTO `Addresses` VALUES
