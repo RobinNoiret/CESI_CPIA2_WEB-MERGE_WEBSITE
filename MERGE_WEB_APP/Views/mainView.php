@@ -16,26 +16,34 @@
         $smarty->assign('title', 'Merge-connexion');
         
     }
-<<<<<<< HEAD
     elseif ($page == 'internship'){
         if (isset($title)){ $smarty->assign('title',$title);}
         else {  $smarty->assign('title','Merge-stages');}
         if (isset($_GET['id'])){$smarty->assign('id',$_GET['id']);}
         if (isset($action)){ 
             $smarty->assign('action',$action);
-            $smarty->assign('placeholderTitle','Stage - Nom de stage');
-            $smarty->assign('companyID','');
-            $smarty->assign('internshipTitle','');
-            $smarty->assign('companyName', '');
-            $smarty->assign('internshipDesc','');
-            $smarty->assign('placeholderDesc','Donner une description des missions et du contenu de l\'offre de stage ...');
-            $smarty->assign('internshipDesc','');
-            $smarty->assign('placeholderComp','Compétence1, Compétence2, Compétence3 ...');
+            if ($action = ('display' or 'add')){           
+                $smarty->assign('companyID','');        /*élément à remplire*/
+                $smarty->assign('internshipTitle','');
+                $smarty->assign('companyName', '');     /*élément à remplire*/
+                $smarty->assign('placesNumber','');
+                $smarty->assign('remuneration','');
+                $smarty->assign('internshipDesc','');
+                $smarty->assign('internshipComp','');
+            }
+            else{
+                $smarty->assign('companyID',$compagnyID);
+                $smarty->assign('internshipTitle',$internshipTitle);
+                $smarty->assign('companyName', $companyName);
+                $smarty->assign('companyAddresse',$companyAddresse);
+                $smarty->assign('placesNumber',$placesNumber);
+                $smarty->assign('remuneration',$remuneration);
+                $smarty->assign('internshipDesc',$internshipDesc);
+                $smarty->assign('internshipComp',$internshipComp);
+            }
         }     
     }
    
-=======
->>>>>>> main
 
     $user = $this->whatIsConnect();
     $smarty->assign('user', $user);

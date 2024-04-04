@@ -1,30 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.36, created on 2024-04-03 09:18:04
-=======
-/* Smarty version 3.1.36, created on 2024-04-03 14:05:32
->>>>>>> main
+/* Smarty version 3.1.36, created on 2024-04-03 22:02:54
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-<<<<<<< HEAD
-  'unifunc' => 'content_660d02acc26ff6_88241001',
-=======
-  'unifunc' => 'content_660d460cca9419_66238666',
->>>>>>> main
+  'unifunc' => 'content_660db5ee9a7586_71912547',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '746e0906028383140d4fad91c9ec0bf31563fe29' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\header.tpl',
-<<<<<<< HEAD
-      1 => 1712088913,
-=======
-      1 => 1712145529,
->>>>>>> main
+      1 => 1712174179,
       2 => 'file',
     ),
   ),
@@ -32,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_660d02acc26ff6_88241001 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660d460cca9419_66238666 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> main
+function content_660db5ee9a7586_71912547 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header>
     <nav id="navbar-header" class="navbar">

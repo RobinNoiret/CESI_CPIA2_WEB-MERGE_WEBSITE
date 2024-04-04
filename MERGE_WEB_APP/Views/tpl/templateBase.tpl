@@ -25,15 +25,13 @@
                 {include "../tpl/homeContent.tpl"}
             {elseif  $page eq 'connexion'}
                 {include "../tpl/connexionContent.tpl"}
-<<<<<<< HEAD
+            {elseif  $page eq 'mentions'}
+                {include "../tpl/mLegaleContent.tpl"}
+
             {elseif $action eq 'display'}
             {elseif $action eq 'dispalyOne'}
             {elseif $action eq 'change' or $action eq 'add'}
                 {include "../tpl/offer.tpl"}
-=======
-            {elseif  $page eq 'mentions'}
-                {include "../tpl/mLegaleContent.tpl"}
->>>>>>> main
             {/if}
         </div>
 

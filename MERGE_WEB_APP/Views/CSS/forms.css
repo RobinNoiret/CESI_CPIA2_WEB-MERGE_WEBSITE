@@ -84,3 +84,10 @@ input::placeholder {
     display: flex;
     text-align: left;
 }
+
+.h2-action{
+  font-size: 2rem;
+  color: var(--orange-action);
+  font-weight: bold;
+  text-align: center;
+}

@@ -73,20 +73,20 @@
                 if (isset($_GET['action'])){
                     $action = 'display';
                     if ($_GET['action'] == 'display'){
-                        $contenu = $internshipModel->selectAll();
+                        $content = $internshipModel->selectAll();
                         include 'Views/mainView.php';
                     }
                     elseif ($_GET['action'] == 'displayOne'){
-                        $contenu = $internshipModel->select($_GET['id']);
+                        $content = $internshipModel->select($_GET['id']);
                         $title = 'Merge-stage'; // put the name of the stage
                         $action = 'displayOne';
                         include 'Views/mainView.php';
                     }
                     elseif ($_GET['action'] == 'research'){
                         if (isset($_GET['domain'])){
-                            $contenu = $internshipModel->selectDomain($_GET['domain']);
+                            $content = $internshipModel->selectDomain($_GET['domain']);
                         }else {
-                            $contenu = $internshipModel->selectSeveral(/*ensemble de paramètre à définir*/);
+                            $content = $internshipModel->selectSeveral(/*ensemble de paramètre à définir*/);
                         }
                         include 'Views/mainView.php';
                     }
@@ -106,6 +106,7 @@
                                 
                                 // Ask the confirmation to update data
                                 $action = 'change';
+                                $content = $internshipModel->select($_GET['id']);
                                 $title = 'Merge-modification'; // put the name of the stage
                                 // Make the update with model
                                 // Signal the correct change

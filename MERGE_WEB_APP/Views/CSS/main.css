@@ -12,6 +12,12 @@
 /*A revoir pour factoriser car conflit entre connexion et création*/
 @import url('forms.css');
 
+/*_____Buttons______*/
+@import url('buttons.css');
+
+/*_______Offer______*/
+@import url('offer.css');
+
 /*_______Home_______*/
 @import url('homePage.css');
 
@@ -38,6 +44,12 @@ html
     --gris-clair: rgb(234, 234, 234, 1);            /*Variation white - footer & items background*/
 
     --noir-fixe: rgba(29, 29, 29, 1);               /*Main black - text color*/
+
+    --gradient-color1: #FF7D00;                     /*couleur la plus a gauche*/        
+    --gradient-color2: #F79C43;                     /*couleur au centre*/
+    --gradient-color3: #FFA800;                       /*couleur la plus a droite*/
+
+    --gradient: linear-gradient(to right, var(--gradient-color1), var(--gradient-color2), var(--gradient-color3));
 
 /*______Fonts______*/
     font-family: "DM Sans", sans-serif;
@@ -162,4 +174,9 @@ header, footer {
     color: var(--blanc-fixe);
     background-color: #FF7D00;
     transform: translateY(-2px);
+}
+
+textarea { 
+    resize: none; 
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
