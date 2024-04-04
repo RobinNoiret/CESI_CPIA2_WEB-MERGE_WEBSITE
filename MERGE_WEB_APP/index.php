@@ -29,7 +29,7 @@
             //$controller->studentController();
         }
         elseif ($_GET["page"]=='company'){               // Want to access to company
-            //$controller->companyController();
+            $controller->companiesController();
         }
         elseif ($_GET["page"]=='mentionslégales'){       // Want to access to legal aspect
             $controller->mentionController();

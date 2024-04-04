@@ -74,6 +74,38 @@
             return true;
         }
 
+        public function companiesController() {
+            $page = 'companies';
+        
+            // Inclure le modèle des entreprises
+            include_once 'Models/companyModel.php';
+        
+            // Créer une instance du modèle des entreprises
+            $companyModel = new companyModel($this->sourcePath);
+
+            // Vérifier si un ID d'entreprise est passé en paramètre
+            if (isset($_POST['search'])) {
+                // Récupération de l'id de la company
+                $companyID = $_POST['companyID'];
+                // Vérifier si l'ID de l'entreprise est vide
+                if (!empty($companyID)) {
+                    // Appeler la méthode select() pour récupérer l'entreprise spécifique
+                    $companies = $companyModel->select($companyID); // Assurez-vous que le résultat est toujours sous forme de tableau
+                } else {
+                    // Appeler la méthode selectAll() pour récupérer toutes les entreprises par défaut
+                    $companies = $companyModel->selectAll();
+                }
+            } else{
+                // Appeler la méthode selectAll() pour récupérer toutes les entreprises par défaut
+                $companies = $companyModel->selectAll();
+            }
+            
+            // Passer les données récupérées à la vue
+            include 'Views/mainView.php';
+        
+            return true;
+        }
+
         public function  mentionController(){
             $page = 'mentions';
             include 'Views/mainView.php';

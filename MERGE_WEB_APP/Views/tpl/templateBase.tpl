@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap" rel="stylesheet">
         <link rel="manifest" href="/MERGE_WEB_APP/Manifest.json" />
         <meta name="theme-color" content="#ff7d00">
+        <script src="https://kit.fontawesome.com/7fb23658f3.js" crossorigin="anonymous"></script>
         
         <title> {$title} </title>	
     {/block}
@@ -27,6 +28,8 @@
                 {include "../tpl/homeContent.tpl"}
             {elseif  $page eq 'connexion'}
                 {include "../tpl/connexionContent.tpl"}
+            {elseif $page eq 'companies' }
+            	{include "../tpl/companies.tpl"}
             {elseif  $page eq 'mentions'}
                 {include "../tpl/mLegaleContent.tpl"}
             {/if}
