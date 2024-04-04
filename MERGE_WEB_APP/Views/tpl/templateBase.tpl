@@ -29,7 +29,11 @@
             {elseif  $page eq 'connexion'}
                 {include "../tpl/connexionContent.tpl"}
             {elseif $page eq 'companies' }
-            	{include "../tpl/companies.tpl"}
+                {if $action eq 'add'}
+                    {include "../tpl/companiesActions.tpl"}
+                {else}
+            	    {include "../tpl/companies.tpl"}
+                {/if}
             {elseif  $page eq 'mentions'}
                 {include "../tpl/mLegaleContent.tpl"}
             {/if}
