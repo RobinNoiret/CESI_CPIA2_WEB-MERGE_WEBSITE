@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-04 18:13:57
+/* Smarty version 3.1.36, created on 2024-04-04 19:41:20
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\offer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660ed1c5850ee8_38187156',
+  'unifunc' => 'content_660ee640f24232_21881213',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ba068df921a1ed8a5dda655cd98d6fa61b38448f' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\offer.tpl',
-      1 => 1712247211,
+      1 => 1712252303,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660ed1c5850ee8_38187156 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660ee640f24232_21881213 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form  action="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
 ?page=internship&action=<?php echo $_smarty_tpl->tpl_vars['action']->value;
 if ($_smarty_tpl->tpl_vars['action']->value == 'change') {?>&id=<?php echo $_smarty_tpl->tpl_vars['intershipID']->value;
@@ -59,9 +59,9 @@ if ($_smarty_tpl->tpl_vars['action']->value == 'change') {?>&id=<?php echo $_sma
                     <h3>Le Stage</h3>
                     <div class="description">
                         <h4>Descriptif du stage</h4>
-                        <textarea name="internshipDesc" id="descrArea" placeholder="Donner une description des missions et du contenu de l'offre de stage ..."><?php echo $_smarty_tpl->tpl_vars['internshipDesc']->value;?>
+                        <textarea name="internshipDesc" class="textarea" id="descrArea" placeholder="Donner une description des missions et du contenu de l'offre de stage ..."><?php echo $_smarty_tpl->tpl_vars['internshipDesc']->value;?>
 </textarea>
-                    </div>
+                        </div>
                 </div>
             </div>
             <div class="right-part">
@@ -70,7 +70,7 @@ if ($_smarty_tpl->tpl_vars['action']->value == 'change') {?>&id=<?php echo $_sma
                 </div>
                 <div class="skills">
                     <h4>Compétences</h4>
-                    <textarea name="skills" id="skillsArea" placeholder="Compétence1, Compétence2, Compétence3 ..."><?php echo $_smarty_tpl->tpl_vars['internshipComp']->value;?>
+                    <textarea name="skills" id="skillsArea" class="textarea" placeholder="Compétence1, Compétence2, Compétence3 ..."><?php echo $_smarty_tpl->tpl_vars['internshipComp']->value;?>
 </textarea>
                 </div>
             </div>

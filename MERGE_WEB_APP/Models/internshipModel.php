@@ -12,7 +12,7 @@
                                         ');
 
             $this->tryToExecute($request); 
-            $datas = $request->fetch(PDO::FETCH_ASSOC);
+            $datas = $request->fetchAll(PDO::FETCH_ASSOC);
 
             return $datas;
         }

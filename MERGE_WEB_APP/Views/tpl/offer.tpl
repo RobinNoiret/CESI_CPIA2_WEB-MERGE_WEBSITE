@@ -27,11 +27,7 @@
                     <h3>Le Stage</h3>
                     <div class="description">
                         <h4>Descriptif du stage</h4>
-                        {if $action neq 'add'}
                         <textarea name="internshipDesc" class="textarea" id="descrArea" placeholder="Donner une description des missions et du contenu de l'offre de stage ...">{$internshipDesc}</textarea>
-                        {else}
-
-                        {/if}
                         </div>
                 </div>
             </div>

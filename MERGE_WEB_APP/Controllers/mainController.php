@@ -74,6 +74,7 @@
                     $action = 'display';
                     if ($_GET['action'] == 'display'){
                         $content = $internshipModel->selectAll();
+                        var_dump($content);
                         include 'Views/mainView.php';
                     }
                     elseif ($_GET['action'] == 'displayOne'){
@@ -104,13 +105,13 @@
                             }
                             elseif ($_GET['action'] == 'change'){
                                 // Ask the confirmation to update data
+
                                 // Make the update with model
-                                // Signal the correct change
                                 $title = 'Merge-modification'; // put the name of the stage
                                 $action = 'change';
+
                                 if (isset($_POST['companyID'])){
                                     // Do if an save action is made
-                                    
                                     $internshipModel->update($_GET['id']);
 
                                     //Alert the user of the correct execution
@@ -145,7 +146,8 @@
                     }                  
                 }
                 else {
-                    $contenu = $internshipModel->selectAll();
+                    $content = $internshipModel->selectAll();
+                    var_dump($content);
                     include 'Views/mainView.php';
                 }
             }
