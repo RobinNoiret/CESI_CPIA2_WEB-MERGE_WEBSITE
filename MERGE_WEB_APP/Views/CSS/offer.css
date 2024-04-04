@@ -75,3 +75,31 @@
     justify-content: center;
     padding: 0.4rem;
 }
+
+.table td{
+    font-size: 1rem;
+}
+.table td .CTA_secondaire, .internship-details .CTA_secondaire{
+    font-size: 0.8rem;
+}
+.internship-interactivity{
+    display: flex;
+    justify-content: space-between;
+}
+
+thead td{
+    font-weight: bold;
+}
+
+.fa-solid{
+    color: var(--noir-fixe);
+}
+.fa-solid:hover{
+    color: var(--orange-action);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

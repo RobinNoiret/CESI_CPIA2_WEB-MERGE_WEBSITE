@@ -20,15 +20,14 @@
                 $temp = array_merge($data, 
                                     array('skills' => $this->selectSkill($data['ID'])),
                                     array('address' => $data['cityName'].' '.$data['postalCode']),
-                                    array('short_descr' => (substr($data['descr'],0,40)).'...')
+                                    array('short_descr' => (substr($data['descr'],0,41)).'...')
                                 );
                 $datas[$index]=$temp;
                 $index = $index+1;
             }
-
             //var_dump($datas);
 
-            return $datas;
+            return $datas;        
         }
 
         public function selectSeveral(/*ensemble de paramètres*/){        // Return data with filters

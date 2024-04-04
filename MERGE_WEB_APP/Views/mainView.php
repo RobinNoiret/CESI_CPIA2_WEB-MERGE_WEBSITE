@@ -47,6 +47,8 @@
             }
             else {
                 $smarty->assign('content',$content);
+                $smarty->assign('lastPage',$pagination['max']);
+                $smarty->assign('currentPage',$pagination['current']);
             }
 
         }     

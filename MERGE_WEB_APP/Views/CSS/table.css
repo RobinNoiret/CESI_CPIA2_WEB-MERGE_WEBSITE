@@ -1,5 +1,5 @@
 .table-container {
-    margin: 20px;
+    margin: 1.3rem;
 }
 
 table {
@@ -8,9 +8,9 @@ table {
 }
 
 th, td {
-    padding: 12px 15px;
+    padding: 0.4rem 1rem;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0.08rem solid #ddd;
 }
 
 th {

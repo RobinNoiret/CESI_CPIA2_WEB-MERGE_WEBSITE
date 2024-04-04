@@ -67,13 +67,21 @@
             if ($this->whatIsConnect() != 'none' or true){              // Verify user's connexion
                 $page = 'internship';
 
+                var_dump($_POST);
+
                 include_once 'Models/internshipModel.php';
                 $internshipModel = new internshipModel($this->sourcePath);
 
                 $action = 'display';
                 if (isset($_GET['action'])){
                     if ($_GET['action'] == 'display'){
-                        $content = $internshipModel->selectAll();
+                        if (isset($_GET['rslPage'])){
+                            $pagination = $internshipModel->pagination($internshipModel->selectAll(),5,$_GET['rslPage']);
+                        }
+                        else{
+                            $pagination = $internshipModel->pagination($internshipModel->selectAll(),5);
+                        }
+                        $content = $pagination['page'];
                         include 'Views/mainView.php';
                     }
                     elseif ($_GET['action'] == 'displayOne'){
@@ -145,7 +153,10 @@
                     }                  
                 }
                 else {
-                    $content = $internshipModel->selectAll();
+                    $pagination = $internshipModel->pagination($internshipModel->selectAll(),5);
+                    $content = $pagination['page'];
+
+
                     include 'Views/mainView.php';
                 }
             }
