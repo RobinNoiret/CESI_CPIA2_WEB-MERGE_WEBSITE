@@ -74,6 +74,35 @@
             return true;
         }
 
+        public function companiesController() {
+            $page = 'companies';
+        
+            // Inclure le modèle des entreprises
+            include_once 'Models/companyModel.php';
+        
+            // Créer une instance du modèle des entreprises
+            $companyModel = new companyModel($this->sourcePath);
+
+            // Vérifier si un ID d'entreprise est passé en paramètre
+            if (isset($_POST['search'])) {
+                
+                // Récupération de l'id de la company
+                $companyID = $_POST['companyID'];
+                // Appeler la méthode select() pour récupérer l'entreprise spécifique
+                //$companies = array();
+                $companies = $companyModel->select($companyID); // Assurez-vous que le résultat est toujours sous forme de tableau
+                //$companies.array_push($rslt);
+            } else {
+                // Appeler la méthode selectAll() pour récupérer toutes les entreprises par défaut
+                $companies = $companyModel->selectAll();
+            }
+            
+            // Passer les données récupérées à la vue
+            include 'Views/mainView.php';
+        
+            return true;
+        }
+
         public function errorsController($errorType){     // Autorized $errorType : data, connect, net, server
             if ($errorType == '404'){
                 $link = 'Views/tpl/errors/RessourceIntrouvable.tpl';
