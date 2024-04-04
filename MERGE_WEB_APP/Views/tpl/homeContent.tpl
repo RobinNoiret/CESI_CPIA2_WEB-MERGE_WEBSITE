@@ -3,7 +3,7 @@
     <!-- ___________________________________________ Image de fond ___________________________________________ -->
 
     <div id="landing-pictureBG">
-        <img id="picture" src="Views/Assets/Picture backgroundhome-firstpicture-min.png">
+        <img id="picture" src="Views/Assets/Picture backgroundhome-firstpicture-min.png" alt="Open space moderne avec postes de travail et espace commun">
     </div>
 
     <!-- ____________________________________________ Bloc stats ____________________________________________ -->
@@ -33,28 +33,28 @@
         <div class="domains">
             <div class="domain" id="domain-IT">
                 <a href="{$source|cat:'?page=internship&action=research&domain=IT'}">
-                <img class="domain-pictures" src="Views/Assets/TechnologyIT.png">
+                <img class="domain-pictures" src="Views/Assets/TechnologyIT.png" alt="Illustration de technologie moderne et innovante">
                 </a>
                 <h4 class="domain-title">IT</h4>
             </div>
 
             <div class="domain" id="domain-services">
                 <a href="{$source|cat:'?page=internshi&action=researchp&domain=Services'}">
-                <img class="domain-pictures" src="Views/Assets/Serviceservice.png">
+                <img class="domain-pictures" src="Views/Assets/Serviceservice.png" alt="Illustration des services">
                 </a>
                 <h4 class="domain-title">Services</h4>
             </div>
 
             <div class="domain" id="domain-Health">
                 <a href="{$source|cat:'?page=internship&action=research&domain=Santé'}">
-                <img class="domain-pictures" src="Views/Assets/Health Care - Health Researchhealth.png">
+                <img class="domain-pictures" src="Views/Assets/Health Care - Health Researchhealth.png" alt="Image représentant la santé et le bien-être">
                 </a>
                 <h4 class="domain-title">Santé</h4>
             </div>
 
             <div class="domain" id="domain-Finances">
                 <a href="{$source|cat:'?page=internship&action=research&domain=Finances'}">
-                <img class="domain-pictures" src="Views/Assets/Business Planbusiness.svg">
+                <img class="domain-pictures" src="Views/Assets/Business Planbusiness.svg" alt="Représentation graphique de concepts financiers et de gestion">
                 </a>
                 <h4 class="domain-title">Finances</h4>
             </div>
@@ -80,12 +80,12 @@
                 </a>
             </div>
 
-            <img class="article-picture" src="Views/Assets/Placeholder imageexplorez et trouver votre voie.png">
+            <img class="article-picture" src="Views/Assets/Placeholder imageexplorez et trouver votre voie.png" alt="image d'un bureau avec un ordianteur portable et un cahier">
 
         </article>
 
         <article class="articles-pict_left">
-            <img class="article-picture" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png">
+            <img class="article-picture" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png" alt="illustration d'un réseau de différents points">
             
             <div class="articles-text">
                 <h4>Développez votre réseau</h4>
@@ -100,7 +100,7 @@
                     Découvrir les évènements
                 </a>
             </div>
-            <img class="article-picture-responsive" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png">
+            <img class="article-picture-responsive" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png" alt="illustration d'un réseau de différents points">
         </article>
 
         <article class="articles-pict_right">
@@ -119,7 +119,7 @@
                 </a>
             </div>
 
-            <img class="article-picture" src="Views/Assets/Placeholder imagepréparez vous.png">
+            <img class="article-picture" src="Views/Assets/Placeholder imagepréparez vous.png" alt="photo d'un entretient professionnel">
         </article>
 
     </div>

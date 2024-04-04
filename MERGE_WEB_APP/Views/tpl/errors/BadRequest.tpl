@@ -12,7 +12,7 @@
         <h1 id="h1_error"> Ooops !</h1>
         <h2 id="h2_error"> Bad Request </h2>
         <div class="error-picture"> 
-            <img class="picture" src="Views/Assets/error400.png">
+            <img class="picture" src="Views/Assets/error400.png" alt="Erreur 400 : Requête incorrecte">
         </div>
 
         <div class="error-CTA">
