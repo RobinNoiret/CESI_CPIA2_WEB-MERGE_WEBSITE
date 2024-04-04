@@ -85,14 +85,17 @@
 
             // Vérifier si un ID d'entreprise est passé en paramètre
             if (isset($_POST['search'])) {
-                
                 // Récupération de l'id de la company
                 $companyID = $_POST['companyID'];
-                // Appeler la méthode select() pour récupérer l'entreprise spécifique
-                //$companies = array();
-                $companies = $companyModel->select($companyID); // Assurez-vous que le résultat est toujours sous forme de tableau
-                //$companies.array_push($rslt);
-            } else {
+                // Vérifier si l'ID de l'entreprise est vide
+                if (!empty($companyID)) {
+                    // Appeler la méthode select() pour récupérer l'entreprise spécifique
+                    $companies = $companyModel->select($companyID); // Assurez-vous que le résultat est toujours sous forme de tableau
+                } else {
+                    // Appeler la méthode selectAll() pour récupérer toutes les entreprises par défaut
+                    $companies = $companyModel->selectAll();
+                }
+            } else{
                 // Appeler la méthode selectAll() pour récupérer toutes les entreprises par défaut
                 $companies = $companyModel->selectAll();
             }

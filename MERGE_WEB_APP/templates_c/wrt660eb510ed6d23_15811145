@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-04 16:16:04
+/* Smarty version 3.1.36, created on 2024-04-04 16:11:28
   from 'D:\Brieuc\CESI\A2_info\BLOCS\4. Développement web\Projet\CESI_CPIA2_WEB_PROJECT-1\MERGE_WEB_APP\Views\tpl\companies.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660eb624c47040_19417409',
+  'unifunc' => 'content_660eb510e53791_84971042',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2174aae967423cd723a3aa4b29652eef5d056d19' => 
     array (
       0 => 'D:\\Brieuc\\CESI\\A2_info\\BLOCS\\4. Développement web\\Projet\\CESI_CPIA2_WEB_PROJECT-1\\MERGE_WEB_APP\\Views\\tpl\\companies.tpl',
-      1 => 1712240163,
+      1 => 1712239873,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660eb624c47040_19417409 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660eb510e53791_84971042 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <h1>Liste des entreprises</h1>
 
@@ -33,7 +33,7 @@ function content_660eb624c47040_19417409 (Smarty_Internal_Template $_smarty_tpl)
         <button type="submit" name="search">Rechercher</button>
     </form>
     <a href="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
-?page=company&action=add" class="add-company-button">Ajouter une entreprise</a>
+?page=company&?page=add" class="add-company-button">Ajouter une entreprise</a>
 </div>
 
 <div class="table-container">
