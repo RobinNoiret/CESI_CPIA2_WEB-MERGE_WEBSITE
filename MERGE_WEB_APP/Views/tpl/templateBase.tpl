@@ -10,6 +10,8 @@
 
         <link rel="stylesheet" href="Views/CSS/main.css" />
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap" rel="stylesheet">
+        <link rel="manifest" href="/MERGE_WEB_APP/Manifest.json" />
+        <meta name="theme-color" content="#ff7d00">
         
         <title> {$title} </title>	
     {/block}
