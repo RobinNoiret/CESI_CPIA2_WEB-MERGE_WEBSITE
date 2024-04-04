@@ -533,6 +533,13 @@ INSERT INTO `Addresses` VALUES
 (86,'Pass Chive',9,48,8),
 (87,'Center Kinsman',9,11,15);
 
+-- pour les 4 dernière entreprises de la Home Page :
+INSERT INTO addresses (streetName, streetNum, companyID, cityID) VALUES
+('Rue de la Liberté', 10, 60, 1),
+('Avenue des Champs', 25, 61, 2),
+('Boulevard Voltaire', 7, 62, 3),
+('Rue du Commerce', 15, 63, 4);
+
 
 -- Peuplement de la table Offers
 insert into Offers (title, descr, publicationDate, placesNumber, remunerationBasis, addressID) values
@@ -568,6 +575,20 @@ insert into Offers (title, descr, publicationDate, placesNumber, remunerationBas
 ('Assistant Commercial', "Nous recherchons un assistant commercial pour soutenir nos équipes dans le développement des ventes. Vous serez chargé d'assister nos commerciaux dans la prospection de clients, la gestion des comptes clients et le suivi des ventes.", '2024-01-10', 2, 1200, 57),
 ('Développeur Java Senior', "Nous recherchons un développeur Java senior pour rejoindre notre équipe de développement logiciel. Vous serez responsable de la conception, du développement et de la maintenance de solutions logicielles robustes et évolutives, en utilisant les meilleures pratiques de développement.", '2024-01-08', 3, 1800, 22),
 ('Assistant de Communication Interne', "Rejoignez notre équipe en tant qu'assistant de communication interne et participez à la gestion des communications internes de l'entreprise. Vous serez chargé d'assister nos responsables communication dans la création de contenus, la diffusion d'informations et l'organisation d'événements internes.", '2024-01-05', 1, 850, 68);
+
+-- Offres entreprise home page :
+INSERT INTO Offers (title, descr, publicationDate, placesNumber, remunerationBasis, addressID) VALUES
+('Développeur Web Full-Stack', 'Nous recherchons un développeur web Full-Stack expérimenté pour rejoindre notre équipe dynamique.', '2024-04-01', 3, 'Salaire compétitif', 88),
+('Assistant Administratif', "Nous sommes à la recherche d'un assistant administratif pour fournir un soutien administratif efficace à notre équipe.", '2024-03-31', 2, '1000', 89),
+('Infirmier(e) en Soins Intensifs', 'Nous recrutons un(e) infirmier(e) en soins intensifs pour rejoindre notre équipe médicale.', '2024-04-02', 1, '1500', 90),
+('Analyste Financier', 'Nous recherchons un analyste financier pour fournir une analyse financière précise et des recommandations stratégiques.', '2024-04-03', 2, '2000', 91),
+('Chef de Projet Marketing', "Nous sommes à la recherche d'un chef de projet marketing talentueux pour diriger nos initiatives marketing.", '2024-04-04', 1, '1800', 88),
+('Ingénieur Logiciel', 'Nous recrutons un ingénieur logiciel pour participer au développement de nos produits logiciels.', '2024-04-01', 3, '1600', 89),
+('Spécialiste des Ressources Humaines', "Nous recherchons un spécialiste des ressources humaines pour gérer les opérations RH de l\'entreprise.", '2024-04-02', 2, '1400', 90),
+('Conseiller Financier', "Nous sommes à la recherche d'un conseiller financier pour fournir des conseils financiers personnalisés à nos clients.", '2024-04-03', 1, '1750', 91),
+('Développeur Mobile', 'Nous recrutons un développeur mobile expérimenté pour rejoindre notre équipe de développement.', '2024-04-04', 2, '1700', 88),
+('Assistant de Recherche Médicale', 'Nous recherchons un assistant de recherche médicale pour soutenir nos projets de recherche clinique.', '2024-04-05', 1, '1200', 89);
+
 
 
 -- Peuplement de la table Wishlist (10 par ligne) (OK)
