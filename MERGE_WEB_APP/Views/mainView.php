@@ -18,6 +18,7 @@
         $smarty->assign('title', 'Merge-Entreprises');
         $smarty->assign('companies',$companies);
     }
+
     $user = $this->whatIsConnect();
     $smarty->assign('user', $user);
     $smarty->assign('source', $this->sourcePath);

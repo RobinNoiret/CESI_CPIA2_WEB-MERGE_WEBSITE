@@ -1,0 +1,40 @@
+{
+    "name" : "Merge - Find your internship",
+    "short_name" : "Merge",
+    "description" : "Grâce à Merge, il n'y a plus de frontière entre l'étudiant et les entreprise. Trouve l'entreprise qui te correspond sur Merge.fr",
+    "lang" : "fr",
+
+    "start_url" : "MERGE_WEB_APP/",
+
+    "categories": [
+        "Education",
+        "Communication"
+    ],
+    
+    "orientation": "portrait",
+    "display" : "standalone",
+
+    "theme_color" : "#ff7d00",
+    "background_color" : "#1d1d1d",
+
+    "icons" : [
+        {
+            "src": "Views/Assets/logoMerge144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src" : "Views/Assets/MergeLogo.png",
+            "sizes" : "512x512",
+            "type" : "image/png"
+        },
+        {
+            "src" : "Views/Assets/MergeLogo.png",
+            "sizes" : "512x512",
+            "type" : "image/png",
+            "purpose": "maskable"
+        }
+        
+    ]
+}

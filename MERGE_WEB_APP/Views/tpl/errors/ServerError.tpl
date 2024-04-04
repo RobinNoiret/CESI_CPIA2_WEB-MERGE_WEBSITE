@@ -13,7 +13,7 @@
         <h1 id="h1_error"> Ooops !</h1>
         <h2 id="h2_error"> Le serveur nous a lâché</h2>
         <div class="error-picture"> 
-            <img class="picture" src="Views/Assets/error500.png">
+            <img class="picture" src="Views/Assets/error500.png" alt="Erreur 500 : Erreur interne du serveur">
         </div>
 
         <div class="error-CTA">

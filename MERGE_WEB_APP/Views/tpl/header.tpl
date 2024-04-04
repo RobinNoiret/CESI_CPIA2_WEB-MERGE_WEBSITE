@@ -4,7 +4,7 @@
     <nav id="navbar-header" class="navbar">
 
         <a id="link_nav-logo" class="nav-logo" href="{$source}">
-            <img id="nav-logo" class="nav-logo" src="Views/Assets/logo avec texte.png">
+            <img id="nav-logo" class="nav-logo" src="Views/Assets/logo avec texte.png" alt="Logo Merge">
         </a>
 
         <ul {if $user eq 'Admin' || $user eq 'Pilote'}class="nav-links-big"{else}class="nav-links-small"{/if}>
@@ -20,7 +20,7 @@
         </ul>
         
         <a id="link_user-icon" class="user-icon" href="{$source|cat:$connecAction}">
-            <img id="user-icon"src="Views/Assets/user-circle.svg" alt="User icon" class="user-icon">
+            <img id="user-icon"src="Views/Assets/user-circle.svg" alt="Icon de compte utilisateur" class="user-icon">
         </a>
 
     </nav>
