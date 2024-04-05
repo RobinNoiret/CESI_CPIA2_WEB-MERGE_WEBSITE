@@ -8,7 +8,18 @@
         <input type="text" name="activityArea" placeholder="Entrez le secteur d'activité">
         <button type="submit" name="search">Rechercher</button>
     </form>
-    <a href="{$source}?page=company&action=add" class="add-company-button">Ajouter une entreprise</a>
+    {if $user eq 'Admin' || $user eq 'Pilote'}
+        <a href="{$source}?page=company&action=add" class="add-company-button">Ajouter une entreprise</a>
+    {/if}
+    <!-- Afficher le message de succès s'il existe -->
+    {if isset($successMessage)}
+        <div class="success-message">{$successMessage}</div>
+    {/if}
+
+    <!-- Afficher le message d'erreur s'il existe -->
+    {if isset($errorMessage)}
+        <div class="error-message">{$errorMessage}</div>
+    {/if}
 </div>
 
 <div class="table-container">
@@ -20,8 +31,8 @@
                 <th>Nom de l'entreprise</th>
                 <th>Secteur d'activité</th>
                 <th>Localités</th>
-                <th>Nombre de candidats</th>
-                <th>Actions</th>
+                <th class="center">Nombre de candidats</th>
+                <th class="center">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -32,17 +43,17 @@
                     <td>{$company.companyName}</td>
                     <td>{$company.activityArea}</td>
                     <td>{$company.localities}</td>
-                    <td>{$company.applicantCount}</td>
+                    <td class="center">{$company.applicantCount}</td>
                     <td class="modify">
                         <a href="{$source}?page=company&action=edit&companyID={$company.companyID}" class="fa-solid fa-pen-to-square"></a>
-                    </td>
-                    <td class="delete">
                     </td>
                 </tr>
 
             {/foreach}
         </tbody>
     </table>
+
+    
 
 </div>
 
