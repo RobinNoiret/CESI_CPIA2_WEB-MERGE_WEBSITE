@@ -64,8 +64,104 @@
 
 
         public function internshipController(){
-            // Verify user's connexion
-            $this->isConnect();
+            if ($this->whatIsConnect() != 'none'){              // Verify user's connexion
+                $page = 'internship';
+
+                include_once 'Models/internshipModel.php';
+                $internshipModel = new internshipModel($this->sourcePath);
+
+                $action = 'display';
+                if (isset($_GET['action'])){
+                    if ($_GET['action'] == 'display'){
+                        if (isset($_GET['rslPage'])){
+                            $pagination = $internshipModel->pagination($internshipModel->selectAll(),5,$_GET['rslPage']);
+                        }
+                        else{
+                            $pagination = $internshipModel->pagination($internshipModel->selectAll(),5);
+                        }
+                        $content = $pagination['page'];
+                        include 'Views/mainView.php';
+                    }
+                    elseif ($_GET['action'] == 'displayOne'){
+                        $title = 'Merge-stage'; // put the name of the stage
+                        $action = 'displayOne';
+                        $content = $internshipModel->select($_GET['id']);
+
+                        include 'Views/mainView.php';
+                    }
+                    elseif ($_GET['action'] == 'research'){
+                        if (isset($_GET['domain'])){
+                            $content = $internshipModel->selectDomain($_GET['domain']);
+                        }else {
+                            $content = $internshipModel->selectSeveral(/*ensemble de paramètre à définir*/);
+                        }
+                        include 'Views/mainView.php';
+                    }
+                    else{
+                        if ($this->whatIsConnect() == ('Pilote' or 'Admin')){
+                            if ($_GET['action'] == 'add'){
+                                $title = 'Merge-stage-nouveau'; // put the name of the stage
+                                $action = 'add';
+                                // Choose an existing compagny after choose an existing adresse from this company
+                                
+                                // Make the insert with model
+                                // Signal the correct change
+                                // Display the mainView
+                                include 'Views/mainView.php';
+                            }
+                            elseif ($_GET['action'] == 'change'){
+                                // Ask the confirmation to update data
+
+                                // Make the update with model
+                                $title = 'Merge-modification'; // put the name of the stage
+                                $action = 'change';
+
+                                if (isset($_POST['companyID'])){
+                                    // Do if an save action is made
+                                    $internshipModel->update($_GET['id']);
+
+                                    //Alert the user of the correct execution
+                                    header('Location: '.$this->sourcePath.'?page=internship&action=displayOne&id='.$_GET['id']);
+                                    exit;
+                                }
+                                else{
+                                $content = $internshipModel->select($_GET['id']);
+                                }
+
+                                // Display the mainView
+                                include 'Views/mainView.php';
+                            }
+                            elseif ($_GET['action'] == 'delete'){
+                                // Ask the confirmation to delete
+                                var_dump($_POST);
+                                // Make the delete with model
+                                $internshipModel->delete($_GET['id']);
+
+                                // Alert on the correct change
+                                header('Location: '.$this->sourcePath.'?page=internship&action=display');
+                                exit;
+                                
+                            }
+                            else {
+                                $this->errorsController(404);
+                            }
+                        }
+                        else {
+                            $this->errorsController(404);
+                        }                       
+                    }                  
+                }
+                else {
+                    $pagination = $internshipModel->pagination($internshipModel->selectAll(),5);
+                    $content = $pagination['page'];
+
+
+                    include 'Views/mainView.php';
+                }
+            }
+            else{
+                header('Location: '.$this->sourcePath.'?page=connexion');
+            }
 
             // Test "action" criteria to know if you want to create, display, update, delete
                 //update and delete need an ID
