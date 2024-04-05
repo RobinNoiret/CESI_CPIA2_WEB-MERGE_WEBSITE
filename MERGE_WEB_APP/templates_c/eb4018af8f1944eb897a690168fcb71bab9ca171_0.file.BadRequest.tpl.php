@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-05 02:25:34
+/* Smarty version 3.1.36, created on 2024-04-05 08:39:50
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\errors\BadRequest.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660f44fee1e192_01849139',
+  'unifunc' => 'content_660f9cb6e34224_64362800',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eb4018af8f1944eb897a690168fcb71bab9ca171' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\errors\\BadRequest.tpl',
-      1 => 1712265708,
+      1 => 1712298760,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660f44fee1e192_01849139 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660f9cb6e34224_64362800 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -35,7 +35,7 @@ function content_660f44fee1e192_01849139 (Smarty_Internal_Template $_smarty_tpl)
         <h1 id="h1_error"> Ooops !</h1>
         <h2 id="h2_error"> Bad Request </h2>
         <div class="error-picture"> 
-            <img class="picture" src="Views/Assets/error400.png">
+            <img class="picture" src="Views/Assets/error400.png" alt="Erreur 400 : Requête incorrecte">
         </div>
 
         <div class="error-CTA">
