@@ -173,6 +173,7 @@
         public function companiesController() {
             if ($this->whatIsConnect() != 'none'){              // Verify user's connexion
                 $page = 'companies';
+
             
                 // Inclure le modèle des entreprises
                 include_once 'Models/companyModel.php';
@@ -199,16 +200,14 @@
                     $error = '';
                     $success = '';
 
-
                     // Vérifier si des données de formulaire ont été soumises pour l'ajout d'une entreprise
-                    if (isset($_POST['submit'])) {
+                    if (isset($_POST['nomEntreprise'])) {
                         // Récupérer les données du formulaire
                         $companyName = $_POST['nomEntreprise'];
                         $activityArea = $_POST['secteurActivite'];
                         $streetName = $_POST['nomRue1'];
                         $streetNum = $_POST['numRue1'];
                         $postalCode = $_POST['codePostal1'];
-                        var_dump($_GET['submit']);
 
                         // Appeler la méthode insert du modèle pour insérer une nouvelle entreprise
                         $insertResult = $companyModel->insert($companyName, $activityArea, $streetName, $streetNum, $postalCode);
@@ -226,8 +225,8 @@
                         }
 
                         // Rediriger vers la page précédente (page de l'entreprise)
-                        header("Location: http://localhost/Projet/CESI_CPIA2_WEB_PROJECT-1/MERGE_WEB_APP/?page=company");
-                        exit();
+                        header('Location: '.$sourcePath.'?page=company');
+                        exit;
 
                     }
                 } else {

@@ -75,27 +75,46 @@
         }
         
         public function insert($companyName, $activityArea, $streetName, $streetNum, $postalCode) {
-            // Préparer la requête pour insérer l'entreprise et son adresse
-            $request = $this->db->prepare("
-                INSERT INTO companies (companyName, activityArea) 
-                VALUES (:companyName, :activityArea); 
-                INSERT INTO addresses (streetName, streetNum, companyID, cityID) 
-                VALUES (:streetName, :streetNum, LAST_INSERT_ID(), (SELECT cityID FROM cities WHERE postalCode = :postalCode LIMIT 1));
-            ");
+            try {
+                // Commencer une transaction
+                $this->db->beginTransaction();
+                
+                // Insérer l'entreprise
+                $requestCompany = $this->db->prepare("
+                    INSERT INTO companies (companyName, activityArea) 
+                    VALUES (:companyName, :activityArea)
+                ");
+                $requestCompany->bindParam(':companyName', $companyName);
+                $requestCompany->bindParam(':activityArea', $activityArea);
+                $this->tryToExecute($requestCompany);
         
-            // Binder les paramètres
-            $request->bindParam(':companyName', $companyName);
-            $request->bindParam(':activityArea', $activityArea);
-            $request->bindParam(':streetName', $streetName);
-            $request->bindParam(':streetNum', $streetNum);
-            $request->bindParam(':postalCode', $postalCode);
+                // Récupérer l'ID de l'entreprise insérée
+                $companyID = $this->db->lastInsertId();
         
-            // Exécuter la requête
-            $this->tryToExecute($request);
+                // Insérer l'adresse
+                $requestAddress = $this->db->prepare("
+                    INSERT INTO addresses (streetName, streetNum, companyID, cityID) 
+                    VALUES (:streetName, :streetNum, :companyID, (SELECT cityID FROM cities WHERE postalCode = :postalCode LIMIT 1))
+                ");
+                $requestAddress->bindParam(':streetName', $streetName);
+                $requestAddress->bindParam(':streetNum', $streetNum);
+                $requestAddress->bindParam(':companyID', $companyID);
+                $requestAddress->bindParam(':postalCode', $postalCode);
+                $this->tryToExecute($requestAddress);
         
-            // Retourner un message de succès (optionnel)
-            return "Entreprise insérée avec succès.";
+                // Valider la transaction
+                $this->db->commit();
+        
+                // Retourner un message de succès
+                return "Entreprise insérée avec succès.";
+            } catch (PDOException $e) {
+                // En cas d'erreur, annuler la transaction
+                $this->db->rollBack();
+                // Retourner un message d'erreur
+                return "Erreur lors de l'insertion de l'entreprise : " . $e->getMessage();
+            }
         }
+        
         
 
         public function update(/*ensemble de données*/){

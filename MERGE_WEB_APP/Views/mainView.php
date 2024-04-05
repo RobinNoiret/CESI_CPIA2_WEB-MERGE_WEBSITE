@@ -66,11 +66,14 @@
             if ($action == 'add' ){
                 $smarty->assign('title', 'Merge-Création-Entreprises');
                 $smarty->assign('action',$action);
-                $smarty->assign('',); 
-                $smarty->assign('',);
-                $smarty->assign('',); 
-                $smarty->assign('',);
-                $smarty->assign('',);
+                // Assigner d'autres variables nécessaires pour le formulaire d'ajout d'entreprise
+                $smarty->assign('companyName', ''); // Valeur par défaut pour le nom de l'entreprise
+                $smarty->assign('activityArea', ''); // Valeur par défaut pour le secteur d'activité
+                $smarty->assign('streetName', ''); // Valeur par défaut pour le nom de la rue
+                $smarty->assign('streetNum', ''); // Valeur par défaut pour le numéro de la rue
+                $smarty->assign('postalCode', ''); // Valeur par défaut pour le code postal
+                $smarty->assign('errorMessage', $error); // Message d'erreur (le cas échéant)
+                $smarty->assign('successMessage', $success); // Message de succès (le cas échéant)
             }
         }
     }

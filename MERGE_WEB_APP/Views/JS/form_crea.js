@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
                           <label class="Form_label" for="ville${i + 1}">Ville :</label>
                           <div class="resultsAPI" id="resultsAPI${i + 1}"></div>
                       </div>
-                      <input class="Form_CTA_secondaire" type="submit" value="Soumettre">
                   </div>
               `;
         }

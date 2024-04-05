@@ -117,12 +117,13 @@ header, footer {
     transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
 }
 
-.CTA_secondaire
+.CTA_secondaire, .CTA-button
 {
     /* width: 40%; */
     display: inline-block;
 
     font-size: 1rem;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
     
@@ -135,11 +136,12 @@ header, footer {
     border-image-slice: 1;
     border-color: var(--orange-action);
     
-    background-color: var(--blanc-fixe);
-    color: var(--orange-action);
+    background-color: #FFFFFF;  /* var(--blanc-fixe) */
+    color: var(--noir-fixe);
 
     transition: transform 0.3s ease-in-out;
 }
+
 .CTA_secondaire:hover
 {
     transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
@@ -150,33 +152,12 @@ header, footer {
     /* Soit inscription.html (CTA-important ou secondaire)*/
     /* Soit connexion.html (CTA-button)*/
 
-.CTA-button
-{
-    display: inline;
-    font-weight: bold;
-    font-size: 1em;
-    width: 12.5rem;
-    height: auto;
-    margin: 0.6rem;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-    padding: 0.75rem 1.25rem;
-    position: relative;
-    background-color: var(--blanc-fixe);
-    border-radius: 3rem;
-    overflow: hidden;
-    border: 0.2rem solid;
-    border-color: #FF7D00;
-    cursor: pointer;
-    transition: .5s ease;
-}
  
 .CTA-button:hover
 {
     color: var(--blanc-fixe);
     background-color: #FF7D00;
-    transform: translateY(-2px);
+    transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
 }
 
 textarea { 

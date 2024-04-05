@@ -1,26 +1,31 @@
 
-<h1>Liste des entreprises</h1>
-
-<div class="search-container">
-    <form action="{$source}?page=company" method="post">
-        <input type="text" name="companyID" placeholder="Entrez l'ID de l'entreprise">
-        <input type="text" name="companyName" placeholder="Entrez le nom de l'entreprise">
-        <input type="text" name="activityArea" placeholder="Entrez le secteur d'activité">
-        <button type="submit" name="search">Rechercher</button>
-    </form>
-    {if $user eq 'Admin' || $user eq 'Pilote'}
-        <a href="{$source}?page=company&action=add" class="add-company-button">Ajouter une entreprise</a>
-    {/if}
-    <!-- Afficher le message de succès s'il existe -->
-    {if isset($successMessage)}
-        <div class="success-message">{$successMessage}</div>
-    {/if}
-
-    <!-- Afficher le message d'erreur s'il existe -->
-    {if isset($errorMessage)}
-        <div class="error-message">{$errorMessage}</div>
-    {/if}
+<div class="custom-search-container">
+    <h1 class="custom-title">Liste des entreprises</h1>
+    <div class="form-content">
+        <form action="{$source}?page=company" method="post" class="custom-search">
+            <div class="input-container">
+                <label for="companyID">ID de l'entreprise</label>
+                <input type="text" id="companyID" name="companyID" class="custom-input" placeholder="Entrez l'ID de l'entreprise">
+            </div>
+            <div class="input-container">
+                <label for="companyName">Nom de l'entreprise</label>
+                <input type="text" id="companyName" name="companyName" class="custom-input" placeholder="Entrez le nom de l'entreprise">
+                </div>
+            <div class="input-container">
+                <label for="activityArea">Secteur d'activité</label>
+                <input type="text" id="activityArea" name="activityArea" class="custom-input" placeholder="Entrez le secteur d'activité">
+            </div>
+            <button type="submit" name="search" class="CTA_secondaire">Rechercher</button>
+        </form>
+        <div class="add-button">
+            {if $user eq 'Admin' || $user eq 'Pilote'}
+                <a href="{$source}?page=company&action=add" class="CTA_secondaire">Ajouter une entreprise</a>
+            {/if}
+        </div>
+    </div>
 </div>
+
+
 
 <div class="table-container">
 

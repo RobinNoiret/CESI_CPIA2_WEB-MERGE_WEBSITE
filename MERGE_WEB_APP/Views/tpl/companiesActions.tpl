@@ -50,15 +50,7 @@
                             <div class="resultsAPI"></div>
                         </div>
                         <input class="Form_CTA_secondaire" type="submit" value="Soumettre">
-                        <!-- Afficher le message de succès s'il existe -->
-                        {if isset($successMessage)}
-                            <div class="success-message">{$successMessage}</div>
-                        {/if}
-
-                        <!-- Afficher le message d'erreur s'il existe -->
-                        {if isset($errorMessage)}
-                            <div class="error-message">{$errorMessage}</div>
-                        {/if}
+                        
                     </div>
                 </div>
             </div>  
