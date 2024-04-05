@@ -27,29 +27,7 @@ Pour le bon déroulement de notre projet, il est essentiel de mettre en place un
 <br><br>
 
 ## DataBase
-La création et le remplissage de la base de données sont des étapes fondamentales pour assurer la fonctionnalité de notre projet. Nous avons ajouté des données fictives, cependant pour votre usage nous vous laissons le soin de saisir les valeurs liées à votre activité. Ce qui suit décrit le processus utilisant les codes que vous avez développés et partagés sur notre projet GitHub :
-
-  **1. Code de création**
-La première étape consiste à exécuter le script de création de base de données disponible dans le référentiel GitHub.
-
-<p align="center">
-    <a href="#lien vers le code">
-      <img alt="Script de création" src="#lien bouton" />
-    </a>
-</p>
-
-<br>
-
-  **2. Data Population Script**
-Une fois la structure de la base de données en place, le script de remplissage des données est exécuté. Ce script insère des exemples de données ou les enregistrements initiaux nécessaires dans les tables, permettant les tests et la validation des fonctionnalités.
-
-<p align="center">
-    <a href="#lien vers le code">
-      <img alt="Script de création" src="#lien bouton" />
-    </a>
-</p>
-
-<br>
+Pour ce qui est de la Base de données, vous trouverez tout ce dont vous avez besoin dans le fichier BDD du projet (script de céation, peuplement, ...) Attention, pour ce qui est de l'instalation veiller à suivre le protocole se trouvant dans le même fichier pour pouvoir peupler sans problème !
 
 ## Authors
 * **Robin NOIRET** - [Robin GitHub](https://github.com/RobinNoiret)
