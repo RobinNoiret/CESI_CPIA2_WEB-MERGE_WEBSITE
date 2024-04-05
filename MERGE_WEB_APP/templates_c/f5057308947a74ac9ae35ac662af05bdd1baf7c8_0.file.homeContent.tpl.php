@@ -1,18 +1,32 @@
 <?php
+<<<<<<< HEAD:MERGE_WEB_APP/templates_c/cdb50ddc8672c40abf88474b37bb8950562c621a_0.file.homeContent.tpl.php
 /* Smarty version 3.1.36, created on 2024-04-05 01:47:32
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
+=======
+/* Smarty version 3.1.36, created on 2024-04-03 16:25:55
+  from 'D:\Brieuc\CESI\A2_info\BLOCS\4. Développement web\Projet\CESI_CPIA2_WEB_PROJECT-1\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
+>>>>>>> main:MERGE_WEB_APP/templates_c/f5057308947a74ac9ae35ac662af05bdd1baf7c8_0.file.homeContent.tpl.php
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
+<<<<<<< HEAD:MERGE_WEB_APP/templates_c/cdb50ddc8672c40abf88474b37bb8950562c621a_0.file.homeContent.tpl.php
   'unifunc' => 'content_660f3c14c9fe15_90358875',
+=======
+  'unifunc' => 'content_660d66f3726197_56096459',
+>>>>>>> main:MERGE_WEB_APP/templates_c/f5057308947a74ac9ae35ac662af05bdd1baf7c8_0.file.homeContent.tpl.php
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'cdb50ddc8672c40abf88474b37bb8950562c621a' => 
+    'f5057308947a74ac9ae35ac662af05bdd1baf7c8' => 
     array (
+<<<<<<< HEAD:MERGE_WEB_APP/templates_c/cdb50ddc8672c40abf88474b37bb8950562c621a_0.file.homeContent.tpl.php
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\homeContent.tpl',
       1 => 1712265708,
+=======
+      0 => 'D:\\Brieuc\\CESI\\A2_info\\BLOCS\\4. Développement web\\Projet\\CESI_CPIA2_WEB_PROJECT-1\\MERGE_WEB_APP\\Views\\tpl\\homeContent.tpl',
+      1 => 1712145037,
+>>>>>>> main:MERGE_WEB_APP/templates_c/f5057308947a74ac9ae35ac662af05bdd1baf7c8_0.file.homeContent.tpl.php
       2 => 'file',
     ),
   ),
@@ -20,7 +34,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD:MERGE_WEB_APP/templates_c/cdb50ddc8672c40abf88474b37bb8950562c621a_0.file.homeContent.tpl.php
 function content_660f3c14c9fe15_90358875 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_660d66f3726197_56096459 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> main:MERGE_WEB_APP/templates_c/f5057308947a74ac9ae35ac662af05bdd1baf7c8_0.file.homeContent.tpl.php
 ?><div class="landing">
 
     <!-- ___________________________________________ Image de fond ___________________________________________ -->

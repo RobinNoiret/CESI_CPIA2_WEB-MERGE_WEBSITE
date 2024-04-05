@@ -55,7 +55,25 @@
         }     
     }
    
+    elseif ($page == 'companies' ){
+        $smarty->assign('title', 'Merge-Entreprises');
+        $smarty->assign('companies',$companies);
+        $smarty->assign('action','');
+        if (isset($action)){
+            
 
+        if ($action == 'add' ){
+            $smarty->assign('title', 'Merge-Création-Entreprises');
+            $smarty->assign('action',$action);
+            $smarty->assign('',);
+            $smarty->assign('',);
+            $smarty->assign('',);
+            $smarty->assign('',);
+            $smarty->assign('',);
+        }
+    }
+    }
+    
     $user = $this->whatIsConnect();
     $smarty->assign('user', $user);
     $smarty->assign('source', $this->sourcePath);

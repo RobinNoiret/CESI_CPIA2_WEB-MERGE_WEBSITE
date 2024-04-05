@@ -12,7 +12,7 @@
         <h1 id="h1_error"> Ooops !</h1>
         <h2 id="h2_error"> Ressource introuvable ou n'existe pas</h2>
         <div class="error-picture"> 
-            <img class="picture" src="Views/Assets/error404.png">
+            <img class="picture" src="Views/Assets/error404.png" alt="Erreur 404 : Page non trouvée">
         </div>
 
         <div class="error-CTA">

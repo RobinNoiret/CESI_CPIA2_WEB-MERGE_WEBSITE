@@ -21,14 +21,14 @@
 /*_______Home_______*/
 @import url('homePage.css');
 
-/*_______Table_______*/
-@import url('table.css');
-
-/*______Errors______*/
-/*@import url('errors.css');*/
+/*__Mentions Légales__*/
+@import url('mLegales.css');
 
 /*____Responsive____*/
 @import url('responsive.css');
+
+/*_______Table_______*/
+@import url('table.css');
 
 
 /*___________________________________________________________________________________________________________________________*/
