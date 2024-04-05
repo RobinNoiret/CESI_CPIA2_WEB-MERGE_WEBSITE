@@ -53,6 +53,10 @@
     .footer-list{
         display: block;
     }
+
+    .places-column, .date-column, .descr-column{
+        display: none;
+    }
     
     /*_________ Errors ___________*/ /*Source : pages d'erreurs*/
     h1
@@ -84,6 +88,23 @@
         margin: 0;
         padding: 0; */
     }
+
+
+    /*________ offers __________*/
+    .descr-block .details-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .job-description textarea{
+        width: 80vw;
+        height: 20vh;
+    }
+    .skills textarea{
+        width: 80vw;
+        height: 5vh;
+    }
+
 
     /*_________ Errors ___________*/ /*Source : pages d'erreurs*/
     h1

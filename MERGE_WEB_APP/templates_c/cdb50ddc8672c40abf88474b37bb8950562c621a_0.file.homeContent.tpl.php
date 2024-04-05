@@ -1,32 +1,18 @@
 <?php
-<<<<<<< HEAD:MERGE_WEB_APP/templates_c/cdb50ddc8672c40abf88474b37bb8950562c621a_0.file.homeContent.tpl.php
-/* Smarty version 3.1.36, created on 2024-04-05 01:47:32
+/* Smarty version 3.1.36, created on 2024-04-05 08:39:46
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
-=======
-/* Smarty version 3.1.36, created on 2024-04-03 16:25:55
-  from 'D:\Brieuc\CESI\A2_info\BLOCS\4. Développement web\Projet\CESI_CPIA2_WEB_PROJECT-1\MERGE_WEB_APP\Views\tpl\homeContent.tpl' */
->>>>>>> main:MERGE_WEB_APP/templates_c/f5057308947a74ac9ae35ac662af05bdd1baf7c8_0.file.homeContent.tpl.php
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-<<<<<<< HEAD:MERGE_WEB_APP/templates_c/cdb50ddc8672c40abf88474b37bb8950562c621a_0.file.homeContent.tpl.php
-  'unifunc' => 'content_660f3c14c9fe15_90358875',
-=======
-  'unifunc' => 'content_660d66f3726197_56096459',
->>>>>>> main:MERGE_WEB_APP/templates_c/f5057308947a74ac9ae35ac662af05bdd1baf7c8_0.file.homeContent.tpl.php
+  'unifunc' => 'content_660f9cb2aa5c45_13516805',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'f5057308947a74ac9ae35ac662af05bdd1baf7c8' => 
+    'cdb50ddc8672c40abf88474b37bb8950562c621a' => 
     array (
-<<<<<<< HEAD:MERGE_WEB_APP/templates_c/cdb50ddc8672c40abf88474b37bb8950562c621a_0.file.homeContent.tpl.php
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\homeContent.tpl',
-      1 => 1712265708,
-=======
-      0 => 'D:\\Brieuc\\CESI\\A2_info\\BLOCS\\4. Développement web\\Projet\\CESI_CPIA2_WEB_PROJECT-1\\MERGE_WEB_APP\\Views\\tpl\\homeContent.tpl',
-      1 => 1712145037,
->>>>>>> main:MERGE_WEB_APP/templates_c/f5057308947a74ac9ae35ac662af05bdd1baf7c8_0.file.homeContent.tpl.php
+      1 => 1712298760,
       2 => 'file',
     ),
   ),
@@ -34,17 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD:MERGE_WEB_APP/templates_c/cdb50ddc8672c40abf88474b37bb8950562c621a_0.file.homeContent.tpl.php
-function content_660f3c14c9fe15_90358875 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_660d66f3726197_56096459 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> main:MERGE_WEB_APP/templates_c/f5057308947a74ac9ae35ac662af05bdd1baf7c8_0.file.homeContent.tpl.php
+function content_660f9cb2aa5c45_13516805 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="landing">
 
     <!-- ___________________________________________ Image de fond ___________________________________________ -->
 
     <div id="landing-pictureBG">
-        <img id="picture" src="Views/Assets/Picture backgroundhome-firstpicture-min.png">
+        <img id="picture" src="Views/Assets/Picture backgroundhome-firstpicture-min.png" alt="Open space moderne avec postes de travail et espace commun">
     </div>
 
     <!-- ____________________________________________ Bloc stats ____________________________________________ -->
@@ -78,7 +60,7 @@ function content_660d66f3726197_56096459 (Smarty_Internal_Template $_smarty_tpl)
             <div class="domain" id="domain-IT">
                 <a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=internship&action=research&domain=IT');?>
 ">
-                <img class="domain-pictures" src="Views/Assets/TechnologyIT.png">
+                <img class="domain-pictures" src="Views/Assets/TechnologyIT.png" alt="Illustration de technologie moderne et innovante">
                 </a>
                 <h4 class="domain-title">IT</h4>
             </div>
@@ -86,7 +68,7 @@ function content_660d66f3726197_56096459 (Smarty_Internal_Template $_smarty_tpl)
             <div class="domain" id="domain-services">
                 <a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=internshi&action=researchp&domain=Services');?>
 ">
-                <img class="domain-pictures" src="Views/Assets/Serviceservice.png">
+                <img class="domain-pictures" src="Views/Assets/Serviceservice.png" alt="Illustration des services">
                 </a>
                 <h4 class="domain-title">Services</h4>
             </div>
@@ -94,7 +76,7 @@ function content_660d66f3726197_56096459 (Smarty_Internal_Template $_smarty_tpl)
             <div class="domain" id="domain-Health">
                 <a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=internship&action=research&domain=Santé');?>
 ">
-                <img class="domain-pictures" src="Views/Assets/Health Care - Health Researchhealth.png">
+                <img class="domain-pictures" src="Views/Assets/Health Care - Health Researchhealth.png" alt="Image représentant la santé et le bien-être">
                 </a>
                 <h4 class="domain-title">Santé</h4>
             </div>
@@ -102,7 +84,7 @@ function content_660d66f3726197_56096459 (Smarty_Internal_Template $_smarty_tpl)
             <div class="domain" id="domain-Finances">
                 <a href="<?php echo ($_smarty_tpl->tpl_vars['source']->value).('?page=internship&action=research&domain=Finances');?>
 ">
-                <img class="domain-pictures" src="Views/Assets/Business Planbusiness.svg">
+                <img class="domain-pictures" src="Views/Assets/Business Planbusiness.svg" alt="Représentation graphique de concepts financiers et de gestion">
                 </a>
                 <h4 class="domain-title">Finances</h4>
             </div>
@@ -128,12 +110,12 @@ function content_660d66f3726197_56096459 (Smarty_Internal_Template $_smarty_tpl)
                 </a>
             </div>
 
-            <img class="article-picture" src="Views/Assets/Placeholder imageexplorez et trouver votre voie.png">
+            <img class="article-picture" src="Views/Assets/Placeholder imageexplorez et trouver votre voie.png" alt="image d'un bureau avec un ordianteur portable et un cahier">
 
         </article>
 
         <article class="articles-pict_left">
-            <img class="article-picture" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png">
+            <img class="article-picture" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png" alt="illustration d'un réseau de différents points">
             
             <div class="articles-text">
                 <h4>Développez votre réseau</h4>
@@ -148,7 +130,7 @@ function content_660d66f3726197_56096459 (Smarty_Internal_Template $_smarty_tpl)
                     Découvrir les évènements
                 </a>
             </div>
-            <img class="article-picture-responsive" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png">
+            <img class="article-picture-responsive" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png" alt="illustration d'un réseau de différents points">
         </article>
 
         <article class="articles-pict_right">
@@ -167,7 +149,7 @@ function content_660d66f3726197_56096459 (Smarty_Internal_Template $_smarty_tpl)
                 </a>
             </div>
 
-            <img class="article-picture" src="Views/Assets/Placeholder imagepréparez vous.png">
+            <img class="article-picture" src="Views/Assets/Placeholder imagepréparez vous.png" alt="photo d'un entretient professionnel">
         </article>
 
     </div>

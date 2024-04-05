@@ -1,0 +1,95 @@
+.postuler, .like, .btn-close, .return, .modify, .delete, .save {
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Styles communs pour les boutons */
+.postuler, .like {
+    height: 48px;
+    width: 50px;
+    background-color: #1D1D1D;
+    border-radius: 16px;
+    font-size: 0.5rem;
+    color: #f6f6f6;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Légère augmentation de l'ombre */
+}
+
+/* Ajustements spécifiques pour chaque bouton */
+.postuler {
+    width: 110px;
+    letter-spacing: 0.15rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.like {
+    width: 52px;
+}
+
+/* Styles au survol */
+.postuler:hover, .like:hover {
+    background-color: #333;
+}
+
+/* Styles pour les icônes */
+.modify i, .btn-close div, .return i, .like i {
+    font-size: 2em;
+    transition: transform 0.3s ease;
+}
+
+/* Effets de survol pour les icônes */
+.modify i:hover, .btn-close div:hover, .return i:hover {
+    transform: rotate(5deg) scale(1.2);
+}
+
+/* Flex container pour les boutons */
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Couleur orange pour les icônes spécifiques */
+.btn-close, .return {
+    color: #FF7D00;
+    width: auto;
+}
+
+/* Styles spécifiques pour les icônes de coeur */
+.heart--gray {
+    color: #f6f6f6;
+}
+
+.heart--orange {
+    color: #FF7D00;
+}
+
+.delete, .save {
+    width: 291px;
+    height: 48px;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: solid 3.5px transparent;
+    background: 
+      linear-gradient(#ffffff, #ffffff) padding-box, 
+      var(--gradient) border-box;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s ease; /* Transition sur la couleur de fond, de texte et de bordure */
+}
+
+.delete:hover, .save:hover {
+    background: 
+      linear-gradient(#FF7D00, #FF7D00) padding-box;
+    color: #ffffff; /* Couleur de texte au survol */
+    border: none;
+}
+
+/* CSS */
+.pressed {
+    transform: scale(0.90); /* Déplace le bouton vers le bas */
+}
