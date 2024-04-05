@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     text-align: left; /* Alignement à gauche du texte à l'intérieur du formulaire */
-    width: 30%;
+    width: 50%;
   }
 
   .form-text
@@ -83,4 +83,37 @@ input::placeholder {
 {
     display: flex;
     text-align: left;
+}
+
+/*____________ Bouton "Soumettre" du formulaire ____________*/
+.Form_CTA_secondaire
+{
+    
+    background-color: var(--blanc-fixe);
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--orange-action);
+    border-radius: 50em;
+
+    color: var(--orange-action);
+    padding: 5px 10px;
+    width: 80%;
+    height: 3%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 16px;
+    margin: 25px 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Form_CTA_secondaire:hover
+{
+    transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
+    background-color: var(--blanc-fixe);
 }

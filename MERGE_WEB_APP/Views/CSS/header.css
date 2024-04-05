@@ -45,7 +45,7 @@ header
     align-items: center;        /* Center in heigh*/
     text-align: center;         /* Center in width*/
     font-weight: bold;
-    gap: 1rem;
+    gap:  1.75rem;               /* Space between linkes */
     list-style: none;
     padding-left: 0; 
 }

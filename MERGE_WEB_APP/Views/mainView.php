@@ -17,20 +17,21 @@
     elseif ($page == 'companies' ){
         $smarty->assign('title', 'Merge-Entreprises');
         $smarty->assign('companies',$companies);
-        $smarty->assign('action','');
-        if (isset($action)){
-            
+        $smarty->assign('action',null);
 
-        if ($action == 'add' ){
-            $smarty->assign('title', 'Merge-Création-Entreprises');
-            $smarty->assign('action',$action);
-            $smarty->assign('',);
-            $smarty->assign('',);
-            $smarty->assign('',);
-            $smarty->assign('',);
-            $smarty->assign('',);
+        if (isset($action)){
+
+
+            if ($action == 'add' ){
+                $smarty->assign('title', 'Merge-Création-Entreprises');
+                $smarty->assign('action',$action);
+                $smarty->assign('',); 
+                $smarty->assign('',);
+                $smarty->assign('',); 
+                $smarty->assign('',);
+                $smarty->assign('',);
+            }
         }
-    }
     }
     
     $user = $this->whatIsConnect();

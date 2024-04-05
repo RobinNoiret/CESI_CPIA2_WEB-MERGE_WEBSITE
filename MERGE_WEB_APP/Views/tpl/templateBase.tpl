@@ -42,6 +42,7 @@
         {include "../tpl/footer.tpl"}
         
         <script src="Views/JS/header.js"></script>
+        <script src="Views/JS/form_crea.js"></script>
         {/block}
         
     </body> 

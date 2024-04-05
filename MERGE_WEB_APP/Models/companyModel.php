@@ -4,6 +4,7 @@
     class companyModel extends connectToDB{
         
         public function selectAll(){
+
             $request = $this->db->prepare("SELECT 
             c.companyID AS companyID,
             COALESCE(c.companyName, 'Nom non spécifié') AS companyName,
@@ -21,10 +22,10 @@
         LEFT JOIN 
             candidatures ca ON o.offerID = ca.offerID
         GROUP BY 
-            c.companyID;
+            c.companyID
           
         ");
-            // Set parameters if need
+            // Bind parameters
 
             $this->tryToExecute($request);                  
             $datas = $request->fetchAll(PDO::FETCH_ASSOC);      // Return a table of tables with multiples entites
@@ -73,11 +74,29 @@
             return $datas;
         }
         
-        public function insert(/*ensemble de données*/){
-            $datas = array(); // A modifier
-
-            return $datas;       
+        public function insert($companyName, $activityArea, $streetName, $streetNum, $postalCode) {
+            // Préparer la requête pour insérer l'entreprise et son adresse
+            $request = $this->db->prepare("
+                INSERT INTO companies (companyName, activityArea) 
+                VALUES (:companyName, :activityArea); 
+                INSERT INTO addresses (streetName, streetNum, companyID, cityID) 
+                VALUES (:streetName, :streetNum, LAST_INSERT_ID(), (SELECT cityID FROM cities WHERE postalCode = :postalCode LIMIT 1));
+            ");
+        
+            // Binder les paramètres
+            $request->bindParam(':companyName', $companyName);
+            $request->bindParam(':activityArea', $activityArea);
+            $request->bindParam(':streetName', $streetName);
+            $request->bindParam(':streetNum', $streetNum);
+            $request->bindParam(':postalCode', $postalCode);
+        
+            // Exécuter la requête
+            $this->tryToExecute($request);
+        
+            // Retourner un message de succès (optionnel)
+            return "Entreprise insérée avec succès.";
         }
+        
 
         public function update(/*ensemble de données*/){
             $datas = array(); // A modifier
