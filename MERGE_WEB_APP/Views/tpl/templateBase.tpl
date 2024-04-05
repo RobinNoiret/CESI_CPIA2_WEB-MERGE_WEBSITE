@@ -32,6 +32,8 @@
             {elseif $page eq 'internship'}
                 {if $action eq 'change' or $action eq 'add'}
                     {include "Views/tpl/offerTemplates/modifyOffer.tpl"}
+                {elseif $action eq 'displayOne'}
+                    {include "Views/tpl/offerTemplates/displayOffer.tpl"}
                 {else}
                     {include "Views/tpl/offerTemplates/displayOffers.tpl"}
                 {/if}

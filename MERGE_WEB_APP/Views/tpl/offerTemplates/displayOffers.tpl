@@ -11,7 +11,7 @@
             </form>
         </div>
 
-        {if $user neq 'Student'}
+        {if $user neq 'Etudiant'}
             <div class="intership-button">
                 <form id="addForm">
                 <buttonbutton class="CTA_secondaire" action='{$source}?page=internship&action=add'>Ajouter</button>
@@ -32,7 +32,7 @@
                     <td id="header-date" class='date-column'>Date de publication</td>
                     <td id="header-places" class='places-column'> Nombre de places</td>
                     <td id="header-open" class='open-column'></td>
-                    {if $user neq 'Student'}<td id="header-modify" class='modify-Column'></td>{/if}
+                    {if $user neq 'Etudiant'}<td id="header-modify" class='modify-Column'></td>{/if}
                 </tr>
             </thead>
             <tbody>
@@ -45,7 +45,7 @@
                     <td class='date-column'>{$elem.publicationDate}</td>
                     <td class='places-column'>{$elem.placesNumber}</td>
                     <td class='open-column'><a class="CTA_secondaire" href="{$source}?page=internship&action=displayOne&id={$elem.ID}">Découvrir l'offre<a></td>
-                    {if $user neq 'Student'}
+                    {if $user neq 'Etudiant'}
                         <td class="modify-Column"><a class='fa-solid fa-pen-to-square' href="{$source}?page=internship&action=change&id={$elem.ID}">
                         <a> </td>
                     {/if}

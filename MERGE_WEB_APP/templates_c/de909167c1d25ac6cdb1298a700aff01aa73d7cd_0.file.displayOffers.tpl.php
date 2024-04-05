@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2024-04-05 01:45:02
+/* Smarty version 3.1.36, created on 2024-04-05 02:23:42
   from 'C:\Users\flore\OneDrive\Documents\Cours\Cesi\A2\04 - Dev Web\Projet\Projet-git-part\CESI_CPIA2_WEB_PROJECT\MERGE_WEB_APP\Views\tpl\offerTemplates\displayOffers.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_660f3b7e9a1181_40245485',
+  'unifunc' => 'content_660f448e850be5_29944408',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'de909167c1d25ac6cdb1298a700aff01aa73d7cd' => 
     array (
       0 => 'C:\\Users\\flore\\OneDrive\\Documents\\Cours\\Cesi\\A2\\04 - Dev Web\\Projet\\Projet-git-part\\CESI_CPIA2_WEB_PROJECT\\MERGE_WEB_APP\\Views\\tpl\\offerTemplates\\displayOffers.tpl',
-      1 => 1712273557,
+      1 => 1712276594,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_660f3b7e9a1181_40245485 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660f448e850be5_29944408 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="internship-details">
     <div class="internship-actions">
     </div>
@@ -35,7 +35,7 @@ function content_660f3b7e9a1181_40245485 (Smarty_Internal_Template $_smarty_tpl)
             </form>
         </div>
 
-        <?php if ($_smarty_tpl->tpl_vars['user']->value != 'Student') {?>
+        <?php if ($_smarty_tpl->tpl_vars['user']->value != 'Etudiant') {?>
             <div class="intership-button">
                 <form id="addForm">
                 <buttonbutton class="CTA_secondaire" action='<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
@@ -57,7 +57,7 @@ function content_660f3b7e9a1181_40245485 (Smarty_Internal_Template $_smarty_tpl)
                     <td id="header-date" class='date-column'>Date de publication</td>
                     <td id="header-places" class='places-column'> Nombre de places</td>
                     <td id="header-open" class='open-column'></td>
-                    <?php if ($_smarty_tpl->tpl_vars['user']->value != 'Student') {?><td id="header-modify" class='modify-Column'></td><?php }?>
+                    <?php if ($_smarty_tpl->tpl_vars['user']->value != 'Etudiant') {?><td id="header-modify" class='modify-Column'></td><?php }?>
                 </tr>
             </thead>
             <tbody>
@@ -83,7 +83,7 @@ $_smarty_tpl->tpl_vars['elem']->do_else = false;
                     <td class='open-column'><a class="CTA_secondaire" href="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
 ?page=internship&action=displayOne&id=<?php echo $_smarty_tpl->tpl_vars['elem']->value['ID'];?>
 ">Découvrir l'offre<a></td>
-                    <?php if ($_smarty_tpl->tpl_vars['user']->value != 'Student') {?>
+                    <?php if ($_smarty_tpl->tpl_vars['user']->value != 'Etudiant') {?>
                         <td class="modify-Column"><a class='fa-solid fa-pen-to-square' href="<?php echo $_smarty_tpl->tpl_vars['source']->value;?>
 ?page=internship&action=change&id=<?php echo $_smarty_tpl->tpl_vars['elem']->value['ID'];?>
 ">

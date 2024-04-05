@@ -64,7 +64,7 @@
 
 
         public function internshipController(){
-            if ($this->whatIsConnect() != 'none' or true){              // Verify user's connexion
+            if ($this->whatIsConnect() != 'none'){              // Verify user's connexion
                 $page = 'internship';
 
                 include_once 'Models/internshipModel.php';
@@ -83,9 +83,10 @@
                         include 'Views/mainView.php';
                     }
                     elseif ($_GET['action'] == 'displayOne'){
-                        $content = $internshipModel->select($_GET['id']);
                         $title = 'Merge-stage'; // put the name of the stage
                         $action = 'displayOne';
+                        $content = $internshipModel->select($_GET['id']);
+
                         include 'Views/mainView.php';
                     }
                     elseif ($_GET['action'] == 'research'){

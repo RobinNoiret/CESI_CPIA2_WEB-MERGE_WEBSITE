@@ -25,7 +25,7 @@
 
         if (isset($action)){ 
             $smarty->assign('action',$action);
-            if ($action == 'displayOne'or $action == 'add'){         
+            if ($action == 'add'){         
                 $smarty->assign('companyID','');        /*élément à remplire*/
                 $smarty->assign('internshipTitle','');
                 $smarty->assign('companyName', '');     /*élément à remplire*/
@@ -35,7 +35,7 @@
                 $smarty->assign('internshipComp','');
                 $smarty->assign('companyAddress','');
             }
-            elseif ($action == 'change'){
+            elseif ($action == 'change' or $action == 'displayOne'){
                 $smarty->assign('companyID',$content['companyID']);
                 $smarty->assign('internshipTitle',$content['title']);
                 $smarty->assign('companyName', $content['companyName']);
@@ -44,6 +44,7 @@
                 $smarty->assign('remuneration',$content['remunerationBasis']);
                 $smarty->assign('internshipDesc',$content['descr']);
                 $smarty->assign('internshipComp',$content['skills']);
+                $smarty->assign('publicationDate',$content['publicationDate']);
             }
             else {
                 $smarty->assign('content',$content);

@@ -94,6 +94,9 @@ thead td{
 .fa-solid{
     color: var(--noir-fixe);
 }
+.close .fa-solid{
+    color: var(--orange-action);
+}
 .fa-solid:hover{
     color: var(--orange-action);
 }

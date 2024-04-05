@@ -1,4 +1,3 @@
-<form  action="{$source}?page=internship&action={$action}{if $action eq 'change'}&id={$intershipID}{/if}" method="post">
 <div class="stage-details">
     <div class="stage-actions">
             <!-- aletrnative à la div inférieur<div class="btn-close"><a href="">X</a></div> -->
@@ -9,7 +8,7 @@
             </div>
     </div>
     <div class="stage-title">
-        <textarea id="internshipTitle" class="h2-action" placeholder="Stage - Nom de stage" name="internshipTitle">{$internshipTitle}</textarea>
+        <h2 class="h2-action">{$internshipTitle}</h2>
     </div>
     <div class="company-name">
     <input type="hidden" name="companyID" value="{$companyID}">
@@ -20,8 +19,9 @@
 <div class="descr-block">
     <div class="details-list">
         <ul class="data-list">
-            <li><input type="number" name="remuneration" class="small-input-offer" value="{$remuneration}" placeholder="Base de rémunération"></li>
-            <li><input type="number" name="placesNumber" class="small-input-offer" value="{$placesNumber}" placeholder="Nombre de place"></li>
+            <li><p class="small-input-offer">Date de publication : {$publicationDate}</p></li>
+            <li><p class="small-input-offer">Base de rémunération : {$remuneration}</p></li>
+            <li><p class="small-input-offer">Nombres de places : {$placesNumber}</p></li>
         </ul>
         <div class="details-wrapper">
             <div class="left-part">
@@ -29,7 +29,7 @@
                     <h3>Le Stage</h3>
                     <div class="description">
                         <h4>Descriptif du stage</h4>
-                        <textarea name="internshipDesc" class="textarea" id="descrArea" placeholder="Donner une description des missions et du contenu de l'offre de stage ...">{$internshipDesc}</textarea>
+                        <p class="textarea" id="descrArea">{$internshipDesc}</p>
                         </div>
                 </div>
             </div>
@@ -39,18 +39,19 @@
                 </div>
                 <div class="skills">
                     <h4>Compétences</h4>
-                    <textarea name="skills" id="skillsArea" class="textarea" placeholder="Compétence1, Compétence2, Compétence3 ...">{$internshipComp}</textarea>
+                    <p  id="skillsArea" class="textarea" >{$internshipComp}</p>
                 </div>
             </div>
         </div>
+        {if $user neq 'Etudiant'}
         <div class="buttons">
             <ul class="btn-list-modify">
                 {if $action eq 'change'}
-                    <li><button class="CTA_secondaire" formaction='{$source}?page=internship&action=delete&id={$intershipID}'>Supprimer</button></li>
+                    <li><a class="CTA_secondaire" href='{$source}?page=internship&action=delete&id={$intershipID}'>Supprimer</a></li>
                 {/if}
-                <li><input type="submit" id="btn-save" class="CTA_secondaire" value="Enregistrer"></li>
+                <li><a type="submit" id="btn-save" class="CTA_secondaire" href='{$source}?page=internship&action=change&id={$intershipID}'>Modifier</a></li>
             </ul>
         </div>
+        {/if}
     </div>
 </div>
-</form>

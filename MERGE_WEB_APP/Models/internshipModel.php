@@ -63,6 +63,7 @@
                                                 .$offerData['postalCode'].' '
                                                 .$offerData['cityName'],
                             'placesNumber'=>$offerData['placesNumber'],
+                            'publicationDate'=>$offerData['publicationDate'],
                             'remunerationBasis'=>$offerData['remunerationBasis'],
                             'descr'=>$offerData['descr'],
                             'skills'=>$skillsData
