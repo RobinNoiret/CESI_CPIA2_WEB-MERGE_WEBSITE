@@ -22,7 +22,7 @@
     {block name=body}
 
         {include "../tpl/header.tpl"}
-        <div class="Content">
+        <div class="Content" id="content">
         
             {if $page eq 'home'}
                 {include "../tpl/homeContent.tpl"}

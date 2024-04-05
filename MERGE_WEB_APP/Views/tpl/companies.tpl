@@ -1,6 +1,6 @@
 
 <div class="custom-search-container">
-    <h1 class="custom-title">Liste des entreprises</h1>
+    <h2 class="h2-action custom-title">Liste des entreprises</h2>
     <div class="form-content">
         <form action="{$source}?page=company" method="post" class="custom-search">
             <div class="input-container">

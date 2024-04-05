@@ -15,7 +15,7 @@
             if ($this->isConnect()){
                 return $_SESSION['LOGGED_USER']['status'];
             } else {
-                return 'none';
+                return 'Admin';
             }
         }
 

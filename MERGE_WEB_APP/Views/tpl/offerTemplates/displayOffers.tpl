@@ -20,7 +20,7 @@
         {/if}
     </div>
 </div>
-<div class="table">
+<div class="table-container">
     <div class="rows">
         <table>
             <thead>
