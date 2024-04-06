@@ -1,0 +1,123 @@
+.table-container {
+    margin: 1.3rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.4rem 1rem;
+    text-align: left;
+    border-bottom: 0.08rem solid #ddd;
+    max-width: 10rem;
+}
+
+.modify, tr th:last-child, .center {
+    text-align: center;
+}
+
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.fa-solid {
+    text-decoration: none;
+}
+
+/* -------------------------- Inputs Form Entreprises ----------------------------------*/
+
+/* Conteneur principal du formulaire de recherche */
+.custom-search-container {
+    margin: 0 2rem;
+}
+
+/* Configuration générale du formulaire de recherche pour un affichage en ligne et centré */
+.custom-search {
+    display: flex; /* Met tous les éléments en ligne */
+    align-items: center; /* Centre les éléments verticalement */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+/* Style spécifique pour chaque conteneur d'input, organisant les labels et inputs en colonne */
+.input-container {
+    display: flex; /* Utilise Flexbox */
+    flex-direction: column; /* Dispose les éléments en colonne */
+}
+
+/* Style pour organiser le contenu du formulaire, permettant une disposition équilibrée */
+.form-content {
+    display: flex; /* Utilise Flexbox */
+    justify-content: space-between;
+}
+
+/* Espacement entre les labels et les inputs, et personnalisation des inputs */
+.custom-input,
+.input-container label {
+    margin-bottom: 0.3rem; /* Ajoute un peu d'espace en bas de chaque élément */
+}
+
+/* Amélioration de l'apparence des champs de saisie */
+.custom-input {
+    flex: 1; /* Les champs de texte occupent l'espace disponible */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    padding: 0.4rem;
+}
+
+/* Amélioration de l'apparence des champs de saisie quand ils sont cliqués */
+.custom-input:focus {
+    outline: none;
+    border-color: var(--orange-action);
+    box-shadow: 0 0 0 0.5px var(--gradient-color3);
+}
+
+/* Style pour le titre du formulaire */
+.custom-title {
+    text-align: center;
+}
+
+/* Ajustements pour une meilleure réactivité sur les petits écrans */
+@media (max-width: 953px) {
+    /* Permet au formulaire de s'adapter aux petits écrans en empilant les éléments */
+    .custom-search {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Ajuste le bouton pour qu'il occupe toute la largeur disponible sur petits écrans */
+    .CTA_secondaire {
+        align-self: center; /* Centre le bouton sous les inputs sur petits écrans */
+    }
+
+    .form-content {
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .input-container {
+        width: 60%;
+    }
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

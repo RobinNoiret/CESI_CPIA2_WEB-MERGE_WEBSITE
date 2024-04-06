@@ -12,10 +12,10 @@ header
 .navbar, .navbar
 {
     display: flex;
-    /* top: 0;
-    left: 0; */
+    top: 0;
+    /*left: 0; */
     width: 94vw/*calc(100% - 30px)*/;
-    position: fixed;                    /* Keep navbar when scrolling */
+    position: sticky;
     z-index: 100;
     justify-content: space-between;     /* Make some space beetween images and links */
 
@@ -29,6 +29,11 @@ header
     box-shadow: 5px 1px 10px rgba(29, 29, 29, 0.3);
 }
 
+.navbar-fixed{
+    position: fixed;                    /* Keep navbar when scrolling */
+    width: 94vw;
+}
+
 .nav-logo
 {
     width: 6.25rem;
@@ -40,7 +45,7 @@ header
     align-items: center;        /* Center in heigh*/
     text-align: center;         /* Center in width*/
     font-weight: bold;
-    gap: 1rem;
+    gap:  1.75rem;               /* Space between linkes */
     list-style: none;
     color: var(--noir-fixe);
     padding-left: 0; 

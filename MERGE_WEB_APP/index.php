@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     include ('Controllers/mainController.php');         // Include the controller part
     $path = $_SERVER['REQUEST_URI'];
     $sourcePath = (substr($path,0,strlen($path)-(strlen(strrchr($path,'/'))-1)));  // Keep the path of the start point of the website
@@ -28,7 +29,10 @@
             //$controller->studentController();
         }
         elseif ($_GET["page"]=='company'){               // Want to access to company
-            //$controller->companyController();
+            $controller->companiesController();
+        }
+        elseif ($_GET["page"]=='mentionslégales'){       // Want to access to legal aspect
+            $controller->mentionController();
         }
         elseif ($_GET["page"]=='error'and isset($_GET["error"])){
             errors($controller, $_GET["error"]);

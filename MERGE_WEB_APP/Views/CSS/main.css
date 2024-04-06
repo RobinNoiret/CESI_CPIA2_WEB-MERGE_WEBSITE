@@ -12,14 +12,23 @@
 /*A revoir pour factoriser car conflit entre connexion et création*/
 @import url('forms.css');
 
+/*_____Buttons______*/
+@import url('buttons.css');
+
+/*_______Offer______*/
+@import url('offer.css');
+
 /*_______Home_______*/
 @import url('homePage.css');
 
-/*______Errors______*/
-/*@import url('errors.css');*/
+/*__Mentions Légales__*/
+@import url('mLegales.css');
 
 /*____Responsive____*/
 @import url('responsive.css');
+
+/*_______Table_______*/
+@import url('table.css');
 
 
 /*___________________________________________________________________________________________________________________________*/
@@ -39,6 +48,12 @@ html
 
     --noir-fixe: rgba(29, 29, 29, 1);               /*Main black - text color*/
 
+    --gradient-color1: #FF7D00;                     /*couleur la plus a gauche*/        
+    --gradient-color2: #F79C43;                     /*couleur au centre*/
+    --gradient-color3: #FFA800;                       /*couleur la plus a droite*/
+
+    --gradient: linear-gradient(to right, var(--gradient-color1), var(--gradient-color2), var(--gradient-color3));
+
 /*______Fonts______*/
     font-family: "DM Sans", sans-serif;
 
@@ -51,12 +66,24 @@ html
 body
 {
     width: auto;
-    height: auto;
+    height: 100%;
 
     margin: 0;
     padding: 0;
 
+    display: flex;
+    flex-direction: column;
+
 	background-color: var(--blanc-fixe);
+}
+
+header, footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.Content {
+    flex-grow: 1;
 }
 
 /*_______CTA_______*/
@@ -90,12 +117,13 @@ body
     transform: scale(1.1); /* Augmentez la valeur selon votre préférence */
 }
 
-.CTA_secondaire
+.CTA_secondaire, .CTA-button
 {
-    width: 40%;
+    /* width: 40%; */
     display: inline-block;
 
     font-size: 1rem;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
     
@@ -108,11 +136,12 @@ body
     border-image-slice: 1;
     border-color: var(--orange-action);
     
-    background-color: var(--blanc-fixe);
-    color: var(--orange-action);
+    background-color: #FFFFFF;  /* var(--blanc-fixe) */
+    color: var(--noir-fixe);
 
     transition: transform 0.3s ease-in-out;
 }
+
 .CTA_secondaire:hover
 {
     transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
@@ -123,31 +152,20 @@ body
     /* Soit inscription.html (CTA-important ou secondaire)*/
     /* Soit connexion.html (CTA-button)*/
 
-.CTA-button
-{
-    display: inline;
-    font-weight: bold;
-    font-size: 1em;
-    width: 12.5rem;
-    height: auto;
-    margin: 0.6rem;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-    padding: 0.75rem 1.25rem;
-    position: relative;
-    background-color: var(--blanc-fixe);
-    border-radius: 3rem;
-    overflow: hidden;
-    border: 0.2rem solid;
-    border-color: #FF7D00;
-    cursor: pointer;
-    transition: .5s ease;
-}
  
 .CTA-button:hover
 {
     color: var(--blanc-fixe);
     background-color: #FF7D00;
-    transform: translateY(-2px);
+    transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
+}
+
+textarea { 
+    resize: none; 
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+input, textarea, button{
+    font-family: "DM Sans", sans-serif;
 }

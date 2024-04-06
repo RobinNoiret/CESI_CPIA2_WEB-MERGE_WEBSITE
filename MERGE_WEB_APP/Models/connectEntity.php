@@ -28,4 +28,20 @@
                 exit;
             }            
         }
+
+        public function pagination($array, $itemsPage = 10, $currentPage = 1){
+            $sizeArray = count($array);
+
+            $totalPages = ceil($sizeArray / $itemsPage);               
+            $start = ($currentPage - 1) * $itemsPage;
+            $end = $start + $itemsPage ;
+
+            $page = array();
+            for ($i = $start; $i < $end && $i < $sizeArray; $i++) {
+                $page[$start-$i] = $array[$i];
+            }
+            //var_dump($page);
+
+            return array('page'=>$page,'max'=> $totalPages, 'current'=> $currentPage) ;
+        }
     }

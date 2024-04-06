@@ -3,7 +3,7 @@
     <!-- ___________________________________________ Image de fond ___________________________________________ -->
 
     <div id="landing-pictureBG">
-        <img id="picture" src="Views/Assets/Picture backgroundhome-firstpicture-min.png">
+        <img id="picture" src="Views/Assets/Picture backgroundhome-firstpicture-min.png" alt="Open space moderne avec postes de travail et espace commun">
     </div>
 
     <!-- ____________________________________________ Bloc stats ____________________________________________ -->
@@ -32,29 +32,29 @@
 
         <div class="domains">
             <div class="domain" id="domain-IT">
-                <a href="error-accèsInternet.html">
-                <img class="domain-pictures" src="Views/Assets/TechnologyIT.png">
+                <a href="{$source|cat:'?page=internship&action=research&domain=IT'}">
+                <img class="domain-pictures" src="Views/Assets/TechnologyIT.png" alt="Illustration de technologie moderne et innovante">
                 </a>
                 <h4 class="domain-title">IT</h4>
             </div>
 
             <div class="domain" id="domain-services">
-                <a href="error-accèsServeur.html">
-                <img class="domain-pictures" src="Views/Assets/Serviceservice.png">
+                <a href="{$source|cat:'?page=internshi&action=researchp&domain=Services'}">
+                <img class="domain-pictures" src="Views/Assets/Serviceservice.png" alt="Illustration des services">
                 </a>
                 <h4 class="domain-title">Services</h4>
             </div>
 
             <div class="domain" id="domain-Health">
-                <a href="error-FlorentSauvage.html">
-                <img class="domain-pictures" src="Views/Assets/Health Care - Health Researchhealth.png">
+                <a href="{$source|cat:'?page=internship&action=research&domain=Santé'}">
+                <img class="domain-pictures" src="Views/Assets/Health Care - Health Researchhealth.png" alt="Image représentant la santé et le bien-être">
                 </a>
                 <h4 class="domain-title">Santé</h4>
             </div>
 
             <div class="domain" id="domain-Finances">
-                <a href="error-pageDoesntExist.html">
-                <img class="domain-pictures" src="Views/Assets/Business Planbusiness.svg">
+                <a href="{$source|cat:'?page=internship&action=research&domain=Finances'}">
+                <img class="domain-pictures" src="Views/Assets/Business Planbusiness.svg" alt="Représentation graphique de concepts financiers et de gestion">
                 </a>
                 <h4 class="domain-title">Finances</h4>
             </div>
@@ -69,31 +69,38 @@
                 <h4>Explorez et trouver votre voie</h4>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus egestas ex, id tempor sem maximus id. 
-                    Quisque dignissim neque tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Plongez dans des fiches métiers détaillées pour explorer les différentes professions. Apprenez-en plus
+                    sur les compétences requises, les responsabilités et les opportunités de carrière dans chaque domaine. 
+                    Que vous soyez passionné par le développement informatique, le marketing ou la finance, ces fiches vous 
+                    guideront vers le métier qui vous correspond le mieux.
                 </p>
 
-                <a class="CTA_secondaire" href="#">Découvrir les fiches métiers</a>
+                <a class="CTA_secondaire" href="https://www.emploi-store.fr/portail/parcours-conseils/choisisFuturMetier/fiche-metier">
+                    Découvrir les fiches métiers
+                </a>
             </div>
 
-            <img class="article-picture" src="Views/Assets/Placeholder imageexplorez et trouver votre voie.png">
+            <img class="article-picture" src="Views/Assets/Placeholder imageexplorez et trouver votre voie.png" alt="image d'un bureau avec un ordianteur portable et un cahier">
 
         </article>
 
         <article class="articles-pict_left">
-            <img class="article-picture" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png">
+            <img class="article-picture" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png" alt="illustration d'un réseau de différents points">
             
             <div class="articles-text">
                 <h4>Développez votre réseau</h4>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus egestas ex, id tempor sem maximus id. 
-                    Quisque dignissim neque tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Restez à l’affût des événements professionnels ! Salons de l’emploi, conférences, webinaires… Ces occasions
+                    sont idéales pour rencontrer des employeurs, élargir votre réseau et découvrir des opportunités de stage ou
+                    d’alternance. Préparez votre CV, prévoyez des questions pertinentes et soyez prêt à briller lors de ces rencontres.
                 </p>
 
-                <a class="CTA_secondaire" href="#">Découvrir les évènements</a>
+                <a class="CTA_secondaire" href="https://www.nsalons.com/entreprises/france/">
+                    Découvrir les évènements
+                </a>
             </div>
-            <img class="article-picture-responsive" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png">
+            <img class="article-picture-responsive" src="Views/Assets/Placeholder imagedéveloppez votre réseau.png" alt="illustration d'un réseau de différents points">
         </article>
 
         <article class="articles-pict_right">
@@ -101,14 +108,18 @@
                 <h4>Préparez-vous !</h4>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus egestas ex, id tempor sem maximus id. 
-                    Quisque dignissim neque tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    L’entretien est une étape cruciale dans votre recherche d’emploi. Préparez-vous en amont : révisez vos compétences,
+                    entraînez-vous à répondre aux questions courantes, et travaillez sur votre présentation personnelle. Montrez votre
+                    motivation, votre confiance et votre intérêt pour l’entreprise. Vous serez ainsi prêt à convaincre les recruteurs
+                    que vous êtes le candidat idéal !
                 </p>
 
-                <a class="CTA_secondaire" href="#">Découvrir comment vous préparez</a>
+                <a class="CTA_secondaire" href="https://www.welcometothejungle.com/fr/articles/preparer-entretien-stage">
+                    Découvrir comment vous préparez
+                </a>
             </div>
 
-            <img class="article-picture" src="Views/Assets/Placeholder imagepréparez vous.png">
+            <img class="article-picture" src="Views/Assets/Placeholder imagepréparez vous.png" alt="photo d'un entretient professionnel">
         </article>
 
     </div>
