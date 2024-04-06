@@ -9,7 +9,7 @@ header
     top: 0;
 }
 
-.navbar-small, .navbar-big
+.navbar, .navbar
 {
     display: flex;
     /* top: 0;
@@ -62,14 +62,14 @@ nav ul a:hover
     height: auto;
 }
 
-nav #scrolling-menu-header {
+.navbar #scrolling-menu-header {
     display: none;
     font-size: 3rem;
     color: var(--orange-action);
     cursor: pointer;
 }
 
-nav #second-nav-links a {
-    
+.navbar .scrolling-menu ul {
+    display: none;
 }
 

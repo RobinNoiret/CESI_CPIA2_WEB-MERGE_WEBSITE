@@ -11,14 +11,14 @@
         font-size: 14px;
     }
 
-    .navbar-big .nav-links{
+    .big-links .nav-links{
         display: none;
     }
-    /* .navbar-big #scrolling-menu-header{
+    .big-links .scrolling-menu #nav-menu-header{
         display: block;
-    } */
+    }
 
-    /* .navbar-big .nav-links{
+    /* .big-links .nav-links{
         display: none;
         box-shadow: 0px 1px 2px #CCC;
         background-color: white;
@@ -106,17 +106,15 @@
         font-size: 10px;
     }
 
-    .navbar-small .nav-links{
+    .small-links .nav-links{
         display: none;
     }
-    .navbar-small #scrolling-menu-header{
+    .small-links #scrolling-menu-header{
         display: block;
-
-
     } 
-    nav #second-nav-links, nav #second-nav-links a {
+    /* nav #second-nav-links, nav #second-nav-links a {
         display: flex;
-    }
+    } */
     
 
     /*_________ Errors ___________*/ /*Source : pages d'erreurs*/

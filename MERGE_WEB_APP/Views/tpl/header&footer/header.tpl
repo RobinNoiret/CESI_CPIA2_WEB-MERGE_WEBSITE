@@ -1,10 +1,10 @@
 {* The header change it menu with the value of $user wich can have values none, student, pilote, admin *}
 
 <header>
-    <nav id="navbar" {if $user eq 'Admin' || $user eq 'Pilote'}class="navbar-big"{else}class="navbar-small"{/if} > 
+    <nav id="navbar" {if $user eq 'Admin' || $user eq 'Pilote'}class="navbar big-link"{else}class="navbar small-link"{/if} > 
         <div id="scrolling-menu-header" class="scrolling-menu" >
             <label id="nav-menu-header" class="nav-menu" for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
+            <input type="checkbox" id="toggle" hidden>
             <ul id="second-nav-links" class="nav-links">
                 {include "../header&footer/listeNavHeader.tpl"}
             </ul>
