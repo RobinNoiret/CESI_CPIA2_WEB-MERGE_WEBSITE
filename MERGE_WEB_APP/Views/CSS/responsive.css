@@ -11,10 +11,10 @@
         font-size: 14px;
     }
 
-    .big-links .nav-links{
+    .big-link .nav-links{
         display: none;
     }
-    .big-links .scrolling-menu #nav-menu-header{
+    .big-link .scrolling-menu #nav-menu-header{
         display: block;
     }
 
@@ -110,16 +110,12 @@
         font-size: 10px;
     }
 
-    .small-links .nav-links{
+    .small-link .main-links{
         display: none;
     }
-    .small-links #scrolling-menu-header{
-        display: block;
-    } 
-    /* nav #second-nav-links, nav #second-nav-links a {
+    .small-link #scrolling-menu-header{
         display: flex;
-    } */
-    
+    }
 
 
     /*________ offers __________*/
