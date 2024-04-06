@@ -9,11 +9,10 @@ header
     top: 0;
 }
 
-.navbar, .navbar
+.navbar
 {
     display: flex;
     top: 0;
-    /*left: 0; */
     width: 94vw/*calc(100% - 30px)*/;
     position: sticky;
     z-index: 100;
@@ -51,13 +50,13 @@ header
     padding-left: 0; 
 }
 
-nav ul a
+.navbar ul a
 {
     color: var(--noir-fixe);
     text-decoration: none;
 }
 
-nav ul a:hover
+.navbar ul a:hover
 {
     color: var(--orange-action);
 }
