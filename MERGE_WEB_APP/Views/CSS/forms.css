@@ -1,126 +1,166 @@
 /*___________________________________________________________________________________________________________________________*/
-/*                                                          forms.css                                                        */
-/*___________________________________________________________________________________________________________________________*/
-.landing
-{
-    width: auto;
-}
-
-/*___________________________________________________________________________________________________________________________*/
 /*                                                    Page d'inscription                                                     */
 /*___________________________________________________________________________________________________________________________*/
+
+/* Réglages généraux */
+.landing {
+  width: auto;
+}
+
+/* Conteneur principal du formulaire */
 .form-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .div-form
-  {
-    display: flex;
-    justify-content: center;
-    text-align: left; /* Alignement à gauche du texte à l'intérieur du formulaire */
-    width: 50%;
-  }
-
-  .form-text
-  {
-    text-align: center;
-  }
-  
-/*__________ Ensemble du formulaire __________*/
-.fieldset-group /*Attention*/
-{
-    background-color: white;
-    border-radius: 2em;
-    border-style: none;
-
-    padding: 10%;
-    padding-bottom: 5%;
-    width: 70%;
-
-
-    display: inline;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*___________ Label du formulaire ___________*/
-.Form_label
-{
-    display: flex;
-    text-align: left;
+/* Formulaire lui-même */
+.div-form {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 50%;
 }
 
-#formFields
-{
-    text-align: center;
+/* Texte du formulaire */
+.form-text {
+  text-align: center;
 }
 
-/*___________ Input du formulaire ___________*/
+/* Ensemble du formulaire */
+.fieldset-group {
+  background-color: white;
+  border-radius: 2em;
+  border-style: none;
+  padding: 10%;
+  padding-bottom: 5%;
+  width: 70%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre plus marquée mais diffusée */
+}
+
+/* Label du formulaire */
+.Form_label {
+  display: flex;
+  text-align: left;
+}
+
+/* Champs du formulaire */
+#formFields {
+  text-align: center;
+}
+
+.fields-content {
+  margin: 1rem 0;
+}
+
+/* Input du formulaire */
 .Form_input {
   display: block;
-  margin-bottom: 5px;
+  margin: 5px 0;
   width: 96%;
+  font-size: 1rem;
+  color: var(--orange-action);
   border-style: none;
   border-bottom: 1px solid black;
   transition: border-bottom-color 0.3s;
 }
 
+/* Style lorsqu'un champ est en focus */
 .Form_input:focus {
   outline: none;
   border-width: 2px;
   border-bottom-color: var(--orange-action);
 }
 
+/* Placeholder des inputs */
 input::placeholder {
   opacity: 0.3;
   font-style: italic;
 }
 
-/*____________ H3 du formulaire ____________*/
-.Form_h3_localite
-{
-    display: flex;
-    text-align: left;
+/* Sous-titre des sections du formulaire */
+.Form_h3_localite {
+  display: flex;
+  text-align: left;
+  color: var(--orange-action);
 }
 
-/*____________ Bouton "Soumettre" du formulaire ____________*/
-.Form_CTA_secondaire
-{
-    
-    background-color: var(--blanc-fixe);
-
-    border-width: 2px;
-    border-style: solid;
-    border-color: var(--orange-action);
-    border-radius: 50em;
-
-    color: var(--orange-action);
-    padding: 5px 10px;
-    width: 80%;
-    height: 3%;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-
-    font-size: 16px;
-    margin: 25px 2px;
-    transition: transform 0.3s ease-in-out;
+/* Bouton "Soumettre" du formulaire */
+.Form_CTA_secondaire {
+  background-color: var(--blanc-fixe);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--orange-action);
+  border-radius: 50em;
+  color: var(--orange-action);
+  padding: 5px 10px;
+  width: 80%;
+  height: 3%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 2px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.Form_CTA_secondaire:hover
-{
-    transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
-    background-color: var(--blanc-fixe);
+/* Style du bouton au survol */
+.Form_CTA_secondaire:hover {
+  transform: scale(1.05);
+  background-color: var(--blanc-fixe);
 }
 
-.h2-action{
+/* Titre des sections du formulaire */
+.h2-action {
   font-size: 2rem;
   color: var(--orange-action);
   font-weight: bold;
   text-align: center;
 }
+
+/* Style pour le select Nombre de localités */
+#nombreLocalites, .city_select {
+  display: block;
+  margin: auto; /* Ajout de la marge automatique pour centrer */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30%; /* Réduction de la largeur pour éviter le débordement */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; /* Réduction de la taille de la police */
+  padding: 6px; /* Réduction de l'espacement intérieur */
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+#nombreLocalites:focus, .city_select:focus {
+  outline: none;
+  border-color: var(--orange-action);
+}
+
+/* Style pour l'input Code postal */
+.codePostal {
+  display: block;
+  margin: auto; /* Ajout de la marge automatique pour centrer */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%; /* Réduction de la largeur pour éviter le débordement */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; /* Réduction de la taille de la police */
+  padding: 6px; /* Réduction de l'espacement intérieur */
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+.codePostal:focus {
+  outline: none;
+  border-color: var(--orange-action);
+}
+
+
