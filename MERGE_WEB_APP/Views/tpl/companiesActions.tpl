@@ -1,6 +1,6 @@
 <!--________________________________________ Formualaire de création ________________________________________-->
     
-<h1 class="form-text">Création d'une Entreprise</h1>
+<h2 class="h2-action">Création d'une Entreprise</h2>
 <div class="form-div">
     
     <form class="div-form" action="" method="post">

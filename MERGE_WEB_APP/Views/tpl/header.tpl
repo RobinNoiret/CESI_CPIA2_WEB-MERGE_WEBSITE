@@ -15,6 +15,8 @@
                 {if $user neq 'Pilote'}
                         <li><a href="{$source|cat:'?page=pilote'}">Trouver un pilote</a></li>
                 {/if}
+                <li><a href="{$source|cat:'?page=student'}">Trouver un étudiant</a></li>
+                {else}
                         <li><a href="{$source|cat:'?page=student'}">Trouver un étudiant</a></li>
             {/if}
         </ul>

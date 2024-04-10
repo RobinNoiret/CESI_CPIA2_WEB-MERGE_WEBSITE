@@ -37,13 +37,12 @@
 }
 
 /* Styles pour les icônes */
-.modify i, .btn-close div, .return i, .like i {
-    font-size: 2em;
+.modify a, .btn-close div, .return i, .like i {
     transition: transform 0.3s ease;
 }
 
 /* Effets de survol pour les icônes */
-.modify i:hover, .btn-close div:hover, .return i:hover {
+.modify a:hover, .btn-close div:hover, .return i:hover {
     transform: rotate(5deg) scale(1.2);
 }
 

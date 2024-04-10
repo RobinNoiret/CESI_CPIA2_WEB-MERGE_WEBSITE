@@ -86,11 +86,6 @@ tr:hover {
     box-shadow: 0 0 0 0.5px var(--gradient-color3);
 }
 
-/* Style pour le titre du formulaire */
-.custom-title {
-    margin:  1.5em 0;
-}
-
 /* Ajustements pour une meilleure réactivité sur les petits écrans */
 @media (max-width: 953px) {
     /* Permet au formulaire de s'adapter aux petits écrans en empilant les éléments */

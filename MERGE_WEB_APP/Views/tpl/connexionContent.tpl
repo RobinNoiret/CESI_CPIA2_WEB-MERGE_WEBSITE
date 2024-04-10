@@ -1,4 +1,4 @@
-<h1 class="form-text">Connexion</h1>
+<h2 class="h2-action form-text">Connexion</h2>
 <div class="form-div">
 
     <form class="div-form" action="{$source}?page=connexion" method="post">
@@ -15,8 +15,8 @@
                 <input type="password" class="Form_input" placeholder="mot-de-passe" id="PasswordField" name="password" required>
             </div><br>
 
-            <input type="" onclick="validationConnexion()" class="CTA_secondaire" value="Login"> {* type=submit*}
-        </div>
+            <button onclick="validationConnexion()" class="CTA_secondaire login_btn" type="button">Login</button>
+            </div>
         </fieldset>
     </form>
 </div>

@@ -7,14 +7,14 @@
     <div class="internship-interactivity">
         <div class="internship-search">
             <form action="{$source}?page=internship&action=search" method="post">
-                <input type="submit" id="search-btn" class="CTA_secondaire" value="Rechercher">
+                <input type="submit" id="search-btn" class="CTA-button" value="Rechercher">
             </form>
         </div>
 
         {if $user neq 'Etudiant'}
             <div class="intership-button">
                 <form id="addForm">
-                <buttonbutton class="CTA_secondaire" action='{$source}?page=internship&action=add'>Ajouter</button>
+                <buttonbutton class="CTA-button" action='{$source}?page=internship&action=add'>Ajouter</button>
                 </form>
             </div>
         {/if}
@@ -46,7 +46,7 @@
                     <td class='places-column'>{$elem.placesNumber}</td>
                     <td class='open-column'><a class="CTA_secondaire" href="{$source}?page=internship&action=displayOne&id={$elem.ID}">Découvrir l'offre<a></td>
                     {if $user neq 'Etudiant'}
-                        <td class="modify-Column"><a class='fa-solid fa-pen-to-square' href="{$source}?page=internship&action=change&id={$elem.ID}">
+                        <td class="modify"><a class='fa-solid fa-pen-to-square' href="{$source}?page=internship&action=change&id={$elem.ID}">
                         <a> </td>
                     {/if}
                 </tr>

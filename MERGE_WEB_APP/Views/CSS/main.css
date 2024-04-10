@@ -84,6 +84,7 @@ header, footer {
 
 .Content {
     flex-grow: 1;
+    margin-bottom: 5rem;
 }
 
 /*_______CTA_______*/
@@ -120,31 +121,37 @@ header, footer {
 .CTA_secondaire, .CTA-button
 {
     /* width: 40%; */
+    /* Disposition */
     display: inline-block;
+    margin: 0.25em 0.125em;
+    padding: 0.6em 1.25em;
 
+    /* Texte */
     font-size: 1rem;
     font-weight: bold;
+    color: var(--noir-fixe);
     text-align: center;
     text-decoration: none;
-    
-    padding: 0.6em 1.25em;
-    margin: 0.25em 0.125em;
 
-    border-width: 0.18em;
-    border-style: solid;
-    border-radius: 50em;
-    border-image-slice: 1;
-    border-color: var(--orange-action);
-    
-    background-color: #FFFFFF;  /* var(--blanc-fixe) */
-    color: var(--noir-fixe);
+    /* Bordures et arrière-plan */
+    border: 0.18em solid var(--orange-action);
+    border-radius: 50em; 
+    background-color: #FFFFFF; 
 
-    transition: transform 0.3s ease-in-out;
+    /* Effets */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login_btn {
+    width: 60%;
 }
 
 .CTA_secondaire:hover
 {
-    transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
+    transform: scale(1.08); /* Augmentez la valeur selon votre préférence */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Bouton formulaire connexion Brieuc, à mêtre à jour en fonction du CTA définitif*/
@@ -153,11 +160,11 @@ header, footer {
     /* Soit connexion.html (CTA-button)*/
 
  
-.CTA-button:hover
-{
+.CTA-button:hover {
     color: var(--blanc-fixe);
-    background-color: #FF7D00;
-    transform: scale(1.05); /* Augmentez la valeur selon votre préférence */
+    background-color: var(--orange-action); 
+    transform: scale(1.08); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 textarea { 

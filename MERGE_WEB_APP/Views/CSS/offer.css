@@ -79,9 +79,7 @@
 .table td{
     font-size: 1rem;
 }
-.table td .CTA_secondaire, .internship-details .CTA_secondaire{
-    font-size: 0.8rem;
-}
+
 .internship-interactivity{
     display: flex;
     justify-content: space-between;

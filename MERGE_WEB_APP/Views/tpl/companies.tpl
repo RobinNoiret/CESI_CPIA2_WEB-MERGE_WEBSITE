@@ -1,6 +1,6 @@
 
 <div class="custom-search-container">
-    <h2 class="h2-action custom-title">Liste des entreprises</h2>
+    <h2 class="h2-action">Liste des entreprises</h2>
     <div class="form-content">
         <form action="{$source}?page=company" method="post" class="custom-search">
             <div class="input-container">
@@ -15,11 +15,11 @@
                 <label for="activityArea">Secteur d'activité</label>
                 <input type="text" id="activityArea" name="activityArea" class="custom-input" placeholder="Entrez le secteur d'activité">
             </div>
-            <button type="submit" name="search" class="CTA_secondaire">Rechercher</button>
+            <button type="submit" name="search" class="CTA-button">Rechercher</button>
         </form>
         <div class="add-button">
             {if $user eq 'Admin' || $user eq 'Pilote'}
-                <a href="{$source}?page=company&action=add" class="CTA_secondaire">Ajouter une entreprise</a>
+                <a href="{$source}?page=company&action=add" class="CTA-button">Ajouter</a>
             {/if}
         </div>
     </div>
@@ -37,7 +37,9 @@
                 <th>Secteur d'activité</th>
                 <th>Localités</th>
                 <th class="center">Nombre de candidats</th>
-                <th class="center">Actions</th>
+                {if $user eq 'Admin' || $user eq 'Pilote'}
+                    <th class="center">Actions</th>
+                {/if}
             </tr>
         </thead>
         <tbody>
@@ -49,9 +51,12 @@
                     <td>{$company.activityArea}</td>
                     <td>{$company.localities}</td>
                     <td class="center">{$company.applicantCount}</td>
-                    <td class="modify">
-                        <a href="{$source}?page=company&action=edit&companyID={$company.companyID}" class="fa-solid fa-pen-to-square"></a>
-                    </td>
+                    {if $user eq 'Admin' || $user eq 'Pilote'}
+                        <td class="modify">
+                            <a href="{$source}?page=company&action=edit&companyID={$company.companyID}" class="fa-solid fa-pen-to-square"></a>
+                        </td>
+                    {/if}
+                    
                 </tr>
 
             {/foreach}

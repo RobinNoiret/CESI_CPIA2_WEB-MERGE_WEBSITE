@@ -22,11 +22,6 @@
   width: 50%;
 }
 
-/* Texte du formulaire */
-.form-text {
-  text-align: center;
-}
-
 /* Ensemble du formulaire */
 .fieldset-group {
   background-color: white;
@@ -34,7 +29,7 @@
   border-style: none;
   padding: 10%;
   padding-bottom: 5%;
-  width: 70%;
+  width: 60%;
   display: inline;
   justify-content: center;
   align-items: center;
@@ -62,7 +57,7 @@
   margin: 5px 0;
   width: 96%;
   font-size: 1rem;
-  color: var(--orange-action);
+  font-weight: bold;
   border-style: none;
   border-bottom: 1px solid black;
   transition: border-bottom-color 0.3s;
@@ -121,6 +116,7 @@ input::placeholder {
   color: var(--orange-action);
   font-weight: bold;
   text-align: center;
+  margin: 1.5em 0;
 }
 
 /* Style pour le select Nombre de localités */
