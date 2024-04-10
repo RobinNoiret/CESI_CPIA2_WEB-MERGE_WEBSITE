@@ -32,4 +32,4 @@ Pour ce qui est de la Base de données, vous trouverez tout ce dont vous avez be
 ## Authors
 * **Robin NOIRET** - [Robin GitHub](https://github.com/RobinNoiret)
 * **Floren MAILLARD-SALIN** - [Florent GitHub](https://github.com/FlorentMS)
-* **Brieuc OLIVIERI** - [Brieuc GitHub](https://github.com/FlorentMS)
+* **Brieuc OLIVIERI** - [Brieuc GitHub](https://github.com/BrieucOlivieri)
